@@ -8,4 +8,3 @@ __pycache__/
 *.out
 *.model
 *.pickle
-!trained_models/
