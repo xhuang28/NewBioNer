@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+*.json
+*.pdf
+*.out
+*.model
+*.pickle
+!trained_models/
