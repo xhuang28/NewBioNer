@@ -8,3 +8,7 @@ __pycache__/
 *.out
 *.model
 *.pickle
+*.tsv
+*.pkl
+*.h5
+*.pt
