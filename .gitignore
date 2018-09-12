@@ -12,3 +12,5 @@ __pycache__/
 *.pkl
 *.h5
 *.pt
+*.p
+*.json_bak
