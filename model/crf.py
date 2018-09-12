@@ -1274,7 +1274,7 @@ class CRFDecode_vb():
         self.average_batch = average_batch
 
 
-    def decode(self, scores, mask):
+    def decode(self, scores, mask, negated=False):
         """Find the optimal path with viterbe decode
 
         args:
@@ -1288,7 +1288,9 @@ class CRFDecode_vb():
         seq_len = scores.size(0)
         bat_size = scores.size(1)
 
-        mask = 1 - mask
+        if not negated:
+            mask = 1 - mask
+        
         #decode_idx = scores.new(seq_len-1, bat_size).long()
         decode_idx = torch.LongTensor(seq_len-1, bat_size)
 

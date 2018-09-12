@@ -1,8 +1,18 @@
+cd /auto/nlg-05/huan183/NewBioNer
+salloc --ntasks=1 --partition=isi --time=24:00:00 --mem-per-cpu=48GB --gres=gpu:1
+source activate
+srun --pty --time=23:00:00 --gres=gpu:1 python
+
+
+
+
+
 import torch, argparse, json, pickle, itertools
 from model.lm_lstm_crf import *
 from model.data_util import *
 from model.crf import *
 from pathlib import Path
+from copy import deepcopy
 
 
 def load_data(train_features, train_labels, train_args):
@@ -139,98 +149,31 @@ def make_silver(dataloader):
     return new_dataloader
 
 
+checkpoint_file = torch.load('trained_models/EXP2_CN21_C200_W300_MV0_EP58/N21_LAST_0.9710_0.9649_0.9773_58.model', map_location={'cuda:1':'cuda:'+str(torch.cuda.current_device())})
+train_args = json.load(open('trained_models/EXP2_CN21_C200_W300_MV0_EP58/N21_LAST_0.9710_0.9649_0.9773_58.json_bak', 'r'))['args']
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Make prediction with pretrained models')
-    parser.add_argument('--checkpoint', help='checkpoint to be loaded')
-    parser.add_argument('--train_args', help='args to be loaded')
-    parser.add_argument('--train_file', nargs='+', default=['./corpus/train/BC2GM-IOBES/train.tsv',
-                                                            './corpus/train/BC4CHEMD-IOBES/train.tsv',
-                                                            './corpus/train/BC5CDR-IOBES/train.tsv',
-                                                            './corpus/train/JNLPBA-IOBES/train.tsv',
-                                                            './corpus/train/linnaeus-IOBES/train.tsv',
-                                                            './corpus/train/NCBI-IOBES/train.tsv'], help='path to training files')
-    parser.add_argument('--dev_file', nargs='+', default=['./corpus/train/BC2GM-IOBES/devel.tsv',
-                                                          './corpus/train/BC4CHEMD-IOBES/devel.tsv',
-                                                          './corpus/train/BC5CDR-IOBES/devel.tsv',
-                                                          './corpus/train/JNLPBA-IOBES/devel.tsv',
-                                                          './corpus/train/linnaeus-IOBES/devel.tsv',
-                                                          './corpus/train/NCBI-IOBES/devel.tsv'])
-    parser.add_argument('--load_pickle', default=False, help='path to pickle file for crf2train_dataloader')
-    
-    
-    args = parser.parse_args()
-    
-    checkpoint_file = torch.load(args.checkpoint, map_location={'cuda:1':'cuda:'+str(torch.cuda.current_device())})
-    train_args_all = json.load(open(args.train_args, 'r'))
-    train_args = train_args_all['args']
-    
-    if args.load_pickle == False or not Path(args.load_pickle).is_file() or not 'crf2corpus' in train_args:
-        train_features, train_labels = read_combine_data(args.train_file, args.dev_file)
-    dev_features, dev_labels = read_data(args.dev_file)
-    test_features, test_labels = read_data(args.test_file)
-    
-    rewrite = False
-    if not 'crf2corpus' in train_args:
-    
-        ##### <copied from original code> #####
-        corpus_missing_tagspace = build_corpus_missing_tagspace(train_labels, train_args['tag2idx'])
-        corpus2crf, corpus_str2crf = corpus_dispatcher(corpus_missing_tagspace, style='N21')
-        crf2corpus = {}
-        for key, val in corpus2crf.items():
-            if val not in crf2corpus:
-                crf2corpus[val] = [key]
-            else:
-                crf2corpus[val] += [key]
-        
-        train_args['crf2corpus'] = crf2corpus
-        ##### </copied from original code> #####
-        
-        rewrite = True
-    
-    if not 'idx2tag' in train_args:
-        train_args['idx2tag'] = {v:k for k,v in train_args['tag2idx'].items()}
-        
-        rewrite = True
-    
-    if rewrite == True:
-        print("Rewriting train args")
-        train_args_all['args'] = train_args # original variable should already be modified, just to make sure
-        json.dump(train_args_all, open(args.train_args+'_bak', 'w'))
-    
-    if args.load_pickle == False or not Path(args.load_pickle).is_file():
-        crf2train_dataloader = load_data(train_features, train_labels, train_args)
-        pickle.dump(crf2train_dataloader, open('crf2train_dataloader.pickle', 'wb'))
-    else:
-        print("loading from pickle")
-        crf2train_dataloader = pickle.load(open(args.load_pickle, 'rb'))
-        
-    packer = CRFRepack_WC(len(train_args['tag2idx']), True)
-    
-    ner_model = LM_LSTM_CRF(len(train_args['tag2idx']), len(train_args['chr2idx']), 
-        train_args['char_dim'], train_args['char_hidden'], train_args['char_layers'], 
-        train_args['word_dim'], train_args['word_hidden'], train_args['word_layers'], 
-        len(train_args['token2idx']), train_args['drop_out'], len(train_args['crf2corpus']), 
-        large_CRF=train_args['small_crf'], if_highway=train_args['high_way'], 
-        in_doc_words=train_args['in_doc_words'], highway_layers = train_args['highway_layers'])
-    
-    ner_model.load_state_dict(checkpoint_file['state_dict'])
-    #ner_model.cuda()
-        
-    decoder = CRFDecode_vb(len(train_args['tag2idx']), train_args['tag2idx']['<start>'], train_args['tag2idx']['<pad>'])
-    
-    new_crf2train_dataloader = make_silver(crf2train_dataloader[0])
-    pickle.dump(new_crf2train_dataloader, open('dataloaders/new_crf2train_dataloader.p', 'wb', 0))
-    new_crf2dev_dataloader = make_silver(crf2dev_dataloader)
-    pickle.dump(new_crf2dev_dataloader, open('dataloaders/new_crf2dev_dataloader.p', 'wb', 0))
-    new_dev_dataset_loader = make_silver(dev_dataset_loader)
-    pickle.dump(new_dev_dataset_loader, open('dataloaders/new_dev_dataset_loader.p', 'wb', 0))
-    new_test_dataset_loader = make_silver(test_dataset_loader)
-    pickle.dump(new_test_dataset_loader, open('dataloaders/new_test_dataset_loader.p', 'wb', 0))
+crf2train_dataloader = pickle.load(open('crf2train_dataloader.pickle', 'rb'))
+
+packer = CRFRepack_WC(len(train_args['tag2idx']), True)
+
+ner_model = LM_LSTM_CRF(len(train_args['tag2idx']), len(train_args['chr2idx']), 
+    train_args['char_dim'], train_args['char_hidden'], train_args['char_layers'], 
+    train_args['word_dim'], train_args['word_hidden'], train_args['word_layers'], 
+    len(train_args['token2idx']), train_args['drop_out'], len(train_args['crf2corpus']), 
+    large_CRF=train_args['small_crf'], if_highway=train_args['high_way'], 
+    in_doc_words=train_args['in_doc_words'], highway_layers = train_args['highway_layers'])
+
+ner_model.load_state_dict(checkpoint_file['state_dict'])
+#ner_model.cuda()
+decoder = CRFDecode_vb(len(train_args['tag2idx']), train_args['tag2idx']['<start>'], train_args['tag2idx']['<pad>'])
+
+
+
+new_crf2train_dataloader = make_silver(crf2train_dataloader[0])
     
     
     
-    
-    
-    
-    
+
+
+
+
