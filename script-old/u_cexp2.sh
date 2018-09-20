@@ -9,11 +9,11 @@ export LANGUAGE=en_US.UTF-8
 EXP_NAME="EXP1"
 EXEC_NAME="EXP1.$1"
 SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
-CHECKPOINT_FOLDER="$SRC_FOLDER/checkpoints/c_$EXEC_NAME"
+CHECKPOINT_FOLDER="$SRC_FOLDER/checkpoints/unlimit_c_$EXEC_NAME"
 DATA_FOLDER="$SRC_FOLDER/corpus/train"
 LOGS_FOLDER="$SRC_FOLDER/logs"
 DATA_LOADER_FOLDER="$SRC_FOLDER/dataloaders"
-#LOAD_CHECKPOINT="/auto/nlg-05/huan183/NewBioNer/trained_models/EXP2_CN21_C200_W300_MV0_EP58/N21_LAST_0.9710_0.9649_0.9773_58"
+LOAD_CHECKPOINT="/auto/nlg-05/huan183/NewBioNer/trained_models/EXP2_CN21_C200_W300_MV0_EP58/N21_LAST_0.9710_0.9649_0.9773_58"
 
 
 cd $SRC_FOLDER
@@ -47,8 +47,8 @@ python3 $SRC_FOLDER/train.py \
   --dispatch N21 \
   --corpus_mask_value 0 \
   --batch_size 10 \
-  --least_iters $2 \
-  --epoch $2 \
+  --least_iters 30 \
+  --epoch 500 \
   --patience 30 \
   --stop_on_single \
   --lr 0.01 \
@@ -62,6 +62,6 @@ python3 $SRC_FOLDER/train.py \
   --dev_loader $DATA_LOADER_FOLDER/crf2dev_dataloader.p \
   --dev_loader2 $DATA_LOADER_FOLDER/dev_dataset_loader.p \
   --test_loader $DATA_LOADER_FOLDER/test_dataset_loader.p \
-  | tee $LOGS_FOLDER/c_$EXEC_NAME.log
+  | tee $LOGS_FOLDER/unlimit_c_$EXEC_NAME.log
 
   source deactivate

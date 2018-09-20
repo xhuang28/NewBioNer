@@ -1,0 +1,41 @@
+eval setting:
+Namespace(annotate=False, corpus_mask_value=0.0, debug_errors=False, error_num=100, eva_matrix='fa', eval_filtered=False, global_eval=False, global_pred=False, gpu=0, if_pred=True, load_arg='/auto/nlg-05/huan183/NewBioNer/checkpoints/c_EXP1.1/N21_LAST_0.9577_0.9564_0.9591_61.json', load_check_point='/auto/nlg-05/huan183/NewBioNer/checkpoints/c_EXP1.1/N21_LAST_0.9577_0.9564_0.9591_61.model', local_eval=False, pickle='', post=False, pred_file=['/auto/nlg-05/huan183/NewBioNer/corpus/eval/CELLFINDER-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP13CG-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/CHEMPROT-IOBES/test.tsv'], pred_scope='local', show_collison=False, verbose=0)
+train setting:
+Negative Log Likelihood
+corpus2crf {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+corpus_str2crf {'7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '1 2 3 4 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '1 2 3 4 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '1 2 3 4 7 8 9 10 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '7 8 9 10 11 12 13 14 31 32 33 34': [0], '1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30': [0]}
+crf2corpus {0: [0, 1, 2, 3, 4, 5]}
+corpus_missing_tagspace [[7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [1, 2, 3, 4, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [1, 2, 3, 4, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [1, 2, 3, 4, 7, 8, 9, 10, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [7, 8, 9, 10, 11, 12, 13, 14, 31, 32, 33, 34], [1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]]
+LM_LSTM_CRF(
+  (char_embeds): Embedding(97, 30)
+  (forw_char_lstm): LSTM(30, 200, dropout=0.5)
+  (back_char_lstm): LSTM(30, 200, dropout=0.5)
+  (word_embeds): Embedding(72450, 200)
+  (word_lstm): LSTM(600, 150, dropout=0.5, bidirectional=True)
+  (dropout): Dropout(p=0.5)
+  (crflist): ModuleList(
+    (0): CRF_L(
+      (hidden2tag): Linear(in_features=300, out_features=1225, bias=True)
+    )
+  )
+  (char_pre_train_out): Linear(in_features=200, out_features=97, bias=True)
+  (word_pre_train_out): Linear(in_features=200, out_features=72450, bias=True)
+)
+tagset_size:  35
+
+Objective Function: Negative Log Liklihood
+ - Total it 45: 0it [00:00, ?it/s] - Total it 45: 40it [00:02, 17.70it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/CELLFINDER-IOBES/test.tsv
+Global: 
+P: 0.5943 R: 0.2782 F1: 0.3790
+
+['B-CELL_TYPE', 'I-CELL_TYPE', 'I-CELL_TYPE', 'E-CELL_TYPE', 'O', 'O', 'O', 'O', 'S-SPECIES', 'O', 'B-GP', 'I-GP', 'E-GP', 'O']
+ - Total it 40: 0it [00:00, ?it/s]                                  /auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP13CG-IOBES/test.tsv
+Global: 
+P: 0.7140 R: 0.3933 F1: 0.5072
+
+['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+ - Total it 18: 0it [00:00, ?it/s] - Total it 18: 14it [00:02,  6.55it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/CHEMPROT-IOBES/test.tsv
+Global: 
+P: 0.8141 R: 0.6549 F1: 0.7259
+
+['S-CHEMICAL', 'O', 'S-CHEMICAL', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'I-GP', 'I-GP', 'E-GP', 'O', 'O', 'O', 'B-GP', 'I-GP', 'E-GP', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'E-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'I-GP', 'E-GP', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'I-GP', 'E-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'S-GP', 'O', 'S-GP', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O']

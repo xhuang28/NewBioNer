@@ -114,11 +114,13 @@ def make_silver(dataloader):
         
         new_scores = torch.from_numpy(np.array(new_scores))
         supervised_pred = decoder.decode(new_scores, mask_v.data, negated = False)
+        start_label = train_args['tag2idx']['<start>']
+        pad_label = train_args['tag2idx']['<pad>']
+        silver4 = np.array([[start_label for r in range(supervised_pred.shape[1])]] + supervised_pred.numpy().tolist())
         
         tg_v_1, tg_v_2, tg_v_3, tg_v_4 = deepcopy(tg_v.data.numpy()), deepcopy(tg_v.data.numpy()), deepcopy(tg_v.data.numpy()), deepcopy(tg_v.data.numpy())
         for i in range(bat_size):
             curr_mask = mask_v[:,i]
-            pad_label = train_args['tag2idx']['<pad>']
             label_size = len(train_args['tag2idx'])
             cur_len = sum(curr_mask).data.numpy()[0]
             threshold = seq_len
@@ -153,6 +155,8 @@ checkpoint_file = torch.load('trained_models/EXP2_CN21_C200_W300_MV0_EP58/N21_LA
 train_args = json.load(open('trained_models/EXP2_CN21_C200_W300_MV0_EP58/N21_LAST_0.9710_0.9649_0.9773_58.json_bak', 'r'))['args']
 
 crf2train_dataloader = pickle.load(open('crf2train_dataloader.pickle', 'rb'))
+crf2train_dataloader = pickle.load(open('/auto/nlg-05/huan183/NewBioNer/dataloaders/c_crf2train_dataloader.p', 'rb'))
+
 
 packer = CRFRepack_WC(len(train_args['tag2idx']), True)
 

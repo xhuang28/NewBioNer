@@ -1,4 +1,5 @@
 #!/bin/bash
+
 source activate py36
 
 export LC_ALL=en_US.UTF-8
@@ -50,4 +51,6 @@ python3 $SRC_FOLDER/ptrain.py \
   --load_opt \
   --pickle $SRC_FOLDER/pickle/EXP2/$3 \
   | tee $SRC_FOLDER/log/EXP2/$EXEC_NAME.log
+  
+  
 source deactivate py36

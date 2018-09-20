@@ -1,4 +1,5 @@
-import torch, argparse, json, pickle, itertools
+import torch, argparse, json, pickle, itertools, os, time
+from copy import deepcopy
 from model.lm_lstm_crf import *
 from model.data_util import *
 from model.crf import *
@@ -23,6 +24,8 @@ def update_s(s, l, idx_annotated, O_idx):
     return new_s
 
 def make_silver(dataloader):
+    start_time = time.time()
+    iii=0
     new_dataloader = [[], [], [], []]    
     for f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v, reorder in itertools.chain.from_iterable(dataloader):
         f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v = packer.repack_vb(f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v)
@@ -32,8 +35,6 @@ def make_silver(dataloader):
         
         scores = ner_model(f_f.cpu(), f_p.cpu(), b_f.cpu(), b_p.cpu(), w_f.cpu(), 0, corpus_mask_v.cpu())
         pred = decoder.decode(scores.data, mask_v.data, negated = False)
-        idx_annotated = np.where(corpus_mask_v[i,j,0].data)[0]
-        idx_annotated = np.array([r for r in idx_annotated if r!=0])
         
         seq_len = scores.size(0)
         bat_size = scores.size(1)
@@ -46,7 +47,7 @@ def make_silver(dataloader):
         for i in range(bat_size):
             curr_seq = scores[:,i,:,:]
             curr_mask = mask_v[:,i]
-            cliped_seq = curr_seq[:sum(curr_mask).data.numpy()[0]]
+            cliped_seq = curr_seq[:sum(curr_mask.data)]
             fore_probas = [cliped_seq[0, train_args['tag2idx']['<start>'], :]] + [0 for r in range(len(cliped_seq)-2)]
             back_probas = [0 for r in range(len(cliped_seq)-2)] + [cliped_seq[-1, :, train_args['tag2idx']['<pad>']]]
             
@@ -84,6 +85,8 @@ def make_silver(dataloader):
                     break
                 p = pred[i-1,j]
                 proba = bat_full_probas[j][i-1][p]
+                idx_annotated = np.where(corpus_mask_v[i,j,0].data)[0]
+                idx_annotated = np.array([r for r in idx_annotated if r!=0])
                 if l == 0 and p != 0 and not p in idx_annotated:
                     if proba > 0.7:
                         silver1[i,j] = p
@@ -99,42 +102,55 @@ def make_silver(dataloader):
             new_scores_1 = []
             for j in range(scores.shape[1]):
                 s, l = scores[i,j,:,:], gold_labels[i,j]
+                idx_annotated = np.where(corpus_mask_v[i,j,0].data)[0]
+                idx_annotated = np.array([r for r in idx_annotated if r!=0])
                 new_scores_1.append(update_s(s, l, idx_annotated, int(train_args['tag2idx']['O'])))
             new_scores.append(new_scores_1)
         
         new_scores = torch.from_numpy(np.array(new_scores))
         supervised_pred = decoder.decode(new_scores, mask_v.data, negated = False)
+        start_label = train_args['tag2idx']['<start>']
+        pad_label = train_args['tag2idx']['<pad>']
+        silver4 = np.array([[start_label for r in range(supervised_pred.shape[1])]] + supervised_pred.numpy().tolist())
         
         tg_v_1, tg_v_2, tg_v_3, tg_v_4 = deepcopy(tg_v.data.numpy()), deepcopy(tg_v.data.numpy()), deepcopy(tg_v.data.numpy()), deepcopy(tg_v.data.numpy())
         for i in range(bat_size):
             curr_mask = mask_v[:,i]
-            pad_label = train_args['tag2idx']['<pad>']
             label_size = len(train_args['tag2idx'])
             cur_len = sum(curr_mask).data.numpy()[0]
             threshold = seq_len
             
             i_l = silver1[:,i]
-            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len] * label_size + pad_label]
+            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len-1] * label_size + pad_label]
             tg_v_1[:,i] = np.array(curr_tg_v).reshape(-1,1)
             
             i_l = silver2[:,i]
-            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len] * label_size + pad_label]
+            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len-1] * label_size + pad_label]
             tg_v_2[:,i] = np.array(curr_tg_v).reshape(-1,1)
             
             i_l = silver3[:,i]
-            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len] * label_size + pad_label]
+            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len-1] * label_size + pad_label]
             tg_v_3[:,i] = np.array(curr_tg_v).reshape(-1,1)
             
             i_l = silver4[:,i]
-            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len] * label_size + pad_label]
+            curr_tg_v = [i_l[ind] * label_size + i_l[ind + 1] for ind in range(0, threshold-1)] + [i_l[cur_len-1] * label_size + pad_label]
             tg_v_4[:,i] = np.array(curr_tg_v).reshape(-1,1)
             
         tg_v_1, tg_v_2, tg_v_3, tg_v_4 = torch.from_numpy(tg_v_1), torch.from_numpy(tg_v_2), torch.from_numpy(tg_v_3), torch.from_numpy(tg_v_4)
         
+        corpus_mask_v = corpus_mask_v.data.numpy()
+        corpus_mask_v[:,:,:] = 1
+        corpus_mask_v = torch.from_numpy(corpus_mask_v)
+        
+        f_f, f_p, b_f, b_p, w_f = f_f.cpu(), f_p.cpu(), b_f.cpu(), b_p.cpu(), w_f.cpu()
         new_dataloader[0].append([f_f, f_p, b_f, b_p, w_f, tg_v_1, mask_v, len_v, corpus_mask_v, reorder])
         new_dataloader[1].append([f_f, f_p, b_f, b_p, w_f, tg_v_2, mask_v, len_v, corpus_mask_v, reorder])
         new_dataloader[2].append([f_f, f_p, b_f, b_p, w_f, tg_v_3, mask_v, len_v, corpus_mask_v, reorder])
         new_dataloader[3].append([f_f, f_p, b_f, b_p, w_f, tg_v_4, mask_v, len_v, corpus_mask_v, reorder])
+        iii+=1
+        if iii%1000==0:
+            print(iii)
+            print(time.time()-start_time)
     
     return new_dataloader
 
@@ -156,7 +172,9 @@ if __name__ == "__main__":
                                                           './corpus/train/JNLPBA-IOBES/devel.tsv',
                                                           './corpus/train/linnaeus-IOBES/devel.tsv',
                                                           './corpus/train/NCBI-IOBES/devel.tsv'])
-    parser.add_argument('--load_pickle', default=False, help='path to pickle file for crf2train_dataloader')
+    parser.add_argument('--load_train_loader', help='path to pickle file for crf2train_dataloader')
+    parser.add_argument('--load_c_train_loader', help='path to pickle file for combined crf2train_dataloader')
+    parser.add_argument('--save_file', help='path to save data loader files')
     
     
     args = parser.parse_args()
@@ -165,68 +183,77 @@ if __name__ == "__main__":
     train_args_all = json.load(open(args.train_args, 'r'))
     train_args = train_args_all['args']
     
-    if args.load_pickle == False or not Path(args.load_pickle).is_file() or not 'crf2corpus' in train_args:
-        train_features, train_labels = read_combine_data(args.train_file, args.dev_file)
-    dev_features, dev_labels = read_data(args.dev_file)
-    test_features, test_labels = read_data(args.test_file)
+    train_data_loader = pickle.load(open(args.load_train_loader, 'rb'))
+    c_train_data_loader = pickle.load(open(args.load_c_train_loader, 'rb'))
     
-    rewrite = False
-    if not 'crf2corpus' in train_args:
-    
-        ##### <copied from original code> #####
-        corpus_missing_tagspace = build_corpus_missing_tagspace(train_labels, train_args['tag2idx'])
-        corpus2crf, corpus_str2crf = corpus_dispatcher(corpus_missing_tagspace, style='N21')
-        crf2corpus = {}
-        for key, val in corpus2crf.items():
-            if val not in crf2corpus:
-                crf2corpus[val] = [key]
-            else:
-                crf2corpus[val] += [key]
-        
-        train_args['crf2corpus'] = crf2corpus
-        ##### </copied from original code> #####
-        
-        rewrite = True
-    
-    if not 'idx2tag' in train_args:
-        train_args['idx2tag'] = {v:k for k,v in train_args['tag2idx'].items()}
-        
-        rewrite = True
-    
-    if rewrite == True:
-        print("Rewriting train args")
-        train_args_all['args'] = train_args # original variable should already be modified, just to make sure
-        json.dump(train_args_all, open(args.train_args+'_bak', 'w'))
-    
-    if args.load_pickle == False or not Path(args.load_pickle).is_file():
-        crf2train_dataloader = load_data(train_features, train_labels, train_args)
-        pickle.dump(crf2train_dataloader, open('crf2train_dataloader.pickle', 'wb'))
-    else:
-        print("loading from pickle")
-        crf2train_dataloader = pickle.load(open(args.load_pickle, 'rb'))
-        
     packer = CRFRepack_WC(len(train_args['tag2idx']), True)
     
     ner_model = LM_LSTM_CRF(len(train_args['tag2idx']), len(train_args['chr2idx']), 
         train_args['char_dim'], train_args['char_hidden'], train_args['char_layers'], 
         train_args['word_dim'], train_args['word_hidden'], train_args['word_layers'], 
-        len(train_args['token2idx']), train_args['drop_out'], len(train_args['crf2corpus']), 
+        len(train_args['token2idx']), train_args['drop_out'], 1, 
         large_CRF=train_args['small_crf'], if_highway=train_args['high_way'], 
         in_doc_words=train_args['in_doc_words'], highway_layers = train_args['highway_layers'])
     
     ner_model.load_state_dict(checkpoint_file['state_dict'])
     #ner_model.cuda()
-        
+    
     decoder = CRFDecode_vb(len(train_args['tag2idx']), train_args['tag2idx']['<start>'], train_args['tag2idx']['<pad>'])
     
-    new_crf2train_dataloader = make_silver(crf2train_dataloader[0])
-    pickle.dump(new_crf2train_dataloader, open('dataloaders/new_crf2train_dataloader.p', 'wb', 0))
-    new_crf2dev_dataloader = make_silver(crf2dev_dataloader)
-    pickle.dump(new_crf2dev_dataloader, open('dataloaders/new_crf2dev_dataloader.p', 'wb', 0))
-    new_dev_dataset_loader = make_silver(dev_dataset_loader)
-    pickle.dump(new_dev_dataset_loader, open('dataloaders/new_dev_dataset_loader.p', 'wb', 0))
-    new_test_dataset_loader = make_silver(test_dataset_loader)
-    pickle.dump(new_test_dataset_loader, open('dataloaders/new_test_dataset_loader.p', 'wb', 0))
+    
+    new_crf2train_dataloader = make_silver(train_data_loader[0])
+    
+    model_name = args.checkpoint.split('/')[-1][:-6]
+    if not os.path.exists(args.save_file + '/EXP1.1'):
+        os.makedirs(args.save_file + '/EXP1.1')
+    if not os.path.exists(args.save_file + '/EXP1.2'):
+        os.makedirs(args.save_file + '/EXP1.2')
+    if not os.path.exists(args.save_file + '/EXP1.3'):
+        os.makedirs(args.save_file + '/EXP1.3')
+    if not os.path.exists(args.save_file + '/EXP1.4'):
+        os.makedirs(args.save_file + '/EXP1.4')
+    
+    protocol = 2
+    # memory issue
+    print('dumping!')
+    with open(args.save_file + '/EXP1.1/new_crf2train_dataloader.p', 'wb') as f:
+        for r in new_crf2train_dataloader[0]:
+            pickle.dump(r, f, protocol)
+    
+    with open(args.save_file + '/EXP1.2/new_crf2train_dataloader.p', 'wb') as f:
+        for r in new_crf2train_dataloader[1]:
+            pickle.dump(r, f, protocol)
+    
+    with open(args.save_file + '/EXP1.3/new_crf2train_dataloader.p', 'wb') as f:
+        for r in new_crf2train_dataloader[2]:
+            pickle.dump(r, f, protocol)
+    
+    with open(args.save_file + '/EXP1.4/new_crf2train_dataloader.p', 'wb') as f:
+        for r in new_crf2train_dataloader[3]:
+            pickle.dump(r, f, protocol)
+    
+    new_crf2train_dataloader = None # free up memory
+    
+    
+    c_new_crf2train_dataloader = make_silver(c_train_data_loader[0])
+    
+    print('dumping!')
+    with open(args.save_file + '/EXP1.1/c_new_crf2train_dataloader.p', 'wb') as f:
+        for r in c_new_crf2train_dataloader[0]:
+            pickle.dump(r, f, protocol)
+    
+    with open(args.save_file + '/EXP1.2/c_new_crf2train_dataloader.p', 'wb') as f:
+        for r in c_new_crf2train_dataloader[1]:
+            pickle.dump(r, f, protocol)
+    
+    with open(args.save_file + '/EXP1.3/c_new_crf2train_dataloader.p', 'wb') as f:
+        for r in c_new_crf2train_dataloader[2]:
+            pickle.dump(r, f, protocol)
+    
+    with open(args.save_file + '/EXP1.4/c_new_crf2train_dataloader.p', 'wb') as f:
+        for r in c_new_crf2train_dataloader[3]:
+            pickle.dump(r, f, protocol)
+    
     
     
     

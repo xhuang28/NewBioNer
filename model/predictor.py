@@ -473,5 +473,13 @@ class Predictor:
         scores = ner_model(f_f, f_p, b_f, b_p, w_f, crf_no, corpus_mask_v)
         selected_scores = scores * corpus_mask_v
         decoded = self.decoder.decode(selected_scores.data, mask_v.data)
-
+        
+        # decoded2 = self.decoder.decode(scores.data, mask_v.data)
+        # for i in range(decoded2.shape[0]):
+            # for j in range(decoded2.shape[1]):
+                # idx_annotated = np.where(corpus_mask_v[i,j,0].cpu().data)[0]
+                # if not decoded2[i,j] in idx_annotated:
+                    # decoded2[i,j] = 0
+        
+        
         return decoded, scores

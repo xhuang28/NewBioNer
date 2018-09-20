@@ -11,6 +11,8 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.sparse as sparse
 import model.utils as utils
+from copy import deepcopy
+import numpy as np
 
 class CRF_L(nn.Module):
     """Conditional Random Field (CRF) layer. This version is used in Ma et al. 2016, has more parameters than CRF_S
@@ -263,13 +265,14 @@ class CRFLoss_vb(nn.Module):
         
     """
 
-    def __init__(self, tagset_size, start_tag, end_tag, average_batch=True):
+    def __init__(self, tagset_size, start_tag, end_tag, average_batch=True, O_idx=0):
         super(CRFLoss_vb, self).__init__()
         self.tagset_size = tagset_size
         self.start_tag = start_tag
         self.end_tag = end_tag
         self.average_batch = average_batch
-
+        self.O_idx = O_idx
+    
     def forward(self, scores, target, mask, corpus_mask):
         """
         args:
@@ -279,19 +282,95 @@ class CRFLoss_vb(nn.Module):
         return:
             loss
         """
-        # print(scores)
-        # print(target)
-        # print(mask)
 
         # calculate batch size and seq len
         seq_len = scores.size(0)
         bat_size = scores.size(1)
 
-        scores = scores * corpus_mask
-        # calculate sentence score
-        tg_energy = torch.gather(scores.view(seq_len, bat_size, -1), 2, target).view(seq_len, bat_size)  # seq_len * bat_size
-        tg_energy = tg_energy.masked_select(mask).sum()
-
+        # scores = scores * corpus_mask
+        # # calculate sentence score
+        # tg_energy = torch.gather(scores.view(seq_len, bat_size, -1), 2, target).view(seq_len, bat_size)  # seq_len * bat_size
+        # tg_energy = tg_energy.masked_select(mask).sum()
+        
+        
+        gold_labels = (target / 35).view(target.shape[0], target.shape[1]).cpu().data.numpy()
+        
+        seq_iter = enumerate(scores)
+        # the first score should start with <start>
+        idx, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
+        # only need start from start_tag
+        cur_partition = inivalues[:, self.start_tag, :].contiguous()  # bat_size * to_target_size
+        selected_pos = []
+        for i in range(bat_size):
+            idx_annotated = np.where(corpus_mask[idx,i,0].data)[0]
+            idx_annotated = np.array([r for r in idx_annotated if r!=0])
+            if gold_labels[idx+1,i] == self.O_idx:
+                selected_p = np.ones(self.tagset_size)
+                selected_p[idx_annotated] = 0
+            else:
+                selected_p = np.zeros(self.tagset_size)
+                selected_p[gold_labels[idx+1,i]] = 1
+            selected_pos.append(selected_p)
+        
+        selected_pos = autograd.Variable(torch.FloatTensor(np.array(selected_pos))).cuda()
+        mat_neg_inf = autograd.Variable(torch.FloatTensor(np.full_like(cur_partition.cpu().data.numpy(), -np.Inf))).cuda()
+        try:
+            cur_partition = utils.switch(mat_neg_inf, cur_partition, selected_pos).contiguous().view(bat_size, -1)
+        except:
+            import pickle
+            pickle.dump([scores, target, mask, corpus_mask, cur_partition], open('/media/storage_e/npeng/bioner/xiao/NewBioNER/BP_all.p', 'wb'), 2)
+            assert False
+        
+        tg_energy = cur_partition
+        # iter over last scores
+        for idx, cur_values in seq_iter:
+            # previous to_target is current from_target
+            # tg_energy: previous results log(exp(from_target)), revised by gold label, #(batch_size * from_target)
+            # cur_values: bat_size * from_target * to_target
+            cur_values = cur_values + tg_energy.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
+            
+            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
+                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
+            
+            # the final step outputs probability of next tag, which is <EOS>. So don't do it in the final step
+            if idx < gold_labels.shape[0]-1:
+                selected_pos = []
+                for i in range(bat_size):
+                    idx_annotated = np.where(corpus_mask[idx+1,i,0].data)[0]
+                    idx_annotated = np.array([r for r in idx_annotated if r!=0])
+                    if gold_labels[idx+1,i] == self.O_idx:
+                        selected_p = np.ones(self.tagset_size)
+                        selected_p[idx_annotated] = 0
+                    else:
+                        selected_p = np.zeros(self.tagset_size)
+                        selected_p[gold_labels[idx+1,i]] = 1
+                    selected_pos.append(selected_p)
+                
+                selected_pos = autograd.Variable(torch.FloatTensor(np.array(selected_pos))).cuda()
+                
+                mat_neg_inf = autograd.Variable(torch.FloatTensor(np.full_like(cur_partition.cpu().data.numpy(), -np.Inf))).cuda()
+                
+                cur_partition = utils.switch(mat_neg_inf, cur_partition, selected_pos).contiguous().view(bat_size, -1).contiguous()
+            
+            try:
+                tg_energy = utils.switch(tg_energy, cur_partition,
+                                        mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
+            except:
+                import pickle
+                pickle.dump([scores, target, mask, corpus_mask, tg_energy, cur_partition, mask[idx]], open('/media/storage_e/npeng/bioner/xiao/NewBioNER/BP_all.p', 'wb'), 2)
+                assert False
+            
+        try:
+            #only need end at end_tag
+            tg_energy = tg_energy[:, self.end_tag].sum()
+        except:
+            import pickle
+            pickle.dump([scores, target, mask, corpus_mask, tg_energy], open('/media/storage_e/npeng/bioner/xiao/NewBioNER/BP_all.p', 'wb'), 2)
+            assert False
+        
+        
+        
+        
         # calculate forward partition score
 
         # build iter
@@ -1274,7 +1353,7 @@ class CRFDecode_vb():
         self.average_batch = average_batch
 
 
-    def decode(self, scores, mask, negated=False):
+    def decode(self, scores, mask):
         """Find the optimal path with viterbe decode
 
         args:
@@ -1288,9 +1367,7 @@ class CRFDecode_vb():
         seq_len = scores.size(0)
         bat_size = scores.size(1)
 
-        if not negated:
-            mask = 1 - mask
-        
+        mask = 1 - mask
         #decode_idx = scores.new(seq_len-1, bat_size).long()
         decode_idx = torch.LongTensor(seq_len-1, bat_size)
 
