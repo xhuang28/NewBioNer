@@ -1,0 +1,119 @@
+OCCPUIED the GPU
+setting:
+Namespace(batch_size=10, caseless=True, change_gold=False, change_prob=1.0, char_dim=30, char_hidden=200, char_layers=1, checkpoint='/auto/nlg-05/huan183/NewBioNer/checkpoints/P1/EXP1/TEST2', clip_grad=5.0, co_train=False, combine=False, corpus_mask_value=0.0, cost_value=1.0, dev_file=['/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/devel.tsv'], dispatch='N21', drop_out=0.5, emb_file='/home/nlg-05/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt', epoch=500, eva_matrix='fa', fine_tune=False, gpu=0, high_way=False, highway_layers=1, idea='Li', lambda0=1, least_iters=50, load_arg='', load_check_point='', load_opt=False, lr=0.01, lr_decay=0.05, max_margin=False, mini_count=5, momentum=0.9, nll_rp=False, patience=30, pickle='/auto/nlg-05/huan183/NewBioNer/pickle', plateau=False, pred_method='M', rand_embedding=False, seed=42, shrink_embedding=True, small_crf=False, softmax_margin=False, start_epoch=0, stop_on_single=True, test_file=['/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/test.tsv'], train_file=['/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/train.tsv'], unk='unk', update='sgd', word_dim=200, word_hidden=300, word_layers=1)
+can_load_check_point:  
+can_load_arg:  
+load_opt:  False
+loading corpus
+['/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/train.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/train.tsv']
+['/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/devel.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/devel.tsv']
+['/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/test.tsv']
+rebuild_maps
+constructing coding table
+constructing coding table
+constructing coding table
+constructing coding table
+constructing coding table
+constructing coding table
+feature size: '21422'
+loading embedding
+Load from PICKLE
+embedding size: '71725'
+{'O': 0, 'B-GP': 1, 'I-GP': 2, 'E-GP': 3, 'S-GP': 4, '<start>': 5, '<pad>': 6, 'S-CHEMICAL': 7, 'B-CHEMICAL': 8, 'E-CHEMICAL': 9, 'I-CHEMICAL': 10, 'B-DISEASE': 11, 'E-DISEASE': 12, 'I-DISEASE': 13, 'S-DISEASE': 14, 'B-DNA': 15, 'E-DNA': 16, 'B-CELL_TYPE': 17, 'I-CELL_TYPE': 18, 'E-CELL_TYPE': 19, 'I-DNA': 20, 'S-CELL_TYPE': 21, 'S-DNA': 22, 'S-CELL_LINE': 23, 'B-CELL_LINE': 24, 'E-CELL_LINE': 25, 'I-CELL_LINE': 26, 'B-RNA': 27, 'I-RNA': 28, 'E-RNA': 29, 'S-RNA': 30, 'S-SPECIES': 31, 'B-SPECIES': 32, 'E-SPECIES': 33, 'I-SPECIES': 34}
+Statistic:
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/train.tsv 12574
+Counter({'O': 318104, 'I-GP': 13418, 'B-GP': 8686, 'E-GP': 8686, 'S-GP': 6511})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/train.tsv 30682
+Counter({'O': 826726, 'I-CHEMICAL': 27013, 'S-CHEMICAL': 20747, 'B-CHEMICAL': 8731, 'E-CHEMICAL': 8731})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/train.tsv 4560
+Counter({'O': 103967, 'S-CHEMICAL': 4426, 'S-DISEASE': 2408, 'B-DISEASE': 1774, 'E-DISEASE': 1774, 'I-DISEASE': 1144, 'I-CHEMICAL': 1123, 'B-CHEMICAL': 777, 'E-CHEMICAL': 777})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/train.tsv 5424
+Counter({'O': 124452, 'I-DISEASE': 3239, 'B-DISEASE': 2876, 'E-DISEASE': 2876, 'S-DISEASE': 2258})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/train.tsv 18534
+Counter({'O': 345736, 'S-GP': 16012, 'B-GP': 11791, 'E-GP': 11791, 'I-GP': 10646, 'I-DNA': 7408, 'B-DNA': 6660, 'E-DNA': 6660, 'B-CELL_TYPE': 4612, 'E-CELL_TYPE': 4612, 'I-CELL_LINE': 3707, 'I-CELL_TYPE': 3520, 'B-CELL_LINE': 2912, 'E-CELL_LINE': 2912, 'S-DNA': 1821, 'S-CELL_TYPE': 1580, 'B-RNA': 731, 'E-RNA': 731, 'I-RNA': 617, 'S-CELL_LINE': 518, 'S-RNA': 113})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/train.tsv 11935
+Counter({'O': 277701, 'S-SPECIES': 1471, 'B-SPECIES': 648, 'E-SPECIES': 648, 'I-SPECIES': 492})
+
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/devel.tsv 2519
+Counter({'O': 63544, 'I-GP': 2710, 'B-GP': 1727, 'E-GP': 1727, 'S-GP': 1334})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/devel.tsv 30639
+Counter({'O': 822028, 'I-CHEMICAL': 26182, 'S-CHEMICAL': 20858, 'B-CHEMICAL': 8628, 'E-CHEMICAL': 8628})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/devel.tsv 4581
+Counter({'O': 103389, 'S-CHEMICAL': 4622, 'S-DISEASE': 2513, 'B-DISEASE': 1733, 'E-DISEASE': 1733, 'I-CHEMICAL': 1023, 'I-DISEASE': 990, 'B-CHEMICAL': 725, 'E-CHEMICAL': 725})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv 923
+Counter({'O': 22092, 'I-DISEASE': 586, 'B-DISEASE': 504, 'E-DISEASE': 504, 'S-DISEASE': 283})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/devel.tsv 1932
+Counter({'O': 37227, 'B-GP': 1293, 'E-GP': 1293, 'S-GP': 1173, 'I-GP': 1118, 'I-DNA': 881, 'B-DNA': 825, 'E-DNA': 825, 'I-CELL_LINE': 429, 'B-CELL_TYPE': 400, 'E-CELL_TYPE': 400, 'B-CELL_LINE': 339, 'E-CELL_LINE': 339, 'S-DNA': 227, 'I-CELL_TYPE': 216, 'S-CELL_TYPE': 126, 'B-RNA': 92, 'E-RNA': 92, 'I-RNA': 90, 'S-CELL_LINE': 61, 'S-RNA': 15})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/devel.tsv 4078
+Counter({'O': 92751, 'S-SPECIES': 520, 'B-SPECIES': 191, 'E-SPECIES': 191, 'I-SPECIES': 162})
+
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv 5038
+Counter({'O': 128364, 'I-GP': 5273, 'B-GP': 3503, 'E-GP': 3503, 'S-GP': 2822})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/test.tsv 26364
+Counter({'O': 711171, 'I-CHEMICAL': 22246, 'S-CHEMICAL': 18076, 'B-CHEMICAL': 7270, 'E-CHEMICAL': 7270})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/test.tsv 4797
+Counter({'O': 110576, 'S-CHEMICAL': 4741, 'S-DISEASE': 2666, 'B-DISEASE': 1758, 'E-DISEASE': 1758, 'I-CHEMICAL': 984, 'I-DISEASE': 979, 'B-CHEMICAL': 644, 'E-CHEMICAL': 644})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/test.tsv 940
+Counter({'O': 22450, 'I-DISEASE': 550, 'B-DISEASE': 537, 'E-DISEASE': 537, 'S-DISEASE': 423})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/test.tsv 4243
+Counter({'O': 81647, 'S-GP': 2708, 'I-GP': 2415, 'B-GP': 2359, 'E-GP': 2359, 'I-CELL_TYPE': 1532, 'B-CELL_TYPE': 1459, 'E-CELL_TYPE': 1459, 'I-DNA': 939, 'B-DNA': 850, 'E-DNA': 850, 'I-CELL_LINE': 563, 'S-CELL_TYPE': 462, 'B-CELL_LINE': 426, 'E-CELL_LINE': 426, 'S-DNA': 206, 'B-RNA': 102, 'E-RNA': 102, 'I-RNA': 85, 'S-CELL_LINE': 74, 'S-RNA': 16})
+/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/test.tsv 7142
+Counter({'O': 162421, 'S-SPECIES': 986, 'B-SPECIES': 447, 'E-SPECIES': 447, 'I-SPECIES': 352})
+
+constructing dataset
+corpus_missing_tagspace [[7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [1, 2, 3, 4, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [1, 2, 3, 4, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [1, 2, 3, 4, 7, 8, 9, 10, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], [7, 8, 9, 10, 11, 12, 13, 14, 31, 32, 33, 34], [1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]]
+corpus2crf {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+corpus_str2crf {'7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '1 2 3 4 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '1 2 3 4 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '1 2 3 4 7 8 9 10 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0], '7 8 9 10 11 12 13 14 31 32 33 34': [0], '1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30': [0]}
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/train.tsv -> CRF:  0
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/train.tsv -> CRF:  0
+/auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/train.tsv -> CRF:  0
+/auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/train.tsv -> CRF:  0
+/auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/train.tsv -> CRF:  0
+/auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/train.tsv -> CRF:  0
+crf2corpus {0: [0, 1, 2, 3, 4, 5]}
+Load from PICKLE
+Up round by batch size
+combined train[idx/len]:  {0: 83730}
+Load from PICKLE
+combined dev[idx/len]:  {0: 44700}
+Load from PICKLE
+peek cropus mask
+
+    1     1     1  ...      0     0     0
+    1     1     1  ...      0     0     0
+    1     1     1  ...      0     0     0
+       ...          ⋱          ...       
+    0     0     0  ...      0     0     0
+    0     0     0  ...      0     0     0
+    0     0     0  ...      0     0     0
+[torch.FloatTensor of size 35x35]
+
+building model
+inin char embed
+LM_LSTM_CRF(
+  (char_embeds): Embedding(97, 30)
+  (forw_char_lstm): LSTM(30, 200, dropout=0.5)
+  (back_char_lstm): LSTM(30, 200, dropout=0.5)
+  (word_embeds): Embedding(71725, 200)
+  (word_lstm): LSTM(600, 150, dropout=0.5, bidirectional=True)
+  (dropout): Dropout(p=0.5)
+  (crflist): ModuleList(
+    (0): CRF_S(
+      (hidden2tag): Linear(in_features=300, out_features=35, bias=True)
+      (sigmoid): Sigmoid()
+    )
+  )
+  (char_pre_train_out): Linear(in_features=200, out_features=97, bias=True)
+  (word_pre_train_out): Linear(in_features=200, out_features=71725, bias=True)
+)
+tagset_size:  35
+
+Objective Function: Negative Log Liklihood
+Epoch: [1/500]
+Train corpus:  ['BC2GM-IOBES', 'BC4CHEMD-IOBES', 'BC5CDR-IOBES', 'NCBI-IOBES', 'JNLPBA-IOBES', 'linnaeus-IOBES']
+ - Total it 8373: 0it [00:00, ?it/s] - Total it 8373: 24it [00:02, 11.95it/s] - Total it 8373: 96it [00:04, 23.88it/s] - Total it 8373: 168it [00:06, 27.81it/s] - Total it 8373: 244it [00:08, 30.24it/s] - Total it 8373: 319it [00:10, 31.63it/s] - Total it 8373: 395it [00:12, 32.63it/s] - Total it 8373: 471it [00:14, 33.35it/s] - Total it 8373: 547it [00:16, 33.89it/s] - Total it 8373: 622it [00:18, 34.24it/s] - Total it 8373: 697it [00:20, 34.56it/s] - Total it 8373: 772it [00:22, 34.81it/s] - Total it 8373: 848it [00:24, 35.06it/s] - Total it 8373: 924it [00:26, 35.26it/s] - Total it 8373: 999it [00:28, 35.40it/s] - Total it 8373: 1074it [00:30, 35.51it/s] - Total it 8373: 1149it [00:32, 35.59it/s] - Total it 8373: 1225it [00:34, 35.71it/s] - Total it 8373: 1301it [00:36, 35.82it/s] - Total it 8373: 1377it [00:38, 35.91it/s] - Total it 8373: 1453it [00:40, 35.99it/s] - Total it 8373: 1529it [00:42, 36.07it/s] - Total it 8373: 1604it [00:44, 36.12it/s] - Total it 8373: 1679it [00:46, 36.17it/s] - Total it 8373: 1754it [00:48, 36.22it/s] - Total it 8373: 1829it [00:50, 36.05it/s] - Total it 8373: 1901it [00:53, 35.48it/s] - Total it 8373: 1967it [00:56, 34.99it/s] - Total it 8373: 2028it [00:58, 34.59it/s] - Total it 8373: 2086it [01:00, 34.23it/s] - Total it 8373: 2142it [01:03, 33.92it/s] - Total it 8373: 2197it [01:05, 33.65it/s] - Total it 8373: 2251it [01:07, 33.38it/s] - Total it 8373: 2304it [01:09, 33.14it/s] - Total it 8373: 2356it [01:11, 32.92it/s] - Total it 8373: 2408it [01:13, 32.72it/s] - Total it 8373: 2460it [01:15, 32.52it/s] - Total it 8373: 2512it [01:17, 32.33it/s] - Total it 8373: 2564it [01:19, 32.14it/s] - Total it 8373: 2616it [01:21, 31.98it/s] - Total it 8373: 2667it [01:23, 31.82it/s] - Total it 8373: 2718it [01:25, 31.67it/s] - Total it 8373: 2769it [01:27, 31.53it/s] - Total it 8373: 2820it [01:29, 31.39it/s] - Total it 8373: 2871it [01:31, 31.24it/s] - Total it 8373: 2922it [01:33, 31.09it/s] - Total it 8373: 2973it [01:35, 30.97it/s] - Total it 8373: 3024it [01:38, 30.86it/s] - Total it 8373: 3075it [01:40, 30.75it/s] - Total it 8373: 3126it [01:42, 30.65it/s] - Total it 8373: 3177it [01:44, 30.55it/s] - Total it 8373: 3229it [01:46, 30.45it/s] - Total it 8373: 3280it [01:48, 30.36it/s] - Total it 8373: 3331it [01:50, 30.27it/s] - Total it 8373: 3382it [01:52, 30.18it/s] - Total it 8373: 3433it [01:54, 30.09it/s] - Total it 8373: 3484it [01:56, 30.01it/s] - Total it 8373: 3536it [01:58, 29.94it/s] - Total it 8373: 3587it [02:00, 29.86it/s] - Total it 8373: 3638it [02:02, 29.79it/s] - Total it 8373: 3689it [02:04, 29.72it/s] - Total it 8373: 3740it [02:06, 29.65it/s] - Total it 8373: 3791it [02:08, 29.58it/s] - Total it 8373: 3842it [02:10, 29.51it/s] - Total it 8373: 3893it [02:12, 29.44it/s] - Total it 8373: 3944it [02:14, 29.38it/s] - Total it 8373: 3995it [02:16, 29.32it/s] - Total it 8373: 4047it [02:18, 29.26it/s] - Total it 8373: 4098it [02:20, 29.21it/s] - Total it 8373: 4149it [02:22, 29.15it/s] - Total it 8373: 4200it [02:24, 29.10it/s] - Total it 8373: 4251it [02:26, 29.05it/s] - Total it 8373: 4302it [02:28, 29.00it/s] - Total it 8373: 4353it [02:30, 28.95it/s] - Total it 8373: 4404it [02:32, 28.89it/s] - Total it 8373: 4455it [02:34, 28.85it/s] - Total it 8373: 4506it [02:36, 28.80it/s] - Total it 8373: 4557it [02:38, 28.76it/s] - Total it 8373: 4608it [02:40, 28.72it/s] - Total it 8373: 4659it [02:42, 28.68it/s] - Total it 8373: 4710it [02:44, 28.63it/s] - Total it 8373: 4761it [02:47, 28.48it/s] - Total it 8373: 4808it [02:49, 28.34it/s] - Total it 8373: 4853it [02:52, 28.20it/s] - Total it 8373: 4896it [02:54, 28.08it/s] - Total it 8373: 4937it [02:56, 27.96it/s] - Total it 8373: 4977it [02:58, 27.85it/s] - Total it 8373: 5017it [03:00, 27.75it/s] - Total it 8373: 5056it [03:02, 27.64it/s] - Total it 8373: 5095it [03:04, 27.55it/s] - Total it 8373: 5134it [03:07, 27.45it/s] - Total it 8373: 5172it [03:09, 27.36it/s] - Total it 8373: 5210it [03:11, 27.27it/s] - Total it 8373: 5248it [03:13, 27.17it/s] - Total it 8373: 5286it [03:15, 27.09it/s] - Total it 8373: 5324it [03:17, 27.00it/s] - Total it 8373: 5363it [03:19, 26.92it/s] - Total it 8373: 5401it [03:21, 26.83it/s] - Total it 8373: 5439it [03:23, 26.73it/s] - Total it 8373: 5477it [03:25, 26.65it/s] - Total it 8373: 5515it [03:27, 26.57it/s] - Total it 8373: 5553it [03:29, 26.50it/s] - Total it 8373: 5591it [03:31, 26.42it/s] - Total it 8373: 5629it [03:33, 26.35it/s] - Total it 8373: 5667it [03:35, 26.28it/s] - Total it 8373: 5705it [03:37, 26.20it/s] - Total it 8373: 5743it [03:39, 26.12it/s] - Total it 8373: 5781it [03:41, 26.06it/s] - Total it 8373: 5819it [03:43, 25.99it/s] - Total it 8373: 5857it [03:45, 25.93it/s] - Total it 8373: 5895it [03:47, 25.86it/s] - Total it 8373: 5933it [03:49, 25.80it/s] - Total it 8373: 5971it [03:52, 25.74it/s] - Total it 8373: 6009it [03:54, 25.67it/s] - Total it 8373: 6047it [03:56, 25.61it/s] - Total it 8373: 6085it [03:58, 25.56it/s] - Total it 8373: 6123it [04:00, 25.50it/s] - Total it 8373: 6161it [04:02, 25.44it/s] - Total it 8373: 6199it [04:04, 25.39it/s] - Total it 8373: 6237it [04:06, 25.33it/s] - Total it 8373: 6275it [04:08, 25.28it/s] - Total it 8373: 6313it [04:10, 25.23it/s] - Total it 8373: 6351it [04:12, 25.18it/s] - Total it 8373: 6389it [04:14, 25.13it/s] - Total it 8373: 6427it [04:16, 25.07it/s] - Total it 8373: 6465it [04:18, 25.00it/s] - Total it 8373: 6503it [04:20, 24.95it/s] - Total it 8373: 6541it [04:22, 24.90it/s] - Total it 8373: 6579it [04:24, 24.85it/s] - Total it 8373: 6617it [04:26, 24.81it/s] - Total it 8373: 6655it [04:28, 24.76it/s] - Total it 8373: 6693it [04:30, 24.71it/s] - Total it 8373: 6731it [04:32, 24.67it/s] - Total it 8373: 6769it [04:34, 24.63it/s] - Total it 8373: 6807it [04:36, 24.58it/s] - Total it 8373: 6845it [04:38, 24.54it/s] - Total it 8373: 6883it [04:40, 24.50it/s] - Total it 8373: 6921it [04:42, 24.46it/s] - Total it 8373: 6959it [04:47, 24.21it/s] - Total it 8373: 6991it [04:51, 23.99it/s] - Total it 8373: 7018it [04:54, 23.81it/s] - Total it 8373: 7042it [04:57, 23.64it/s] - Total it 8373: 7064it [05:00, 23.49it/s] - Total it 8373: 7084it [05:03, 23.36it/s] - Total it 8373: 7103it [05:05, 23.24it/s] - Total it 8373: 7121it [05:08, 23.11it/s] - Total it 8373: 7138it [05:10, 23.02it/s] - Total it 8373: 7155it [05:12, 22.90it/s] - Total it 8373: 7172it [05:14, 22.80it/s] - Total it 8373: 7189it [05:16, 22.70it/s] - Total it 8373: 7206it [05:19, 22.59it/s] - Total it 8373: 7223it [05:21, 22.49it/s] - Total it 8373: 7239it [05:23, 22.39it/s] - Total it 8373: 7255it [05:25, 22.29it/s] - Total it 8373: 7272it [05:27, 22.20it/s] - Total it 8373: 7288it [05:29, 22.09it/s] - Total it 8373: 7304it [05:31, 22.00it/s] - Total it 8373: 7320it [05:33, 21.92it/s] - Total it 8373: 7336it [05:36, 21.82it/s] - Total it 8373: 7352it [05:38, 21.74it/s] - Total it 8373: 7368it [05:40, 21.65it/s] - Total it 8373: 7385it [05:42, 21.57it/s] - Total it 8373: 7401it [05:44, 21.49it/s] - Total it 8373: 7417it [05:46, 21.41it/s] - Total it 8373: 7434it [05:48, 21.33it/s] - Total it 8373: 7450it [05:50, 21.25it/s] - Total it 8373: 7466it [05:52, 21.15it/s] - Total it 8373: 7482it [05:55, 21.07it/s] - Total it 8373: 7499it [05:57, 21.00it/s] - Total it 8373: 7515it [05:59, 20.92it/s] - Total it 8373: 7531it [06:01, 20.84it/s] - Total it 8373: 7548it [06:03, 20.77it/s] - Total it 8373: 7564it [06:05, 20.69it/s] - Total it 8373: 7580it [06:07, 20.62it/s] - Total it 8373: 7596it [06:09, 20.55it/s] - Total it 8373: 7612it [06:11, 20.47it/s] - Total it 8373: 7628it [06:13, 20.41it/s] - Total it 8373: 7644it [06:15, 20.34it/s] - Total it 8373: 7661it [06:17, 20.27it/s] - Total it 8373: 7677it [06:19, 20.21it/s] - Total it 8373: 7695it [06:22, 20.14it/s] - Total it 8373: 7712it [06:24, 20.07it/s] - Total it 8373: 7728it [06:26, 20.00it/s] - Total it 8373: 7745it [06:28, 19.94it/s] - Total it 8373: 7761it [06:30, 19.87it/s] - Total it 8373: 7777it [06:32, 19.81it/s] - Total it 8373: 7793it [06:34, 19.74it/s] - Total it 8373: 7809it [06:36, 19.68it/s] - Total it 8373: 7825it [06:38, 19.62it/s] - Total it 8373: 7841it [06:40, 19.56it/s] - Total it 8373: 7857it [06:42, 19.50it/s] - Total it 8373: 7873it [06:45, 19.43it/s] - Total it 8373: 7889it [06:47, 19.36it/s] - Total it 8373: 7904it [06:49, 19.30it/s] - Total it 8373: 7919it [06:51, 19.24it/s] - Total it 8373: 7935it [06:53, 19.18it/s] - Total it 8373: 7951it [06:55, 19.13it/s] - Total it 8373: 7968it [06:57, 19.07it/s] - Total it 8373: 7984it [06:59, 19.02it/s] - Total it 8373: 8001it [07:01, 18.96it/s] - Total it 8373: 8017it [07:04, 18.91it/s] - Total it 8373: 8034it [07:06, 18.86it/s] - Total it 8373: 8050it [07:08, 18.80it/s] - Total it 8373: 8066it [07:10, 18.74it/s] - Total it 8373: 8082it [07:12, 18.69it/s] - Total it 8373: 8100it [07:14, 18.64it/s] - Total it 8373: 8116it [07:16, 18.58it/s] - Total it 8373: 8132it [07:18, 18.53it/s] - Total it 8373: 8148it [07:20, 18.48it/s] - Total it 8373: 8164it [07:23, 18.42it/s] - Total it 8373: 8180it [07:25, 18.37it/s] - Total it 8373: 8197it [07:27, 18.33it/s] - Total it 8373: 8213it [07:29, 18.28it/s] - Total it 8373: 8230it [07:31, 18.24it/s] - Total it 8373: 8247it [07:33, 18.19it/s] - Total it 8373: 8264it [07:35, 18.14it/s] - Total it 8373: 8280it [07:37, 18.09it/s] - Total it 8373: 8297it [07:39, 18.04it/s] - Total it 8373: 8313it [07:41, 18.00it/s] - Total it 8373: 8329it [07:43, 17.95it/s] - Total it 8373: 8345it [07:46, 17.90it/s] - Total it 8373: 8361it [07:48, 17.85it/s]                                           training loss: 7.1471
+N21 Dev Corpus:  ['BC2GM-IOBES', 'BC4CHEMD-IOBES', 'BC5CDR-IOBES', 'NCBI-IOBES', 'JNLPBA-IOBES', 'linnaeus-IOBES']
+ - Total it 894: 0it [00:00, ?it/s] - Total it 894: 130it [00:02, 64.92it/s] - Total it 894: 253it [00:04, 63.20it/s] - Total it 894: 350it [00:06, 58.22it/s] - Total it 894: 447it [00:08, 55.75it/s] - Total it 894: 537it [00:10, 53.50it/s] - Total it 894: 621it [00:12, 50.45it/s] - Total it 894: 702it [00:14, 48.44it/s] - Total it 894: 781it [00:18, 43.17it/s] - Total it 894: 850it [00:23, 35.85it/s]                                         P: 0.3387 R: 0.0127 F1: 0.0245 vloss: -inf
+Prev Best F1: -inf Curr Best F1: 0.0245
+NOW SAVING,  /auto/nlg-05/huan183/NewBioNer/checkpoints/P1/EXP1/TEST2/N21_0.0245_0.3387_0.0127_1
+

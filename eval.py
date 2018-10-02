@@ -90,12 +90,18 @@ if __name__ == "__main__":
     parser.add_argument('--eval_filtered',action='store_true', help='gpu id')
     parser.add_argument('--pickle', default='', help='unknow-token in pre-trained embedding')
     parser.add_argument('--annotate', action='store_true', help='unknow-token in pre-trained embedding')
+    
+    # new params
+    parser.add_argument('--pred_method', default="")
+    
 
     # parse the eval settings
     args = parser.parse_args()
     print('eval setting:')
     print(args)
-
+    
+    assert args.pred_method
+    
     # load training settings
     with open(args.load_arg, 'r') as f:
         train_args = json.load(f)
@@ -152,7 +158,7 @@ if __name__ == "__main__":
         train_args['word_dim'], train_args['word_hidden'], train_args['word_layers'], len(token2idx), 
         train_args['drop_out'], len(crf2corpus), 
         large_CRF=train_args['small_crf'], if_highway=train_args['high_way'], 
-        in_doc_words=in_doc_words, highway_layers = train_args['highway_layers'])
+        in_doc_words=in_doc_words, highway_layers = train_args['highway_layers'], sigmoid = train_args['sigmoid'])
     
     ner_model.load_state_dict(checkpoint_file['state_dict'])
     ner_model.display()
@@ -163,7 +169,7 @@ if __name__ == "__main__":
         crit_ner = CRFLoss_mm(len(tag2idx), tag2idx['<start>'], tag2idx['<pad>'], tag2idx['O'], cost_value=train_args["cost_value"], change_gold=train_args["change_gold"], change_prob=train_args["change_prob"])
     else:
         print("Objective Function: Negative Log Liklihood")
-        crit_ner = CRFLoss_vb(len(tag2idx), tag2idx['<start>'], tag2idx['<pad>'])
+        crit_ner = CRFLoss_vb(len(tag2idx), tag2idx['<start>'], tag2idx['<pad>'], O_idx=tag2idx['O'])
     
     crit_lm = nn.CrossEntropyLoss()
     optimizer = None
@@ -183,7 +189,7 @@ if __name__ == "__main__":
     predictor = Predictor(tag2idx, packer, label_seq = True, batch_size = 50)
     
     # evaluator       
-    evaluator = Evaluator(predictor, packer, tag2idx, args.eva_matrix)
+    evaluator = Evaluator(predictor, packer, tag2idx, args.eva_matrix, args.pred_method)
 
     agent = Trainer(ner_model, packer, crit_ner, crit_lm, optimizer, evaluator, crf2corpus)
     
@@ -389,7 +395,7 @@ if __name__ == "__main__":
                     merge_batch = True
 
                     #pred_tags = predictor.predict(ner_model, dataloader, crf_idx, merge_batch=merge_batch, totag=False)                
-                    pred_tags = predictor.predict(ner_model, dataloader, crf_idx, merge_batch=True, totag=True)
+                    pred_tags = predictor.predict(ner_model, dataloader, crf_idx, args.pred_method, merge_batch=True, totag=True)
                     pred_tags = sorted(pred_tags, key=lambda item:item[0])
                     reorder_idx, pred_tags = zip(*pred_tags)
                     for i, re_idx in enumerate(sorted(reorder_idx)):

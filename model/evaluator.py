@@ -242,11 +242,12 @@ class Evaluator(eval_batch):
 
     """
    
-    def __init__(self, predictor, packer, l_map, score_type):
+    def __init__(self, predictor, packer, l_map, score_type, pred_method):
         eval_batch.__init__(self, packer, l_map)
-
+        
         self.predictor = predictor
-
+        self.pred_method = pred_method
+        
         if 'f' in score_type:
             self.eval_b = self.calc_f1_batch
             self.calc_s = self.f1_score
@@ -294,7 +295,7 @@ class Evaluator(eval_batch):
             desc=' - Total it %d' % (num_sample), leave=False, file=sys.stdout):
             f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v = self.packer.repack_vb(f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v, volatile=True)
             
-            decoded, scores = self.predictor.predict_batch(ner_model, crf_no, f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v)
+            decoded, scores = self.predictor.predict_batch(ner_model, crf_no, f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v, self.pred_method)
             if crit_ner is not None:
                 loss = crit_ner(scores, tg_v, mask_v, corpus_mask_v)
                 validation_loss += utils.to_scalar(loss)

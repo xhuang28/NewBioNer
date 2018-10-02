@@ -34,8 +34,8 @@ class LM_LSTM_CRF(nn.Module):
         highway_layers: number of highway layers
     """
     
-    def __init__(self, tagset_size, char_size, char_dim, char_hidden_dim, char_rnn_layers, word_embedding_dim, word_hidden_dim, word_rnn_layers, vocab_size, dropout_ratio, num_crf, large_CRF=True, if_highway = False, in_doc_words = 2, highway_layers = 1):
-
+    def __init__(self, tagset_size, char_size, char_dim, char_hidden_dim, char_rnn_layers, word_embedding_dim, word_hidden_dim, word_rnn_layers, vocab_size, dropout_ratio, num_crf, large_CRF=True, if_highway = False, in_doc_words = 2, highway_layers = 1, sigmoid=""):
+        assert sigmoid
         super(LM_LSTM_CRF, self).__init__()
         self.char_dim = char_dim
         self.char_hidden_dim = char_hidden_dim
@@ -44,6 +44,7 @@ class LM_LSTM_CRF(nn.Module):
         self.word_hidden_dim = word_hidden_dim
         self.word_size = vocab_size
         self.if_highway = if_highway
+        self.sigmoid = sigmoid
 
         self.char_embeds = nn.Embedding(char_size, char_dim)
         self.forw_char_lstm = nn.LSTM(char_dim, char_hidden_dim, num_layers=char_rnn_layers, bidirectional=False, dropout=dropout_ratio)
@@ -62,7 +63,7 @@ class LM_LSTM_CRF(nn.Module):
         self.crflist = nn.ModuleList()
         for i in range(num_crf):
             if large_CRF:
-                self.crflist.append(crf.CRF_L(word_hidden_dim, tagset_size))
+                self.crflist.append(crf.CRF_L(word_hidden_dim, tagset_size, sigmoid=self.sigmoid))
             else:
                 self.crflist.append(crf.CRF_S(word_hidden_dim, tagset_size))
 

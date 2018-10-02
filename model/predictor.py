@@ -14,6 +14,7 @@ from tqdm import tqdm
 
 from model.crf import CRFDecode_vb
 from model.utils import *
+import model.utils as utils
 import functools
 from tqdm import tqdm
 import sys
@@ -428,7 +429,7 @@ class Predictor:
                     l = labels[ind2 - ind][0: len(f) ]
                     fout.write(self.decode_str(features[ind2], l) + '\n\n')
 
-    def predict(self, ner_model, dataset_loader, crf_no, merge_batch=False, totag=False):
+    def predict(self, ner_model, dataset_loader, crf_no, pred_method, merge_batch=False, totag=False):
         """
         calculate score for pre-selected metrics
 
@@ -443,7 +444,7 @@ class Predictor:
             itertools.chain.from_iterable(dataset_loader), mininterval=2,
             desc=' - Total it %d' % (num_sample), leave=False, file=sys.stdout):
             f_f, f_p, b_f, b_p, w_f, _, mask_v, corpus_mask_v = self.packer.repack_vb(f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v, volatile=True)
-            labels, scores = self.predict_batch(ner_model, crf_no, f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v)
+            labels, scores = self.predict_batch(ner_model, crf_no, f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v, pred_method)
             
             labels = torch.unbind(labels, 1)
             _, length = torch.unbind(len_v, 1)
@@ -460,7 +461,7 @@ class Predictor:
             corpus_labels = functools.reduce(lambda x, y: x + y, corpus_labels)
         return corpus_labels
 
-    def predict_batch(self, ner_model, crf_no, f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v):
+    def predict_batch(self, ner_model, crf_no, f_f, f_p, b_f, b_p, w_f, tg, mask_v, len_v, corpus_mask_v, pred_method):
         """
         calculate score for pre-selected metrics
 
@@ -471,15 +472,22 @@ class Predictor:
         if ner_model.training:
             ner_model.eval()
         scores = ner_model(f_f, f_p, b_f, b_p, w_f, crf_no, corpus_mask_v)
-        selected_scores = scores * corpus_mask_v
-        decoded = self.decoder.decode(selected_scores.data, mask_v.data)
         
-        # decoded2 = self.decoder.decode(scores.data, mask_v.data)
-        # for i in range(decoded2.shape[0]):
-            # for j in range(decoded2.shape[1]):
-                # idx_annotated = np.where(corpus_mask_v[i,j,0].cpu().data)[0]
-                # if not decoded2[i,j] in idx_annotated:
-                    # decoded2[i,j] = 0
+        assert pred_method in ["M", "U"]
         
+        if pred_method == "M":
+            # no matter take sigmoid or not, setting undesired scores to -inf
+            neg_inf_scores = autograd.Variable(torch.FloatTensor(np.full(scores.shape, -1e9))).cuda()
+            selected_scores = utils.switch(neg_inf_scores.contiguous(), scores.contiguous(), corpus_mask_v).view(scores.shape)
+            decoded = self.decoder.decode(selected_scores.data, mask_v.data)
+            return decoded, scores
         
-        return decoded, scores
+        if pred_method == "U":
+            decoded = self.decoder.decode(scores.data, mask_v.data)
+            for i in range(decoded.shape[0]):
+                for j in range(decoded.shape[1]):
+                    idx_annotated = np.where(corpus_mask_v[i,j,0].cpu().data)[0]
+                    if not decoded[i,j] in idx_annotated:
+                        decoded[i,j] = self.l_map['O']
+            return decoded, scores
+

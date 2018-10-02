@@ -24,15 +24,21 @@ class CRF_L(nn.Module):
     """
     
 
-    def __init__(self, hidden_dim, tagset_size, if_bias=True):
+    def __init__(self, hidden_dim, tagset_size, if_bias=True, sigmoid=""):
+        assert sigmoid
         super(CRF_L, self).__init__()
+        self.sigmoid = sigmoid
         self.tagset_size = tagset_size
-        self.hidden2tag = nn.Linear(hidden_dim, self.tagset_size * self.tagset_size, bias=if_bias)
+        self.transitions = nn.Linear(hidden_dim, self.tagset_size * self.tagset_size, bias=if_bias)
+        self.hidden2tag = nn.Linear(hidden_dim, self.tagset_size, bias=if_bias)
+        self.ReLU = nn.ReLU()
+        self.Sigmoid = nn.Sigmoid()
 
     def rand_init(self):
         """random initialization
         """
         utils.init_linear(self.hidden2tag)
+        utils.init_linear(self.transitions)
 
     def forward(self, feats):
         """
@@ -41,7 +47,14 @@ class CRF_L(nn.Module):
         return:
             output from crf layer (batch_size, seq_len, tag_size, tag_size)
         """
-        return self.hidden2tag(feats).view(-1, self.tagset_size, self.tagset_size)
+        ins_num = feats.size(0) * feats.size(1)
+        scores = self.hidden2tag(feats).view(ins_num, self.tagset_size, 1).expand(ins_num, self.tagset_size, self.tagset_size)
+        trans_ = self.transitions(feats).view(ins_num, self.tagset_size, self.tagset_size)
+        
+        if self.sigmoid == "nosig":
+            return scores + trans_
+        elif self.sigmoid == "relu":
+            return self.ReLU(scores + trans_)
 
 
 class CRF_S(nn.Module):
@@ -273,136 +286,201 @@ class CRFLoss_vb(nn.Module):
         self.average_batch = average_batch
         self.O_idx = O_idx
     
-    def forward(self, scores, target, mask, corpus_mask):
+    def calc_energy_gold_ts(self, scores, target, mask, corpus_mask):
+        # calculate energy (unnormalized log proba) of the gold tag sequence
+        seq_len = scores.size(0)
+        bat_size = scores.size(1)
+        tg_energy = torch.gather(scores.view(seq_len, bat_size, -1), 2, target).view(seq_len, bat_size)  # seq_len * bat_size
+        tg_energy = tg_energy.masked_select(mask).sum()
+        
+        return tg_energy
+    
+    def forward_algo(self, scores, target, mask, corpus_mask):
+        # Forward Algorithm
+        seq_len = scores.size(0)
+        bat_size = scores.size(1)
+        
+        seq_iter = enumerate(scores)
+        # the first score should start with <start>
+        _, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
+        # only need start from start_tag
+        cur_partition = inivalues[:, self.start_tag, :]  # bat_size * to_target_size
+        partition = cur_partition
+        # iter over last scores
+        for idx, cur_values in seq_iter:
+            # previous to_target is current from_target
+            # cur_partition: previous->current results log(exp(from_target)), #(batch_size * from_target)
+            # cur_values: bat_size * from_target * to_target            
+            cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
+            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
+                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
+            partition = utils.switch(partition, cur_partition,
+                                     mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
+        
+        #only need end at end_tag
+        partition = partition[:, self.end_tag].sum()
+        
+        return partition
+    
+    def restricted_forward_algo_v1(self, scores, target, mask, corpus_mask, sigmoid):
+        # Restricted Forward Algorithm v1
+        # "O": Set scores of all local labels (not including "O") to 0
+        # "NE": Set scores of all other labels to 0
+        seq_len = scores.size(0)
+        bat_size = scores.size(1)
+        gold_labels = (target / 35).view(target.shape[0], target.shape[1])
+        
+        seq_iter = enumerate(scores)
+        # the first score should start with <start>
+        _, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
+        # only need start from start_tag
+        cur_partition = inivalues[:, self.start_tag, :]  # bat_size * to_target_size
+        partition = cur_partition
+        # iter over last scores
+        for idx, cur_values in seq_iter:
+            # previous to_target is current from_target
+            # cur_partition: previous->current results log(exp(from_target)), #(batch_size * from_target)
+            # cur_values: bat_size * from_target * to_target
+            curr_labels = gold_labels[idx,:]
+            
+            # mask cur_partition and cur_values to rule out undesired tag sequences
+            partition_mask = np.ones(cur_partition.shape)
+            values_mask = np.ones(cur_values.shape)
+            for i in range(partition_mask.shape[0]):
+                curr_label = curr_labels[i].cpu().data.numpy()[0]
+                if curr_label == self.O_idx:
+                    idx_annotated = np.where(corpus_mask[0,i,0].data)[0]
+                    idx_annotated = np.array([r for r in idx_annotated if r!=self.O_idx]) # exclude "O"
+                    partition_mask[i,idx_annotated] = 0
+                    values_mask[i,idx_annotated,:] = 0
+                else:
+                    partition_mask[i,:] = 0
+                    partition_mask[i,curr_label] = 1
+                    values_mask[i,:,:] = 0
+                    values_mask[i,curr_label,:] = 1
+            
+            partition_mask = autograd.Variable(torch.FloatTensor(partition_mask)).cuda()
+            values_mask = autograd.Variable(torch.FloatTensor(values_mask)).cuda()
+            if sigmoid == "relu":
+                cur_partition = cur_partition * partition_mask
+                cur_values = cur_values * values_mask
+            else:
+                neg_inf_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, -1e9))).cuda()
+                neg_inf_values = autograd.Variable(torch.FloatTensor(np.full(cur_values.shape, -1e9))).cuda()
+                cur_partition = utils.switch(neg_inf_partition, cur_partition, partition_mask).view(cur_partition.shape)
+                cur_values = utils.switch(neg_inf_values, cur_values, values_mask).view(cur_values.shape)
+            
+            cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
+            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
+                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
+            partition = utils.switch(partition.contiguous(), cur_partition.contiguous(),
+                                     mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
+            
+        #only need end at end_tag
+        partition = partition[:, self.end_tag].sum()
+        
+        return partition
+    
+    def restricted_forward_algo_v2(self, scores, target, mask, corpus_mask, sigmoid):
+        # Restricted Forward Algorithm v1
+        # "O": Set scores of all non-local labels to 0
+        # "NE": No changes
+        seq_len = scores.size(0)
+        bat_size = scores.size(1)
+        gold_labels = (target / 35).view(target.shape[0], target.shape[1])
+        
+        seq_iter = enumerate(scores)
+        # the first score should start with <start>
+        _, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
+        # only need start from start_tag
+        cur_partition = inivalues[:, self.start_tag, :]  # bat_size * to_target_size
+        partition = cur_partition
+        # iter over last scores
+        for idx, cur_values in seq_iter:
+            # previous to_target is current from_target
+            # cur_partition: previous->current results log(exp(from_target)), #(batch_size * from_target)
+            # cur_values: bat_size * from_target * to_target
+            curr_labels = gold_labels[idx,:]
+            
+            # mask cur_partition and cur_values to rule out undesired tag sequences
+            partition_mask = np.ones(cur_partition.shape)
+            values_mask = np.ones(cur_values.shape)
+            for i in range(partition_mask.shape[0]):
+                curr_label = curr_labels[i].cpu().data.numpy()[0]
+                if curr_label == self.O_idx:
+                    idx_unannotated = np.where((1-corpus_mask[0,i,0]).data)[0]
+                    partition_mask[i,idx_unannotated] = 0
+                    values_mask[i,idx_unannotated,:] = 0
+            
+            partition_mask = autograd.Variable(torch.FloatTensor(partition_mask)).cuda()
+            values_mask = autograd.Variable(torch.FloatTensor(values_mask)).cuda()
+            if sigmoid == "relu":
+                cur_partition = cur_partition * partition_mask
+                cur_values = cur_values * values_mask
+            else:
+                neg_inf_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, -1e9))).cuda()
+                neg_inf_values = autograd.Variable(torch.FloatTensor(np.full(cur_values.shape, -1e9))).cuda()
+                cur_partition = utils.switch(neg_inf_partition, cur_partition, partition_mask).view(cur_partition.shape)
+                cur_values = utils.switch(neg_inf_values, cur_values, values_mask).view(cur_values.shape)
+            
+            cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
+            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
+                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
+            partition = utils.switch(partition, cur_partition,
+                                     mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
+            
+        #only need end at end_tag
+        partition = partition[:, self.end_tag].sum()
+        
+        return partition
+    
+    
+    def forward(self, scores, target, mask, corpus_mask, idea=None, sigmoid=""):
         """
         args:
             scores (seq_len, bat_size, target_size_from, target_size_to) : crf scores
             target (seq_len, bat_size, 1) : golden state
             mask (size seq_len, bat_size) : mask for padding
+            *idea ("Li", "P11", "P12", "P21"...): idea for training (loss calculation)
         return:
             loss
         """
-
-        # calculate batch size and seq len
-        seq_len = scores.size(0)
+        assert sigmoid
         bat_size = scores.size(1)
-
-        # scores = scores * corpus_mask
-        # # calculate sentence score
-        # tg_energy = torch.gather(scores.view(seq_len, bat_size, -1), 2, target).view(seq_len, bat_size)  # seq_len * bat_size
-        # tg_energy = tg_energy.masked_select(mask).sum()
         
+        # numerator and denominator: ...of the likelihood function:)
         
-        gold_labels = (target / 35).view(target.shape[0], target.shape[1]).cpu().data.numpy()
-        
-        seq_iter = enumerate(scores)
-        # the first score should start with <start>
-        idx, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
-        # only need start from start_tag
-        cur_partition = inivalues[:, self.start_tag, :].contiguous()  # bat_size * to_target_size
-        selected_pos = []
-        for i in range(bat_size):
-            idx_annotated = np.where(corpus_mask[idx,i,0].data)[0]
-            idx_annotated = np.array([r for r in idx_annotated if r!=0])
-            if gold_labels[idx+1,i] == self.O_idx:
-                selected_p = np.ones(self.tagset_size)
-                selected_p[idx_annotated] = 0
+        # Global training (Phase 2)
+        if idea == None:
+            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = forward_algo(scores, target, mask, corpus_mask)
+        if idea == "P10":
+            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = forward_algo(scores, target, mask, corpus_mask)
+        # Li's masking approach
+        elif idea == "Li":
+            if sigmoid == "relu":
+                scores = scores * corpus_mask
             else:
-                selected_p = np.zeros(self.tagset_size)
-                selected_p[gold_labels[idx+1,i]] = 1
-            selected_pos.append(selected_p)
-        
-        selected_pos = autograd.Variable(torch.FloatTensor(np.array(selected_pos))).cuda()
-        mat_neg_inf = autograd.Variable(torch.FloatTensor(np.full_like(cur_partition.cpu().data.numpy(), -np.Inf))).cuda()
-        try:
-            cur_partition = utils.switch(mat_neg_inf, cur_partition, selected_pos).contiguous().view(bat_size, -1)
-        except:
-            import pickle
-            pickle.dump([scores, target, mask, corpus_mask, cur_partition], open('/media/storage_e/npeng/bioner/xiao/NewBioNER/BP_all.p', 'wb'), 2)
+                neg_inf_scores = autograd.Variable(torch.FloatTensor(np.full(scores.shape, -1e9))).cuda()
+                scores = utils.switch(neg_inf_scores, scores, corpus_mask).view(scores.shape)
+            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = forward_algo(scores, target, mask, corpus_mask)
+        elif idea == "P11":
+            numerator = restricted_forward_algo_v1(scores, target, mask, corpus_mask, sigmoid)
+            denominator = forward_algo(scores, target, mask, corpus_mask)
+        elif idea == "P12":
+            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = restricted_forward_algo_v2(scores, target, mask, corpus_mask, sigmoid)
+        else:
+            print("\n\n**********Idea not implemented!**********\n\n")
             assert False
         
-        tg_energy = cur_partition
-        # iter over last scores
-        for idx, cur_values in seq_iter:
-            # previous to_target is current from_target
-            # tg_energy: previous results log(exp(from_target)), revised by gold label, #(batch_size * from_target)
-            # cur_values: bat_size * from_target * to_target
-            cur_values = cur_values + tg_energy.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
-            
-            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
-                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
-            
-            # the final step outputs probability of next tag, which is <EOS>. So don't do it in the final step
-            if idx < gold_labels.shape[0]-1:
-                selected_pos = []
-                for i in range(bat_size):
-                    idx_annotated = np.where(corpus_mask[idx+1,i,0].data)[0]
-                    idx_annotated = np.array([r for r in idx_annotated if r!=0])
-                    if gold_labels[idx+1,i] == self.O_idx:
-                        selected_p = np.ones(self.tagset_size)
-                        selected_p[idx_annotated] = 0
-                    else:
-                        selected_p = np.zeros(self.tagset_size)
-                        selected_p[gold_labels[idx+1,i]] = 1
-                    selected_pos.append(selected_p)
-                
-                selected_pos = autograd.Variable(torch.FloatTensor(np.array(selected_pos))).cuda()
-                
-                mat_neg_inf = autograd.Variable(torch.FloatTensor(np.full_like(cur_partition.cpu().data.numpy(), -np.Inf))).cuda()
-                
-                cur_partition = utils.switch(mat_neg_inf, cur_partition, selected_pos).contiguous().view(bat_size, -1).contiguous()
-            
-            try:
-                tg_energy = utils.switch(tg_energy, cur_partition,
-                                        mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
-            except:
-                import pickle
-                pickle.dump([scores, target, mask, corpus_mask, tg_energy, cur_partition, mask[idx]], open('/media/storage_e/npeng/bioner/xiao/NewBioNER/BP_all.p', 'wb'), 2)
-                assert False
-            
-        try:
-            #only need end at end_tag
-            tg_energy = tg_energy[:, self.end_tag].sum()
-        except:
-            import pickle
-            pickle.dump([scores, target, mask, corpus_mask, tg_energy], open('/media/storage_e/npeng/bioner/xiao/NewBioNER/BP_all.p', 'wb'), 2)
-            assert False
-        
-        
-        
-        
-        # calculate forward partition score
-
-        # build iter
-        seq_iter = enumerate(scores)
-        # the first score should start with <start>
-        _, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
-        # only need start from start_tag
-        partition = inivalues[:, self.start_tag, :]  # bat_size * to_target_size
-        # iter over last scores
-        for idx, cur_values in seq_iter:
-            # previous to_target is current from_target
-            # partition: previous results log(exp(from_target)), #(batch_size * from_target)
-            # cur_values: bat_size * from_target * to_target
-            cur_values = cur_values + partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
-            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
-                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
-            partition = utils.switch(partition, cur_partition,
-                                     mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
-            # the following two may achieve higher speed, but raise run-time error
-            # new_partition = partition.clone()
-            # new_partition.masked_scatter_(mask[idx].view(-1, 1).expand(bat_size, self.tagset_size), cur_partition)  #0 for partition, 1 for cur_partition
-            # partition = new_partition
-            
-        #only need end at end_tag
-        partition = partition[:, self.end_tag].sum()
-        # average = mask.sum()
-
         # average_batch
         if self.average_batch:
-            loss = (partition - tg_energy) / bat_size
+            loss = (denominator - numerator) / bat_size
         else:
-            loss = (partition - tg_energy)
+            loss = (denominator - numerator)
         return loss
 
 '''
