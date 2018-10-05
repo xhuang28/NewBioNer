@@ -45,7 +45,7 @@ python3 -u $SRC_FOLDER/train_p1.py \
   $DATA_FOLDER/linnaeus-IOBES/test.tsv \
   --word_dim 200 --char_dim 30 --caseless --fine_tune --shrink_embedding \
   --sigmoid $3 \
-  --dispatch N21 --corpus_mask_value $6 \
+  --dispatch N21 --corpus_mask_value 0 \
   --batch_size 10 \
   --least_iters $7 --epoch $7 --patience 30 --stop_on_single \
   --lr 0.01 \
@@ -57,6 +57,7 @@ python3 -u $SRC_FOLDER/train_p1.py \
   --combine \
   --idea $1 \
   --pred_method $2 \
+  --mask_value $6 \
   | tee $SRC_FOLDER/logs/$FOLDER/$EXEC_NAME.log
 
 

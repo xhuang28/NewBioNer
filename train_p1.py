@@ -98,12 +98,14 @@ if __name__ == "__main__":
     parser.add_argument('--idea', default=None)
     parser.add_argument('--pred_method', default='')
     parser.add_argument('--sigmoid', default='')
+    parser.add_argument('--mask_value', type=float, default=None)
     
     
     args = parser.parse_args()
     
     assert args.pred_method in ['U', 'M']
     assert args.sigmoid in ['nosig', 'relu']
+    assert args.mask_value is not None
     
     if not torch.cuda.is_available():
         args.gpu = -1

@@ -381,7 +381,7 @@ class CRFLoss_vb(nn.Module):
         
         return partition
     
-    def restricted_forward_algo_v2(self, scores, target, mask, corpus_mask, sigmoid):
+    def restricted_forward_algo_v2(self, scores, target, mask, corpus_mask, sigmoid, mask_value):
         # Restricted Forward Algorithm v1
         # "O": Set scores of all non-local labels to 0
         # "NE": No changes
@@ -403,25 +403,34 @@ class CRFLoss_vb(nn.Module):
             curr_labels = gold_labels[idx,:]
             
             # mask cur_partition and cur_values to rule out undesired tag sequences
-            partition_mask = np.ones(cur_partition.shape)
-            values_mask = np.ones(cur_values.shape)
+            partition_mask, partition_mask_v = np.ones(cur_partition.shape), np.ones(cur_partition.shape)
+            values_mask, values_mask_v = np.ones(cur_values.shape), np.ones(cur_values.shape)
             for i in range(partition_mask.shape[0]):
                 curr_label = curr_labels[i].cpu().data.numpy()[0]
                 if curr_label == self.O_idx:
                     idx_unannotated = np.where((1-corpus_mask[0,i,0]).data)[0]
                     partition_mask[i,idx_unannotated] = 0
+                    partition_mask_v[i,idx_unannotated] = mask_value
                     values_mask[i,idx_unannotated,:] = 0
+                    values_mask_v[i,idx_unannotated,:] = mask_value
             
             partition_mask = autograd.Variable(torch.FloatTensor(partition_mask)).cuda()
+            partition_mask_v = autograd.Variable(torch.FloatTensor(partition_mask_v)).cuda()
             values_mask = autograd.Variable(torch.FloatTensor(values_mask)).cuda()
+            values_mask_v = autograd.Variable(torch.FloatTensor(values_mask_v)).cuda()
             if sigmoid == "relu":
-                cur_partition = cur_partition * partition_mask
-                cur_values = cur_values * values_mask
-            else:
+                cur_partition = cur_partition * partition_mask_v
+                cur_values = cur_values * values_mask_v
+            elif mask_value == 0:
                 neg_inf_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, -1e9))).cuda()
                 neg_inf_values = autograd.Variable(torch.FloatTensor(np.full(cur_values.shape, -1e9))).cuda()
-                cur_partition = utils.switch(neg_inf_partition, cur_partition, partition_mask).view(cur_partition.shape)
-                cur_values = utils.switch(neg_inf_values, cur_values, values_mask).view(cur_values.shape)
+                cur_partition = utils.switch(neg_inf_partition, cur_partition.contiguous(), partition_mask).view(cur_partition.shape)
+                cur_values = utils.switch(neg_inf_values, cur_values.contiguous(), values_mask).view(cur_values.shape)
+            else:
+                neg_inf_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, np.log(mask_value)))).cuda()
+                neg_inf_values = autograd.Variable(torch.FloatTensor(np.full(cur_values.shape, np.log(mask_value)))).cuda()
+                cur_partition = utils.switch(neg_inf_partition, cur_partition.contiguous(), partition_mask).view(cur_partition.shape)
+                cur_values = utils.switch(neg_inf_values, cur_values.contiguous(), values_mask).view(cur_values.shape)
             
             cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
             cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
@@ -435,7 +444,7 @@ class CRFLoss_vb(nn.Module):
         return partition
     
     
-    def forward(self, scores, target, mask, corpus_mask, idea=None, sigmoid=""):
+    def forward(self, scores, target, mask, corpus_mask, idea=None, sigmoid="", mask_value=None):
         """
         args:
             scores (seq_len, bat_size, target_size_from, target_size_to) : crf scores
@@ -446,17 +455,18 @@ class CRFLoss_vb(nn.Module):
             loss
         """
         assert sigmoid
+        assert mask_value is not None
         bat_size = scores.size(1)
         
         # numerator and denominator: ...of the likelihood function:)
         
         # Global training (Phase 2)
         if idea == None:
-            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
-            denominator = forward_algo(scores, target, mask, corpus_mask)
+            numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = self.forward_algo(scores, target, mask, corpus_mask)
         if idea == "P10":
-            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
-            denominator = forward_algo(scores, target, mask, corpus_mask)
+            numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = self.forward_algo(scores, target, mask, corpus_mask)
         # Li's masking approach
         elif idea == "Li":
             if sigmoid == "relu":
@@ -464,14 +474,14 @@ class CRFLoss_vb(nn.Module):
             else:
                 neg_inf_scores = autograd.Variable(torch.FloatTensor(np.full(scores.shape, -1e9))).cuda()
                 scores = utils.switch(neg_inf_scores, scores, corpus_mask).view(scores.shape)
-            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
-            denominator = forward_algo(scores, target, mask, corpus_mask)
+            numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = self.forward_algo(scores, target, mask, corpus_mask)
         elif idea == "P11":
-            numerator = restricted_forward_algo_v1(scores, target, mask, corpus_mask, sigmoid)
-            denominator = forward_algo(scores, target, mask, corpus_mask)
+            numerator = self.restricted_forward_algo_v1(scores, target, mask, corpus_mask, sigmoid)
+            denominator = self.forward_algo(scores, target, mask, corpus_mask)
         elif idea == "P12":
-            numerator = calc_energy_gold_ts(scores, target, mask, corpus_mask)
-            denominator = restricted_forward_algo_v2(scores, target, mask, corpus_mask, sigmoid)
+            numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
+            denominator = self.restricted_forward_algo_v2(scores, target, mask, corpus_mask, sigmoid, mask_value)
         else:
             print("\n\n**********Idea not implemented!**********\n\n")
             assert False
