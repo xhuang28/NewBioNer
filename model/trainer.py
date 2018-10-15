@@ -171,6 +171,11 @@ class Trainer(object):
 
             self.ner_model.zero_grad()
             scores = self.ner_model(f_f, f_p, b_f, b_p, w_f, crf_no, corpus_mask_v)
+            
+            import pickle
+            pickle.dump([f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v, self.ner_model, scores], open('/auto/nlg-05/huan183/NewBioNer/BP_all.p', 'wb'), 0)
+            assert False
+            
             loss = crit_ner(scores, tg_v, mask_v, corpus_mask_v, idea = args.idea, sigmoid = args.sigmoid, mask_value = args.mask_value)
 
             epoch_loss += utils.to_scalar(loss)
