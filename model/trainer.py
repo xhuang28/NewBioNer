@@ -153,7 +153,7 @@ class Trainer(object):
 
     def train_epoch(self, cur_dataset, crf_no, crit_ner, optimizer, args):
         #cur_dataset = crf2train_dataloader[crf_no]
-
+        
         self.ner_model.train()
         epoch_loss = 0
 
@@ -162,21 +162,30 @@ class Trainer(object):
         train_corpus = [args.train_file[i].split("/")[-2] for i in self.crf2corpus[crf_no]]
         print("Epoch: [{:d}/{:d}]".format(args.start_epoch, args.epoch - 1))
         print("Train corpus: ", train_corpus)
-
+        
+        if args.idea[:2] != 'P2':
+            data_iter = itertools.chain.from_iterable(cur_dataset)
+        else:
+            data_iter = iter(cur_dataset)
+        
         for f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v, reorder in tqdm(
-            itertools.chain.from_iterable(cur_dataset), mininterval=2,
+            data_iter, mininterval=2,
             desc=' - Total it %d' % (num_sample), leave=False, file=sys.stdout):
-
-            f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v = self.packer.repack_vb(f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v)
-
+            
+            if args.idea[:2] != 'P2':
+                f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v = self.packer.repack_vb(f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v)
+            else:
+                if args.idea == 'P23':
+                    proba_dist, tg_v = tg_v
+                f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v, reorder = f_f.cuda(), f_p.cuda(), b_f.cuda(), b_p.cuda(), w_f.cuda(), tg_v.cuda(), mask_v.cuda(), len_v.cuda(), corpus_mask_v.cuda(), reorder.cuda()
+            
             self.ner_model.zero_grad()
             scores = self.ner_model(f_f, f_p, b_f, b_p, w_f, crf_no, corpus_mask_v)
             
-            import pickle
-            pickle.dump([f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v, self.ner_model, scores], open('/auto/nlg-05/huan183/NewBioNer/BP_all.p', 'wb'), 0)
-            assert False
-            
-            loss = crit_ner(scores, tg_v, mask_v, corpus_mask_v, idea = args.idea, sigmoid = args.sigmoid, mask_value = args.mask_value)
+            if args.idea == 'P23':
+                loss = crit_ner(scores, [proba_dist, tg_v], mask_v, corpus_mask_v, idea = args.idea, sigmoid = args.sigmoid, mask_value = args.mask_value)
+            else:
+                loss = crit_ner(scores, tg_v, mask_v, corpus_mask_v, idea = args.idea, sigmoid = args.sigmoid, mask_value = args.mask_value)
 
             epoch_loss += utils.to_scalar(loss)
             if args.co_train:

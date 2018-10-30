@@ -42,10 +42,29 @@
 # sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 200 200 0.1
 # sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 300 200 0.2
 # sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 300 200 0.3
-# sbatch --partition=isi --gres=gpu:1 --time=80:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 300 300 0.1
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 300 300 0.1
 # sbatch --partition=isi --gres=gpu:1 --time=80:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 300 300 0.2
 # sbatch --partition=isi --gres=gpu:1 --time=80:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 300 300 0.3
 
+
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 300 0.4
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 300 0.5
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 300 0.6
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 400 0.4
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 400 0.5
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 400 0.6
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 300 0.7
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 400 0.7
+
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 300 0.8
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 400 0.8
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 300 0.9
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 400 0.9
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 300 1.0
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 100 400 1.0
+sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 50 200 0
+#sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 50 300 0
+#sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p1_exp1.sh P12 M nosig 50 400 0
 
 squeue -u huan183
 

@@ -18,15 +18,16 @@ LOAD_CHECKPOINT="$SRC_FOLDER/checkpoints"
 cd $SRC_FOLDER
 
 python3 -u $SRC_FOLDER/eval.py \
-  --load_arg $LOAD_CHECKPOINT/$PHASE/EXP2/EXEC_NAME/CHECKPOINT_NAME.json \
-  --load_check_point $LOAD_CHECKPOINT/$PHASE/EXP2/EXEC_NAME/CHECKPOINT_NAME.model \
+  --load_arg $LOAD_CHECKPOINT/$PHASE/EXP2/$EXEC_NAME/$CHECKPOINT_NAME.json \
+  --load_check_point $LOAD_CHECKPOINT/$PHASE/EXP2/$EXEC_NAME/$CHECKPOINT_NAME.model \
   --if_pred \
   --pred_file \
   $DATA_FOLDER/CELLFINDER-IOBES/test.tsv \
   $DATA_FOLDER/BioNLP13CG-IOBES/test.tsv \
   $DATA_FOLDER/CHEMPROT-IOBES/test.tsv \
   --local_eval \
+  --pickle $5 \
   --pred_method $2 \
-  | tee $SRC_FOLDER/logs/PHASE/eval_$4._$EXEC_NAME.log
+  | tee $SRC_FOLDER/logs/$PHASE/eval_$2._$EXEC_NAME.log
 
 source deactivate

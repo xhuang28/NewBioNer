@@ -263,13 +263,13 @@ if __name__ == "__main__":
         
         try:
             print("Load from PICKLE")
-            single_devset = pickle.load(open(args.pickle + "/single_dev.p", "rb" ))
+            single_devset = pickle.load(open(args.pickle + "/temp_single_dev.p", "rb" ))
             dev_dataset_loader = []
             for datasets_tuple in single_devset:
                 dev_dataset_loader.append([torch.utils.data.DataLoader(tup, 50, shuffle=False, drop_last=False) for tup in datasets_tuple])
             
             print("Load from PICKLE")
-            single_testset = pickle.load(open(args.pickle + "/single_test.p", "rb" ))
+            single_testset = pickle.load(open(args.pickle + "/temp_single_test.p", "rb" ))
             test_dataset_loader = []
             for datasets_tuple in single_testset:
                 test_dataset_loader.append([torch.utils.data.DataLoader(tup, 50, shuffle=False, drop_last=False) for tup in datasets_tuple])

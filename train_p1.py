@@ -106,6 +106,7 @@ if __name__ == "__main__":
     assert args.pred_method in ['U', 'M']
     assert args.sigmoid in ['nosig', 'relu']
     assert args.mask_value is not None
+    assert args.idea
     
     if not torch.cuda.is_available():
         args.gpu = -1
