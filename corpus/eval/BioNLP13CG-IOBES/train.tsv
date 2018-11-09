@@ -6,9 +6,9 @@ type	I-GP
 II	I-GP
 receptor	E-GP
 in	O
-chronic	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+chronic	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 :	O
 analysis	O
 of	O
@@ -34,11 +34,11 @@ the	O
 disease	O
 progression	O
 of	O
-chronic	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+chronic	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 (	O
-CML	S-DISEASE
+CML	S-Disease
 )	O
 .	O
 
@@ -69,7 +69,7 @@ for	O
 mutation	O
 in	O
 some	O
-cancers	S-DISEASE
+cancers	S-Disease
 displaying	O
 microsatellite	O
 instability	O
@@ -91,9 +91,9 @@ beta	I-GP
 RII	E-GP
 mutations	O
 in	O
-RER	B-DISEASE
-+	I-DISEASE
-tumors	E-DISEASE
+RER	B-Disease
++	I-Disease
+tumors	E-Disease
 have	O
 been	O
 associated	O
@@ -141,7 +141,7 @@ in	O
 the	O
 progression	O
 of	O
-CML	S-DISEASE
+CML	S-Disease
 .	O
 
 Analysis	O
@@ -169,7 +169,7 @@ and	O
 blast	O
 phases	O
 of	O
-CML	S-DISEASE
+CML	S-Disease
 ,	O
 showed	O
 no	O
@@ -268,10 +268,10 @@ regions	O
 found	O
 altered	O
 in	O
-RER	B-DISEASE
-+	I-DISEASE
-colon	I-DISEASE
-cancers	E-DISEASE
+RER	B-Disease
++	I-Disease
+colon	I-Disease
+cancers	E-Disease
 were	O
 analyzed	O
 to	O
@@ -282,7 +282,7 @@ sequences	O
 were	O
 aberrant	O
 in	O
-CML	S-DISEASE
+CML	S-Disease
 .	O
 
 No	O
@@ -325,7 +325,7 @@ in	O
 the	O
 progression	O
 of	O
-CML	S-DISEASE
+CML	S-Disease
 .	O
 
 Decreased	O
@@ -721,8 +721,8 @@ in	O
 node	S-Multi-tissue_structure
 -	O
 positive	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 and	O
 lymph	B-Multi-tissue_structure
 nodes	E-Multi-tissue_structure
@@ -760,7 +760,7 @@ metastatic	O
 potential	O
 in	O
 some	O
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 However	O
@@ -802,8 +802,8 @@ resected	O
 pairs	O
 of	O
 primary	O
-lung	B-DISEASE
-cancers	E-DISEASE
+lung	B-Disease
+cancers	E-Disease
 and	O
 metastatic	O
 lymph	B-Multi-tissue_structure
@@ -822,8 +822,8 @@ H1	E-GP
 gene	O
 product	O
 in	O
-primary	B-DISEASE
-cancers	E-DISEASE
+primary	B-Disease
+cancers	E-Disease
 and	O
 metastatic	O
 lymph	B-Multi-tissue_structure
@@ -853,8 +853,8 @@ gene	O
 product	O
 expression	O
 between	O
-primary	B-DISEASE
-cancers	E-DISEASE
+primary	B-Disease
+cancers	E-Disease
 and	O
 metastatic	O
 lymph	B-Multi-tissue_structure
@@ -881,8 +881,8 @@ gene	O
 product	O
 expression	O
 in	O
-lung	B-DISEASE
-cancers	E-DISEASE
+lung	B-Disease
+cancers	E-Disease
 and	O
 the	O
 patients	S-Organism
@@ -953,11 +953,11 @@ reveal	O
 prognostic	O
 value	O
 in	O
-node	B-DISEASE
--	I-DISEASE
-positive	I-DISEASE
-lung	I-DISEASE
-cancers	E-DISEASE
+node	B-Disease
+-	I-Disease
+positive	I-Disease
+lung	I-Disease
+cancers	E-Disease
 .	O
 
 Expression	O
@@ -1656,9 +1656,9 @@ factor	E-GP
 in	O
 patients	S-Organism
 with	O
-renal	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+renal	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 Neovascularization	O
@@ -1670,8 +1670,8 @@ for	O
 the	O
 growth	O
 of	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 ,	O
 is	O
 regulated	O
@@ -1730,11 +1730,11 @@ VEGF	S-GP
 in	O
 patients	S-Organism
 with	O
-renal	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+renal	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 (	O
-RCC	S-DISEASE
+RCC	S-Disease
 )	O
 .	O
 
@@ -1749,13 +1749,13 @@ was	O
 analyzed	O
 in	O
 40	O
-RCC	S-DISEASE
+RCC	S-Disease
 patients	S-Organism
 and	O
 40	O
 patients	S-Organism
 without	O
-cancer	S-DISEASE
+cancer	S-Disease
 (	O
 controls	O
 )	O
@@ -1770,7 +1770,7 @@ immunoassay	O
 
 In	O
 20	O
-RCC	S-DISEASE
+RCC	S-Disease
 patients	S-Organism
 ,	O
 serum	B-Organism_substance
@@ -1814,7 +1814,7 @@ s	O
 VEGF	S-GP
 between	O
 the	O
-RCC	S-DISEASE
+RCC	S-Disease
 patients	S-Organism
 and	O
 the	O
@@ -1861,7 +1861,7 @@ than	O
 ,	O
 between	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 bearing	O
 renal	B-Multi-tissue_structure
@@ -1902,11 +1902,11 @@ the	O
 various	O
 parameters	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 status	O
 such	O
 as	O
-tumor	S-DISEASE
+tumor	S-Disease
 extent	O
 (	O
 P	O
@@ -1937,7 +1937,7 @@ significantly	O
 correlated	O
 with	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 volume	O
 obtained	O
 by	O
@@ -2014,7 +2014,7 @@ that	O
 tumor	B-Tissue
 tissue	E-Tissue
 of	O
-RCC	S-DISEASE
+RCC	S-Disease
 liberates	O
 VEGF	S-GP
 into	O
@@ -2032,7 +2032,7 @@ a	O
 possible	O
 marker	O
 for	O
-RCC	S-DISEASE
+RCC	S-Disease
 .	O
 
 Insulin	S-GP
@@ -2386,12 +2386,12 @@ the	O
 growth	O
 rate	O
 of	O
-von	B-DISEASE
-Hippel	I-DISEASE
--	I-DISEASE
-Lindau	I-DISEASE
-paraganglioma	I-DISEASE
-xenografts	E-DISEASE
+von	B-Disease
+Hippel	I-Disease
+-	I-Disease
+Lindau	I-Disease
+paraganglioma	I-Disease
+xenografts	E-Disease
 to	O
 mice	S-Organism
 .	O
@@ -2415,16 +2415,16 @@ linomide	S-Chemical
 for	O
 treatment	O
 of	O
-von	B-DISEASE
-Hippel	I-DISEASE
--	I-DISEASE
-Lindau	I-DISEASE
-(	I-DISEASE
-VHL	I-DISEASE
-)	I-DISEASE
--	I-DISEASE
-related	I-DISEASE
-tumors	E-DISEASE
+von	B-Disease
+Hippel	I-Disease
+-	I-Disease
+Lindau	I-Disease
+(	I-Disease
+VHL	I-Disease
+)	I-Disease
+-	I-Disease
+related	I-Disease
+tumors	E-Disease
 .	O
 
 Paraganglioma	B-Tissue
@@ -2517,7 +2517,7 @@ and	O
 were	O
 followed	O
 until	O
-tumor	S-DISEASE
+tumor	S-Disease
 diameter	O
 reached	O
 3	O
@@ -2540,7 +2540,7 @@ a	O
 significant	O
 diminution	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 size	O
 and	O
 weight	O
@@ -2561,7 +2561,7 @@ magnetic	O
 resonance	O
 analysis	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 blood	S-Organism_substance
 flow	O
 in	O
@@ -2583,7 +2583,7 @@ of	O
 the	O
 poorly	O
 vascularized	O
-tumors	S-DISEASE
+tumors	S-Disease
 with	O
 a	O
 significant	O
@@ -2599,7 +2599,7 @@ vasodilation	O
 Histological	O
 examination	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 from	O
 linomide	S-Chemical
 -	O
@@ -2622,7 +2622,7 @@ a	O
 fold	O
 reduction	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 vascular	B-GP
 endothelial	I-GP
 growth	I-GP
@@ -2654,8 +2654,8 @@ induction	O
 of	O
 angiogenesis	O
 by	O
-VHL	B-DISEASE
-tumors	E-DISEASE
+VHL	B-Disease
+tumors	E-Disease
 may	O
 constitute	O
 an	O
@@ -2711,15 +2711,15 @@ in	O
 EBV	S-Organism
 -	O
 associated	O
-malignancies	S-DISEASE
+malignancies	S-Disease
 including	O
-nasopharyngeal	B-DISEASE
-carcinoma	E-DISEASE
+nasopharyngeal	B-Disease
+carcinoma	E-Disease
 and	O
-Hodgkin	B-DISEASE
-'	I-DISEASE
-s	I-DISEASE
-lymphoma	E-DISEASE
+Hodgkin	B-Disease
+'	I-Disease
+s	I-Disease
+lymphoma	E-Disease
 .	O
 
 Previous	O
@@ -2950,7 +2950,7 @@ ATX	S-GP
 ,	O
 a	O
 potent	O
-tumor	S-DISEASE
+tumor	S-Disease
 motogen	O
 ,	O
 augments	O
@@ -3206,7 +3206,7 @@ cellular	S-Cell
 characteristics	O
 necessary	O
 for	O
-tumor	S-DISEASE
+tumor	S-Disease
 aggressiveness	O
 .	O
 
@@ -3245,7 +3245,7 @@ have	O
 been	O
 identified	O
 in	O
-gliomas	S-DISEASE
+gliomas	S-Disease
 ,	O
 in	O
 which	O
@@ -3511,9 +3511,9 @@ apoptosis	O
 in	O
 a	O
 human	S-Organism
-transitional	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+transitional	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 of	O
 the	O
 bladder	B-Cell
@@ -3525,8 +3525,8 @@ The	O
 second	O
 most	O
 prevalent	O
-urological	B-DISEASE
-malignancy	E-DISEASE
+urological	B-Disease
+malignancy	E-Disease
 in	O
 middle	O
 aged	O
@@ -3534,8 +3534,8 @@ and	O
 elderly	O
 men	S-Organism
 is	O
-bladder	B-DISEASE
-cancer	E-DISEASE
+bladder	B-Disease
+cancer	E-Disease
 ,	O
 with	O
 90	O
@@ -3544,9 +3544,9 @@ of	O
 the	O
 cases	O
 being	O
-transitional	B-DISEASE
-cell	I-DISEASE
-carcinomas	E-DISEASE
+transitional	B-Disease
+cell	I-Disease
+carcinomas	E-Disease
 .	O
 
 The	O
@@ -3638,8 +3638,8 @@ a	O
 profound	O
 effect	O
 in	O
-bladder	B-DISEASE
-cancer	E-DISEASE
+bladder	B-Disease
+cancer	E-Disease
 management	O
 .	O
 
@@ -3657,9 +3657,9 @@ tumor	B-Cell
 cells	E-Cell
 derived	O
 from	O
-transitional	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+transitional	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 of	O
 the	O
 bladder	S-Organ
@@ -3730,9 +3730,9 @@ growth	O
 inhibition	O
 of	O
 the	O
-transitional	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+transitional	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 of	O
 the	O
 bladder	B-Cell
@@ -3991,9 +3991,9 @@ for	O
 the	O
 management	O
 of	O
-transitional	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+transitional	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 of	O
 the	O
 bladder	S-Organ
@@ -4635,7 +4635,7 @@ in	O
 vivo	O
 .	O
 
-Neuroblastoma	S-DISEASE
+Neuroblastoma	S-Disease
 and	O
 hepatocyte	S-Cell
 coculture	O
@@ -4647,11 +4647,11 @@ apoptosis	O
 
 BACKGROUND	O
 :	O
-Neuroblastoma	S-DISEASE
+Neuroblastoma	S-Disease
 is	O
 a	O
 childhood	O
-tumor	S-DISEASE
+tumor	S-Disease
 that	O
 often	O
 displays	O
@@ -4661,7 +4661,7 @@ behavior	O
 .	O
 
 The	O
-tumor	S-DISEASE
+tumor	S-Disease
 may	O
 present	O
 with	O
@@ -4685,7 +4685,7 @@ metastases	O
 and	O
 the	O
 primary	O
-tumor	S-DISEASE
+tumor	S-Disease
 may	O
 spontaneously	O
 regress	O
@@ -4711,7 +4711,7 @@ the	O
 dichotomous	O
 behavior	O
 of	O
-neuroblastoma	S-DISEASE
+neuroblastoma	S-Disease
 .	O
 
 We	O
@@ -5038,7 +5038,7 @@ hepatocytes	S-Cell
 .	O
 
 A	O
-tumor	S-DISEASE
+tumor	S-Disease
 '	O
 s	O
 ability	O
@@ -5053,7 +5053,7 @@ mediators	O
 generated	O
 in	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 host	O
 interaction	O
@@ -5068,7 +5068,7 @@ independent	O
 characteristic	O
 of	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 itself	O
 .	O
 
@@ -5248,8 +5248,8 @@ several	O
 human	S-Organism
 and	O
 other	O
-mammalian	B-DISEASE
-cancers	E-DISEASE
+mammalian	B-Disease
+cancers	E-Disease
 .	O
 
 Transforming	O
@@ -5766,8 +5766,8 @@ CD40	S-GP
 expression	O
 on	O
 human	S-Organism
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 correlates	O
 with	O
 metastatic	O
@@ -5781,8 +5781,8 @@ poor	O
 prognosis	O
 associated	O
 with	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 is	O
 related	O
 to	O
@@ -5843,8 +5843,8 @@ different	O
 surface	O
 markers	O
 on	O
-lung	B-DISEASE
-cancers	E-DISEASE
+lung	B-Disease
+cancers	E-Disease
 suggested	O
 to	O
 be	O
@@ -5883,7 +5883,7 @@ correlation	O
 was	O
 found	O
 between	O
-tumor	S-DISEASE
+tumor	S-Disease
 prognosis	O
 and	O
 EGFR	S-GP
@@ -5915,7 +5915,7 @@ metastatic	O
 spread	O
 of	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 .	O
 
 In	O
@@ -5944,7 +5944,7 @@ All	O
 of	O
 the	O
 4	O
-tumors	S-DISEASE
+tumors	S-Disease
 that	O
 were	O
 CD40	S-GP
@@ -5954,7 +5954,7 @@ negative	O
 were	O
 stage	O
 I	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 without	O
 any	O
@@ -5969,7 +5969,7 @@ metastasis	O
 Of	O
 the	O
 14	O
-tumors	S-DISEASE
+tumors	S-Disease
 that	O
 expressed	O
 CD40	S-GP
@@ -5996,7 +5996,7 @@ diagnosis	O
 
 Patients	S-Organism
 whose	O
-tumors	S-DISEASE
+tumors	S-Disease
 were	O
 CD40	S-GP
 -	O
@@ -6034,7 +6034,7 @@ groups	O
 were	O
 observed	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 size	O
 ,	O
 gender	O
@@ -6058,8 +6058,8 @@ that	O
 CD40	S-GP
 expression	O
 on	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 may	O
 play	O
 a	O
@@ -6094,11 +6094,11 @@ S	B-GP
 and	O
 interleukins	S-GP
 as	O
-tumour	S-DISEASE
+tumour	S-Disease
 markers	O
 in	O
 advanced	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 .	O
 
 Recently	O
@@ -6111,10 +6111,10 @@ shown	O
 promise	O
 as	O
 a	O
-tumour	S-DISEASE
+tumour	S-Disease
 marker	O
 in	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 ;	O
 however	O
 ,	O
@@ -6144,7 +6144,7 @@ regression	O
 or	O
 progression	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 In	O
@@ -6194,7 +6194,7 @@ in	O
 patients	S-Organism
 with	O
 advanced	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 who	O
 were	O
 to	O
@@ -6334,7 +6334,7 @@ or	O
 bone	S-Organ
 metastases	O
 in	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 .	O
 
 S	B-GP
@@ -6362,7 +6362,7 @@ TEL	S-GP
 ,	O
 a	O
 putative	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 ,	O
 modulates	O
@@ -6415,8 +6415,8 @@ is	O
 biallelically	O
 disrupted	O
 in	O
-acute	B-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+leukemia	E-Disease
 ,	O
 and	O
 loss	O
@@ -6431,7 +6431,7 @@ been	O
 observed	O
 in	O
 various	O
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 Here	O
@@ -6626,7 +6626,7 @@ TEL	S-GP
 acts	O
 as	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 ,	O
 in	O
@@ -7283,7 +7283,7 @@ inflammation	O
 wound	S-Pathological_formation
 repair	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 /	O
 metastasis	O
@@ -7416,7 +7416,7 @@ of	O
 p75	S-GP
 expression	O
 in	O
-NB	S-DISEASE
+NB	S-Disease
 ,	O
 we	O
 transfected	O
@@ -7603,7 +7603,7 @@ growth	O
 and	O
 metastasis	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 and	O
 considerable	O
@@ -7615,7 +7615,7 @@ to	O
 find	O
 inhibitors	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 .	O
 
@@ -8020,7 +8020,7 @@ and	O
 the	O
 expression	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 p16	S-GP
 (	O
@@ -8056,7 +8056,7 @@ IL	B-GP
 12	E-GP
 -	O
 dependent	O
-tumor	S-DISEASE
+tumor	S-Disease
 inhibition	O
 rests	O
 on	O
@@ -8372,7 +8372,7 @@ vitro	O
 the	O
 authors	O
 analyzed	O
-tumor	S-DISEASE
+tumor	S-Disease
 inhibitive	O
 gene	O
 P53	S-GP
@@ -8780,7 +8780,7 @@ novel	O
 host	O
 anti	O
 -	O
-tumor	S-DISEASE
+tumor	S-Disease
 defense	O
 mechanism	O
 .	O
@@ -8912,7 +8912,7 @@ in	O
 accelerated	O
 and	O
 increased	O
-tumor	S-DISEASE
+tumor	S-Disease
 formation	O
 .	O
 
@@ -8931,7 +8931,7 @@ tumor	E-Pathological_formation
 formation	O
 ,	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 was	O
 significantly	O
@@ -8953,7 +8953,7 @@ deficiency	O
 did	O
 not	O
 affect	O
-tumor	S-DISEASE
+tumor	S-Disease
 differentiation	O
 or	O
 proliferation	O
@@ -8993,7 +8993,7 @@ novel	O
 host	O
 anti	O
 -	O
-tumor	S-DISEASE
+tumor	S-Disease
 defense	O
 mechanism	O
 .	O
@@ -9009,16 +9009,16 @@ clinicopathological	O
 features	O
 of	O
 human	S-Organism
-remnant	B-DISEASE
-stomach	I-DISEASE
-cancer	E-DISEASE
+remnant	B-Disease
+stomach	I-Disease
+cancer	E-Disease
 after	O
 gastric	S-Organ
 surgery	O
 for	O
 primary	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -9033,14 +9033,14 @@ the	O
 biological	O
 features	O
 of	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 of	O
 the	O
 remnant	B-Organ
 stomach	E-Organ
 (	O
-RSC	S-DISEASE
+RSC	S-Disease
 )	O
 .	O
 
@@ -9055,7 +9055,7 @@ the	O
 remnant	B-Organ
 stomach	E-Organ
 for	O
-RSC	S-DISEASE
+RSC	S-Disease
 and	O
 were	O
 divided	O
@@ -9064,7 +9064,7 @@ two	O
 groups	O
 :	O
 the	O
-RSCB	S-DISEASE
+RSCB	S-Disease
 group	O
 consisted	O
 of	O
@@ -9079,7 +9079,7 @@ benign	O
 disease	O
 and	O
 the	O
-RSCM	S-DISEASE
+RSCM	S-Disease
 group	O
 consisted	O
 of	O
@@ -9090,8 +9090,8 @@ underwent	O
 gastrectomy	O
 for	O
 primary	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -9103,8 +9103,8 @@ and	O
 the	O
 appearance	O
 of	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 in	O
 the	O
 remnant	B-Organ
@@ -9114,12 +9114,12 @@ significantly	O
 shorter	O
 in	O
 the	O
-RSCM	S-DISEASE
+RSCM	S-Disease
 group	O
 than	O
 in	O
 the	O
-RSCB	S-DISEASE
+RSCB	S-Disease
 group	O
 .	O
 
@@ -9132,12 +9132,12 @@ more	O
 frequent	O
 in	O
 the	O
-RSCM	S-DISEASE
+RSCM	S-Disease
 group	O
 than	O
 in	O
 the	O
-RSCB	S-DISEASE
+RSCB	S-Disease
 group	O
 and	O
 the	O
@@ -9148,7 +9148,7 @@ labeling	O
 index	O
 of	O
 the	O
-tumors	S-DISEASE
+tumors	S-Disease
 was	O
 significantly	O
 higher	O
@@ -9163,7 +9163,7 @@ Furthermore	O
 p53	S-GP
 overexpression	O
 by	O
-tumors	S-DISEASE
+tumors	S-Disease
 was	O
 almost	O
 twice	O
@@ -9171,12 +9171,12 @@ as	O
 common	O
 in	O
 the	O
-RSCM	S-DISEASE
+RSCM	S-Disease
 group	O
 as	O
 in	O
 the	O
-RSCB	S-DISEASE
+RSCB	S-Disease
 group	O
 .	O
 
@@ -9225,10 +9225,10 @@ high	O
 proliferative	O
 activity	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 the	O
-RSCM	S-DISEASE
+RSCM	S-Disease
 group	O
 and	O
 H	B-Organism
@@ -9244,14 +9244,14 @@ carcinogenesis	O
 in	O
 patients	S-Organism
 with	O
-RSC	S-DISEASE
+RSC	S-Disease
 .	O
 
 Current	O
 prospects	O
 for	O
 controlling	O
-cancer	S-DISEASE
+cancer	S-Disease
 growth	O
 with	O
 non	O
@@ -9284,7 +9284,7 @@ growth	O
 and	O
 spread	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 can	O
 be	O
 slowed	O
@@ -9315,7 +9315,7 @@ the	O
 clinical	O
 management	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 ,	O
 in	O
 part	O
@@ -9460,7 +9460,7 @@ suitable	O
 for	O
 use	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 prevention	O
 .	O
 
@@ -9810,12 +9810,12 @@ Evi	B-GP
 1	E-GP
 -	O
 induced	O
-neoplastic	B-DISEASE
-tumors	E-DISEASE
+neoplastic	B-Disease
+tumors	E-Disease
 ,	O
 including	O
-myeloid	B-DISEASE
-leukemias	E-DISEASE
+myeloid	B-Disease
+leukemias	E-Disease
 .	O
 
 Antibodies	O
@@ -9857,7 +9857,7 @@ PAI	B-GP
 may	O
 contribute	O
 to	O
-tumour	S-DISEASE
+tumour	S-Disease
 progression	O
 .	O
 
@@ -10171,7 +10171,7 @@ for	O
 the	O
 treatment	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 Inhibition	O
@@ -10464,10 +10464,10 @@ HSP27	S-GP
 in	O
 patients	S-Organism
 with	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 Heat	B-GP
@@ -10543,7 +10543,7 @@ play	O
 important	O
 roles	O
 in	O
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 Archival	B-Tissue
@@ -10552,10 +10552,10 @@ from	O
 40	O
 patients	S-Organism
 with	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 who	O
 received	O
 primary	O
@@ -10670,10 +10670,10 @@ promoted	O
 in	O
 patients	S-Organism
 with	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 and	O
 should	O
 be	O
@@ -10683,10 +10683,10 @@ independent	O
 prognostic	O
 factor	O
 of	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 patients	S-Organism
 .	O
 
@@ -10701,7 +10701,7 @@ is	O
 associated	O
 with	O
 advanced	O
-neuroblastoma	S-DISEASE
+neuroblastoma	S-Disease
 .	O
 
 BACKGROUND	O
@@ -10710,7 +10710,7 @@ Angiogenesis	O
 is	O
 essential	O
 for	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 relies	O
@@ -10761,7 +10761,7 @@ and	O
 protein	O
 levels	O
 in	O
-neuroblastoma	S-DISEASE
+neuroblastoma	S-Disease
 remains	O
 widely	O
 unknown	O
@@ -10769,16 +10769,16 @@ unknown	O
 
 METHODS	O
 :	O
-Tumor	B-DISEASE
-biopsy	I-DISEASE
-specimens	E-DISEASE
+Tumor	B-Disease
+biopsy	I-Disease
+specimens	E-Disease
 and	O
 serum	S-Organism_substance
 were	O
 obtained	O
 from	O
 37	O
-neuroblastoma	S-DISEASE
+neuroblastoma	S-Disease
 patients	S-Organism
 ;	O
 adrenal	B-Multi-tissue_structure
@@ -10795,8 +10795,8 @@ as	O
 controls	O
 .	O
 
-Biopsy	B-DISEASE
-specimens	E-DISEASE
+Biopsy	B-Disease
+specimens	E-Disease
 were	O
 examined	O
 by	O
@@ -10864,7 +10864,7 @@ mRNA	O
 were	O
 expressed	O
 in	O
-neuroblastoma	S-DISEASE
+neuroblastoma	S-Disease
 and	O
 control	O
 tissues	S-Tissue
@@ -10992,9 +10992,9 @@ upregulated	O
 MRNA	O
 levels	O
 in	O
-stage	B-DISEASE
-III	I-DISEASE
-neuroblastoma	E-DISEASE
+stage	B-Disease
+III	I-Disease
+neuroblastoma	E-Disease
 .	O
 
 VEGF	B-GP
@@ -11018,10 +11018,10 @@ a	O
 diagnostic	O
 tool	O
 in	O
-advanced	B-DISEASE
--	I-DISEASE
-stage	I-DISEASE
-neuroblastoma	E-DISEASE
+advanced	B-Disease
+-	I-Disease
+stage	I-Disease
+neuroblastoma	E-Disease
 .	O
 
 Hypoxia	B-GP
@@ -11136,7 +11136,7 @@ HIF	B-GP
 
 In	O
 human	S-Organism
-gliomas	S-DISEASE
+gliomas	S-Disease
 and	O
 other	O
 cancer	B-Cell
@@ -11247,9 +11247,9 @@ of	O
 myelodysplastic	O
 syndrome	O
 and	O
-acute	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 in	O
 congenital	O
 neutropenias	O
@@ -11335,13 +11335,13 @@ developed	O
 myelodysplastic	O
 syndrome	O
 and	O
-acute	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 (	O
 MDS	O
 /	O
-AML	S-DISEASE
+AML	S-Disease
 )	O
 ,	O
 which	O
@@ -11372,7 +11372,7 @@ propensity	O
 for	O
 MDS	O
 or	O
-AML	S-DISEASE
+AML	S-Disease
 as	O
 part	O
 of	O
@@ -11445,7 +11445,7 @@ onset	O
 of	O
 MDS	O
 or	O
-AML	S-DISEASE
+AML	S-Disease
 and	O
 patient	S-Organism
 gender	O
@@ -11554,7 +11554,7 @@ propensity	O
 for	O
 MDS	O
 /	O
-AML	S-DISEASE
+AML	S-Disease
 in	O
 the	O
 genetically	O
@@ -11635,7 +11635,7 @@ to	O
 overt	O
 MDS	O
 or	O
-AML	S-DISEASE
+AML	S-Disease
 ,	O
 hematopoietic	B-Cell
 stem	I-Cell
@@ -11721,7 +11721,7 @@ more	O
 overt	O
 signs	O
 of	O
-malignancy	S-DISEASE
+malignancy	S-Disease
 .	O
 
 Hypoxic	O
@@ -11750,8 +11750,8 @@ protein	O
 kinases	O
 .	O
 
-Solid	B-DISEASE
-tumors	E-DISEASE
+Solid	B-Disease
+tumors	E-Disease
 must	O
 establish	O
 a	O
@@ -11804,8 +11804,8 @@ Increased	O
 VEGF	S-GP
 expression	O
 by	O
-malignant	B-DISEASE
-tumors	E-DISEASE
+malignant	B-Disease
+tumors	E-Disease
 has	O
 been	O
 associated	O
@@ -11857,7 +11857,7 @@ mechanisms	O
 by	O
 which	O
 hypoxic	O
-tumor	S-DISEASE
+tumor	S-Disease
 environments	O
 induce	O
 HIF	B-GP
@@ -12073,7 +12073,7 @@ in	O
 cultures	O
 and	O
 induce	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 experimental	O
 animals	O
@@ -12916,7 +12916,7 @@ of	O
 angiogenesis	O
 by	O
 the	O
-cancer	S-DISEASE
+cancer	S-Disease
 chemopreventive	O
 agent	O
 conjugated	B-Chemical
@@ -13452,12 +13452,12 @@ capillary	S-Tissue
 morphogenesis	O
 and	O
 inhibits	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 in	O
 a	O
 murine	S-Organism
-tumor	S-DISEASE
+tumor	S-Disease
 model	O
 .	O
 
@@ -13523,7 +13523,7 @@ has	O
 been	O
 linked	O
 to	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 metastasis	O
@@ -13531,7 +13531,7 @@ metastasis	O
 as	O
 well	O
 as	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 associated	O
 angiogenesis	O
@@ -13619,7 +13619,7 @@ controls	O
 Grossly	O
 ,	O
 these	O
-tumors	S-DISEASE
+tumors	S-Disease
 were	O
 small	O
 and	O
@@ -13634,7 +13634,7 @@ evaluation	O
 revealed	O
 that	O
 although	O
-tumors	S-DISEASE
+tumors	S-Disease
 overexpressing	O
 TIMP	B-GP
 -	I-GP
@@ -13718,7 +13718,7 @@ TIMP	B-GP
 3	E-GP
 -	O
 overexpressing	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Taken	O
@@ -13738,7 +13738,7 @@ inhibit	O
 angiogenesis	O
 and	O
 associated	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 ,	O
 and	O
@@ -13782,7 +13782,7 @@ for	O
 its	O
 involvement	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 and	O
 angiogenesis	O
 .	O
@@ -13985,7 +13985,7 @@ Bcl	B-GP
 VEGF	S-GP
 induction	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 ,	O
 concluding	O
@@ -14010,7 +14010,7 @@ cell	S-Cell
 adhesion	O
 molecules	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 induced	O
 by	O
@@ -14039,7 +14039,7 @@ and	O
 endothelial	B-Cell
 cells	E-Cell
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 were	O
 investigated	O
@@ -14288,7 +14288,7 @@ in	O
 the	O
 in	O
 vivo	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 which	O
 were	O
@@ -14325,7 +14325,7 @@ rats	E-Organism
 .	O
 
 The	O
-tumors	S-DISEASE
+tumors	S-Disease
 of	O
 A431	S-Cell
 supplemented	O
@@ -14362,7 +14362,7 @@ cells	E-Cell
 .	O
 
 The	O
-tumor	S-DISEASE
+tumor	S-Disease
 mass	O
 thus	O
 formed	O
@@ -14378,8 +14378,8 @@ as	O
 large	O
 as	O
 control	O
-A431	B-DISEASE
-tumors	E-DISEASE
+A431	B-Disease
+tumors	E-Disease
 that	O
 were	O
 grown	O
@@ -14424,8 +14424,8 @@ in	O
 the	O
 size	O
 of	O
-A431	B-DISEASE
-tumors	E-DISEASE
+A431	B-Disease
+tumors	E-Disease
 ,	O
 which	O
 were	O
@@ -14449,8 +14449,8 @@ The	O
 size	O
 of	O
 these	O
-A431	B-DISEASE
-tumors	E-DISEASE
+A431	B-Disease
+tumors	E-Disease
 did	O
 not	O
 differ	O
@@ -14459,8 +14459,8 @@ from	O
 those	O
 of	O
 control	O
-A431	B-DISEASE
-tumors	E-DISEASE
+A431	B-Disease
+tumors	E-Disease
 raised	O
 without	O
 F	B-Cell
@@ -14483,7 +14483,7 @@ endothelial	B-Cell
 cells	E-Cell
 in	O
 orderly	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiomorphogenesis	O
 is	O
 highly	O
@@ -14510,7 +14510,7 @@ of	O
 which	O
 remarkably	O
 retards	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 angiogenesis	O
@@ -15140,13 +15140,13 @@ I	E-GP
 protein	O
 expression	O
 in	O
-primary	B-DISEASE
-colorectal	I-DISEASE
-cancer	E-DISEASE
+primary	B-Disease
+colorectal	I-Disease
+cancer	E-Disease
 and	O
-lymph	B-DISEASE
-node	I-DISEASE
-metastases	E-DISEASE
+lymph	B-Disease
+node	I-Disease
+metastases	E-Disease
 .	O
 
 Topoisomerase	B-GP
@@ -15163,12 +15163,12 @@ for	O
 the	O
 treatment	O
 of	O
-malignant	B-DISEASE
-disease	E-DISEASE
+malignant	B-Disease
+disease	E-Disease
 ,	O
 especially	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 .	O
 
 Because	O
@@ -15183,8 +15183,8 @@ of	O
 topo	B-GP
 I	E-GP
 in	O
-colorectal	B-DISEASE
-tumors	E-DISEASE
+colorectal	B-Disease
+tumors	E-Disease
 ,	O
 this	O
 study	O
@@ -15197,12 +15197,12 @@ protein	O
 expression	O
 in	O
 primary	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 and	O
-lymph	B-DISEASE
-node	I-DISEASE
-metastases	E-DISEASE
+lymph	B-Disease
+node	I-Disease
+metastases	E-Disease
 and	O
 studied	O
 the	O
@@ -15243,15 +15243,15 @@ in	O
 249	O
 primary	O
 human	S-Organism
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 and	O
 42	O
 paired	O
-lymph	B-DISEASE
-node	I-DISEASE
-metastasis	I-DISEASE
-samples	E-DISEASE
+lymph	B-Disease
+node	I-Disease
+metastasis	I-Disease
+samples	E-Disease
 .	O
 
 Topo	B-GP
@@ -15344,7 +15344,7 @@ in	O
 51	O
 %	O
 )	O
-samples	S-DISEASE
+samples	S-Disease
 ,	O
 including	O
 24	O
@@ -15392,9 +15392,9 @@ expressing	O
 topo	B-GP
 I	E-GP
 in	O
-primary	B-DISEASE
-colorectal	I-DISEASE
-cancer	E-DISEASE
+primary	B-Disease
+colorectal	I-Disease
+cancer	E-Disease
 was	O
 significantly	O
 associated	O
@@ -15411,8 +15411,8 @@ P	O
 
 Patients	S-Organism
 with	O
-rectal	B-DISEASE
-cancer	E-DISEASE
+rectal	B-Disease
+cancer	E-Disease
 had	O
 greater	O
 topo	B-GP
@@ -15421,8 +15421,8 @@ expression	O
 than	O
 those	O
 with	O
-colon	B-DISEASE
-tumors	E-DISEASE
+colon	B-Disease
+tumors	E-Disease
 (	O
 P	O
 =	O
@@ -15468,7 +15468,7 @@ topo	B-GP
 I	E-GP
 staining	O
 between	O
-primary	S-DISEASE
+primary	S-Disease
 and	O
 lymph	B-Multi-tissue_structure
 node	E-Multi-tissue_structure
@@ -15502,7 +15502,7 @@ not	O
 differ	O
 across	O
 various	O
-tumor	S-DISEASE
+tumor	S-Disease
 stages	O
 ,	O
 pathology	O
@@ -15629,7 +15629,7 @@ clinical	O
 diseases	O
 such	O
 as	O
-cancer	S-DISEASE
+cancer	S-Disease
 ,	O
 fibrotic	O
 diseases	O
@@ -15720,9 +15720,9 @@ c	B-GP
 kit	E-GP
 gene	O
 in	O
-gastrointestinal	B-DISEASE
-stromal	I-DISEASE
-tumor	E-DISEASE
+gastrointestinal	B-Disease
+stromal	I-Disease
+tumor	E-Disease
 ]	O
 .	O
 
@@ -15751,11 +15751,11 @@ pathology	O
 and	O
 prognosis	O
 of	O
-gastrointestinal	B-DISEASE
-stromal	I-DISEASE
-tumor	E-DISEASE
+gastrointestinal	B-Disease
+stromal	I-Disease
+tumor	E-Disease
 (	O
-GIST	S-DISEASE
+GIST	S-Disease
 )	O
 .	O
 
@@ -15788,7 +15788,7 @@ in	O
 82	O
 patients	S-Organism
 with	O
-GIST	S-DISEASE
+GIST	S-Disease
 .	O
 
 RESULTS	O
@@ -15865,8 +15865,8 @@ were	O
 and	O
 0	O
 in	O
-benign	B-DISEASE
-GIST	E-DISEASE
+benign	B-Disease
+GIST	E-Disease
 ,	O
 and	O
 were	O
@@ -15890,13 +15890,13 @@ were	O
 62	O
 )	O
 in	O
-malignant	B-DISEASE
-GIST	E-DISEASE
+malignant	B-Disease
+GIST	E-Disease
 .	O
 
 Mutation	O
 positive	O
-GIST	S-DISEASE
+GIST	S-Disease
 showed	O
 higher	O
 frequency	O
@@ -15928,9 +15928,9 @@ important	O
 diagnostic	O
 marker	O
 of	O
-gastrointestinal	B-DISEASE
-stromal	I-DISEASE
-tumor	E-DISEASE
+gastrointestinal	B-Disease
+stromal	I-Disease
+tumor	E-Disease
 .	O
 
 c	B-GP
@@ -15947,7 +15947,7 @@ in	O
 the	O
 pathogenesis	O
 of	O
-GIST	S-DISEASE
+GIST	S-Disease
 and	O
 also	O
 may	O
@@ -15987,7 +15987,7 @@ procaspase	B-GP
 processing	O
 .	O
 
-Tumors	S-DISEASE
+Tumors	S-Disease
 display	O
 a	O
 high	O
@@ -16261,8 +16261,8 @@ expressing	O
 cells	S-Cell
 of	O
 the	O
-immune	B-Anatomical_system
-system	E-Anatomical_system
+immune	B-ANATOMY
+system	E-ANATOMY
 by	O
 facilitating	O
 the	O
@@ -16697,12 +16697,12 @@ exert	O
 an	O
 anti	O
 -	O
-tumor	S-DISEASE
+tumor	S-Disease
 effect	O
 on	O
 human	S-Organism
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 .	O
 
 Possible	O
@@ -17015,7 +17015,7 @@ of	O
 angiogenesis	O
 .	O
 
-Tumor	S-DISEASE
+Tumor	S-Disease
 angiogenesis	O
 modulates	O
 leukocyte	S-Cell
@@ -17053,7 +17053,7 @@ interactions	O
 is	O
 suppressed	O
 in	O
-malignancies	S-DISEASE
+malignancies	S-Disease
 .	O
 
 In	O
@@ -17078,7 +17078,7 @@ the	O
 presence	O
 of	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 .	O
 
 By	O
@@ -17110,9 +17110,9 @@ mice	E-Organism
 bearing	O
 small	O
 human	S-Organism
-LS174T	B-DISEASE
-colon	I-DISEASE
-carcinomas	E-DISEASE
+LS174T	B-Disease
+colon	I-Disease
+carcinomas	E-Disease
 and	O
 in	O
 C57Bl	B-Organism
@@ -17121,8 +17121,8 @@ C57Bl	B-Organism
 mice	E-Organism
 bearing	O
 murine	S-Organism
-B16F10	B-DISEASE
-melanomas	E-DISEASE
+B16F10	B-Disease
+melanomas	E-Disease
 .	O
 
 Leukocyte	S-Cell
@@ -17137,7 +17137,7 @@ within	O
 and	O
 outside	O
 small	O
-tumors	S-DISEASE
+tumors	S-Disease
 growing	O
 in	O
 the	O
@@ -17152,14 +17152,14 @@ mice	S-Organism
 with	O
 a	O
 large	O
-tumor	S-DISEASE
+tumor	S-Disease
 growing	O
 on	O
 their	O
 flank	S-Organism_subdivision
 .	O
 
-Tumor	S-DISEASE
+Tumor	S-Disease
 -	O
 free	O
 mice	S-Organism
@@ -17197,8 +17197,8 @@ in	O
 vessels	S-Tissue
 inside	O
 the	O
-ear	B-DISEASE
-tumor	E-DISEASE
+ear	B-Disease
+tumor	E-Disease
 in	O
 both	O
 mouse	S-Organism
@@ -17213,7 +17213,7 @@ increasing	O
 distance	O
 from	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 .	O
 
 Surprisingly	O
@@ -17231,8 +17231,8 @@ mice	S-Organism
 with	O
 a	O
 large	O
-flank	B-DISEASE
-tumor	E-DISEASE
+flank	B-Disease
+tumor	E-Disease
 was	O
 also	O
 reduced	O
@@ -17260,7 +17260,7 @@ the	O
 presence	O
 of	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 in	O
 nude	B-Organism
 mice	E-Organism
@@ -17286,8 +17286,8 @@ mice	S-Organism
 bearing	O
 a	O
 small	O
-ear	B-DISEASE
-tumor	E-DISEASE
+ear	B-Disease
+tumor	E-Disease
 with	O
 a	O
 humanized	O
@@ -17854,7 +17854,7 @@ galectin	B-GP
 -	I-GP
 3	E-GP
 inhibits	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 metastasis	O
@@ -17865,8 +17865,8 @@ mouse	E-Organism
 model	O
 of	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 PURPOSE	O
@@ -17884,8 +17884,8 @@ potential	O
 therapeutic	O
 agent	O
 for	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 based	O
 on	O
 galectin	B-GP
@@ -17900,8 +17900,8 @@ tumorigenicity	O
 and	O
 metastasis	O
 of	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -17933,7 +17933,7 @@ efficacious	O
 for	O
 reduction	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 for	O
@@ -17992,7 +17992,7 @@ mice	E-Organism
 bearing	O
 orthotopically	O
 implanted	O
-tumors	S-DISEASE
+tumors	S-Disease
 derived	O
 from	O
 breast	B-Cell
@@ -18120,7 +18120,7 @@ found	O
 that	O
 the	O
 mean	O
-tumor	S-DISEASE
+tumor	S-Disease
 volumes	O
 and	O
 weights	O
@@ -18178,13 +18178,13 @@ in	O
 reducing	O
 metastases	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 volumes	O
 and	O
 weights	O
 in	O
 primary	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 an	O
 orthotopic	O
@@ -18193,8 +18193,8 @@ mouse	E-Organism
 model	O
 of	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 Prognostic	O
@@ -18211,9 +18211,9 @@ factor	E-GP
 expression	O
 in	O
 resected	O
-squamous	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+squamous	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 of	O
 the	O
 esophagus	S-Organ
@@ -18230,10 +18230,10 @@ a	O
 wide	O
 variety	O
 of	O
-cancers	S-DISEASE
+cancers	S-Disease
 are	O
 p53	S-GP
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 gene	O
 mutations	O
@@ -18274,8 +18274,8 @@ a	O
 critical	O
 process	O
 in	O
-solid	B-DISEASE
-tumor	E-DISEASE
+solid	B-Disease
+tumor	E-Disease
 growth	O
 and	O
 metastasis	O
@@ -18303,7 +18303,7 @@ may	O
 be	O
 a	O
 major	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 regulator	O
 .	O
@@ -18322,8 +18322,8 @@ expressions	O
 and	O
 prognosis	O
 in	O
-esophageal	B-DISEASE
-carcinoma	E-DISEASE
+esophageal	B-Disease
+carcinoma	E-Disease
 .	O
 
 Forty	O
@@ -18338,11 +18338,11 @@ stage	O
 II	O
 and	O
 III	O
-squamous	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+squamous	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 (	O
-SCC	S-DISEASE
+SCC	S-Disease
 )	O
 of	O
 the	O
@@ -18368,7 +18368,7 @@ and	O
 %	O
 of	O
 the	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 respectively	O
 .	O
@@ -18387,7 +18387,7 @@ only	O
 %	O
 of	O
 the	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 and	O
 no	O
@@ -18448,7 +18448,7 @@ stage	O
 II	O
 and	O
 III	O
-SCC	S-DISEASE
+SCC	S-Disease
 of	O
 the	O
 esophagus	S-Organ
@@ -18461,7 +18461,7 @@ the	O
 survivin	S-GP
 pathway	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 :	O
 initiation	O
 of	O
@@ -18470,7 +18470,7 @@ apoptosis	O
 and	O
 suppression	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 associated	O
 angiogenesis	O
@@ -18492,7 +18492,7 @@ shown	O
 promise	O
 as	O
 novel	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 strategies	O
 for	O
 triggering	O
@@ -18506,7 +18506,7 @@ progression	O
 ,	O
 and	O
 inhibiting	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 in	O
 preclinical	O
@@ -18630,7 +18630,7 @@ and	O
 on	O
 kinetics	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 development	O
@@ -18638,9 +18638,9 @@ of	O
 angiogenesis	O
 in	O
 a	O
-breast	B-DISEASE
-cancer	I-DISEASE
-xenograft	E-DISEASE
+breast	B-Disease
+cancer	I-Disease
+xenograft	E-Disease
 model	O
 in	O
 vivo	O
@@ -18801,9 +18801,9 @@ When	O
 injected	O
 in	O
 human	S-Organism
-breast	B-DISEASE
-cancer	I-DISEASE
-xenografts	E-DISEASE
+breast	B-Disease
+cancer	I-Disease
+xenografts	E-Disease
 ,	O
 pAd	B-GP
 -	I-GP
@@ -18812,7 +18812,7 @@ inhibited	O
 growth	O
 of	O
 established	O
-tumors	S-DISEASE
+tumors	S-Disease
 and	O
 triggered	O
 tumor	B-Cell
@@ -18832,7 +18832,7 @@ approximately	O
 %	O
 reduction	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 derived	O
 blood	B-Multi-tissue_structure
@@ -18844,7 +18844,7 @@ of	O
 CD31	S-GP
 -	O
 stained	O
-tumor	S-DISEASE
+tumor	S-Disease
 areas	O
 ,	O
 and	O
@@ -18884,7 +18884,7 @@ this	O
 pathway	O
 results	O
 in	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 activity	O
 via	O
 a	O
@@ -19626,8 +19626,8 @@ and	O
 RANK	B-GP
 ligand	E-GP
 in	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 bone	S-Tissue
 metastasis	O
 .	O
@@ -19705,7 +19705,7 @@ elucidate	O
 a	O
 mechanism	O
 for	O
-cancer	S-DISEASE
+cancer	S-Disease
 -	O
 induced	O
 osteoclastogenesis	O
@@ -19714,8 +19714,8 @@ cells	S-Cell
 from	O
 a	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 line	O
 ,	O
 MDA	B-Cell
@@ -19770,8 +19770,8 @@ lines	E-Cell
 and	O
 samples	S-Tissue
 from	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 by	O
 RT	O
 -	O
@@ -19825,8 +19825,8 @@ MB	I-Cell
 cells	E-Cell
 alone	O
 or	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 samples	O
 did	O
 not	O
@@ -19867,8 +19867,8 @@ that	O
 direct	O
 interactions	O
 between	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 and	O
 stromal	S-Cell
 or	O
@@ -20785,7 +20785,7 @@ physiologic	O
 effects	O
 on	O
 the	O
-vasculature	S-Anatomical_system
+vasculature	S-ANATOMY
 through	O
 both	O
 endocrine	O
@@ -20961,7 +20961,7 @@ binding	I-GP
 proteins	E-GP
 in	O
 the	O
-vasculature	S-Anatomical_system
+vasculature	S-ANATOMY
 and	O
 summarize	O
 evidence	O
@@ -20994,10 +20994,10 @@ from	O
 betel	S-Organism_subdivision
 -	O
 associated	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 PURPOSE	O
@@ -21007,7 +21007,7 @@ has	O
 profound	O
 effects	O
 on	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 metastasis	O
@@ -21046,12 +21046,12 @@ in	O
 the	O
 progression	O
 of	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 (	O
-OSCC	S-DISEASE
+OSCC	S-Disease
 )	O
 have	O
 been	O
@@ -21081,7 +21081,7 @@ with	O
 betel	S-Organism_subdivision
 -	O
 associated	O
-OSCC	S-DISEASE
+OSCC	S-Disease
 and	O
 to	O
 evaluate	O
@@ -21096,13 +21096,13 @@ AND	O
 METHODS	O
 :	O
 The	O
-paraffin	B-DISEASE
-sections	E-DISEASE
+paraffin	B-Disease
+sections	E-Disease
 from	O
 49	O
 subjects	S-Organism
 with	O
-OSCC	S-DISEASE
+OSCC	S-Disease
 were	O
 subjected	O
 to	O
@@ -21129,8 +21129,8 @@ The	O
 findings	O
 in	O
 the	O
-tissue	B-DISEASE
-samples	E-DISEASE
+tissue	B-Disease
+samples	E-Disease
 were	O
 analyzed	O
 with	O
@@ -21149,8 +21149,8 @@ course	O
 RESULTS	O
 :	O
 The	O
-OSCC	B-DISEASE
-samples	E-DISEASE
+OSCC	B-Disease
+samples	E-Disease
 had	O
 an	O
 average	O
@@ -21179,7 +21179,7 @@ in	O
 5	O
 %	O
 of	O
-samples	S-DISEASE
+samples	S-Disease
 .	O
 
 Both	O
@@ -21244,7 +21244,7 @@ as	O
 well	O
 as	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 site	O
 and	O
 size	O
@@ -21288,7 +21288,7 @@ of	O
 a	O
 subset	O
 of	O
-OSCC	S-DISEASE
+OSCC	S-Disease
 associated	O
 mostly	O
 with	O
@@ -21362,7 +21362,7 @@ of	O
 autophagy	O
 genes	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppression	O
 .	O
 
@@ -21384,13 +21384,13 @@ cases	O
 of	O
 human	S-Organism
 sporadic	O
-breast	S-DISEASE
+breast	S-Disease
 ,	O
-ovarian	S-DISEASE
+ovarian	S-Disease
 ,	O
 and	O
-prostate	B-DISEASE
-cancer	E-DISEASE
+prostate	B-Disease
+cancer	E-Disease
 .	O
 
 Therefore	O
@@ -21430,7 +21430,7 @@ the	O
 frequency	O
 of	O
 spontaneous	O
-malignancies	S-DISEASE
+malignancies	S-Disease
 and	O
 accelerates	O
 the	O
@@ -21448,7 +21448,7 @@ lesions	E-Pathological_formation
 Molecular	O
 analyses	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 beclin	B-GP
 1	E-GP
@@ -21498,7 +21498,7 @@ a	O
 haplo	O
 -	O
 insufficient	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 suppressor	O
 gene	O
@@ -21518,7 +21518,7 @@ cell	S-Cell
 growth	O
 control	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppression	O
 .	O
 
@@ -21539,7 +21539,7 @@ the	O
 pathogenesis	O
 of	O
 human	S-Organism
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 Effects	O
@@ -21580,7 +21580,7 @@ of	O
 colorectal	B-Pathological_formation
 dysplasia	E-Pathological_formation
 and	O
-cancer	S-DISEASE
+cancer	S-Disease
 in	O
 subjects	O
 with	O
@@ -21635,8 +21635,8 @@ null	O
 mice	S-Organism
 spontaneously	O
 develop	O
-colon	B-DISEASE
-cancer	E-DISEASE
+colon	B-Disease
+cancer	E-Disease
 in	O
 the	O
 setting	O
@@ -21660,8 +21660,8 @@ of	O
 UC	S-Pathological_formation
 -	O
 associated	O
-colon	B-DISEASE
-cancer	E-DISEASE
+colon	B-Disease
+cancer	E-Disease
 in	O
 the	O
 IL	B-GP
@@ -21748,8 +21748,8 @@ necropsy	O
 ,	O
 all	O
 macroscopic	O
-colonic	B-DISEASE
-tumors	E-DISEASE
+colonic	B-Disease
+tumors	E-Disease
 were	O
 identified	O
 and	O
@@ -21758,7 +21758,7 @@ classified	O
 as	O
 dysplasia	S-Pathological_formation
 or	O
-adenocarcinoma	S-DISEASE
+adenocarcinoma	S-Disease
 .	O
 
 The	O
@@ -21774,12 +21774,12 @@ high	B-Pathological_formation
 grade	I-Pathological_formation
 dysplasia	E-Pathological_formation
 /	O
-carcinoma	S-DISEASE
+carcinoma	S-Disease
 in	O
 situ	O
 and	O
 invasive	O
-adenocarcinoma	S-DISEASE
+adenocarcinoma	S-Disease
 )	O
 in	O
 the	O
@@ -22002,7 +22002,7 @@ model	O
 
 Effect	O
 of	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 agents	O
 on	O
 cytotoxicity	O
@@ -22038,7 +22038,7 @@ here	O
 whether	O
 6	O
 popular	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 compounds	O
 modify	O
 the	O
@@ -22048,9 +22048,9 @@ of	O
 NaF	S-Chemical
 against	O
 human	S-Organism
-squamous	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+squamous	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 (	O
 HSC	B-Cell
 -	I-Cell
@@ -22058,8 +22058,8 @@ HSC	B-Cell
 )	E-Cell
 and	O
 human	S-Organism
-promyelocytic	B-DISEASE
-leukemia	E-DISEASE
+promyelocytic	B-Disease
+leukemia	E-Disease
 (	O
 HL	B-Cell
 -	I-Cell
@@ -22264,11 +22264,11 @@ and	O
 around	O
 the	O
 early	O
-central	B-Anatomical_system
-nervous	I-Anatomical_system
-system	E-Anatomical_system
+central	B-ANATOMY
+nervous	I-ANATOMY
+system	E-ANATOMY
 (	O
-CNS	S-Anatomical_system
+CNS	S-ANATOMY
 ,	O
 i	O
 .	O
@@ -22320,7 +22320,7 @@ the	O
 molecular	O
 control	O
 of	O
-CNS	S-Anatomical_system
+CNS	S-ANATOMY
 angiogenesis	O
 ,	O
 but	O
@@ -22352,30 +22352,30 @@ vasculature	S-Multi-tissue_structure
 
 The	O
 candidate	O
-tumour	S-DISEASE
+tumour	S-Disease
 suppressor	O
 protein	O
 ING4	S-GP
 regulates	O
-brain	B-DISEASE
-tumour	E-DISEASE
+brain	B-Disease
+tumour	E-Disease
 growth	O
 and	O
 angiogenesis	O
 .	O
 
-Gliomas	S-DISEASE
+Gliomas	S-Disease
 are	O
 the	O
 most	O
 common	O
 primary	O
-tumours	S-DISEASE
+tumours	S-Disease
 of	O
 the	O
-central	B-Anatomical_system
-nervous	I-Anatomical_system
-system	E-Anatomical_system
+central	B-ANATOMY
+nervous	I-ANATOMY
+system	E-ANATOMY
 ,	O
 with	O
 nearly	O
@@ -22399,7 +22399,7 @@ the	O
 first	O
 year	O
 of	O
-glioblastoma	S-DISEASE
+glioblastoma	S-Disease
 diagnosis	O
 .	O
 
@@ -22409,7 +22409,7 @@ induction	O
 of	O
 angiogenesis	O
 in	O
-glioblastomas	S-DISEASE
+glioblastomas	S-Disease
 suggests	O
 that	O
 it	O
@@ -22431,8 +22431,8 @@ underlying	O
 the	O
 regulation	O
 of	O
-brain	B-DISEASE
-tumour	E-DISEASE
+brain	B-Disease
+tumour	E-Disease
 growth	O
 and	O
 angiogenesis	O
@@ -22446,7 +22446,7 @@ report	O
 that	O
 a	O
 candidate	O
-tumour	S-DISEASE
+tumour	S-Disease
 suppressor	O
 gene	O
 ,	O
@@ -22456,8 +22456,8 @@ is	O
 involved	O
 in	O
 regulating	O
-brain	B-DISEASE
-tumour	E-DISEASE
+brain	B-Disease
+tumour	E-Disease
 growth	O
 and	O
 angiogenesis	O
@@ -22470,7 +22470,7 @@ is	O
 significantly	O
 reduced	O
 in	O
-gliomas	S-DISEASE
+gliomas	S-Disease
 as	O
 compared	O
 with	O
@@ -22494,17 +22494,17 @@ to	O
 higher	O
 grades	O
 of	O
-tumours	S-DISEASE
+tumours	S-Disease
 .	O
 
 In	O
 mice	S-Organism
 ,	O
-xenografts	S-DISEASE
+xenografts	S-Disease
 of	O
 human	S-Organism
-glioblastoma	B-DISEASE
-U87MG	E-DISEASE
+glioblastoma	B-Disease
+U87MG	E-Disease
 ,	O
 which	O
 has	O
@@ -22524,7 +22524,7 @@ volume	O
 fractions	O
 than	O
 control	O
-tumours	S-DISEASE
+tumours	S-Disease
 .	O
 
 We	O
@@ -22550,8 +22550,8 @@ and	O
 that	O
 ING4	S-GP
 regulates	O
-brain	B-DISEASE
-tumour	E-DISEASE
+brain	B-Disease
+tumour	E-Disease
 angiogenesis	O
 through	O
 transcriptional	O
@@ -22575,8 +22575,8 @@ an	O
 important	O
 role	O
 in	O
-brain	B-DISEASE
-tumour	E-DISEASE
+brain	B-Disease
+tumour	E-Disease
 pathogenesis	O
 .	O
 
@@ -22666,7 +22666,7 @@ TGFbeta1	S-GP
 signaling	O
 pathway	O
 in	O
-cancers	S-DISEASE
+cancers	S-Disease
 it	O
 became	O
 clear	O
@@ -22675,20 +22675,20 @@ TGFbeta1	S-GP
 signaling	O
 is	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 pathway	O
 for	O
 early	O
 stages	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 However	O
 many	O
 human	S-Organism
-carcinomas	S-DISEASE
+carcinomas	S-Disease
 overexpress	O
 TGFbeta1	S-GP
 and	O
@@ -22737,7 +22737,7 @@ role	O
 of	O
 TGFbeta1	S-GP
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 This	O
@@ -22751,7 +22751,7 @@ for	O
 TGFbeta1	S-GP
 as	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 promoting	O
 and	O
 metastasis	O
@@ -22775,7 +22775,7 @@ that	O
 the	O
 switch	O
 from	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 to	O
 oncogene	O
@@ -22806,7 +22806,7 @@ thrombin	S-GP
 in	O
 angiogenesis	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 .	O
 
@@ -22832,7 +22832,7 @@ is	O
 activated	O
 in	O
 most	O
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 ,	O
 plays	O
@@ -22840,7 +22840,7 @@ an	O
 important	O
 role	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 biology	O
 .	O
 
@@ -22860,7 +22860,7 @@ which	O
 is	O
 essential	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 metastasis	O
@@ -23050,7 +23050,7 @@ explain	O
 the	O
 angiogenic	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 promoting	O
 effect	O
@@ -23088,7 +23088,7 @@ activity	O
 after	O
 in	O
 vivo	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 or	O
 co	O
@@ -23153,11 +23153,11 @@ remarkably	O
 after	O
 in	O
 vivo	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 (	O
 subcutaneous	O
-tumor	S-DISEASE
+tumor	S-Disease
 formation	O
 in	O
 nude	B-Organism
@@ -23258,7 +23258,7 @@ However	O
 after	O
 they	O
 formed	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 nude	B-Organism
 mice	E-Organism
@@ -23310,7 +23310,7 @@ affected	O
 by	O
 in	O
 vivo	O
-tumor	S-DISEASE
+tumor	S-Disease
 circumstances	O
 .	O
 
@@ -23454,8 +23454,8 @@ AOM	S-Chemical
 -	O
 induced	O
 rat	S-Organism
-colon	B-DISEASE
-tumors	E-DISEASE
+colon	B-Disease
+tumors	E-Disease
 .	O
 
 Little	O
@@ -23519,7 +23519,7 @@ lactoferrin	S-GP
 mediated	O
 inhibition	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 development	O
 .	O
 
@@ -23633,7 +23633,7 @@ bovine	S-Organism
 lactoferrin	S-GP
 -	O
 mediated	O
-tumor	S-DISEASE
+tumor	S-Disease
 inhibition	O
 .	O
 
@@ -23675,7 +23675,7 @@ interacting	O
 substrate	O
 ,	O
 promotes	O
-cancerous	S-DISEASE
+cancerous	S-Disease
 phenotypes	O
 .	O
 
@@ -23783,7 +23783,7 @@ DLC1	S-GP
 Ser88Ala	S-Amino_acid
 mutant	O
 promotes	O
-cancerous	S-DISEASE
+cancerous	S-Disease
 properties	O
 of	O
 breast	B-Cell
@@ -23803,8 +23803,8 @@ than	O
 %	O
 of	O
 human	S-Organism
-breast	B-DISEASE
-tumors	E-DISEASE
+breast	B-Disease
+tumors	E-Disease
 .	O
 
 The	O
@@ -23830,7 +23830,7 @@ kinase	O
 might	O
 regulate	O
 the	O
-cancerous	S-DISEASE
+cancerous	S-Disease
 phenotypes	O
 .	O
 
@@ -24260,7 +24260,7 @@ However	O
 ,	O
 how	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressive	O
 functions	O
 of	O
@@ -24344,7 +24344,7 @@ on	O
 their	O
 implications	O
 for	O
-cancer	S-DISEASE
+cancer	S-Disease
 biology	O
 .	O
 
@@ -24723,8 +24723,8 @@ its	O
 epigenetic	O
 microsatellite	O
 in	O
-gastric	B-DISEASE
-carcinoma	E-DISEASE
+gastric	B-Disease
+carcinoma	E-Disease
 ]	O
 .	O
 
@@ -24748,8 +24748,8 @@ its	O
 epigenetic	O
 microsatellite	O
 in	O
-gastric	B-DISEASE
-carcinoma	E-DISEASE
+gastric	B-Disease
+carcinoma	E-Disease
 and	O
 explore	O
 their	O
@@ -24757,8 +24757,8 @@ roles	O
 in	O
 progression	O
 of	O
-gastric	B-DISEASE
-carcinoma	E-DISEASE
+gastric	B-Disease
+carcinoma	E-Disease
 .	O
 
 METHODS	O
@@ -24778,8 +24778,8 @@ D10S1687	O
 )	O
 in	O
 advanced	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 was	O
 detected	O
 by	O
@@ -24799,8 +24799,8 @@ normal	O
 gastric	B-Multi-tissue_structure
 mucosa	E-Multi-tissue_structure
 and	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 was	O
 evaluated	O
 by	O
@@ -24858,8 +24858,8 @@ in	O
 )	O
 of	O
 advanced	O
-gastric	B-DISEASE
-cancers	E-DISEASE
+gastric	B-Disease
+cancers	E-Disease
 .	O
 
 The	O
@@ -24906,8 +24906,8 @@ mucosa	S-Multi-tissue_structure
 early	O
 and	O
 advanced	O
-gastric	B-DISEASE
-carcinomas	E-DISEASE
+gastric	B-Disease
+carcinomas	E-Disease
 ,	O
 respectively	O
 ,	O
@@ -24959,8 +24959,8 @@ in	O
 early	O
 and	O
 advanced	O
-gastric	B-DISEASE
-carcinomas	E-DISEASE
+gastric	B-Disease
+carcinomas	E-Disease
 than	O
 that	O
 in	O
@@ -24990,8 +24990,8 @@ of	O
 microsatellites	O
 in	O
 advanced	O
-gastric	B-DISEASE
-carcinomas	E-DISEASE
+gastric	B-Disease
+carcinomas	E-Disease
 .	O
 
 PTEN	S-GP
@@ -25027,8 +25027,8 @@ node	E-Multi-tissue_structure
 metastasis	O
 of	O
 advanced	O
-gastric	B-DISEASE
-carcinomas	E-DISEASE
+gastric	B-Disease
+carcinomas	E-Disease
 (	O
 P	O
 <	O
@@ -25053,8 +25053,8 @@ in	O
 different	O
 stages	O
 of	O
-gastric	B-DISEASE
-carcinoma	E-DISEASE
+gastric	B-Disease
+carcinoma	E-Disease
 ,	O
 and	O
 is	O
@@ -25088,8 +25088,8 @@ tumorigenesis	O
 and	O
 progression	O
 of	O
-gastric	B-DISEASE
-carcinomas	E-DISEASE
+gastric	B-Disease
+carcinomas	E-Disease
 .	O
 
 Granulocyte	B-GP
@@ -25125,9 +25125,9 @@ cells	E-Cell
 from	O
 patients	S-Organism
 with	O
-acute	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 .	O
 
 In	O
@@ -25238,9 +25238,9 @@ from	O
 17	O
 patients	S-Organism
 with	O
-acute	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 .	O
 
 After	O
@@ -25534,8 +25534,8 @@ induces	O
 cell	S-Cell
 death	O
 in	O
-malignant	B-DISEASE
-glioma	E-DISEASE
+malignant	B-Disease
+glioma	E-Disease
 :	O
 an	O
 in	O
@@ -25552,8 +25552,8 @@ is	O
 a	O
 hallmark	O
 of	O
-malignant	B-DISEASE
-tumors	E-DISEASE
+malignant	B-Disease
+tumors	E-Disease
 .	O
 
 As	O
@@ -25561,7 +25561,7 @@ a	O
 consequence	O
 ,	O
 these	O
-tumors	S-DISEASE
+tumors	S-Disease
 generate	O
 more	O
 lactate	S-Chemical
@@ -25587,8 +25587,8 @@ that	O
 MCT	S-GP
 expression	O
 in	O
-malignant	B-DISEASE
-tumors	E-DISEASE
+malignant	B-Disease
+tumors	E-Disease
 may	O
 differ	O
 from	O
@@ -25656,7 +25656,7 @@ abundant	O
 or	O
 specific	O
 to	O
-glioma	S-DISEASE
+glioma	S-Disease
 then	O
 were	O
 targeted	O
@@ -25871,8 +25871,8 @@ treatment	O
 of	O
 patients	S-Organism
 with	O
-malignant	B-DISEASE
-glioma	E-DISEASE
+malignant	B-Disease
+glioma	E-Disease
 .	O
 
 Hypoxia	O
@@ -25989,7 +25989,7 @@ the	O
 therapeutic	O
 window	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 specific	O
 delivery	O
@@ -26093,7 +26093,7 @@ for	O
 down	O
 -	O
 regulating	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 under	O
 hypoxic	O
@@ -26112,7 +26112,7 @@ Galpha12	S-GP
 :	O
 regulation	O
 of	O
-leukemia	S-DISEASE
+leukemia	S-Disease
 -	O
 associated	O
 protein	O
@@ -26315,9 +26315,9 @@ antigen	E-GP
 PCNA	S-GP
 )	O
 and	O
-myeloid	B-DISEASE
--	I-DISEASE
-leukemia	E-DISEASE
+myeloid	B-Disease
+-	I-Disease
+leukemia	E-Disease
 -	O
 associated	O
 SET	S-GP
@@ -26474,7 +26474,7 @@ the	O
 regulation	O
 of	O
 the	O
-leukemia	S-DISEASE
+leukemia	S-Disease
 -	O
 associated	O
 SET	S-GP
@@ -26495,8 +26495,8 @@ phenotype	O
 identifies	O
 poor	O
 prognosis	O
-colorectal	B-DISEASE
-cancers	E-DISEASE
+colorectal	B-Disease
+cancers	E-Disease
 .	O
 
 PURPOSE	O
@@ -26515,7 +26515,7 @@ proteolytic	O
 enzymes	O
 involved	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 invasion	O
 ;	O
 several	O
@@ -26527,7 +26527,7 @@ have	O
 been	O
 implicated	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 prognosis	O
 .	O
 
@@ -26567,7 +26567,7 @@ understand	O
 their	O
 role	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 invasion	O
 ,	O
 it	O
@@ -26662,15 +26662,15 @@ n	O
 90	O
 )	O
 of	O
-stage	B-DISEASE
-III	I-DISEASE
-(	I-DISEASE
-Dukes	I-DISEASE
-'	I-DISEASE
-C	I-DISEASE
-)	I-DISEASE
-colorectal	I-DISEASE
-cancers	E-DISEASE
+stage	B-Disease
+III	I-Disease
+(	I-Disease
+Dukes	I-Disease
+'	I-Disease
+C	I-Disease
+)	I-Disease
+colorectal	I-Disease
+cancers	E-Disease
 .	O
 
 An	O
@@ -26717,8 +26717,8 @@ a	O
 distinct	O
 group	O
 of	O
-colorectal	B-DISEASE
-cancers	E-DISEASE
+colorectal	B-Disease
+cancers	E-Disease
 with	O
 poor	O
 prognosis	O
@@ -26812,8 +26812,8 @@ of	O
 poor	O
 prognosis	O
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 .	O
 
 2	B-Chemical
@@ -26826,7 +26826,7 @@ inducible	I-GP
 factor	I-GP
 1alpha	E-GP
 ,	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 ,	O
 and	O
@@ -26836,22 +26836,22 @@ augments	O
 paclitaxel	S-Chemical
 efficacy	O
 in	O
-head	B-DISEASE
-and	I-DISEASE
-neck	I-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+head	B-Disease
+and	I-Disease
+neck	I-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 PURPOSE	O
 :	O
-Head	B-DISEASE
-and	I-DISEASE
-neck	I-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinomas	E-DISEASE
+Head	B-Disease
+and	I-Disease
+neck	I-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinomas	E-Disease
 have	O
 been	O
 reported	O
@@ -26918,11 +26918,11 @@ clinical	O
 trials	O
 for	O
 advanced	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 and	O
 multiple	O
-myeloma	S-DISEASE
+myeloma	S-Disease
 .	O
 
 To	O
@@ -26941,12 +26941,12 @@ effects	O
 of	O
 2ME2	S-Chemical
 in	O
-head	B-DISEASE
-and	I-DISEASE
-neck	I-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+head	B-Disease
+and	I-Disease
+neck	I-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 EXPERIMENTAL	O
@@ -26977,12 +26977,12 @@ in	O
 recurrent	O
 or	O
 advanced	O
-head	B-DISEASE
-and	I-DISEASE
-neck	I-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+head	B-Disease
+and	I-Disease
+neck	I-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 RESULTS	O
@@ -27175,15 +27175,15 @@ vivo	O
 ,	O
 in	O
 a	O
-xenograft	S-DISEASE
+xenograft	S-Disease
 model	O
 of	O
-head	B-DISEASE
-and	I-DISEASE
-neck	I-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+head	B-Disease
+and	I-Disease
+neck	I-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 using	O
 UM	B-Cell
 -	I-Cell
@@ -27194,7 +27194,7 @@ cells	E-Cell
 ,	O
 2ME2	S-Chemical
 exhibited	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 and	O
 antiangiogenic	O
 activity	O
@@ -27228,12 +27228,12 @@ of	O
 recurrent	O
 or	O
 advanced	O
-head	B-DISEASE
-and	I-DISEASE
-neck	I-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+head	B-Disease
+and	I-Disease
+neck	I-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 HIF	B-GP
@@ -27245,7 +27245,7 @@ human	S-Organism
 fetal	B-Cell
 paraganglia	E-Cell
 and	O
-neuroblastoma	S-DISEASE
+neuroblastoma	S-Disease
 :	O
 relation	O
 to	O
@@ -27259,8 +27259,8 @@ and	O
 hypoxia	O
 .	O
 
-Solid	B-DISEASE
-tumors	E-DISEASE
+Solid	B-Disease
+tumors	E-Disease
 are	O
 frequently	O
 necrotic	O
@@ -27331,11 +27331,11 @@ development	O
 of	O
 the	O
 murine	S-Organism
-sympathetic	B-Anatomical_system
-nervous	I-Anatomical_system
-system	E-Anatomical_system
+sympathetic	B-ANATOMY
+nervous	I-ANATOMY
+system	E-ANATOMY
 (	O
-SNS	S-Anatomical_system
+SNS	S-ANATOMY
 )	O
 .	O
 
@@ -27362,7 +27362,7 @@ SNS	B-Cell
 paraganglia	E-Cell
 .	O
 
-Neuroblastoma	S-DISEASE
+Neuroblastoma	S-Disease
 is	O
 derived	O
 from	O
@@ -27374,7 +27374,7 @@ In	O
 a	O
 subset	O
 of	O
-neuroblastomas	S-DISEASE
+neuroblastomas	S-Disease
 ,	O
 a	O
 spontaneous	O
@@ -27426,7 +27426,7 @@ HIF	B-GP
 2alpha	E-GP
 on	O
 the	O
-neuroblastoma	S-DISEASE
+neuroblastoma	S-Disease
 phenotype	O
 .	O
 
@@ -27499,7 +27499,7 @@ suggest	O
 that	O
 poorly	O
 vascularized	O
-neuroblastomas	S-DISEASE
+neuroblastomas	S-Disease
 become	O
 immature	O
 and	O
@@ -27562,7 +27562,7 @@ mitogen	O
 can	O
 act	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 induced	O
 angiogenesis	O
@@ -28029,8 +28029,8 @@ cytoplasm	S-Organism_substance
 in	O
 human	S-Organism
 primary	O
-breast	B-DISEASE
-carcinoma	E-DISEASE
+breast	B-Disease
+carcinoma	E-Disease
 and	O
 is	O
 associated	O
@@ -28080,8 +28080,8 @@ conditions	O
 .	O
 
 In	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 ,	O
 there	O
 are	O
@@ -28110,13 +28110,13 @@ normal	O
 breast	B-Tissue
 tissue	E-Tissue
 to	O
-ductal	B-DISEASE
-carcinoma	E-DISEASE
+ductal	B-Disease
+carcinoma	E-Disease
 in	O
 situ	O
 and	O
 invasive	O
-carcinoma	S-DISEASE
+carcinoma	S-Disease
 is	O
 reported	O
 together	O
@@ -28131,7 +28131,7 @@ angiogenin	S-GP
 in	O
 239	O
 invasive	O
-carcinomas	S-DISEASE
+carcinomas	S-Disease
 and	O
 standard	O
 clinicopathological	O
@@ -28179,10 +28179,10 @@ compartments	O
 in	O
 in	O
 situ	O
-carcinoma	S-DISEASE
+carcinoma	S-Disease
 and	O
 invasive	O
-carcinoma	S-DISEASE
+carcinoma	S-Disease
 compared	O
 with	O
 normal	O
@@ -28194,14 +28194,14 @@ angiogenin	S-GP
 expression	O
 in	O
 invasive	O
-carcinomas	S-DISEASE
+carcinomas	S-Disease
 is	O
 significantly	O
 positively	O
 associated	O
 with	O
 high	O
-tumour	S-DISEASE
+tumour	S-Disease
 grade	O
 (	O
 p	O
@@ -28261,7 +28261,7 @@ p	O
 8	O
 )	O
 ,	O
-tumour	S-DISEASE
+tumour	S-Disease
 size	O
 (	O
 p	O
@@ -28347,8 +28347,8 @@ may	O
 be	O
 important	O
 in	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 progression	O
 and	O
 that	O
@@ -28369,9 +28369,9 @@ tamoxifen	S-Chemical
 .	O
 
 Hereditary	O
-paraganglioma	S-DISEASE
+paraganglioma	S-Disease
 /	O
-pheochromocytoma	S-DISEASE
+pheochromocytoma	S-Disease
 and	O
 inherited	O
 succinate	B-GP
@@ -28469,16 +28469,16 @@ or	O
 apparently	O
 sporadic	O
 '	O
-paraganglioma	S-DISEASE
+paraganglioma	S-Disease
 and	O
 /	O
 or	O
-pheochromocytoma	S-DISEASE
+pheochromocytoma	S-Disease
 ,	O
 an	O
 autosomal	O
 inherited	O
-cancer	S-DISEASE
+cancer	S-Disease
 -	O
 susceptibility	O
 syndrome	O
@@ -28501,11 +28501,11 @@ patients	S-Organism
 and	O
 families	O
 with	O
-paragangliomas	S-DISEASE
+paragangliomas	S-Disease
 and	O
 /	O
 or	O
-pheochromocytomas	S-DISEASE
+pheochromocytomas	S-Disease
 .	O
 
 The	O
@@ -28535,12 +28535,12 @@ form	O
 of	O
 susceptibility	O
 to	O
-renal	S-DISEASE
+renal	S-Disease
 ,	O
-uterine	S-DISEASE
+uterine	S-Disease
 and	O
-cutaneous	B-DISEASE
-tumors	E-DISEASE
+cutaneous	B-Disease
+tumors	E-Disease
 has	O
 highlighted	O
 the	O
@@ -28559,7 +28559,7 @@ of	O
 the	O
 mitochondria	S-Cellular_component
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 Mouse	S-Organism
@@ -28626,7 +28626,7 @@ INK4B	S-GP
 )	O
 ,	O
 have	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 activities	O
 and	O
@@ -28634,7 +28634,7 @@ are	O
 inactivated	O
 in	O
 human	S-Organism
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 Interestingly	O
@@ -28690,7 +28690,7 @@ that	O
 acts	O
 as	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 through	O
 the	O
@@ -28710,7 +28710,7 @@ p15	S-GP
 (	O
 INK4B	S-GP
 )	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 and	O
 one	O
@@ -28893,7 +28893,7 @@ major	O
 molecular	O
 pathways	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppression	O
 .	O
 
@@ -29196,17 +29196,17 @@ Thalidomide	S-Chemical
 and	O
 angiostatin	S-GP
 inhibit	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 in	O
 a	O
 murine	S-Organism
-xenograft	S-DISEASE
+xenograft	S-Disease
 model	O
 of	O
 human	S-Organism
-cervical	B-DISEASE
-cancer	E-DISEASE
+cervical	B-Disease
+cancer	E-Disease
 .	O
 
 OBJECTIVE	O
@@ -29220,7 +29220,7 @@ thalidomide	S-Chemical
 and	O
 angiostatin	S-GP
 on	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 ,	O
 angiogenesis	O
@@ -29229,11 +29229,11 @@ and	O
 apoptosis	O
 in	O
 a	O
-xenograft	S-DISEASE
+xenograft	S-Disease
 model	O
 of	O
-cervical	B-DISEASE
-cancer	E-DISEASE
+cervical	B-Disease
+cancer	E-Disease
 .	O
 
 METHODS	O
@@ -29281,7 +29281,7 @@ mice	E-Organism
 .	O
 
 After	O
-tumors	S-DISEASE
+tumors	S-Disease
 developed	O
 ,	O
 mice	S-Organism
@@ -29309,7 +29309,7 @@ days	O
 .	O
 
 Fractional	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 was	O
 determined	O
@@ -29317,7 +29317,7 @@ and	O
 immunohistochemical	O
 analysis	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 was	O
 used	O
 to	O
@@ -29365,7 +29365,7 @@ and	O
 thalidomide	S-Chemical
 both	O
 inhibited	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 by	O
 about	O
@@ -29398,7 +29398,7 @@ apoptosis	O
 when	O
 compared	O
 to	O
-tumors	S-DISEASE
+tumors	S-Disease
 from	O
 control	O
 animals	O
@@ -29410,7 +29410,7 @@ Angiostatin	S-GP
 and	O
 thalidomide	S-Chemical
 inhibit	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 ,	O
 angiogenesis	O
@@ -29420,11 +29420,11 @@ induce	O
 apoptosis	O
 in	O
 this	O
-xenograft	S-DISEASE
+xenograft	S-Disease
 model	O
 of	O
-cervical	B-DISEASE
-cancer	E-DISEASE
+cervical	B-Disease
+cancer	E-Disease
 .	O
 
 Therapeutic	O
@@ -29438,9 +29438,9 @@ gamma	O
 irradiation	O
 on	O
 human	S-Organism
-breast	B-DISEASE
-cancer	I-DISEASE
-xenograft	E-DISEASE
+breast	B-Disease
+cancer	I-Disease
+xenograft	E-Disease
 growth	O
 ,	O
 angiogenesis	O
@@ -29495,11 +29495,11 @@ mice	E-Organism
 bearing	O
 a	O
 human	S-Organism
-MDA	B-DISEASE
-MB231	I-DISEASE
-breast	I-DISEASE
-cancer	I-DISEASE
-xenograft	E-DISEASE
+MDA	B-Disease
+MB231	I-Disease
+breast	I-Disease
+cancer	I-Disease
+xenograft	E-Disease
 were	O
 tested	O
 .	O
@@ -29588,8 +29588,8 @@ additional	O
 weeks	O
 .	O
 
-Tumor	B-DISEASE
-sections	E-DISEASE
+Tumor	B-Disease
+sections	E-Disease
 were	O
 stained	O
 for	O
@@ -29613,7 +29613,7 @@ HIF	S-GP
 RESULTS	O
 :	O
 Most	O
-tumors	S-DISEASE
+tumors	S-Disease
 less	O
 than	O
 35	O
@@ -29621,7 +29621,7 @@ mm3	O
 were	O
 white	O
 but	O
-tumors	S-DISEASE
+tumors	S-Disease
 greater	O
 than	O
 35	O
@@ -29632,17 +29632,17 @@ and	O
 had	O
 a	O
 vascularized	O
-capsule	S-DISEASE
+capsule	S-Disease
 .	O
 
 The	O
-cortex	S-DISEASE
+cortex	S-Disease
 within	O
 100	O
 microns	O
 of	O
 the	O
-capsule	S-DISEASE
+capsule	S-Disease
 had	O
 little	O
 vascularization	O
@@ -29665,13 +29665,13 @@ than	O
 microns	O
 from	O
 the	O
-capsule	S-DISEASE
+capsule	S-Disease
 (	O
-subcortex	S-DISEASE
+subcortex	S-Disease
 )	O
 .	O
 
-Tumors	S-DISEASE
+Tumors	S-Disease
 greater	O
 than	O
 35	O
@@ -29691,7 +29691,7 @@ blood	B-Multi-tissue_structure
 vessels	E-Multi-tissue_structure
 in	O
 the	O
-subcortex	S-DISEASE
+subcortex	S-Disease
 and	O
 more	O
 endothelial	B-Cellular_component
@@ -29704,7 +29704,7 @@ HIF	S-GP
 positive	O
 areas	O
 than	O
-tumors	S-DISEASE
+tumors	S-Disease
 from	O
 the	O
 control	O
@@ -29726,7 +29726,7 @@ metastatic	O
 sites	O
 and	O
 slower	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 than	O
 did	O
@@ -29754,7 +29754,7 @@ safe	O
 means	O
 for	O
 retarding	O
-tumor	S-DISEASE
+tumor	S-Disease
 vascularization	O
 ,	O
 growth	O
@@ -29868,7 +29868,7 @@ developed	O
 intestinal	B-Pathological_formation
 polyps	E-Pathological_formation
 ,	O
-tumor	S-DISEASE
+tumor	S-Disease
 multiplicities	O
 were	O
 much	O
@@ -30040,7 +30040,7 @@ vascular	S-Multi-tissue_structure
 targeting	O
 for	O
 gynecologic	O
-malignancies	S-DISEASE
+malignancies	S-Disease
 .	O
 
 Neovascularization	O
@@ -30051,7 +30051,7 @@ and	O
 critical	O
 step	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 development	O
 and	O
 progression	O
@@ -30091,11 +30091,11 @@ therapeutic	O
 targets	O
 for	O
 inhibiting	O
-tumor	S-DISEASE
+tumor	S-Disease
 neovascularization	O
 and	O
 thus	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 .	O
 
@@ -30113,7 +30113,7 @@ complex	O
 ,	O
 and	O
 each	O
-tumor	S-DISEASE
+tumor	S-Disease
 exhibits	O
 unique	O
 features	O
@@ -30261,7 +30261,7 @@ frequently	O
 mutated	O
 in	O
 human	S-Organism
-leukemia	S-DISEASE
+leukemia	S-Disease
 has	O
 increased	O
 the	O
@@ -30316,7 +30316,7 @@ RUNX1	S-GP
 deregulation	O
 in	O
 human	S-Organism
-leukemia	S-DISEASE
+leukemia	S-Disease
 .	O
 
 Domain	O
@@ -30715,8 +30715,8 @@ arthritis	O
 diabetic	O
 retinopathy	O
 and	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 formation	O
 .	O
 
@@ -31235,9 +31235,9 @@ to	O
 11	O
 %	O
 of	O
-invasive	B-DISEASE
-breast	I-DISEASE
-carcinomas	E-DISEASE
+invasive	B-Disease
+breast	I-Disease
+carcinomas	E-Disease
 .	O
 
 This	O
@@ -31255,14 +31255,14 @@ several	O
 clinicopathological	O
 features	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 markers	O
 of	O
 clinical	O
 significance	O
 in	O
-breast	B-DISEASE
-pathology	E-DISEASE
+breast	B-Disease
+pathology	E-Disease
 including	O
 key	O
 regulators	O
@@ -31301,9 +31301,9 @@ paraffin	O
 embedded	O
 samples	O
 of	O
-invasive	B-DISEASE
-ductal	I-DISEASE
-carcinomas	E-DISEASE
+invasive	B-Disease
+ductal	I-Disease
+carcinomas	E-Disease
 .	O
 
 p63	S-GP
@@ -31316,7 +31316,7 @@ in	O
 16	O
 %	O
 of	O
-carcinomas	S-DISEASE
+carcinomas	S-Disease
 .	O
 
 p63	S-GP
@@ -31331,7 +31331,7 @@ hormone	O
 receptor	O
 -	O
 negative	O
-neoplasms	S-DISEASE
+neoplasms	S-Disease
 with	O
 a	O
 high	O
@@ -31347,7 +31347,7 @@ advanced	O
 pathological	O
 stage	O
 ,	O
-tumor	S-DISEASE
+tumor	S-Disease
 size	O
 ,	O
 and	O
@@ -31428,7 +31428,7 @@ in	O
 the	O
 process	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 metastatic	O
@@ -31460,12 +31460,12 @@ aggressive	O
 behavior	O
 of	O
 these	O
-neoplasms	S-DISEASE
+neoplasms	S-Disease
 .	O
 
 Regulation	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 by	O
 thrombospondin	B-GP
@@ -31484,7 +31484,7 @@ growth	O
 and	O
 metastasis	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Thrombospondin	B-GP
@@ -31514,7 +31514,7 @@ been	O
 suggested	O
 to	O
 alter	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 by	O
 modulating	O
@@ -31523,7 +31523,7 @@ in	O
 a	O
 variety	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 types	O
 .	O
 
@@ -31538,7 +31538,7 @@ up	O
 regulated	O
 by	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 gene	O
 ,	O
@@ -31601,7 +31601,7 @@ in	O
 the	O
 regulation	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 .	O
 
@@ -31621,7 +31621,7 @@ inhibition	O
 of	O
 angiogenesis	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 will	O
 aid	O
@@ -31635,7 +31635,7 @@ for	O
 the	O
 treatment	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 Regulation	O
@@ -31950,7 +31950,7 @@ of	O
 a	O
 variety	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 and	O
 inflammatory	O
 diseases	O
@@ -32372,10 +32372,10 @@ of	O
 NCAM	S-GP
 in	O
 a	O
-fibrosarcoma	S-DISEASE
+fibrosarcoma	S-Disease
 model	O
 (	O
-T241	S-DISEASE
+T241	S-Disease
 )	O
 improved	O
 pericyte	S-Cell
@@ -32419,8 +32419,8 @@ the	O
 metastatic	O
 potential	O
 of	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 ,	O
 we	O
 studied	O
@@ -32500,7 +32500,7 @@ as	O
 therapeutic	O
 targets	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 The	O
@@ -32534,11 +32534,11 @@ in	O
 a	O
 variety	O
 of	O
-hematologic	S-DISEASE
+hematologic	S-Disease
 and	O
-solid	B-DISEASE
-tumor	I-DISEASE
-malignancies	E-DISEASE
+solid	B-Disease
+tumor	I-Disease
+malignancies	E-Disease
 .	O
 
 A	O
@@ -32597,7 +32597,7 @@ or	O
 in	O
 combination	O
 with	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapies	O
 leads	O
 to	O
@@ -32622,7 +32622,7 @@ kappaB	E-GP
 can	O
 play	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 role	O
 in	O
@@ -32642,7 +32642,7 @@ signal	O
 downstream	O
 of	O
 certain	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapy	O
 regimens	O
 .	O
@@ -32693,7 +32693,7 @@ and	O
 MYC	S-GP
 collaborate	O
 in	O
-lymphoma	S-DISEASE
+lymphoma	S-Disease
 development	O
 by	O
 suppressing	O
@@ -32801,7 +32801,7 @@ of	O
 Runx2	S-GP
 -	O
 expressing	O
-lymphomas	S-DISEASE
+lymphomas	S-Disease
 reveals	O
 a	O
 consistently	O
@@ -32813,7 +32813,7 @@ apoptosis	O
 in	O
 contrast	O
 to	O
-lymphomas	S-DISEASE
+lymphomas	S-Disease
 of	O
 MYC	S-GP
 mice	O
@@ -32994,11 +32994,11 @@ be	O
 effective	O
 against	O
 several	O
-tumours	S-DISEASE
+tumours	S-Disease
 ,	O
 including	O
-cervical	B-DISEASE
-cancer	E-DISEASE
+cervical	B-Disease
+cancer	E-Disease
 .	O
 
 However	O
@@ -33256,7 +33256,7 @@ exerts	O
 its	O
 anti	O
 -	O
-tumour	S-DISEASE
+tumour	S-Disease
 effects	O
 on	O
 cervical	B-Cell
@@ -33288,11 +33288,11 @@ Circulating	B-Cell
 endothelial	I-Cell
 cells	E-Cell
 in	O
-malignant	B-DISEASE
-disease	E-DISEASE
+malignant	B-Disease
+disease	E-Disease
 .	O
 
-Cancer	S-DISEASE
+Cancer	S-Disease
 is	O
 a	O
 disease	O
@@ -33302,7 +33302,7 @@ on	O
 neoangiogenesis	O
 .	O
 
-Cancer	S-DISEASE
+Cancer	S-Disease
 neoangiogenesis	O
 is	O
 often	O
@@ -33328,7 +33328,7 @@ vascular	B-Tissue
 endothelial	E-Tissue
 function	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 is	O
 via	O
 the	O
@@ -33394,7 +33394,7 @@ an	O
 important	O
 role	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 vasculogenesis	O
 .	O
 
@@ -33437,7 +33437,7 @@ the	O
 vascular	S-Multi-tissue_structure
 status	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 .	O
 
@@ -33466,8 +33466,8 @@ on	O
 their	O
 relationship	O
 to	O
-malignant	B-DISEASE
-disease	E-DISEASE
+malignant	B-Disease
+disease	E-Disease
 .	O
 
 GDP	S-Chemical
@@ -33668,9 +33668,9 @@ worse	O
 clinical	O
 outcome	O
 in	O
-T2	B-DISEASE
-gastric	I-DISEASE
-cancer	E-DISEASE
+T2	B-Disease
+gastric	I-Disease
+cancer	E-Disease
 .	O
 
 BACKGROUND	O
@@ -33678,7 +33678,7 @@ BACKGROUND	O
 Abnormal	O
 hemostasis	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 has	O
 previously	O
@@ -33694,7 +33694,7 @@ plasma	S-Organism_substance
 fibrinogen	S-GP
 level	O
 and	O
-cancer	S-DISEASE
+cancer	S-Disease
 metastasis	O
 and	O
 prognosis	O
@@ -33728,8 +33728,8 @@ underwent	O
 surgery	O
 for	O
 advanced	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -33837,9 +33837,9 @@ worse	O
 clinical	O
 outcome	O
 in	O
-T2	B-DISEASE
-gastric	I-DISEASE
-cancer	E-DISEASE
+T2	B-Disease
+gastric	I-Disease
+cancer	E-Disease
 ,	O
 however	O
 ,	O
@@ -33854,11 +33854,11 @@ level	O
 with	O
 prognosis	O
 in	O
-T3	B-DISEASE
-/	I-DISEASE
-T4	I-DISEASE
-gastric	I-DISEASE
-cancer	E-DISEASE
+T3	B-Disease
+/	I-Disease
+T4	I-Disease
+gastric	I-Disease
+cancer	E-Disease
 .	O
 
 CONCLUSION	O
@@ -33879,8 +33879,8 @@ hematogeneous	O
 metastasis	O
 of	O
 advanced	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 ,	O
 which	O
 is	O
@@ -33890,9 +33890,9 @@ of	O
 the	O
 prognosis	O
 in	O
-T2	B-DISEASE
-gastric	I-DISEASE
-cancer	E-DISEASE
+T2	B-Disease
+gastric	I-Disease
+cancer	E-Disease
 .	O
 
 Therefore	O
@@ -33919,9 +33919,9 @@ worse	O
 clinical	O
 outcome	O
 in	O
-T2	B-DISEASE
-gastric	I-DISEASE
-cancer	E-DISEASE
+T2	B-Disease
+gastric	I-Disease
+cancer	E-Disease
 .	O
 
 Defective	O
@@ -33935,10 +33935,10 @@ promoter	O
 methylation	O
 in	O
 primary	O
-central	B-DISEASE
-nervous	I-DISEASE
-system	I-DISEASE
-lymphomas	E-DISEASE
+central	B-Disease
+nervous	I-Disease
+system	I-Disease
+lymphomas	E-Disease
 .	O
 
 OBJECTIVES	O
@@ -33961,8 +33961,8 @@ reduced	O
 by	O
 hypermethylation	O
 in	O
-astrocytic	B-DISEASE
-tumors	E-DISEASE
+astrocytic	B-Disease
+tumors	E-Disease
 .	O
 
 Our	O
@@ -33977,13 +33977,13 @@ the	O
 HRK	S-GP
 gene	O
 in	O
-primary	B-DISEASE
-central	I-DISEASE
-nervous	I-DISEASE
-system	I-DISEASE
-lymphomas	E-DISEASE
+primary	B-Disease
+central	I-Disease
+nervous	I-Disease
+system	I-Disease
+lymphomas	E-Disease
 (	O
-PCNSLs	S-DISEASE
+PCNSLs	S-Disease
 )	O
 .	O
 
@@ -34008,7 +34008,7 @@ of	O
 heterozygosity	O
 in	O
 31	O
-PCNSLs	S-DISEASE
+PCNSLs	S-Disease
 .	O
 
 RESULTS	O
@@ -34017,7 +34017,7 @@ A	O
 total	O
 of	O
 13	O
-PCNSLs	S-DISEASE
+PCNSLs	S-Disease
 (	O
 31	O
 %	O
@@ -34041,7 +34041,7 @@ immunohistochemically	O
 observed	O
 in	O
 9	O
-tumors	S-DISEASE
+tumors	S-Disease
 and	O
 was	O
 significantly	O
@@ -34064,7 +34064,7 @@ HRK	S-GP
 positivity	O
 .	O
 
-PCNSLs	S-DISEASE
+PCNSLs	S-Disease
 with	O
 HRK	S-GP
 methylation	O
@@ -34092,7 +34092,7 @@ MGMT	E-GP
 
 Patients	S-Organism
 with	O
-tumors	S-DISEASE
+tumors	S-Disease
 demonstrating	O
 concurrent	O
 methylation	O
@@ -34151,7 +34151,7 @@ by	O
 promoter	O
 hypermethylation	O
 in	O
-PCNSL	S-DISEASE
+PCNSL	S-Disease
 ,	O
 and	O
 that	O
@@ -34180,7 +34180,7 @@ death	O
 by	O
 apoptosis	O
 during	O
-PCNSL	S-DISEASE
+PCNSL	S-Disease
 tumorigenesis	O
 .	O
 
@@ -34256,8 +34256,8 @@ environmental	O
 conditions	O
 generated	O
 in	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 that	O
 develop	O
 inhomogeneous	B-Pathological_formation
@@ -34284,8 +34284,8 @@ characteristics	O
 of	O
 in	O
 vivo	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 ,	O
 and	O
 serve	O
@@ -34296,7 +34296,7 @@ vitro	O
 model	O
 to	O
 investigate	O
-tumor	S-DISEASE
+tumor	S-Disease
 biology	O
 and	O
 responses	O
@@ -34339,8 +34339,8 @@ into	O
 the	O
 effects	O
 in	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 .	O
 
 In	O
@@ -35231,9 +35231,9 @@ whether	O
 a	O
 variety	O
 of	O
-ciliary	B-DISEASE
-body	I-DISEASE
-tumours	E-DISEASE
+ciliary	B-Disease
+body	I-Disease
+tumours	E-Disease
 synthesise	O
 opticin	S-GP
 to	O
@@ -35267,11 +35267,11 @@ CBE	S-Tissue
 ,	O
 and	O
 in	O
-hyperplastic	S-DISEASE
+hyperplastic	S-Disease
 and	O
-neoplastic	B-DISEASE
-CBE	I-DISEASE
-lesions	E-DISEASE
+neoplastic	B-Disease
+CBE	I-Disease
+lesions	E-Disease
 .	O
 
 RESULTS	O
@@ -35302,16 +35302,16 @@ as	O
 well	O
 as	O
 four	O
-hyperplastic	B-DISEASE
-lesions	E-DISEASE
+hyperplastic	B-Disease
+lesions	E-Disease
 of	O
 the	O
 CBE	S-Tissue
 (	O
-Fuchs	B-DISEASE
-'	I-DISEASE
-s	I-DISEASE
-adenoma	E-DISEASE
+Fuchs	B-Disease
+'	I-Disease
+s	I-Disease
+adenoma	E-Disease
 )	O
 .	O
 
@@ -35321,14 +35321,14 @@ contrast	O
 none	O
 of	O
 eight	O
-neoplastic	B-DISEASE
-lesions	E-DISEASE
+neoplastic	B-Disease
+lesions	E-Disease
 (	O
 two	O
-adenoma	S-DISEASE
+adenoma	S-Disease
 and	O
 six	O
-adenocarcinoma	S-DISEASE
+adenocarcinoma	S-Disease
 )	O
 of	O
 CBE	S-Tissue
@@ -35518,9 +35518,9 @@ with	O
 Men1	S-GP
 to	O
 suppress	O
-neuroendocrine	B-DISEASE
-organ	I-DISEASE
-tumors	E-DISEASE
+neuroendocrine	B-Disease
+organ	I-Disease
+tumors	E-Disease
 .	O
 
 Mutant	O
@@ -35546,16 +35546,16 @@ Kip1	S-GP
 )	O
 develop	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 spectrum	O
 reminiscent	O
 of	O
 human	S-Organism
-multiple	B-DISEASE
-endocrine	I-DISEASE
-neoplasia	E-DISEASE
+multiple	B-Disease
+endocrine	I-Disease
+neoplasia	E-Disease
 (	O
-MEN	S-DISEASE
+MEN	S-Disease
 )	O
 syndromes	O
 .	O
@@ -35572,13 +35572,13 @@ with	O
 Men1	S-GP
 ,	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 gene	O
 mutated	O
 in	O
 familial	O
-MEN1	S-DISEASE
+MEN1	S-Disease
 ,	O
 we	O
 characterized	O
@@ -35618,7 +35618,7 @@ Men1	S-GP
 )	O
 mice	O
 develop	O
-tumors	S-DISEASE
+tumors	S-Disease
 at	O
 an	O
 accelerated	O
@@ -35712,7 +35712,7 @@ was	O
 lost	O
 in	O
 most	O
-tumors	S-DISEASE
+tumors	S-Disease
 from	O
 Men1	S-GP
 (	O
@@ -35726,7 +35726,7 @@ was	O
 retained	O
 in	O
 most	O
-tumors	S-DISEASE
+tumors	S-Disease
 from	O
 p18	S-GP
 (	O
@@ -35779,7 +35779,7 @@ cell	S-Cell
 proliferation	O
 ,	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 .	O
 
@@ -35829,7 +35829,7 @@ treatment	O
 of	O
 inflammation	O
 and	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 The	O
@@ -36025,7 +36025,7 @@ been	O
 shown	O
 to	O
 possess	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 activities	O
 ,	O
 including	O
@@ -36078,7 +36078,7 @@ treatment	O
 and	O
 prevention	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 ,	O
 as	O
 well	O
@@ -36105,8 +36105,8 @@ kringle	I-GP
 -	I-GP
 2	E-GP
 inhibits	O
-B16F10	B-DISEASE
-melanoma	E-DISEASE
+B16F10	B-Disease
+melanoma	E-Disease
 metastasis	O
 through	O
 inhibition	O
@@ -36148,7 +36148,7 @@ degradation	O
 is	O
 essential	O
 for	O
-tumor	S-DISEASE
+tumor	S-Disease
 metastasis	O
 .	O
 
@@ -36202,7 +36202,7 @@ proteins	O
 .	O
 
 Because	O
-tumor	S-DISEASE
+tumor	S-Disease
 metastasis	O
 requires	O
 angiogenesis	O
@@ -36233,7 +36233,7 @@ revealed	O
 that	O
 the	O
 metastatic	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 mouse	S-Organism
 lung	S-Organ
@@ -36252,8 +36252,8 @@ lung	S-Organ
 injury	O
 induced	O
 by	O
-B16F10	B-DISEASE
-melanoma	E-DISEASE
+B16F10	B-Disease
+melanoma	E-Disease
 metastasis	O
 was	O
 diminished	O
@@ -36316,7 +36316,7 @@ mouse	S-Organism
 lung	S-Organ
 which	O
 induces	O
-tumor	S-DISEASE
+tumor	S-Disease
 metastasis	O
 and	O
 angiogenesis	O
@@ -36328,8 +36328,8 @@ suggest	O
 that	O
 inhibition	O
 of	O
-B16F10	B-DISEASE
-melanoma	E-DISEASE
+B16F10	B-Disease
+melanoma	E-Disease
 metastasis	O
 by	O
 rk	B-GP
@@ -36780,11 +36780,11 @@ with	O
 clinical	O
 course	O
 in	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 patients	S-Organism
 with	O
-endocrine	S-Anatomical_system
+endocrine	S-ANATOMY
 -	O
 dependent	O
 distant	O
@@ -36808,11 +36808,11 @@ schedule	O
 in	O
 patients	S-Organism
 with	O
-endocrine	S-Anatomical_system
+endocrine	S-ANATOMY
 -	O
 dependent	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 and	O
 distant	O
 metastases	O
@@ -36837,11 +36837,11 @@ shown	O
 In	O
 32	O
 evaluated	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 patients	S-Organism
 with	O
-endocrine	S-Anatomical_system
+endocrine	S-ANATOMY
 -	O
 dependent	O
 distant	O
@@ -37094,7 +37094,7 @@ leads	O
 myeloid	B-Cell
 progenitors	E-Cell
 to	O
-leukemia	S-DISEASE
+leukemia	S-Disease
 ,	O
 yet	O
 it	O
@@ -37113,8 +37113,8 @@ required	O
 for	O
 development	O
 of	O
-overt	B-DISEASE
-leukemia	E-DISEASE
+overt	B-Disease
+leukemia	E-Disease
 .	O
 
 To	O
@@ -37156,11 +37156,11 @@ bone	B-Cell
 marrow	I-Cell
 cells	E-Cell
 developed	O
-acute	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 (	O
-AML	S-DISEASE
+AML	S-Disease
 )	O
 ,	O
 and	O
@@ -37217,7 +37217,7 @@ Hoxa9	S-GP
 Meis1	S-GP
 -	O
 induced	O
-AML	S-DISEASE
+AML	S-Disease
 ,	O
 suggesting	O
 that	O
@@ -37303,8 +37303,8 @@ industries	O
 can	O
 act	O
 as	O
-skin	B-DISEASE
-tumor	E-DISEASE
+skin	B-Disease
+tumor	E-Disease
 promoters	O
 and	O
 cause	O
@@ -37439,7 +37439,7 @@ depletion	O
 of	O
 antioxidants	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 formation	O
 during	O
 two	O
@@ -37597,8 +37597,8 @@ exposed	O
 animals	S-Organism
 ,	O
 whereas	O
-skin	B-DISEASE
-carcinomas	E-DISEASE
+skin	B-Disease
+carcinomas	E-Disease
 were	O
 found	O
 only	O
@@ -38507,12 +38507,12 @@ defective	O
 vascular	S-Multi-tissue_structure
 response	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 implants	O
 leading	O
 to	O
 reduced	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 .	O
 
@@ -38527,7 +38527,7 @@ be	O
 particularly	O
 desirable	O
 in	O
-tumors	S-DISEASE
+tumors	S-Disease
 that	O
 have	O
 highly	O
@@ -38707,7 +38707,7 @@ in	O
 nude	B-Organism
 mice	E-Organism
 ,	O
-tumors	S-DISEASE
+tumors	S-Disease
 formed	O
 by	O
 the	O
@@ -38774,8 +38774,8 @@ subset	O
 of	O
 invasive	O
 human	S-Organism
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 and	O
 its	O
 targeted	O
@@ -38788,8 +38788,8 @@ weak	O
 oncogenic	O
 properties	O
 for	O
-mammary	B-DISEASE
-cancer	E-DISEASE
+mammary	B-Disease
+cancer	E-Disease
 initiation	O
 .	O
 
@@ -38810,7 +38810,7 @@ upregulated	O
 in	O
 selected	O
 human	S-Organism
-malignancies	S-DISEASE
+malignancies	S-Disease
 ,	O
 and	O
 the	O
@@ -38870,8 +38870,8 @@ subset	O
 of	O
 invasive	O
 human	S-Organism
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 .	O
 
 Based	O
@@ -39011,7 +39011,7 @@ the	O
 long	O
 latency	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 formation	O
 and	O
 the	O
@@ -39020,8 +39020,8 @@ occurrence	O
 of	O
 bona	O
 fide	O
-mammary	B-DISEASE
-cancers	E-DISEASE
+mammary	B-Disease
+cancers	E-Disease
 ,	O
 we	O
 conclude	O
@@ -39038,7 +39038,7 @@ properties	O
 
 Instead	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 initiation	O
 ,	O
 it	O
@@ -39061,8 +39061,8 @@ subset	O
 of	O
 spontaneously	O
 arising	O
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 .	O
 
 Expression	O
@@ -39076,17 +39076,17 @@ Bax	S-GP
 and	O
 p53	S-GP
 in	O
-primary	B-DISEASE
-tumors	E-DISEASE
+primary	B-Disease
+tumors	E-Disease
 and	O
 lymph	B-Multi-tissue_structure
 node	E-Multi-tissue_structure
 metastases	O
 in	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 Disturbances	O
@@ -39107,7 +39107,7 @@ progression	O
 of	O
 many	O
 human	S-Organism
-malignancies	S-DISEASE
+malignancies	S-Disease
 .	O
 
 The	O
@@ -39147,10 +39147,10 @@ selected	O
 clinicopathological	O
 features	O
 in	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 Consequently	O
@@ -39183,10 +39183,10 @@ in	O
 samples	O
 of	O
 primary	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 and	O
 in	O
 22	O
@@ -39195,8 +39195,8 @@ pairs	O
 of	O
 primary	O
 and	O
-metastatic	B-DISEASE
-tumors	E-DISEASE
+metastatic	B-Disease
+tumors	E-Disease
 .	O
 
 The	O
@@ -39217,7 +39217,7 @@ analyzed	O
 in	O
 10	O
 different	O
-tumor	S-DISEASE
+tumor	S-Disease
 fields	O
 ,	O
 and	O
@@ -39285,7 +39285,7 @@ of	O
 the	O
 studied	O
 primary	O
-tumors	S-DISEASE
+tumors	S-Disease
 and	O
 in	O
 63	O
@@ -39328,7 +39328,7 @@ and	O
 Bax	S-GP
 in	O
 primary	O
-tumors	S-DISEASE
+tumors	S-Disease
 (	O
 P	O
 <	O
@@ -39353,7 +39353,7 @@ expression	O
 in	O
 primary	O
 oral	S-Organism_subdivision
-cancers	S-DISEASE
+cancers	S-Disease
 and	O
 its	O
 expression	O
@@ -39388,7 +39388,7 @@ sites	O
 compared	O
 with	O
 primary	O
-tumors	S-DISEASE
+tumors	S-Disease
 could	O
 indicate	O
 an	O
@@ -39397,8 +39397,8 @@ of	O
 these	O
 proteins	O
 with	O
-oral	B-DISEASE
-cancer	E-DISEASE
+oral	B-Disease
+cancer	E-Disease
 progression	O
 and	O
 development	O
@@ -39418,15 +39418,15 @@ between	O
 primary	O
 and	O
 metastatic	O
-tumor	S-DISEASE
+tumor	S-Disease
 might	O
 help	O
 to	O
 understand	O
 mechanisms	O
 of	O
-oral	B-DISEASE
-cancer	E-DISEASE
+oral	B-Disease
+cancer	E-Disease
 progression	O
 .	O
 
@@ -39439,7 +39439,7 @@ receptor	I-GP
 beta	E-GP
 enhances	O
 the	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 and	O
 the	O
 anti	O
@@ -39477,7 +39477,7 @@ in	O
 tumorigenesis	O
 through	O
 stimulating	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 promoting	O
@@ -39581,7 +39581,7 @@ studies	O
 significantly	O
 enhanced	O
 the	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 and	O
 the	O
 anti	O
@@ -39605,26 +39605,26 @@ receptor	I-GP
 ,	O
 in	O
 a	O
-pancreatic	S-DISEASE
+pancreatic	S-Disease
 (	O
-BxPC	B-DISEASE
--	I-DISEASE
-3	E-DISEASE
+BxPC	B-Disease
+-	I-Disease
+3	E-Disease
 )	O
 and	O
 a	O
-non	B-DISEASE
--	I-DISEASE
-small	I-DISEASE
-cell	I-DISEASE
-lung	I-DISEASE
-(	I-DISEASE
-NCI	I-DISEASE
--	I-DISEASE
-H460	I-DISEASE
-)	I-DISEASE
-tumor	I-DISEASE
-xenograft	E-DISEASE
+non	B-Disease
+-	I-Disease
+small	I-Disease
+cell	I-Disease
+lung	I-Disease
+(	I-Disease
+NCI	I-Disease
+-	I-Disease
+H460	I-Disease
+)	I-Disease
+tumor	I-Disease
+xenograft	E-Disease
 models	O
 .	O
 
@@ -39637,16 +39637,16 @@ of	O
 and	O
 DC101	S-Chemical
 in	O
-BxPC	B-DISEASE
--	I-DISEASE
-3	I-DISEASE
-xenograft	E-DISEASE
+BxPC	B-Disease
+-	I-Disease
+3	I-Disease
+xenograft	E-Disease
 -	O
 bearing	O
 mice	S-Organism
 resulted	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 regression	O
 in	O
 58	O
@@ -39683,7 +39683,7 @@ in	O
 combinations	O
 with	O
 other	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 and	O
 /	O
 or	O
@@ -39698,7 +39698,7 @@ of	O
 a	O
 variety	O
 of	O
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 In	O
@@ -39716,8 +39716,8 @@ low	O
 dose	O
 radiotherapy	O
 in	O
-follicular	B-DISEASE
-lymphoma	E-DISEASE
+follicular	B-Disease
+lymphoma	E-Disease
 .	O
 
 Very	O
@@ -39742,8 +39742,8 @@ safe	O
 local	O
 treatment	O
 for	O
-follicular	B-DISEASE
-lymphoma	E-DISEASE
+follicular	B-Disease
+lymphoma	E-Disease
 .	O
 
 To	O
@@ -39769,7 +39769,7 @@ profile	O
 of	O
 patients	S-Organism
 '	O
-biopsies	S-DISEASE
+biopsies	S-Disease
 taken	O
 before	O
 and	O
@@ -39912,8 +39912,8 @@ effective	O
 palliative	O
 treatment	O
 for	O
-follicular	B-DISEASE
-lymphoma	E-DISEASE
+follicular	B-Disease
+lymphoma	E-Disease
 .	O
 
 Moreover	O
@@ -39991,8 +39991,8 @@ a	O
 reduced	O
 risk	O
 of	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 in	O
 a	O
 number	O
@@ -40040,7 +40040,7 @@ an	O
 essential	O
 feature	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 ,	O
 and	O
@@ -40530,12 +40530,12 @@ a	O
 lymphangiogenic	O
 switch	O
 in	O
-prostate	B-DISEASE
-cancer	E-DISEASE
+prostate	B-Disease
+cancer	E-Disease
 .	O
 
-Prostate	B-DISEASE
-cancer	E-DISEASE
+Prostate	B-Disease
+cancer	E-Disease
 dissemination	O
 is	O
 difficult	O
@@ -40567,7 +40567,7 @@ investigate	O
 the	O
 role	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 lymphangiogenesis	O
 during	O
 metastasis	O
@@ -40598,9 +40598,9 @@ potentials	O
 of	O
 several	O
 human	S-Organism
-prostate	B-DISEASE
-cancer	I-DISEASE
-xenograft	E-DISEASE
+prostate	B-Disease
+cancer	I-Disease
+xenograft	E-Disease
 models	O
 ,	O
 LAPC	B-Cell
@@ -40640,7 +40640,7 @@ imaging	O
 .	O
 
 After	O
-tumor	S-DISEASE
+tumor	S-Disease
 implantation	O
 the	O
 animals	S-Organism
@@ -40657,8 +40657,8 @@ of	O
 metastases	O
 .	O
 
-Metastatic	B-DISEASE
-lesions	E-DISEASE
+Metastatic	B-Disease
+lesions	E-Disease
 were	O
 confirmed	O
 by	O
@@ -40674,7 +40674,7 @@ lymphangiogenic	O
 profiles	O
 of	O
 the	O
-tumors	S-DISEASE
+tumors	S-Disease
 were	O
 characterized	O
 .	O
@@ -40710,7 +40710,7 @@ and	O
 the	O
 development	O
 of	O
-metastases	S-DISEASE
+metastases	S-Disease
 was	O
 evaluated	O
 .	O
@@ -40787,15 +40787,15 @@ LAPC	B-Cell
 -	I-Cell
 9	E-Cell
 enhanced	O
-tumor	S-DISEASE
+tumor	S-Disease
 lymphangiogenesis	O
 leading	O
 to	O
 the	O
 development	O
 of	O
-metastatic	B-DISEASE
-lesions	E-DISEASE
+metastatic	B-Disease
+lesions	E-Disease
 .	O
 
 Taken	O
@@ -40830,8 +40830,8 @@ metastatic	O
 process	O
 of	O
 human	S-Organism
-prostate	B-DISEASE
-cancer	E-DISEASE
+prostate	B-Disease
+cancer	E-Disease
 .	O
 
 In	O
@@ -40847,8 +40847,8 @@ a	O
 key	O
 role	O
 in	O
-prostate	B-DISEASE
-cancer	E-DISEASE
+prostate	B-Disease
+cancer	E-Disease
 metastasis	O
 .	O
 
@@ -41225,8 +41225,8 @@ carcinogenesis	O
 .	O
 
 In	O
-oral	B-DISEASE
-cancers	E-DISEASE
+oral	B-Disease
+cancers	E-Disease
 ,	O
 cytoplasmic	S-Organism_substance
 BAG	B-GP
@@ -41554,8 +41554,8 @@ appraised	O
 in	O
 the	O
 metastatic	O
-liver	B-DISEASE
-tumor	E-DISEASE
+liver	B-Disease
+tumor	E-Disease
 model	O
 developed	O
 from	O
@@ -41603,7 +41603,7 @@ at	O
 week	O
 3	O
 after	O
-tumor	S-DISEASE
+tumor	S-Disease
 induction	O
 .	O
 
@@ -41622,7 +41622,7 @@ albumin	S-GP
 Disse	O
 space	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 bearing	O
 livers	S-Organ
@@ -41798,8 +41798,8 @@ the	O
 cellular	S-Cell
 origin	O
 of	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -41867,8 +41867,8 @@ of	O
 Wnt	S-GP
 signaling	O
 induces	O
-mammary	B-DISEASE
-tumors	E-DISEASE
+mammary	B-Disease
+tumors	E-Disease
 from	O
 stem	S-Cell
 /	O
@@ -42032,8 +42032,8 @@ differentiated	O
 cells	S-Cell
 .	O
 
-Ovarian	B-DISEASE
-cancers	E-DISEASE
+Ovarian	B-Disease
+cancers	E-Disease
 overexpress	O
 the	O
 antimicrobial	O
@@ -42087,7 +42087,7 @@ hCAP	B-GP
 )	O
 ,	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 development	O
 and	O
 progression	O
@@ -42122,7 +42122,7 @@ the	O
 peptide	O
 may	O
 potentiate	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 .	O
 
@@ -42190,8 +42190,8 @@ tissue	E-Tissue
 By	O
 contrast	O
 ,	O
-ovarian	B-DISEASE
-tumors	E-DISEASE
+ovarian	B-Disease
+tumors	E-Disease
 displayed	O
 significantly	O
 higher	O
@@ -42231,11 +42231,11 @@ and	O
 microvessel	S-Tissue
 density	O
 in	O
-epithelial	B-DISEASE
--	I-DISEASE
-derived	I-DISEASE
-ovarian	I-DISEASE
-tumors	E-DISEASE
+epithelial	B-Disease
+-	I-Disease
+derived	I-Disease
+ovarian	I-Disease
+tumors	E-Disease
 and	O
 a	O
 significant	O
@@ -42311,8 +42311,8 @@ is	O
 significantly	O
 overexpressed	O
 in	O
-ovarian	B-DISEASE
-tumors	E-DISEASE
+ovarian	B-Disease
+tumors	E-Disease
 and	O
 suggest	O
 LL	B-GP
@@ -42355,12 +42355,12 @@ pro	O
 inflammatory	O
 molecules	O
 and	O
-ovarian	B-DISEASE
-cancer	E-DISEASE
+ovarian	B-Disease
+cancer	E-Disease
 progression	O
 .	O
 
-Tumor	S-DISEASE
+Tumor	S-Disease
 microenvironment	O
 ,	O
 a	O
@@ -42368,7 +42368,7 @@ dangerous	O
 society	O
 leading	O
 to	O
-cancer	S-DISEASE
+cancer	S-Disease
 metastasis	O
 .	O
 
@@ -42380,7 +42380,7 @@ and	O
 prevention	O
 .	O
 
-Cancer	S-DISEASE
+Cancer	S-Disease
 is	O
 no	O
 longer	O
@@ -42406,7 +42406,7 @@ a	O
 treacherous	O
 society	O
 between	O
-cancer	S-DISEASE
+cancer	S-Disease
 and	O
 host	B-Cell
 cells	E-Cell
@@ -42424,7 +42424,7 @@ effective	O
 clinical	O
 targets	O
 for	O
-cancer	S-DISEASE
+cancer	S-Disease
 control	O
 and	O
 prevention	O
@@ -42987,11 +42987,11 @@ gene	O
 are	O
 frequent	O
 in	O
-acute	B-DISEASE
-myeloblastic	I-DISEASE
-leukemias	E-DISEASE
+acute	B-Disease
+myeloblastic	I-Disease
+leukemias	E-Disease
 (	O
-AMLs	S-DISEASE
+AMLs	S-Disease
 )	O
 and	O
 in	O
@@ -43004,18 +43004,18 @@ syndromes	O
 but	O
 rarely	O
 in	O
-acute	B-DISEASE
-lymphoblastic	I-DISEASE
-leukemias	E-DISEASE
+acute	B-Disease
+lymphoblastic	I-Disease
+leukemias	E-Disease
 (	O
-ALLs	S-DISEASE
+ALLs	S-Disease
 )	O
 and	O
-chronic	B-DISEASE
-myelogenous	I-DISEASE
-leukemias	E-DISEASE
+chronic	B-Disease
+myelogenous	I-Disease
+leukemias	E-Disease
 (	O
-CMLs	S-DISEASE
+CMLs	S-Disease
 )	O
 .	O
 
@@ -43049,19 +43049,19 @@ mutations	O
 (	O
 4	O
 in	O
-myeloid	B-DISEASE
-blast	I-DISEASE
-crisis	I-DISEASE
-[	I-DISEASE
-BC	I-DISEASE
-]	I-DISEASE
-CML	E-DISEASE
+myeloid	B-Disease
+blast	I-Disease
+crisis	I-Disease
+[	I-Disease
+BC	I-Disease
+]	I-Disease
+CML	E-Disease
 and	O
 one	O
 in	O
-chronic	B-DISEASE
-phase	I-DISEASE
-CML	E-DISEASE
+chronic	B-Disease
+phase	I-Disease
+CML	E-Disease
 )	O
 within	O
 the	O
@@ -43088,9 +43088,9 @@ ABL	S-GP
 +	O
 ALLs	O
 or	O
-lymphoid	B-DISEASE
-BC	I-DISEASE
-CML	E-DISEASE
+lymphoid	B-Disease
+BC	I-Disease
+CML	E-Disease
 .	O
 
 Emergence	O
@@ -43155,9 +43155,9 @@ investigated	O
 patients	S-Organism
 :	O
 2	O
-myeloid	B-DISEASE
-BC	I-DISEASE
-CMLs	E-DISEASE
+myeloid	B-Disease
+BC	I-Disease
+CMLs	E-Disease
 and	O
 ,	O
 for	O
@@ -43222,7 +43222,7 @@ observed	O
 during	O
 progression	O
 of	O
-CML	S-DISEASE
+CML	S-Disease
 and	O
 in	O
 BCR	S-GP
@@ -43234,8 +43234,8 @@ ALL	O
 
 Suppression	O
 of	O
-lung	B-DISEASE
-tumor	E-DISEASE
+lung	B-Disease
+tumor	E-Disease
 growth	O
 and	O
 metastasis	O
@@ -43262,11 +43262,11 @@ strong	O
 therapeutic	O
 potential	O
 as	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 agents	O
 in	O
 suppressing	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 metastatic	O
@@ -43324,8 +43324,8 @@ gene	O
 therapy	O
 approach	O
 for	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 treatment	O
 .	O
 
@@ -43340,27 +43340,27 @@ rAAV2	S-Organism
 to	O
 deliver	O
 vasostatin	S-GP
-intratumorally	S-DISEASE
+intratumorally	S-Disease
 or	O
 systemically	O
 in	O
 different	O
 mouse	S-Organism
-lung	B-DISEASE
-tumor	E-DISEASE
+lung	B-Disease
+tumor	E-Disease
 models	O
 -	O
 -	O
 subcutaneous	O
 ,	O
 orthotopic	O
-xenograft	S-DISEASE
+xenograft	S-Disease
 ,	O
 and	O
 spontaneous	O
 metastasis	O
-lung	B-DISEASE
-tumor	E-DISEASE
+lung	B-Disease
+tumor	E-Disease
 models	O
 .	O
 
@@ -43377,7 +43377,7 @@ was	O
 determined	O
 by	O
 monitoring	O
-tumor	S-DISEASE
+tumor	S-Disease
 volume	O
 ,	O
 survival	O
@@ -43398,8 +43398,8 @@ RESULTS	O
 :	O
 Mice	S-Organism
 bearing	O
-subcutaneous	B-DISEASE
-tumor	E-DISEASE
+subcutaneous	B-Disease
+tumor	E-Disease
 of	O
 rAAV2	S-Organism
 /	O
@@ -43418,7 +43418,7 @@ showed	O
 reduction	O
 in	O
 primary	O
-tumor	S-DISEASE
+tumor	S-Disease
 volume	O
 and	O
 reduced	O
@@ -43428,7 +43428,7 @@ metastases	O
 .	O
 
 The	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 suppressive	O
 action	O
@@ -43441,10 +43441,10 @@ VAS	E-Organism
 in	O
 subcutaneous	O
 human	S-Organism
-lung	B-DISEASE
-tumor	I-DISEASE
-A549	I-DISEASE
-xenograft	E-DISEASE
+lung	B-Disease
+tumor	I-Disease
+A549	I-Disease
+xenograft	E-Disease
 correlated	O
 with	O
 a	O
@@ -43454,13 +43454,13 @@ of	O
 capillary	B-Tissue
 vessels	E-Tissue
 in	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 In	O
 the	O
 orthotopic	O
-xenograft	S-DISEASE
+xenograft	S-Disease
 model	O
 ,	O
 rAAV2	S-Organism
@@ -43471,8 +43471,8 @@ VAS	E-Organism
 suppressed	O
 metastasis	O
 of	O
-A549	B-DISEASE
-tumors	E-DISEASE
+A549	B-Disease
+tumors	E-Disease
 to	O
 mediastinal	O
 lymph	B-Multi-tissue_structure
@@ -43502,7 +43502,7 @@ rAAV2	S-Organism
 VAS	E-Organism
 after	O
 primary	O
-tumor	S-DISEASE
+tumor	S-Disease
 excision	O
 prolonged	O
 their	O
@@ -43536,13 +43536,13 @@ angiogenesis	O
 inhibitor	O
 in	O
 suppressing	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 during	O
 different	O
 stages	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 ,	O
 validating	O
@@ -43559,8 +43559,8 @@ therapy	O
 in	O
 treatment	O
 against	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 .	O
 
 Radiation	O
@@ -43856,7 +43856,7 @@ growth	O
 and	O
 vascularization	O
 of	O
-fibrosarcoma	S-DISEASE
+fibrosarcoma	S-Disease
 .	O
 
 We	O
@@ -43886,15 +43886,15 @@ growth	O
 and	O
 vascularization	O
 of	O
-soft	B-DISEASE
--	I-DISEASE
-tissue	I-DISEASE
-sarcomas	E-DISEASE
+soft	B-Disease
+-	I-Disease
+tissue	I-Disease
+sarcomas	E-Disease
 ,	O
 which	O
 are	O
-malignant	B-DISEASE
-tumors	E-DISEASE
+malignant	B-Disease
+tumors	E-Disease
 derived	O
 from	O
 mesenchymal	B-Tissue
@@ -44012,14 +44012,14 @@ cell	B-Cell
 lines	E-Cell
 derived	O
 from	O
-malignant	B-DISEASE
-fibrous	I-DISEASE
-histiocytomas	E-DISEASE
+malignant	B-Disease
+fibrous	I-Disease
+histiocytomas	E-Disease
 ,	O
-leiomyosarcomas	S-DISEASE
+leiomyosarcomas	S-Disease
 ,	O
 and	O
-liposarcomas	S-DISEASE
+liposarcomas	S-Disease
 .	O
 
 In	O
@@ -44031,7 +44031,7 @@ MAPK	S-GP
 activity	O
 and	O
 blocked	O
-fibrosarcoma	S-DISEASE
+fibrosarcoma	S-Disease
 growth	O
 .	O
 
@@ -44054,7 +44054,7 @@ by	O
 a	O
 decrease	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 mean	O
 vessel	S-Multi-tissue_structure
 density	O
@@ -44089,7 +44089,7 @@ effects	O
 of	O
 LeTx	S-Chemical
 on	O
-tumor	S-DISEASE
+tumor	S-Disease
 perfusion	O
 were	O
 remarkably	O
@@ -44110,7 +44110,7 @@ of	O
 perfusion	O
 within	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 but	O
 not	O
 in	O
@@ -44145,12 +44145,12 @@ for	O
 targeting	O
 neovascularization	O
 in	O
-fibrosarcomas	S-DISEASE
+fibrosarcomas	S-Disease
 and	O
 other	O
 similar	O
-proliferative	B-DISEASE
-lesions	E-DISEASE
+proliferative	B-Disease
+lesions	E-Disease
 .	O
 
 A	O
@@ -44382,16 +44382,16 @@ beta2	B-GP
 -	I-GP
 tubulin	E-GP
 for	O
-nasopharyngeal	B-DISEASE
-carcinoma	E-DISEASE
+nasopharyngeal	B-Disease
+carcinoma	E-Disease
 .	O
 
 CONTEXT	O
 :	O
-Nasopharyngeal	B-DISEASE
-carcinoma	E-DISEASE
+Nasopharyngeal	B-Disease
+carcinoma	E-Disease
 (	O
-NPC	S-DISEASE
+NPC	S-Disease
 )	O
 ,	O
 common	O
@@ -44447,7 +44447,7 @@ of	O
 the	O
 pathogenesis	O
 of	O
-NPC	S-DISEASE
+NPC	S-Disease
 would	O
 be	O
 important	O
@@ -44671,7 +44671,7 @@ a	O
 prognostic	O
 factor	O
 in	O
-NPC	S-DISEASE
+NPC	S-Disease
 .	O
 
 CONCLUSIONS	O
@@ -44695,7 +44695,7 @@ regulation	O
 is	O
 important	O
 in	O
-NPC	S-DISEASE
+NPC	S-Disease
 formation	O
 and	O
 may	O
@@ -44802,9 +44802,9 @@ shown	O
 to	O
 result	O
 in	O
-salivary	B-DISEASE
-gland	I-DISEASE
-tumors	E-DISEASE
+salivary	B-Disease
+gland	I-Disease
+tumors	E-Disease
 in	O
 100	O
 %	O
@@ -45158,8 +45158,8 @@ proliferation	O
 Hematogenous	O
 metastasis	O
 in	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 requires	O
 isolated	B-Cell
 tumor	I-Cell
@@ -45181,7 +45181,7 @@ PURPOSE	O
 Recent	O
 studies	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 metastasis	O
 have	O
 focused	O
@@ -45205,8 +45205,8 @@ blind	O
 prospective	O
 study	O
 in	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 to	O
 assess	O
 the	O
@@ -45243,7 +45243,7 @@ the	O
 bone	B-Multi-tissue_structure
 marrow	E-Multi-tissue_structure
 at	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 specific	O
 ,	O
@@ -45263,8 +45263,8 @@ blood	I-Organism_substance
 samples	E-Organism_substance
 from	O
 810	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 patients	S-Organism
 were	O
 collected	O
@@ -45351,8 +45351,8 @@ in	O
 early	O
 stages	O
 of	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -45381,8 +45381,8 @@ P	O
 )	O
 .	O
 
-Gastric	B-DISEASE
-cancer	E-DISEASE
+Gastric	B-Disease
+cancer	E-Disease
 metastasized	O
 when	O
 ITCs	S-Cell
@@ -45459,8 +45459,8 @@ of	O
 hematogenous	O
 metastases	O
 in	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 This	O
@@ -45829,8 +45829,8 @@ and	O
 hypoxia	O
 .	O
 
-Adenomatoid	B-DISEASE
-tumour	E-DISEASE
+Adenomatoid	B-Disease
+tumour	E-Disease
 of	O
 the	O
 liver	S-Organ
@@ -45839,8 +45839,8 @@ liver	S-Organ
 An	O
 unusual	O
 primary	O
-adenomatoid	B-DISEASE
-tumour	E-DISEASE
+adenomatoid	B-Disease
+tumour	E-Disease
 arising	O
 in	O
 the	O
@@ -45871,7 +45871,7 @@ postsurgery	O
 Grossly	O
 ,	O
 the	O
-tumour	S-DISEASE
+tumour	S-Disease
 showed	O
 a	O
 haemorrhagic	O
@@ -46033,9 +46033,9 @@ element	E-Tissue
 were	O
 consistent	O
 with	O
-hepatic	B-DISEASE
-adenomatoid	I-DISEASE
-tumour	E-DISEASE
+hepatic	B-Disease
+adenomatoid	I-Disease
+tumour	E-Disease
 .	O
 
 Contemporary	O
@@ -46310,7 +46310,7 @@ factor	E-GP
 thymidine	B-GP
 phosphorylase	E-GP
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 behavior	O
 .	O
 
@@ -46345,12 +46345,12 @@ high	O
 TP	S-GP
 expression	O
 at	O
-tumor	S-DISEASE
+tumor	S-Disease
 sites	O
 is	O
 correlated	O
 with	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 ,	O
 induction	O
@@ -46540,7 +46540,7 @@ an	O
 ideal	O
 target	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapy	O
 .	O
 
@@ -46579,7 +46579,7 @@ chromosome	I-GP
 )	O
 is	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 gene	O
 identified	O
@@ -46648,8 +46648,8 @@ PTEN	S-GP
 gene	O
 therapy	O
 of	O
-ovarian	B-DISEASE
-cancers	E-DISEASE
+ovarian	B-Disease
+cancers	E-Disease
 .	O
 
 METHOD	O
@@ -46828,8 +46828,8 @@ for	O
 therapeutic	O
 intervention	O
 in	O
-ovarian	B-DISEASE
-cancer	E-DISEASE
+ovarian	B-Disease
+cancer	E-Disease
 .	O
 
 Allogeneic	O
@@ -47222,7 +47222,7 @@ cells	E-Cell
 
 Malignancy	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 is	O
 associated	O
 with	O
@@ -47401,9 +47401,9 @@ FdG	S-Chemical
 -	O
 PET	O
 or	O
-primary	B-DISEASE
-breast	I-DISEASE
-cancers	E-DISEASE
+primary	B-Disease
+breast	I-Disease
+cancers	E-Disease
 ,	O
 rates	O
 of	O
@@ -47456,7 +47456,7 @@ of	O
 cell	B-Cell
 lines	E-Cell
 formed	O
-xenografts	S-DISEASE
+xenografts	S-Disease
 in	O
 mice	S-Organism
 .	O
@@ -47522,8 +47522,8 @@ regulation	O
 of	O
 glycolysis	O
 in	O
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 .	O
 
 Intracerebral	O
@@ -47560,9 +47560,9 @@ therapy	O
 applications	O
 to	O
 the	O
-central	B-Anatomical_system
-nervous	I-Anatomical_system
-system	E-Anatomical_system
+central	B-ANATOMY
+nervous	I-ANATOMY
+system	E-ANATOMY
 ,	O
 primary	O
 fibroblasts	S-Cell
@@ -47804,7 +47804,7 @@ fibroblasts	E-Cell
 do	O
 not	O
 produce	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Finally	O
@@ -47850,9 +47850,9 @@ within	O
 the	O
 adult	O
 rat	S-Organism
-central	B-Anatomical_system
-nervous	I-Anatomical_system
-system	E-Anatomical_system
+central	B-ANATOMY
+nervous	I-ANATOMY
+system	E-ANATOMY
 .	O
 
 Angiogenesis	O
@@ -48216,7 +48216,7 @@ angiogenesis	O
 and	O
 metastases	O
 in	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 VEGF	S-GP
@@ -48561,10 +48561,10 @@ exert	O
 osteoinductive	O
 effects	O
 in	O
-prostate	B-DISEASE
-cancer	E-DISEASE
+prostate	B-Disease
+cancer	E-Disease
 (	O
-PC	S-DISEASE
+PC	S-Disease
 )	O
 via	O
 uncharacterized	O
@@ -48588,7 +48588,7 @@ kappaB	E-GP
 ,	O
 implicated	O
 in	O
-PC	S-DISEASE
+PC	S-Disease
 metastasis	O
 ,	O
 is	O
@@ -50330,8 +50330,8 @@ II	E-GP
 expression	O
 in	O
 human	S-Organism
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 .	O
 
 Chicken	B-GP
@@ -50396,8 +50396,8 @@ COUP	B-GP
 TFII	E-GP
 expression	O
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 .	O
 
 Thus	O
@@ -50414,8 +50414,8 @@ COUP	B-GP
 -	I-GP
 TFII	E-GP
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 as	O
 well	O
 as	O
@@ -50439,8 +50439,8 @@ a	O
 prognostic	O
 indicator	O
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 .	O
 
 We	O
@@ -50463,8 +50463,8 @@ tissues	E-Tissue
 from	O
 95	O
 primary	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 patients	S-Organism
 by	O
 immunohistochemistry	O
@@ -50506,7 +50506,7 @@ OS	O
 of	O
 patients	S-Organism
 with	O
-tumors	S-DISEASE
+tumors	S-Disease
 expressing	O
 different	O
 levels	O
@@ -50620,8 +50620,8 @@ for	O
 good	O
 prognosis	O
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 .	O
 
 Homeostatic	O
@@ -50629,7 +50629,7 @@ functions	O
 of	O
 the	O
 p53	S-GP
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 :	O
 regulation	O
@@ -50643,7 +50643,7 @@ defense	O
 
 The	O
 p53	S-GP
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 plays	O
 pivotal	O
@@ -50734,7 +50734,7 @@ important	O
 for	O
 prevention	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 These	O
@@ -50917,7 +50917,7 @@ PTEN	S-GP
 )	O
 ,	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 ,	O
 is	O
@@ -50949,7 +50949,7 @@ activation	O
 of	O
 angiogenesis	O
 in	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 The	O
@@ -51293,7 +51293,7 @@ alternative	O
 strategy	O
 for	O
 inhibiting	O
-tumour	S-DISEASE
+tumour	S-Disease
 angiogenesis	O
 by	O
 vascular	B-GP
@@ -51311,7 +51311,7 @@ a	O
 landmark	O
 feature	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 ,	O
 which	O
 is	O
@@ -51360,7 +51360,7 @@ provide	O
 clinical	O
 benefits	O
 to	O
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 .	O
 
@@ -51477,7 +51477,7 @@ benefits	O
 of	O
 aflibercept	S-Chemical
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 .	O
 
@@ -51914,7 +51914,7 @@ C1	E-GP
 is	O
 lost	O
 during	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 metastasis	O
 .	O
 
@@ -51930,7 +51930,7 @@ stem	I-Cell
 cells	E-Cell
 ,	O
 to	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 ,	O
 is	O
 a	O
@@ -51943,7 +51943,7 @@ mechanisms	O
 
 Loss	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 proteins	O
 ,	O
@@ -51974,7 +51974,7 @@ initiation	O
 and	O
 progression	O
 of	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 .	O
 
 Semaphorins	S-GP
@@ -51997,7 +51997,7 @@ immune	O
 function	O
 ,	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 through	O
 effects	O
@@ -52117,8 +52117,8 @@ of	O
 primary	O
 and	O
 matched	O
-metastatic	B-DISEASE
-lesions	E-DISEASE
+metastatic	B-Disease
+lesions	E-Disease
 from	O
 19	O
 subjects	O
@@ -52126,8 +52126,8 @@ and	O
 in	O
 a	O
 large	O
-melanoma	B-DISEASE
-tumor	E-DISEASE
+melanoma	B-Disease
+tumor	E-Disease
 microarray	O
 .	O
 
@@ -52141,12 +52141,12 @@ of	O
 Plexin	B-GP
 C1	E-GP
 in	O
-metastatic	B-DISEASE
-melanoma	E-DISEASE
+metastatic	B-Disease
+melanoma	E-Disease
 compared	O
 with	O
-primary	B-DISEASE
-melanoma	E-DISEASE
+primary	B-Disease
+melanoma	E-Disease
 ,	O
 suggesting	O
 the	O
@@ -52158,11 +52158,11 @@ C1	E-GP
 receptor	O
 is	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 protein	O
 for	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 .	O
 
 Coagulation	O
@@ -52170,8 +52170,8 @@ function	O
 in	O
 patients	S-Organism
 with	O
-pancreatic	B-DISEASE
-carcinoma	E-DISEASE
+pancreatic	B-Disease
+carcinoma	E-Disease
 .	O
 
 BACKGROUND	O
@@ -52182,8 +52182,8 @@ function	O
 in	O
 patients	S-Organism
 with	O
-pancreatic	B-DISEASE
-carcinoma	E-DISEASE
+pancreatic	B-Disease
+carcinoma	E-Disease
 is	O
 abnormal	O
 and	O
@@ -52208,8 +52208,8 @@ function	O
 in	O
 patients	S-Organism
 with	O
-pancreatic	B-DISEASE
-carcinoma	E-DISEASE
+pancreatic	B-Disease
+carcinoma	E-Disease
 .	O
 
 METHODS	O
@@ -52264,8 +52264,8 @@ levels	O
 in	O
 patients	S-Organism
 with	O
-pancreatic	B-DISEASE
-carcinoma	E-DISEASE
+pancreatic	B-Disease
+carcinoma	E-Disease
 ,	O
 (	O
 476	O
@@ -52317,8 +52317,8 @@ P	O
 In	O
 patients	S-Organism
 with	O
-pancreatic	B-DISEASE
-carcinoma	E-DISEASE
+pancreatic	B-Disease
+carcinoma	E-Disease
 ,	O
 the	O
 levels	O
@@ -52465,8 +52465,8 @@ fibrinogen	S-GP
 in	O
 patients	S-Organism
 with	O
-pancreatic	B-DISEASE
-carcinoma	E-DISEASE
+pancreatic	B-Disease
+carcinoma	E-Disease
 was	O
 elevated	O
 .	O
@@ -52517,7 +52517,7 @@ a	O
 hallmark	O
 of	O
 human	S-Organism
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 It	O
@@ -52526,7 +52526,7 @@ the	O
 driving	O
 force	O
 for	O
-tumor	S-DISEASE
+tumor	S-Disease
 development	O
 as	O
 it	O
@@ -52559,7 +52559,7 @@ underlying	O
 condition	O
 for	O
 human	S-Organism
-tumor	S-DISEASE
+tumor	S-Disease
 development	O
 ,	O
 accounting	O
@@ -52569,7 +52569,7 @@ approximately	O
 %	O
 of	O
 human	S-Organism
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 TNFalpha	S-GP
@@ -52588,7 +52588,7 @@ of	O
 inflammation	O
 -	O
 associated	O
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 We	O
@@ -52677,7 +52677,7 @@ in	O
 inflammation	O
 -	O
 associated	O
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 PTTG	S-GP
@@ -52688,10 +52688,10 @@ node	E-Multi-tissue_structure
 metastasis	O
 in	O
 human	S-Organism
-esophageal	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+esophageal	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 Human	S-Organism
@@ -52708,7 +52708,7 @@ with	O
 metastasis	O
 in	O
 multiple	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 and	O
 yet	O
@@ -52735,12 +52735,12 @@ of	O
 )	O
 of	O
 primary	O
-esophageal	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+esophageal	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 (	O
-ESCC	S-DISEASE
+ESCC	S-Disease
 )	O
 tumor	B-Tissue
 tissues	E-Tissue
@@ -52990,7 +52990,7 @@ PTTG	S-GP
 overexpression	O
 in	O
 promoting	O
-tumor	S-DISEASE
+tumor	S-Disease
 metastasis	O
 ,	O
 whereby	O
@@ -53288,7 +53288,7 @@ shown	O
 to	O
 be	O
 effective	O
-antitumoral	S-DISEASE
+antitumoral	S-Disease
 agents	O
 .	O
 
@@ -53320,7 +53320,7 @@ tumor	B-Cell
 cell	E-Cell
 proliferation	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 induced	O
 angiogenesis	O
@@ -53599,8 +53599,8 @@ failures	O
 that	O
 contribute	O
 to	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 .	O
 
 FOXO3a	S-GP
@@ -53623,14 +53623,14 @@ Although	O
 implicated	O
 as	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 ,	O
 its	O
 role	O
 in	O
-sporadic	B-DISEASE
-cancer	E-DISEASE
+sporadic	B-Disease
+cancer	E-Disease
 is	O
 uncertain	O
 .	O
@@ -53648,10 +53648,10 @@ in	O
 carcinogen	O
 -	O
 induced	O
-lung	B-DISEASE
-adenocarcinoma	E-DISEASE
+lung	B-Disease
+adenocarcinoma	E-Disease
 (	O
-LAC	S-DISEASE
+LAC	S-Disease
 )	O
 .	O
 
@@ -53664,7 +53664,7 @@ play	O
 a	O
 role	O
 in	O
-LAC	S-DISEASE
+LAC	S-Disease
 suppression	O
 by	O
 eliciting	O
@@ -53709,7 +53709,7 @@ a	O
 cause	O
 of	O
 human	S-Organism
-LAC	S-DISEASE
+LAC	S-Disease
 .	O
 
 We	O
@@ -53840,7 +53840,7 @@ of	O
 carcinogenic	O
 damage	O
 in	O
-LAC	S-DISEASE
+LAC	S-Disease
 .	O
 
 Bmi	B-GP
@@ -53894,11 +53894,11 @@ tissues	S-Tissue
 ,	O
 including	O
 the	O
-central	B-Anatomical_system
-nervous	I-Anatomical_system
-system	E-Anatomical_system
+central	B-ANATOMY
+nervous	I-ANATOMY
+system	E-ANATOMY
 (	O
-CNS	S-Anatomical_system
+CNS	S-ANATOMY
 )	O
 .	O
 
@@ -53911,7 +53911,7 @@ elevated	O
 in	O
 most	O
 human	S-Organism
-gliomas	S-DISEASE
+gliomas	S-Disease
 ,	O
 irrespective	O
 of	O
@@ -53970,10 +53970,10 @@ with	O
 expression	O
 in	O
 the	O
-fetal	S-Anatomical_system
+fetal	S-ANATOMY
 and	O
-adult	B-Anatomical_system
-CNS	E-Anatomical_system
+adult	B-ANATOMY
+CNS	E-ANATOMY
 demonstrated	O
 that	O
 transgenic	O
@@ -54061,8 +54061,8 @@ transgenic	O
 mice	S-Organism
 formed	O
 detectable	O
-CNS	B-DISEASE
-tumors	E-DISEASE
+CNS	B-Disease
+tumors	E-Disease
 ,	O
 even	O
 when	O
@@ -54178,11 +54178,11 @@ the	O
 primary	O
 cause	O
 of	O
-non	B-DISEASE
--	I-DISEASE
-melanoma	I-DISEASE
-skin	I-DISEASE
-cancer	E-DISEASE
+non	B-Disease
+-	I-Disease
+melanoma	I-Disease
+skin	I-Disease
+cancer	E-Disease
 .	O
 
 We	O
@@ -54230,10 +54230,10 @@ both	O
 56	O
 %	O
 fewer	O
-skin	B-DISEASE
-tumors	E-DISEASE
+skin	B-Disease
+tumors	E-Disease
 and	O
-tumors	S-DISEASE
+tumors	S-Disease
 that	O
 were	O
 70	O
@@ -54495,14 +54495,14 @@ signaling	O
 pathway	O
 specific	O
 to	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 invasion	O
 and	O
 metastasis	O
 .	O
 
-Tumors	S-DISEASE
+Tumors	S-Disease
 are	O
 tissue	S-Tissue
 -	O
@@ -54522,8 +54522,8 @@ diverse	O
 .	O
 
 In	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 ,	O
 biomarkers	O
 that	O
@@ -54577,8 +54577,8 @@ abnormally	O
 overexpressed	O
 in	O
 some	O
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 and	O
 used	O
 for	O
@@ -54696,8 +54696,8 @@ large	O
 population	O
 of	O
 human	S-Organism
-ductal	B-DISEASE
-cancers	E-DISEASE
+ductal	B-Disease
+cancers	E-Disease
 may	O
 utilize	O
 the	O
@@ -54723,8 +54723,8 @@ in	O
 the	O
 malignancy	O
 of	O
-mammary	B-DISEASE
-tumors	E-DISEASE
+mammary	B-Disease
+tumors	E-Disease
 .	O
 
 Our	O
@@ -54739,8 +54739,8 @@ molecular	O
 mechanisms	O
 of	O
 some	O
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 ,	O
 in	O
 which	O
@@ -54774,7 +54774,7 @@ of	O
 our	O
 knowledge	O
 to	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapeutics	O
 will	O
 also	O
@@ -54785,7 +54785,7 @@ discussed	O
 Met	S-GP
 amplification	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 in	O
 Cdkn2a	S-GP
@@ -54802,7 +54802,7 @@ have	O
 been	O
 identified	O
 in	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 ,	O
 the	O
 relevant	O
@@ -54821,7 +54821,7 @@ understood	O
 Most	O
 primary	O
 human	S-Organism
-melanomas	S-DISEASE
+melanomas	S-Disease
 exhibit	O
 loss	O
 of	O
@@ -54867,8 +54867,8 @@ secondary	O
 genetic	O
 events	O
 in	O
-melanoma	B-DISEASE
-tumor	E-DISEASE
+melanoma	B-Disease
+tumor	E-Disease
 progression	O
 .	O
 
@@ -54887,7 +54887,7 @@ tyrosine	S-Amino_acid
 kinase	O
 implicated	O
 in	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 progression	O
 ,	O
 was	O
@@ -54913,7 +54913,7 @@ a	O
 significant	O
 delay	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 in	O
 vivo	O
@@ -54932,14 +54932,14 @@ detected	O
 in	O
 primary	O
 human	S-Organism
-melanoma	S-DISEASE
+melanoma	S-Disease
 but	O
 is	O
 frequently	O
 observed	O
 in	O
-metastatic	B-DISEASE
-disease	E-DISEASE
+metastatic	B-Disease
+disease	E-Disease
 .	O
 
 This	O
@@ -54951,8 +54951,8 @@ for	O
 Met	S-GP
 activation	O
 in	O
-melanoma	B-DISEASE
-tumor	E-DISEASE
+melanoma	B-Disease
+tumor	E-Disease
 progression	O
 in	O
 the	O
@@ -54987,8 +54987,8 @@ activation	O
 are	O
 associated	O
 with	O
-ovarian	B-DISEASE
-cancer	E-DISEASE
+ovarian	B-Disease
+cancer	E-Disease
 progression	O
 .	O
 
@@ -54997,7 +54997,7 @@ activation	O
 occurs	O
 in	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 microenvironment	O
 and	O
 may	O
@@ -55014,7 +55014,7 @@ a	O
 cellular	S-Cell
 model	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 invasion	O
 to	O
 investigate	O
@@ -55230,8 +55230,8 @@ associated	O
 with	O
 thrombocytosis	O
 in	O
-ovarian	B-DISEASE
-cancer	E-DISEASE
+ovarian	B-Disease
+cancer	E-Disease
 .	O
 
 Platelets	S-Cell
@@ -55248,8 +55248,8 @@ therapeutic	O
 intervention	O
 in	O
 human	S-Organism
-ovarian	B-DISEASE
-cancer	E-DISEASE
+ovarian	B-Disease
+cancer	E-Disease
 .	O
 
 AngiomiRs	S-GP
@@ -55294,7 +55294,7 @@ such	O
 as	O
 ischemia	O
 and	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 Recent	O
@@ -55392,7 +55392,7 @@ miR	B-GP
 cluster	O
 contribute	O
 to	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 .	O
 
@@ -55445,7 +55445,7 @@ a	O
 potential	O
 therapy	O
 for	O
-cardiovascular	S-Anatomical_system
+cardiovascular	S-ANATOMY
 diseases	O
 and	O
 a	O
@@ -56003,13 +56003,13 @@ a	O
 suitable	O
 microenvironment	O
 for	O
-tumor	S-DISEASE
+tumor	S-Disease
 development	O
 and	O
 progression	O
 in	O
-esophageal	B-DISEASE
-carcinoma	E-DISEASE
+esophageal	B-Disease
+carcinoma	E-Disease
 .	O
 
 PURPOSE	O
@@ -56032,7 +56032,7 @@ the	O
 complex	O
 process	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 stroma	S-Tissue
 interactions	O
@@ -56056,8 +56056,8 @@ of	O
 TF	S-Cell
 in	O
 the	O
-esophageal	B-DISEASE
-cancer	E-DISEASE
+esophageal	B-Disease
+cancer	E-Disease
 microenvironment	O
 .	O
 
@@ -56084,12 +56084,12 @@ and	O
 normal	O
 fibroblasts	S-Cell
 from	O
-esophageal	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+esophageal	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 (	O
-ESCC	S-DISEASE
+ESCC	S-Disease
 )	O
 .	O
 
@@ -56218,7 +56218,7 @@ TF	S-Cell
 specific	O
 marker	O
 in	O
-ESCC	S-DISEASE
+ESCC	S-Disease
 .	O
 
 Moreover	O
@@ -56258,8 +56258,8 @@ candidate	O
 genes	O
 for	O
 the	O
-esophageal	B-DISEASE
-cancer	E-DISEASE
+esophageal	B-Disease
+cancer	E-Disease
 microenvironment	O
 .	O
 
@@ -56292,7 +56292,7 @@ proteins	O
 that	O
 could	O
 promote	O
-cancer	S-DISEASE
+cancer	S-Disease
 development	O
 and	O
 progression	O
@@ -56331,7 +56331,7 @@ transition	O
 Role	O
 of	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 ARF	S-GP
 in	O
@@ -56352,7 +56352,7 @@ a	O
 role	O
 of	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 ARF	S-GP
 in	O
@@ -56430,7 +56430,7 @@ The	O
 importance	O
 of	O
 this	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 in	O
 the	O
@@ -56453,7 +56453,7 @@ the	O
 rapid	O
 growth	O
 of	O
-neoplasia	S-DISEASE
+neoplasia	S-Disease
 .	O
 
 However	O
@@ -56920,7 +56920,7 @@ implants	O
 as	O
 well	O
 as	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 were	O
 both	O
@@ -57764,7 +57764,7 @@ growth	O
 and	O
 metastasis	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Among	O
@@ -57779,7 +57779,7 @@ xanthone	B-Chemical
 derivatives	E-Chemical
 ,	O
 the	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 activity	O
 is	O
 quite	O
@@ -58132,7 +58132,7 @@ of	O
 the	O
 hallmarks	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 -	O
 -	O
 has	O
@@ -58154,7 +58154,7 @@ a	O
 key	O
 mediator	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 initiated	O
 angiogenesis	O
@@ -58179,11 +58179,11 @@ therapies	O
 have	O
 clearly	O
 demonstrated	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 efficacy	O
 in	O
 various	O
-malignancies	S-DISEASE
+malignancies	S-Disease
 ,	O
 especially	O
 when	O
@@ -58287,8 +58287,8 @@ treating	O
 patients	S-Organism
 with	O
 adjuvant	O
-colon	B-DISEASE
-cancer	E-DISEASE
+colon	B-Disease
+cancer	E-Disease
 .	O
 
 Nonetheless	O
@@ -58302,7 +58302,7 @@ enhanced	O
 the	O
 arsenal	O
 of	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 therapies	O
 and	O
 has	O
@@ -58313,7 +58313,7 @@ into	O
 the	O
 biology	O
 of	O
-malignancy	S-DISEASE
+malignancy	S-Disease
 .	O
 
 [	O
@@ -58344,7 +58344,7 @@ and	O
 spreading	O
 of	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 .	O
 
 We	O
@@ -58405,7 +58405,7 @@ that	O
 neutrophils	S-Cell
 display	O
 exclusively	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 properties	O
 .	O
 
@@ -58414,7 +58414,7 @@ update	O
 information	O
 testifies	O
 about	O
-protumoral	S-DISEASE
+protumoral	S-Disease
 activity	O
 of	O
 neutrophils	S-Cell
@@ -58423,7 +58423,7 @@ they	O
 migrate	O
 to	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 and	O
 promote	O
 angiogenesis	O
@@ -58434,7 +58434,7 @@ late	O
 stages	O
 of	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 .	O
 
 It	O
@@ -58458,13 +58458,13 @@ enzymes	O
 participate	O
 both	O
 in	O
-antitumoral	S-DISEASE
+antitumoral	S-Disease
 defenses	O
 of	O
 an	O
 organism	O
 and	O
-protumoral	S-DISEASE
+protumoral	S-Disease
 activity	O
 .	O
 
@@ -58500,7 +58500,7 @@ rate	O
 limiting	O
 step	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 .	O
 
@@ -58666,8 +58666,8 @@ and	O
 restoring	O
 organization	O
 of	O
-malignant	B-DISEASE
-clusters	E-DISEASE
+malignant	B-Disease
+clusters	E-Disease
 reduces	O
 VEGF	S-GP
 expression	O
@@ -58707,8 +58707,8 @@ oxaliplatin	S-Chemical
 and	O
 irinotecan	S-Chemical
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 .	O
 
 Metronomic	O
@@ -58777,7 +58777,7 @@ vivo	O
 the	O
 antiangiogenic	O
 and	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 activities	O
 of	O
 metronomic	O
@@ -58804,8 +58804,8 @@ fluorouracil	E-Chemical
 FU	E-Chemical
 )	O
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 and	O
 to	O
 investigate	O
@@ -58885,14 +58885,14 @@ HT	B-Cell
 -	I-Cell
 29	E-Cell
 human	S-Organism
-colorectal	B-DISEASE
-cancer	I-DISEASE
-xenograft	E-DISEASE
+colorectal	B-Disease
+cancer	I-Disease
+xenograft	E-Disease
 model	O
 was	O
 used	O
 and	O
-tumour	S-DISEASE
+tumour	S-Disease
 growth	O
 ,	O
 microvessel	S-Tissue
@@ -58903,7 +58903,7 @@ quantification	O
 were	O
 performed	O
 in	O
-tumours	S-DISEASE
+tumours	S-Disease
 after	O
 the	O
 administration	O
@@ -59016,7 +59016,7 @@ cells	E-Cell
 
 In	O
 a	O
-xenograft	S-DISEASE
+xenograft	S-Disease
 model	O
 metronomic	O
 CPT	B-Chemical
@@ -59035,10 +59035,10 @@ OHP	E-Chemical
 ,	O
 significantly	O
 inhibits	O
-HT	B-DISEASE
--	I-DISEASE
-29	I-DISEASE
-tumor	E-DISEASE
+HT	B-Disease
+-	I-Disease
+29	I-Disease
+tumor	E-Disease
 growth	O
 and	O
 microvessel	S-Tissue
@@ -59087,8 +59087,8 @@ every	O
 cytotoxic	O
 drug	O
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 and	O
 metronomic	O
 combination	O
@@ -59860,7 +59860,7 @@ in	O
 promoting	O
 and	O
 supporting	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 it	O
@@ -59907,7 +59907,7 @@ been	O
 developed	O
 to	O
 improve	O
-tumor	S-DISEASE
+tumor	S-Disease
 control	O
 through	O
 vascular	B-Chemical
@@ -59957,8 +59957,8 @@ major	O
 activity	O
 against	O
 small	O
-tumor	B-DISEASE
-masses	E-DISEASE
+tumor	B-Disease
+masses	E-Disease
 and	O
 at	O
 the	O
@@ -59999,7 +59999,7 @@ and	O
 destruction	O
 of	O
 large	O
-masses	S-DISEASE
+masses	S-Disease
 with	O
 central	O
 hemorrhagic	O
@@ -60009,9 +60009,9 @@ survival	O
 of	O
 a	O
 thin	O
-peripheral	B-DISEASE
-tumor	I-DISEASE
-layer	E-DISEASE
+peripheral	B-Disease
+tumor	I-Disease
+layer	E-Disease
 .	O
 
 VDAs	S-Chemical
@@ -60111,7 +60111,7 @@ TNF	S-GP
 for	O
 Treatment	O
 of	O
-Cancer	S-DISEASE
+Cancer	S-Disease
 and	O
 Autoimmunity	O
 .	O
@@ -60194,7 +60194,7 @@ the	O
 major	O
 players	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 initiation	O
 ,	O
 proliferation	O
@@ -60542,7 +60542,7 @@ important	O
 role	O
 in	O
 human	S-Organism
-glioma	S-DISEASE
+glioma	S-Disease
 progression	O
 .	O
 
@@ -60740,7 +60740,7 @@ aspartate	S-Chemical
 shuttle	O
 in	O
 these	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Large	O
@@ -60779,7 +60779,7 @@ to	O
 oxygen	S-Chemical
 in	O
 these	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Calculations	O
@@ -60886,7 +60886,7 @@ with	O
 short	O
 latency	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 formation	O
 in	O
 both	O
@@ -60904,8 +60904,8 @@ activation	O
 of	O
 AKT	S-GP
 in	O
-allograft	B-DISEASE
-tumors	E-DISEASE
+allograft	B-Disease
+tumors	E-Disease
 specifically	O
 AKT2	S-GP
 as	O
@@ -61006,7 +61006,7 @@ addition	O
 a	O
 reduction	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 volume	O
 of	O
 Grm1	S-GP
@@ -61081,8 +61081,8 @@ semaphorin	B-GP
 -	I-GP
 3F	E-GP
 in	O
-ovarian	B-DISEASE
-cancer	E-DISEASE
+ovarian	B-Disease
+cancer	E-Disease
 .	O
 
 Semaphorins	S-GP
@@ -61243,8 +61243,8 @@ confirmed	O
 in	O
 stage	O
 3	O
-ovarian	B-DISEASE
-tumors	E-DISEASE
+ovarian	B-Disease
+tumors	E-Disease
 .	O
 
 The	O
@@ -61405,7 +61405,7 @@ be	O
 a	O
 hallmark	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 progression	O
 .	O
 
@@ -61425,8 +61425,8 @@ SEMA3	S-GP
 expression	O
 could	O
 control	O
-ovarian	B-DISEASE
-cancer	E-DISEASE
+ovarian	B-Disease
+cancer	E-Disease
 angiogenesis	O
 and	O
 metastasis	O
@@ -61458,7 +61458,7 @@ which	O
 contains	O
 over	O
 60	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 initiating	O
 carcinogens	O
@@ -61471,8 +61471,8 @@ factor	O
 for	O
 development	O
 of	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 ,	O
 accounting	O
 for	O
@@ -61480,7 +61480,7 @@ a	O
 large	O
 portion	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 -	O
 related	O
 deaths	O
@@ -61496,7 +61496,7 @@ tobacco	S-Organism
 smoke	O
 is	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 initiator	O
 ,	O
 but	O
@@ -61508,7 +61508,7 @@ also	O
 acts	O
 as	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 promoter	O
 once	O
 malignant	O
@@ -61538,7 +61538,7 @@ to	O
 tobacco	S-Organism
 smoke	O
 promotes	O
-tumor	S-DISEASE
+tumor	S-Disease
 development	O
 both	O
 in	O
@@ -61562,7 +61562,7 @@ epithelial	I-Cell
 cells	E-Cell
 .	O
 
-Tumor	S-DISEASE
+Tumor	S-Disease
 promotion	O
 is	O
 due	O
@@ -61637,7 +61637,7 @@ a	O
 wide	O
 variety	O
 of	O
-cancers	S-DISEASE
+cancers	S-Disease
 .	O
 
 A	O
@@ -61940,12 +61940,12 @@ dehydrogenase	I-GP
 is	O
 overexpressed	O
 in	O
-non	B-DISEASE
--	I-DISEASE
-small	I-DISEASE
-cell	I-DISEASE
-lung	I-DISEASE
-cancer	E-DISEASE
+non	B-Disease
+-	I-Disease
+small	I-Disease
+cell	I-Disease
+lung	I-Disease
+cancer	E-Disease
 and	O
 correlates	O
 with	O
@@ -62020,9 +62020,9 @@ characterized	O
 large	O
 cohort	O
 of	O
-primary	B-DISEASE
-lung	I-DISEASE
-cancers	E-DISEASE
+primary	B-Disease
+lung	I-Disease
+cancers	E-Disease
 in	O
 correlation	O
 to	O
@@ -62041,9 +62041,9 @@ survival	O
 
 METHODS	O
 :	O
-Primary	B-DISEASE
-lung	I-DISEASE
-cancers	E-DISEASE
+Primary	B-Disease
+lung	I-Disease
+cancers	E-Disease
 (	O
 n	O
 =	O
@@ -62134,7 +62134,7 @@ n	O
 238	O
 )	O
 of	O
-NSCLC	S-DISEASE
+NSCLC	S-Disease
 revealed	O
 LDH5	S-GP
 expression	O
@@ -62171,21 +62171,21 @@ with	O
 histological	O
 type	O
 (	O
-adenocarcinoma	S-DISEASE
+adenocarcinoma	S-Disease
 =	O
 57	O
 %	O
 ,	O
-squamous	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+squamous	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 =	O
 45	O
 %	O
 ,	O
-large	B-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+large	B-Disease
+cell	I-Disease
+carcinoma	E-Disease
 =	O
 46	O
 %	O
@@ -62262,7 +62262,7 @@ TKTL1	S-GP
 within	O
 each	O
 histologic	O
-tumortype	S-DISEASE
+tumortype	S-Disease
 could	O
 not	O
 be	O
@@ -62275,7 +62275,7 @@ LDH5	S-GP
 is	O
 overexpressed	O
 in	O
-NSCLC	S-DISEASE
+NSCLC	S-Disease
 and	O
 could	O
 hence	O
@@ -62521,8 +62521,8 @@ most	O
 virus	O
 -	O
 unrelated	O
-lymphoid	B-DISEASE
-tumors	E-DISEASE
+lymphoid	B-Disease
+tumors	E-Disease
 .	O
 
 These	O
@@ -62569,7 +62569,7 @@ abundant	O
 compound	O
 ,	O
 has	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 functions	O
 in	O
 human	S-Organism
@@ -62629,7 +62629,7 @@ betulin	S-Chemical
 exhibited	O
 only	O
 moderate	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 activity	O
 in	O
 other	O
@@ -62703,7 +62703,7 @@ investigated	O
 the	O
 mechanism	O
 of	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 activity	O
 by	O
 betulin	S-Chemical
@@ -62937,12 +62937,12 @@ are	O
 potent	O
 anti	O
 -	O
-cancer	S-DISEASE
+cancer	S-Disease
 agents	O
 for	O
 variety	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 types	O
 .	O
 
@@ -62961,9 +62961,9 @@ drug	O
 to	O
 treat	O
 cutaneous	O
-T	B-DISEASE
-cell	I-DISEASE
-lymphoma	E-DISEASE
+T	B-Disease
+cell	I-Disease
+lymphoma	E-Disease
 ,	O
 and	O
 the	O
@@ -62997,7 +62997,7 @@ shown	O
 to	O
 exhibit	O
 high	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 activity	O
 ,	O
@@ -63061,10 +63061,10 @@ low	O
 toxicity	O
 in	O
 vivo	O
-ovarian	S-DISEASE
+ovarian	S-Disease
 and	O
-breast	B-DISEASE
-xenograft	E-DISEASE
+breast	B-Disease
+xenograft	E-Disease
 models	O
 .	O
 
@@ -63158,7 +63158,7 @@ mechanisms	O
 underlying	O
 anti	O
 -	O
-tumor	S-DISEASE
+tumor	S-Disease
 activity	O
 of	O
 E1A	S-GP
@@ -63193,8 +63193,8 @@ promotes	O
 Akt	S-GP
 phosphorylation	O
 in	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 BACKGROUND	O
@@ -63253,9 +63253,9 @@ Akt	S-GP
 )	O
 expression	O
 in	O
-breast	B-DISEASE
-cancer	I-DISEASE
-tissue	E-DISEASE
+breast	B-Disease
+cancer	I-Disease
+tissue	E-Disease
 microarrays	O
 showed	O
 nuclear	S-Cellular_component
@@ -63290,9 +63290,9 @@ P	O
 Akt	S-GP
 expression	O
 in	O
-invasive	B-DISEASE
-ductal	I-DISEASE
-carcinoma	E-DISEASE
+invasive	B-Disease
+ductal	I-Disease
+carcinoma	E-Disease
 .	O
 
 Using	O
@@ -63505,10 +63505,10 @@ and	O
 poor	O
 survival	O
 in	O
-invasive	B-DISEASE
-ductal	I-DISEASE
-breast	I-DISEASE
-carcinoma	E-DISEASE
+invasive	B-Disease
+ductal	I-Disease
+breast	I-Disease
+carcinoma	E-Disease
 are	O
 linked	O
 to	O
@@ -63525,8 +63525,8 @@ axis	O
 
 In	O
 these	O
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 activated	O
 Akt	S-GP
 fails	O
@@ -63565,12 +63565,12 @@ nuclear	S-Cellular_component
 FOXO3a	S-GP
 expression	O
 in	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 may	O
 culminate	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 progression	O
 and	O
 the	O
@@ -63720,9 +63720,9 @@ cell	S-Cell
 of	O
 origin	O
 for	O
-basal	B-DISEASE
-cell	I-DISEASE
-cancers	E-DISEASE
+basal	B-Disease
+cell	I-Disease
+cancers	E-Disease
 and	O
 define	O
 additional	O
@@ -63811,7 +63811,7 @@ against	O
 the	O
 development	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 This	O
@@ -63831,8 +63831,8 @@ an	O
 invasion	O
 suppressor	O
 in	O
-epithelial	B-DISEASE
-cancers	E-DISEASE
+epithelial	B-Disease
+cancers	E-Disease
 .	O
 
 Here	O
@@ -63952,7 +63952,7 @@ to	O
 be	O
 protective	O
 against	O
-tumor	S-DISEASE
+tumor	S-Disease
 development	O
 due	O
 to	O
@@ -64022,7 +64022,7 @@ splicing	O
 RASSF1A	S-GP
 is	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 gene	O
 .	O
@@ -64215,7 +64215,7 @@ pro	O
 -	O
 apoptotic	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 genes	O
 and	O
@@ -64296,7 +64296,7 @@ RASSF1A	S-GP
 is	O
 not	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 ,	O
 but	O
@@ -64322,8 +64322,8 @@ stromal	B-Cell
 myofibroblasts	E-Cell
 in	O
 invasive	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 :	O
 stromal	S-Cell
 expression	O
@@ -64356,9 +64356,9 @@ an	O
 important	O
 function	O
 in	O
-epithelial	B-DISEASE
-solid	I-DISEASE
-tumor	E-DISEASE
+epithelial	B-Disease
+solid	I-Disease
+tumor	E-Disease
 biology	O
 .	O
 
@@ -64372,8 +64372,8 @@ the	O
 relativity	O
 of	O
 invasive	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 and	O
 the	O
 desmoplastic	O
@@ -64416,8 +64416,8 @@ the	O
 clinicopathology	O
 of	O
 invasive	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 METHODS	O
@@ -64432,9 +64432,9 @@ a	O
 known	O
 prognosis	O
 of	O
-invasive	B-DISEASE
-breast	I-DISEASE
-cancer	E-DISEASE
+invasive	B-Disease
+breast	I-Disease
+cancer	E-Disease
 .	O
 
 We	O
@@ -64453,8 +64453,8 @@ myofibroblasts	S-Cell
 in	O
 the	O
 invasive	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 After	O
@@ -64646,9 +64646,9 @@ prognosis	O
 for	O
 patients	S-Organism
 with	O
-invasive	B-DISEASE
-breast	I-DISEASE
-cancer	E-DISEASE
+invasive	B-Disease
+breast	I-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -64745,7 +64745,7 @@ is	O
 expressed	O
 in	O
 human	S-Organism
-melanoma	S-DISEASE
+melanoma	S-Disease
 at	O
 the	O
 tumor	B-Tissue
@@ -64972,7 +64972,7 @@ Emerging	O
 metabolic	O
 targets	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapy	O
 .	O
 
@@ -65058,7 +65058,7 @@ been	O
 a	O
 rapidly	O
 growing	O
-area	S-DISEASE
+area	S-Disease
 .	O
 
 Emerging	O
@@ -65069,7 +65069,7 @@ oncogenes	O
 that	O
 drive	O
 the	O
-cancer	S-DISEASE
+cancer	S-Disease
 -	O
 promoting	O
 signals	O
@@ -65142,7 +65142,7 @@ capacity	O
 to	O
 effectively	O
 treat	O
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 .	O
 
@@ -65174,7 +65174,7 @@ potential	O
 metabolic	O
 targets	O
 for	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapy	O
 .	O
 
@@ -65187,7 +65187,7 @@ and	O
 its	O
 role	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 invasion	O
 and	O
 metastasis	O
@@ -65237,7 +65237,7 @@ many	O
 other	O
 types	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 While	O
@@ -65300,9 +65300,9 @@ hair	B-Multi-tissue_structure
 follicle	E-Multi-tissue_structure
 and	O
 in	O
-basal	B-DISEASE
-cell	I-DISEASE
-carcinomas	E-DISEASE
+basal	B-Disease
+cell	I-Disease
+carcinomas	E-Disease
 of	O
 the	O
 skin	S-Organ
@@ -65373,7 +65373,7 @@ MTSS1	S-GP
 s	O
 role	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 metastasis	O
 ,	O
 carcinogenesis	O
@@ -65407,11 +65407,11 @@ carrying	O
 an	O
 experimentally	O
 induced	O
-tumor	S-DISEASE
+tumor	S-Disease
 and	O
 in	O
 human	S-Organism
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 .	O
 
@@ -65437,7 +65437,7 @@ Balb	B-Organism
 c	I-Organism
 mice	E-Organism
 carrying	O
-tumors	S-DISEASE
+tumors	S-Disease
 induced	O
 by	O
 a	O
@@ -65479,7 +65479,7 @@ serum	S-Organism_substance
 increased	O
 with	O
 increased	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 .	O
 
@@ -65495,7 +65495,7 @@ frequently	O
 activated	O
 in	O
 human	S-Organism
-tumours	S-DISEASE
+tumours	S-Disease
 ,	O
 we	O
 examined	O
@@ -65512,7 +65512,7 @@ a	O
 variety	O
 of	O
 human	S-Organism
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 .	O
 
@@ -65527,7 +65527,7 @@ cases	O
 representing	O
 patients	S-Organism
 with	O
-adenocarcinomas	S-DISEASE
+adenocarcinomas	S-Disease
 of	O
 the	O
 stomach	S-Organ
@@ -65550,7 +65550,7 @@ the	O
 following	O
 types	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 no	O
 substantial	O
 change	O
@@ -65563,20 +65563,20 @@ observed	O
 ;	O
 nine	O
 with	O
-breast	S-DISEASE
+breast	S-Disease
 ,	O
 5	O
-colon	S-DISEASE
+colon	S-Disease
 ,	O
 5	O
-lung	S-DISEASE
+lung	S-Disease
 ,	O
 5	O
-ovarian	S-DISEASE
+ovarian	S-Disease
 and	O
 5	O
-hepatocellular	B-DISEASE
-carcinomas	E-DISEASE
+hepatocellular	B-Disease
+carcinomas	E-Disease
 .	O
 
 Serum	S-Organism_substance
@@ -65592,8 +65592,8 @@ valuable	O
 prognostic	O
 marker	O
 in	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 BACKGROUND	O
@@ -65640,8 +65640,8 @@ We	O
 previously	O
 showed	O
 in	O
-colorectal	B-DISEASE
-cancer	E-DISEASE
+colorectal	B-Disease
+cancer	E-Disease
 that	O
 sVAP	B-GP
 -	I-GP
@@ -65682,8 +65682,8 @@ not	O
 been	O
 described	O
 for	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 This	O
@@ -65704,8 +65704,8 @@ features	O
 and	O
 prognosis	O
 in	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 METHODS	O
@@ -65716,8 +65716,8 @@ was	O
 collected	O
 from	O
 107	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 patients	S-Organism
 and	O
 33	O
@@ -65748,7 +65748,7 @@ sVAP	B-GP
 1	E-GP
 level	O
 for	O
-cancer	S-DISEASE
+cancer	S-Disease
 patients	S-Organism
 was	O
 significantly	O
@@ -65760,11 +65760,11 @@ controls	O
 and	O
 decreased	O
 with	O
-disease	S-DISEASE
+disease	S-Disease
 progression	O
 .	O
 
-Tumor	S-DISEASE
+Tumor	S-Disease
 size	O
 ,	O
 serosal	S-Multi-tissue_structure
@@ -65831,8 +65831,8 @@ stages	O
 I	O
 -	O
 III	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 patients	S-Organism
 ,	O
 respectively	O
@@ -65851,8 +65851,8 @@ with	O
 poor	O
 prognosis	O
 in	O
-gastric	B-DISEASE
-cancer	E-DISEASE
+gastric	B-Disease
+cancer	E-Disease
 .	O
 
 Determining	O
@@ -65893,7 +65893,7 @@ in	O
 diseases	O
 such	O
 as	O
-cancer	S-DISEASE
+cancer	S-Disease
 ,	O
 and	O
 that	O
@@ -66104,7 +66104,7 @@ early	O
 biologic	O
 response	O
 to	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapy	O
 and	O
 may	O
@@ -66116,7 +66116,7 @@ the	O
 development	O
 of	O
 new	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapeutics	O
 .	O
 
@@ -66213,8 +66213,8 @@ inhibited	O
 FDG	S-Chemical
 accumulation	O
 in	O
-tumor	B-DISEASE
-xenografts	E-DISEASE
+tumor	B-Disease
+xenografts	E-Disease
 after	O
 1	O
 day	O
@@ -66240,8 +66240,8 @@ microarray	O
 analysis	O
 of	O
 treated	O
-tumor	B-DISEASE
-xenografts	E-DISEASE
+tumor	B-Disease
+xenografts	E-Disease
 revealed	O
 significantly	O
 decreased	O
@@ -66305,11 +66305,11 @@ highly	O
 efficacious	O
 in	O
 this	O
-xenograft	S-DISEASE
+xenograft	S-Disease
 model	O
 of	O
 human	S-Organism
-melanoma	S-DISEASE
+melanoma	S-Disease
 and	O
 decreases	O
 glucose	S-Chemical
@@ -66356,7 +66356,7 @@ RAF265	S-Chemical
 to	O
 assess	O
 early	O
-tumor	S-DISEASE
+tumor	S-Disease
 response	O
 .	O
 
@@ -66393,7 +66393,7 @@ multiple	O
 pathways	O
 linked	O
 to	O
-cancer	S-DISEASE
+cancer	S-Disease
 and	O
 can	O
 suggest	O
@@ -66406,7 +66406,7 @@ analysis	O
 as	O
 biomarkers	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 response	O
 .	O
 
@@ -66435,10 +66435,10 @@ of	O
 the	O
 mechanism	O
 of	O
-hepatocellular	B-DISEASE
-carcinoma	E-DISEASE
+hepatocellular	B-Disease
+carcinoma	E-Disease
 (	O
-HCC	S-DISEASE
+HCC	S-Disease
 )	O
 metastasis	O
 remains	O
@@ -66665,7 +66665,7 @@ potential	O
 biomarkers	O
 associated	O
 with	O
-HCC	S-DISEASE
+HCC	S-Disease
 metastasis	O
 on	O
 the	O
@@ -66827,11 +66827,11 @@ during	O
 development	O
 of	O
 the	O
-central	B-Anatomical_system
-nervous	I-Anatomical_system
-system	E-Anatomical_system
+central	B-ANATOMY
+nervous	I-ANATOMY
+system	E-ANATOMY
 (	O
-CNS	S-Anatomical_system
+CNS	S-ANATOMY
 )	O
 .	O
 
@@ -67036,8 +67036,8 @@ preferentially	O
 expressed	O
 in	O
 human	S-Organism
-breast	B-DISEASE
-carcinomas	E-DISEASE
+breast	B-Disease
+carcinomas	E-Disease
 with	O
 low	O
 estrogen	B-GP
@@ -67073,8 +67073,8 @@ for	O
 90	O
 untreated	O
 primary	O
-breast	B-DISEASE
-carcinomas	E-DISEASE
+breast	B-Disease
+carcinomas	E-Disease
 .	O
 
 Coexpression	O
@@ -67090,7 +67090,7 @@ approximately	O
 %	O
 of	O
 the	O
-tumors	S-DISEASE
+tumors	S-Disease
 regardless	O
 of	O
 menopausal	O
@@ -67105,12 +67105,12 @@ in	O
 tumor	B-Cell
 cells	E-Cell
 of	O
-high	B-DISEASE
--	I-DISEASE
-grade	I-DISEASE
-ductal	I-DISEASE
-breast	I-DISEASE
-carcinomas	E-DISEASE
+high	B-Disease
+-	I-Disease
+grade	I-Disease
+ductal	I-Disease
+breast	I-Disease
+carcinomas	E-Disease
 (	O
 15	O
 of	O
@@ -67136,7 +67136,7 @@ was	O
 found	O
 preferentially	O
 in	O
-tumors	S-DISEASE
+tumors	S-Disease
 with	O
 high	O
 GF	O
@@ -67178,7 +67178,7 @@ Sixty	O
 eight	O
 percent	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 this	O
 group	O
@@ -67193,7 +67193,7 @@ all	O
 vimentin	S-GP
 -	O
 positive	O
-tumors	S-DISEASE
+tumors	S-Disease
 fell	O
 into	O
 this	O
@@ -67230,8 +67230,8 @@ of	O
 ER	S-GP
 -	O
 independent	O
-breast	B-DISEASE
-carcinomas	E-DISEASE
+breast	B-Disease
+carcinomas	E-Disease
 with	O
 poor	O
 prognostic	O
@@ -67244,12 +67244,12 @@ of	O
 Merlin	S-GP
 protein	O
 in	O
-non	B-DISEASE
--	I-DISEASE
-small	I-DISEASE
-cell	I-DISEASE
-lung	I-DISEASE
-carcinoma	E-DISEASE
+non	B-Disease
+-	I-Disease
+small	I-Disease
+cell	I-Disease
+lung	I-Disease
+carcinoma	E-Disease
 and	O
 the	O
 clinical	O
@@ -67270,14 +67270,14 @@ of	O
 Merlin	S-GP
 protein	O
 in	O
-non	B-DISEASE
--	I-DISEASE
-small	I-DISEASE
-cell	I-DISEASE
-lung	I-DISEASE
-cancer	E-DISEASE
+non	B-Disease
+-	I-Disease
+small	I-Disease
+cell	I-Disease
+lung	I-Disease
+cancer	E-Disease
 (	O
-NSCLC	S-DISEASE
+NSCLC	S-Disease
 )	O
 .	O
 
@@ -67292,12 +67292,12 @@ in	O
 45	O
 cases	O
 of	O
-NSCLC	S-DISEASE
+NSCLC	S-Disease
 and	O
 adjacent	O
 tissue	S-Tissue
 of	O
-NSCLC	S-DISEASE
+NSCLC	S-Disease
 and	O
 normal	O
 lung	B-Tissue
@@ -67349,7 +67349,7 @@ of	O
 Merlin	S-GP
 protein	O
 in	O
-NSCLC	S-DISEASE
+NSCLC	S-Disease
 and	O
 normal	O
 lung	B-Multi-tissue_structure
@@ -67422,7 +67422,7 @@ initiation	O
 of	O
 metastasis	O
 of	O
-NSCLC	S-DISEASE
+NSCLC	S-Disease
 .	O
 
 The	O
@@ -67844,7 +67844,7 @@ inhibitor	O
 with	O
 antiangiogenic	O
 and	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 activity	O
 that	O
 mainly	O
@@ -67875,8 +67875,8 @@ for	O
 the	O
 treatment	O
 of	O
-malignant	B-DISEASE
-pheochromocytomas	E-DISEASE
+malignant	B-Disease
+pheochromocytomas	E-Disease
 .	O
 
 However	O
@@ -68195,8 +68195,8 @@ lymph	B-Multi-tissue_structure
 node	E-Multi-tissue_structure
 metastasis	O
 with	O
-endometrial	B-DISEASE
-cancer	E-DISEASE
+endometrial	B-Disease
+cancer	E-Disease
 .	O
 
 Controlling	O
@@ -68209,7 +68209,7 @@ a	O
 key	O
 issue	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapy	O
 .	O
 
@@ -68228,11 +68228,11 @@ in	O
 various	O
 types	O
 of	O
-cancers	S-DISEASE
+cancers	S-Disease
 ,	O
 including	O
-endometrial	B-DISEASE
-cancer	E-DISEASE
+endometrial	B-Disease
+cancer	E-Disease
 .	O
 
 Vascular	B-GP
@@ -68326,8 +68326,8 @@ nude	I-Organism
 mice	E-Organism
 resulted	O
 in	O
-uterine	B-DISEASE
-cancer	E-DISEASE
+uterine	B-Disease
+cancer	E-Disease
 with	O
 lymph	B-Multi-tissue_structure
 node	E-Multi-tissue_structure
@@ -68423,7 +68423,7 @@ lymphangiogenesis	O
 was	O
 observed	O
 within	O
-tumors	S-DISEASE
+tumors	S-Disease
 when	O
 HEC1A	O
 /	O
@@ -68576,7 +68576,7 @@ which	O
 were	O
 increased	O
 in	O
-tumors	S-DISEASE
+tumors	S-Disease
 from	O
 Apc	S-GP
 (	O
@@ -68774,7 +68774,7 @@ recently	O
 reported	O
 for	O
 its	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 effect	O
 on	O
 several	O
@@ -68791,7 +68791,7 @@ molecular	O
 mechanisms	O
 of	O
 this	O
-anticancer	S-DISEASE
+anticancer	S-Disease
 effect	O
 are	O
 not	O
@@ -69003,8 +69003,8 @@ potential	O
 of	O
 curcumin	S-Chemical
 for	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 deserves	O
 further	O
 study	O
@@ -69050,7 +69050,7 @@ considered	O
 a	O
 hallmark	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 Although	O
@@ -69083,7 +69083,7 @@ present	O
 in	O
 a	O
 developing	O
-tumor	S-DISEASE
+tumor	S-Disease
 microenvironment	O
 remains	O
 unclear	O
@@ -69110,7 +69110,7 @@ has	O
 been	O
 implicated	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 development	O
 ,	O
 progression	O
@@ -69310,17 +69310,17 @@ OSM	S-GP
 mediated	O
 signaling	O
 from	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressive	O
 to	O
-tumor	S-DISEASE
+tumor	S-Disease
 promoting	O
 .	O
 
 PTHrP	S-GP
 drives	O
-breast	B-DISEASE
-tumor	E-DISEASE
+breast	B-Disease
+tumor	E-Disease
 initiation	O
 ,	O
 progression	O
@@ -69396,7 +69396,7 @@ dysregulated	O
 expression	O
 in	O
 advanced	O
-cancers	S-DISEASE
+cancers	S-Disease
 causes	O
 malignancy	O
 -	O
@@ -69410,17 +69410,17 @@ is	O
 frequently	O
 expressed	O
 by	O
-breast	B-DISEASE
-tumors	E-DISEASE
+breast	B-Disease
+tumors	E-Disease
 and	O
 other	O
-solid	B-DISEASE
-cancers	E-DISEASE
+solid	B-Disease
+cancers	E-Disease
 ,	O
 its	O
 effects	O
 on	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 are	O
 unclear	O
@@ -69440,8 +69440,8 @@ in	O
 key	O
 steps	O
 of	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 -	O
 it	O
 influences	O
@@ -69450,8 +69450,8 @@ initiation	O
 and	O
 progression	O
 of	O
-primary	B-DISEASE
-tumors	E-DISEASE
+primary	B-Disease
+tumors	E-Disease
 and	O
 metastases	O
 .	O
@@ -69467,8 +69467,8 @@ the	O
 PyMT	S-GP
 -	O
 MMTV	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 mouse	S-Organism
 model	O
 caused	O
@@ -69476,11 +69476,11 @@ a	O
 delay	O
 in	O
 primary	O
-tumor	S-DISEASE
+tumor	S-Disease
 initiation	O
 ,	O
 inhibited	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 ,	O
 and	O
@@ -69569,9 +69569,9 @@ and	O
 metastasis	O
 of	O
 human	S-Organism
-breast	B-DISEASE
-cancer	I-DISEASE
-xenografts	E-DISEASE
+breast	B-Disease
+cancer	I-Disease
+xenografts	E-Disease
 .	O
 
 Our	O
@@ -69591,8 +69591,8 @@ several	O
 key	O
 steps	O
 of	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 and	O
 suggest	O
 that	O
@@ -69610,8 +69610,8 @@ intervention	O
 Aquaporins	S-GP
 in	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 :	O
 identification	O
 and	O
@@ -69619,8 +69619,8 @@ involvement	O
 in	O
 carcinogenesis	O
 of	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 BACKGROUND	O
@@ -69671,8 +69671,8 @@ of	O
 AQPs	S-GP
 in	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 The	O
@@ -69690,8 +69690,8 @@ of	O
 AQPs	S-GP
 in	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 and	O
 its	O
 significance	O
@@ -69747,8 +69747,8 @@ were	O
 expressed	O
 in	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 and	O
 /	O
 or	O
@@ -69779,7 +69779,7 @@ expression	O
 was	O
 higher	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 than	O
 that	O
 in	O
@@ -69876,7 +69876,7 @@ of	O
 the	O
 first	O
 human	S-Organism
-cancer	S-DISEASE
+cancer	S-Disease
 virus	O
 ,	O
 HTLV	B-Organism
@@ -69913,13 +69913,13 @@ as	O
 the	O
 cause	O
 of	O
-adult	B-DISEASE
-T	I-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-leukemia	E-DISEASE
+adult	B-Disease
+T	I-Disease
+-	I-Disease
+cell	I-Disease
+leukemia	E-Disease
 (	O
-ATL	S-DISEASE
+ATL	S-Disease
 )	O
 .	O
 
@@ -69993,7 +69993,7 @@ and	O
 recent	O
 breakthroughs	O
 in	O
-ATL	S-DISEASE
+ATL	S-Disease
 therapy	O
 .	O
 
@@ -70021,10 +70021,10 @@ metastasis	O
 of	O
 highly	O
 metastatic	O
-oral	B-DISEASE
-squamous	I-DISEASE
-cell	I-DISEASE
-carcinoma	E-DISEASE
+oral	B-Disease
+squamous	I-Disease
+cell	I-Disease
+carcinoma	E-Disease
 .	O
 
 Nuclear	B-GP
@@ -70052,10 +70052,10 @@ poor	O
 prognosis	O
 in	O
 many	O
-cancers	S-DISEASE
+cancers	S-Disease
 ,	O
 including	O
-OSCC	S-DISEASE
+OSCC	S-Disease
 .	O
 
 However	O
@@ -70076,7 +70076,7 @@ NF	B-GP
 kappaB	E-GP
 inhibition	O
 on	O
-OSCC	S-DISEASE
+OSCC	S-Disease
 metastasis	O
 .	O
 
@@ -70166,7 +70166,7 @@ metastasis	O
 and	O
 survival	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 engrafted	O
 mice	S-Organism
@@ -70209,8 +70209,8 @@ assessed	O
 ,	O
 and	O
 engrafted	O
-tongue	B-DISEASE
-tumors	E-DISEASE
+tongue	B-Disease
+tumors	E-Disease
 were	O
 immunohistochemically	O
 examined	O
@@ -70308,8 +70308,8 @@ peptide	E-Chemical
 suppressed	O
 metastasis	O
 and	O
-tongue	B-DISEASE
-tumor	E-DISEASE
+tongue	B-Disease
+tumor	E-Disease
 growth	O
 in	O
 GSAS	B-Cell
@@ -70338,8 +70338,8 @@ related	O
 molecules	O
 in	O
 engrafted	O
-tongue	B-DISEASE
-tumors	E-DISEASE
+tongue	B-Disease
+tumors	E-Disease
 .	O
 
 Our	O
@@ -70368,7 +70368,7 @@ treatment	O
 of	O
 highly	O
 metastatic	O
-OSCC	S-DISEASE
+OSCC	S-Disease
 .	O
 
 beta	B-GP
@@ -70384,11 +70384,11 @@ activated	O
 Pten	S-GP
 -	O
 deficient	O
-melanomas	S-DISEASE
+melanomas	S-Disease
 .	O
 
-Malignant	B-DISEASE
-melanoma	E-DISEASE
+Malignant	B-Disease
+melanoma	E-Disease
 is	O
 characterized	O
 by	O
@@ -70422,7 +70422,7 @@ is	O
 frequently	O
 dysregulated	O
 in	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 ,	O
 the	O
 functional	O
@@ -70445,7 +70445,7 @@ a	O
 mouse	S-Organism
 model	O
 of	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 that	O
 is	O
 based	O
@@ -70473,7 +70473,7 @@ a	O
 central	O
 mediator	O
 of	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 metastasis	O
 to	O
 the	O
@@ -70494,7 +70494,7 @@ beta	B-GP
 catenin	E-GP
 levels	O
 control	O
-tumor	S-DISEASE
+tumor	S-Disease
 differentiation	O
 and	O
 regulate	O
@@ -70511,7 +70511,7 @@ signaling	O
 
 Highly	O
 metastatic	O
-tumors	S-DISEASE
+tumors	S-Disease
 with	O
 beta	B-GP
 -	I-GP
@@ -70525,7 +70525,7 @@ a	O
 subset	O
 of	O
 human	S-Organism
-melanomas	S-DISEASE
+melanomas	S-Disease
 .	O
 
 Together	O
@@ -70539,7 +70539,7 @@ a	O
 metastasis	O
 regulator	O
 in	O
-melanoma	S-DISEASE
+melanoma	S-Disease
 .	O
 
 Mitochondrial	S-Cellular_component
@@ -70558,7 +70558,7 @@ inhibitor	O
 HTPB	S-Chemical
 ,	O
 in	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 and	O
 antimetastatic	O
 mouse	S-Organism
@@ -70580,7 +70580,7 @@ new	O
 era	O
 in	O
 molecular	O
-cancer	S-DISEASE
+cancer	S-Disease
 therapeutics	O
 .	O
 
@@ -70593,8 +70593,8 @@ for	O
 the	O
 treatment	O
 of	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 remain	O
 to	O
 be	O
@@ -70639,8 +70639,8 @@ potential	O
 chemotherapeutic	O
 drug	O
 for	O
-solid	B-DISEASE
-tumors	E-DISEASE
+solid	B-Disease
+tumors	E-Disease
 .	O
 
 The	O
@@ -70702,8 +70702,8 @@ MMPs	S-GP
 
 Mice	S-Organism
 with	O
-tumor	B-DISEASE
-xenograft	E-DISEASE
+tumor	B-Disease
+xenograft	E-Disease
 and	O
 experimental	O
 metastasis	O
@@ -70714,7 +70714,7 @@ to	O
 evaluate	O
 effects	O
 on	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 metastasis	O
@@ -70819,9 +70819,9 @@ of	O
 HTPB	S-Chemical
 efficiently	O
 inhibited	O
-A549	B-DISEASE
-xenograft	I-DISEASE
-tumor	E-DISEASE
+A549	B-Disease
+xenograft	I-Disease
+tumor	E-Disease
 growth	O
 in	O
 vivo	O
@@ -70888,7 +70888,7 @@ involve	O
 in	O
 anti	O
 -	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 effects	O
 of	O
@@ -70902,7 +70902,7 @@ cells	E-Cell
 HTPB	S-Chemical
 significantly	O
 suppresses	O
-tumor	S-DISEASE
+tumor	S-Disease
 metastasis	O
 partly	O
 through	O
@@ -70945,8 +70945,8 @@ a	O
 promising	O
 candidate	O
 for	O
-lung	B-DISEASE
-cancer	E-DISEASE
+lung	B-Disease
+cancer	E-Disease
 chemotherapy	O
 .	O
 
@@ -70961,8 +70961,8 @@ in	O
 precursor	B-Pathological_formation
 lesions	E-Pathological_formation
 of	O
-gallbladder	B-DISEASE
-carcinoma	E-DISEASE
+gallbladder	B-Disease
+carcinoma	E-Disease
 .	O
 
 AIM	O
@@ -70993,20 +70993,20 @@ two	O
 pathogenic	O
 models	O
 of	O
-gallbladder	B-DISEASE
-cancer	E-DISEASE
+gallbladder	B-Disease
+cancer	E-Disease
 :	O
 the	O
-metaplasia	B-DISEASE
--	I-DISEASE
-dysplasia	I-DISEASE
--	I-DISEASE
-carcinoma	E-DISEASE
+metaplasia	B-Disease
+-	I-Disease
+dysplasia	I-Disease
+-	I-Disease
+carcinoma	E-Disease
 and	O
 the	O
-adenoma	B-DISEASE
--	I-DISEASE
-carcinoma	E-DISEASE
+adenoma	B-Disease
+-	I-Disease
+carcinoma	E-Disease
 pathways	O
 .	O
 
@@ -71037,8 +71037,8 @@ receptors	O
 was	O
 studied	O
 in	O
-biopsy	B-DISEASE
-samples	E-DISEASE
+biopsy	B-Disease
+samples	E-Disease
 from	O
 92	O
 patients	S-Organism
@@ -71067,7 +71067,7 @@ High	O
 HER2	S-GP
 expression	O
 in	O
-specimens	S-DISEASE
+specimens	S-Disease
 was	O
 additionally	O
 investigated	O
@@ -71103,7 +71103,7 @@ protein	O
 was	O
 absent	O
 in	O
-adenomas	S-DISEASE
+adenomas	S-Disease
 and	O
 in	O
 normal	O
@@ -71129,8 +71129,8 @@ of	O
 epithelial	B-Cell
 cells	E-Cell
 of	O
-intestinal	B-DISEASE
-metaplasia	E-DISEASE
+intestinal	B-Disease
+metaplasia	E-Disease
 (	O
 22	O
 /	O
@@ -71142,7 +71142,7 @@ metaplasia	E-DISEASE
 %	O
 )	O
 and	O
-carcinoma	S-DISEASE
+carcinoma	S-Disease
 in	O
 situ	O
 (	O
@@ -71175,9 +71175,9 @@ in	O
 the	O
 epithelium	S-Tissue
 with	O
-metaplasia	S-DISEASE
+metaplasia	S-Disease
 or	O
-carcinoma	S-DISEASE
+carcinoma	S-Disease
 in	O
 situ	O
 was	O
@@ -71195,8 +71195,8 @@ result	O
 was	O
 observed	O
 in	O
-invasive	B-DISEASE
-carcinomas	E-DISEASE
+invasive	B-Disease
+carcinomas	E-Disease
 (	O
 0	O
 /	O
@@ -71228,7 +71228,7 @@ additionally	O
 observed	O
 in	O
 the	O
-adenomas	S-DISEASE
+adenomas	S-Disease
 .	O
 
 The	O
@@ -71256,8 +71256,8 @@ composing	O
 the	O
 epithelia	S-Tissue
 with	O
-intestinal	B-DISEASE
-metaplasia	E-DISEASE
+intestinal	B-Disease
+metaplasia	E-Disease
 (	O
 24	O
 /	O
@@ -71267,9 +71267,9 @@ metaplasia	E-DISEASE
 %	O
 )	O
 and	O
-carcinoma	B-DISEASE
-in	I-DISEASE
-situ	E-DISEASE
+carcinoma	B-Disease
+in	I-Disease
+situ	E-Disease
 (	O
 10	O
 /	O
@@ -71284,7 +71284,7 @@ the	O
 epithelial	B-Cell
 cells	E-Cell
 of	O
-adenomas	S-DISEASE
+adenomas	S-Disease
 .	O
 
 In	O
@@ -71321,9 +71321,9 @@ a	O
 low	O
 expression	O
 in	O
-invasive	B-DISEASE
-gallbladder	I-DISEASE
-carcinomas	E-DISEASE
+invasive	B-Disease
+gallbladder	I-Disease
+carcinomas	E-Disease
 .	O
 
 CONCLUSION	O
@@ -71344,8 +71344,8 @@ in	O
 precursor	B-Pathological_formation
 lesions	E-Pathological_formation
 of	O
-gallbladder	B-DISEASE
-carcinoma	E-DISEASE
+gallbladder	B-Disease
+carcinoma	E-Disease
 suggests	O
 cross	O
 -	O
@@ -71771,8 +71771,8 @@ H	B-Chemical
 -	O
 antiport	O
 in	O
-ascites	B-DISEASE
-tumors	E-DISEASE
+ascites	B-Disease
+tumors	E-Disease
 .	O
 
 The	O
@@ -72038,7 +72038,7 @@ cations	S-Chemical
 .	O
 
 [	O
-Tumor	S-DISEASE
+Tumor	S-Disease
 metastasis	O
 and	O
 the	O
@@ -72050,8 +72050,8 @@ system	O
 Metastatic	O
 spread	O
 of	O
-malignant	B-DISEASE
-tumor	E-DISEASE
+malignant	B-Disease
+tumor	E-Disease
 appears	O
 to	O
 correlate	O
@@ -72074,9 +72074,9 @@ metastasis	O
 was	O
 examined	O
 in	O
-Lewis	B-DISEASE
-lung	I-DISEASE
-carcinoma	E-DISEASE
+Lewis	B-Disease
+lung	I-Disease
+carcinoma	E-Disease
 of	O
 mice	S-Organism
 .	O
@@ -72090,7 +72090,7 @@ proteases	O
 decreased	O
 the	O
 primary	O
-tumor	S-DISEASE
+tumor	S-Disease
 growth	O
 and	O
 pulmonary	S-Organ
@@ -72123,7 +72123,7 @@ the	O
 primary	O
 site	O
 prevented	O
-tumor	S-DISEASE
+tumor	S-Disease
 invasion	O
 and	O
 metastasis	O
@@ -72138,7 +72138,7 @@ PA	S-GP
 content	O
 of	O
 excised	O
-tumors	S-DISEASE
+tumors	S-Disease
 was	O
 determined	O
 by	O
@@ -72209,7 +72209,7 @@ plays	O
 a	O
 role	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 invasion	O
 and	O
 metastasis	O
@@ -72219,8 +72219,8 @@ Clinically	O
 ,	O
 patients	S-Organism
 with	O
-advanced	B-DISEASE
-cancer	E-DISEASE
+advanced	B-Disease
+cancer	E-Disease
 are	O
 usually	O
 in	O
@@ -72235,14 +72235,14 @@ and	O
 fibrin	S-GP
 deposition	O
 around	O
-tumor	S-DISEASE
+tumor	S-Disease
 mass	O
 is	O
 a	O
 serious	O
 problem	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 chemotherapy	O
 .	O
 
@@ -72257,7 +72257,7 @@ increased	O
 tissue	S-Tissue
 concentration	O
 of	O
-antitumor	S-DISEASE
+antitumor	S-Disease
 agent	O
 .	O
 
@@ -72778,7 +72778,7 @@ expressed	O
 in	O
 several	O
 human	S-Organism
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 suggesting	O
 that	O
@@ -72878,7 +72878,7 @@ the	O
 EGF	B-GP
 receptor	E-GP
 by	O
-tumor	S-DISEASE
+tumor	S-Disease
 promoters	O
 and	O
 other	O
@@ -72917,7 +72917,7 @@ gene	O
 amplification	O
 in	O
 human	S-Organism
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Glutamine	S-Amino_acid
@@ -73362,7 +73362,7 @@ of	O
 EGF	S-GP
 binding	O
 by	O
-tumor	S-DISEASE
+tumor	S-Disease
 promoters	O
 following	O
 long	O
@@ -73422,7 +73422,7 @@ that	O
 prolonged	O
 treatment	O
 with	O
-tumor	S-DISEASE
+tumor	S-Disease
 promoters	O
 alters	O
 the	O
@@ -73697,14 +73697,14 @@ oncogene	O
 Mast	B-Cell
 cells	E-Cell
 and	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 The	O
 specific	O
 enhancement	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 proliferation	O
 in	O
 vitro	O
@@ -73735,7 +73735,7 @@ of	O
 a	O
 variety	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 in	O
 vitro	O
 .	O
@@ -73747,7 +73747,7 @@ at	O
 mast	B-Cell
 cell	E-Cell
 /	O
-tumor	S-DISEASE
+tumor	S-Disease
 ratios	O
 which	O
 reflect	O
@@ -73757,7 +73757,7 @@ of	O
 host	B-Cell
 cell	E-Cell
 /	O
-tumor	S-DISEASE
+tumor	S-Disease
 relationships	O
 in	O
 vivo	O
@@ -73791,7 +73791,7 @@ This	O
 cellular	S-Cell
 interaction	O
 was	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 specific	O
 ,	O
@@ -73824,7 +73824,7 @@ mast	B-Cell
 cell	E-Cell
 -	O
 mediated	O
-tumor	S-DISEASE
+tumor	S-Disease
 cytotoxicity	O
 ,	O
 and	O
@@ -73903,14 +73903,14 @@ close	O
 association	O
 with	O
 human	S-Organism
-malignancies	S-DISEASE
+malignancies	S-Disease
 (	O
-T	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+T	B-Disease
+-	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 and	O
-leukemia	S-DISEASE
+leukemia	S-Disease
 )	O
 .	O
 
@@ -74575,16 +74575,16 @@ from	O
 two	O
 individuals	O
 with	O
-T	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-acute	I-DISEASE
-lymphocytic	I-DISEASE
-leukemia	E-DISEASE
+T	B-Disease
+-	I-Disease
+cell	I-Disease
+acute	I-Disease
+lymphocytic	I-Disease
+leukemia	E-Disease
 (	O
-T	B-DISEASE
--	I-DISEASE
-ALL	E-DISEASE
+T	B-Disease
+-	I-Disease
+ALL	E-Disease
 )	O
 express	O
 HLA	B-GP
@@ -74938,9 +74938,9 @@ drugs	O
 in	O
 mice	S-Organism
 bearing	O
-Lewis	B-DISEASE
-lung	I-DISEASE
-carcinoma	E-DISEASE
+Lewis	B-Disease
+lung	I-Disease
+carcinoma	E-Disease
 .	O
 
 The	O
@@ -75030,7 +75030,7 @@ formation	O
 of	O
 spontaneous	O
 hematogenous	O
-metastases	S-DISEASE
+metastases	S-Disease
 in	O
 mice	S-Organism
 bearing	O
@@ -75039,9 +75039,9 @@ s	O
 c	O
 .	O
 
-Lewis	B-DISEASE
-lung	I-DISEASE
-carcinoma	E-DISEASE
+Lewis	B-Disease
+lung	I-Disease
+carcinoma	E-Disease
 ,	O
 with	O
 a	O
@@ -75092,9 +75092,9 @@ i	O
 m	O
 .	O
 
-Lewis	B-DISEASE
-lung	I-DISEASE
-carcinoma	E-DISEASE
+Lewis	B-Disease
+lung	I-Disease
+carcinoma	E-Disease
 .	O
 
 The	O
@@ -75133,7 +75133,7 @@ by	O
 drug	O
 treatment	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 bearing	O
 mice	S-Organism
@@ -75141,7 +75141,7 @@ as	O
 compared	O
 with	O
 untreated	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 bearing	O
 controls	S-Organism
@@ -75217,7 +75217,7 @@ in	O
 a	O
 noncachectic	O
 animal	O
-tumor	S-DISEASE
+tumor	S-Disease
 system	O
 .	O
 
@@ -75237,7 +75237,7 @@ is	O
 utilized	O
 by	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 ,	O
 is	O
 a	O
@@ -75261,7 +75261,7 @@ tracer	O
 methodology	O
 in	O
 a	O
-sarcoma	S-DISEASE
+sarcoma	S-Disease
 -	O
 bearing	O
 rat	S-Organism
@@ -75291,14 +75291,14 @@ model	O
 .	O
 
 Both	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 bearing	O
 (	O
 TB	O
 )	O
 and	O
-nontumor	S-DISEASE
+nontumor	S-Disease
 bearing	O
 (	O
 NTB	O
@@ -75312,7 +75312,7 @@ to	O
 study	O
 and	O
 the	O
-tumors	S-DISEASE
+tumors	S-Disease
 were	O
 relatively	O
 small	O
@@ -75405,7 +75405,7 @@ results	O
 suggest	O
 that	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 -	O
 bearing	O
 animal	O
@@ -75414,7 +75414,7 @@ even	O
 prior	O
 to	O
 significant	O
-cachexia	S-DISEASE
+cachexia	S-Disease
 ,	O
 has	O
 an	O
@@ -75433,8 +75433,8 @@ a	O
 significant	O
 factor	O
 in	O
-malignant	B-DISEASE
-cachexia	E-DISEASE
+malignant	B-Disease
+cachexia	E-Disease
 .	O
 
 The	O
@@ -75979,8 +75979,8 @@ RNA	B-Organism
 leukemia	I-Organism
 viruses	E-Organism
 cause	O
-lymphoid	B-DISEASE
-neoplasia	E-DISEASE
+lymphoid	B-Disease
+neoplasia	E-Disease
 after	O
 a	O
 long	O
@@ -76095,8 +76095,8 @@ beta	E-GP
 interactions	O
 in	O
 human	S-Organism
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 progression	O
 .	O
 
@@ -76118,7 +76118,7 @@ its	O
 possible	O
 involvement	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 .	O
 
@@ -76192,8 +76192,8 @@ of	O
 tumor	B-Cell
 cells	E-Cell
 suppressed	O
-intraabdominal	B-DISEASE
-tumor	E-DISEASE
+intraabdominal	B-Disease
+tumor	E-Disease
 and	O
 lung	S-Organ
 metastases	O
@@ -76219,11 +76219,11 @@ inhibited	O
 growth	O
 of	O
 established	O
-MDA	B-DISEASE
--	I-DISEASE
-231	I-DISEASE
-subcutaneous	I-DISEASE
-tumors	E-DISEASE
+MDA	B-Disease
+-	I-Disease
+231	I-Disease
+subcutaneous	I-Disease
+tumors	E-Disease
 .	O
 
 Histologically	O
@@ -76234,7 +76234,7 @@ both	O
 treated	O
 and	O
 control	O
-tumors	S-DISEASE
+tumors	S-Disease
 were	O
 identical	O
 .	O
@@ -76260,13 +76260,13 @@ activity	O
 did	O
 not	O
 inhibit	O
-MDA	B-DISEASE
--	I-DISEASE
-231	I-DISEASE
-primary	I-DISEASE
-tumor	E-DISEASE
+MDA	B-Disease
+-	I-Disease
+231	I-Disease
+primary	I-Disease
+tumor	E-Disease
 or	O
-metastases	S-DISEASE
+metastases	S-Disease
 formation	O
 ,	O
 nor	O
@@ -76348,8 +76348,8 @@ in	O
 the	O
 progression	O
 of	O
-mammary	B-DISEASE
-carcinomas	E-DISEASE
+mammary	B-Disease
+carcinomas	E-Disease
 by	O
 suppressing	O
 host	O
@@ -76504,7 +76504,7 @@ v	B-GP
 erbA	E-GP
 to	O
 induce	O
-erythroleukemia	S-DISEASE
+erythroleukemia	S-Disease
 and	O
 to	O
 co	O
@@ -76684,7 +76684,7 @@ both	O
 viruses	O
 induced	O
 an	O
-erythroleukemia	S-DISEASE
+erythroleukemia	S-Disease
 in	O
 about	O
 half	O
@@ -76697,7 +76697,7 @@ In	O
 contrast	O
 ,	O
 no	O
-leukemia	S-DISEASE
+leukemia	S-Disease
 was	O
 observed	O
 with	O
@@ -76748,7 +76748,7 @@ The	O
 average	O
 latency	O
 of	O
-leukemia	S-DISEASE
+leukemia	S-Disease
 induction	O
 was	O
 shorter	O
@@ -76805,7 +76805,7 @@ capable	O
 of	O
 inducing	O
 an	O
-erythroleukemia	S-DISEASE
+erythroleukemia	S-Disease
 when	O
 expressed	O
 by	O
@@ -77691,7 +77691,7 @@ causes	O
 of	O
 death	O
 from	O
-cancer	S-DISEASE
+cancer	S-Disease
 in	O
 human	S-Organism
 beings	O
@@ -77741,11 +77741,11 @@ metastatic	O
 potential	O
 of	O
 many	O
-cancers	S-DISEASE
+cancers	S-Disease
 ,	O
 including	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 .	O
 
 MPs	S-GP
@@ -77754,7 +77754,7 @@ play	O
 a	O
 role	O
 in	O
-tumor	S-DISEASE
+tumor	S-Disease
 angiogenesis	O
 .	O
 
@@ -77790,7 +77790,7 @@ that	O
 tetracyclines	S-Chemical
 can	O
 suppress	O
-tumor	S-DISEASE
+tumor	S-Disease
 MPs	S-GP
 as	O
 well	O
@@ -77837,7 +77837,7 @@ in	O
 vivo	O
 process	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 invasion	O
 through	O
 basement	B-Cellular_component
@@ -78664,7 +78664,7 @@ formation	O
 of	O
 progressively	O
 growing	O
-carcinomas	S-DISEASE
+carcinomas	S-Disease
 after	O
 such	O
 cells	S-Cell
@@ -78704,7 +78704,7 @@ lines	E-Cell
 and	O
 their	O
 derived	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 This	O
@@ -78773,8 +78773,8 @@ tumorigenicity	O
 Furthermore	O
 ,	O
 rat	S-Organism
-mammary	B-DISEASE
-carcinomas	E-DISEASE
+mammary	B-Disease
+carcinomas	E-Disease
 with	O
 elevated	O
 neu	S-GP
@@ -78796,8 +78796,8 @@ when	O
 compared	O
 to	O
 rat	S-Organism
-mammary	B-DISEASE
-carcinomas	E-DISEASE
+mammary	B-Disease
+carcinomas	E-Disease
 with	O
 little	O
 or	O
@@ -78849,8 +78849,8 @@ cells	E-Cell
 and	O
 in	O
 rat	S-Organism
-mammary	B-DISEASE
-carcinomas	E-DISEASE
+mammary	B-Disease
+carcinomas	E-Disease
 that	O
 have	O
 an	O
@@ -78904,7 +78904,7 @@ effects	O
 of	O
 insulin	S-GP
 on	O
-tumor	S-DISEASE
+tumor	S-Disease
 and	O
 skeletal	B-Tissue
 muscle	E-Tissue
@@ -78913,7 +78913,7 @@ metabolism	O
 in	O
 patients	S-Organism
 with	O
-lymphoma	S-DISEASE
+lymphoma	S-Disease
 .	O
 
 BACKGROUND	O
@@ -78933,13 +78933,13 @@ reverse	O
 malnutrition	O
 associated	O
 with	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 The	O
 host	O
 and	O
-tumor	S-DISEASE
+tumor	S-Disease
 sensitivities	O
 to	O
 insulin	S-GP
@@ -78963,7 +78963,7 @@ studied	O
 insulin	S-GP
 effects	O
 on	O
-tumor	S-DISEASE
+tumor	S-Disease
 and	O
 skeletal	B-Tissue
 muscle	E-Tissue
@@ -79004,7 +79004,7 @@ METHODS	O
 Six	O
 patients	S-Organism
 with	O
-lymphoma	S-DISEASE
+lymphoma	S-Disease
 twice	O
 underwent	O
 [	B-Chemical
@@ -79294,7 +79294,7 @@ with	O
 insulin	S-GP
 resistance	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 CONCLUSIONS	O
@@ -79328,7 +79328,7 @@ reduced	O
 in	O
 patients	S-Organism
 with	O
-lymphoma	S-DISEASE
+lymphoma	S-Disease
 ,	O
 the	O
 net	O
@@ -79341,7 +79341,7 @@ between	O
 glucose	S-Chemical
 uptake	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 and	O
 muscle	S-Organ
 ,	O
@@ -79358,7 +79358,7 @@ metabolic	O
 abnormalities	O
 found	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 Effect	O
@@ -79828,7 +79828,7 @@ cells	E-Cell
 Their	O
 relevance	O
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 prevention	O
 .	O
 
@@ -79892,7 +79892,7 @@ reduce	O
 the	O
 risk	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 ,	O
 have	O
 been	O
@@ -79927,7 +79927,7 @@ reduce	O
 the	O
 risk	O
 of	O
-cancer	S-DISEASE
+cancer	S-Disease
 .	O
 
 This	O
@@ -79991,7 +79991,7 @@ of	O
 these	O
 vitamins	S-Chemical
 in	O
-cancer	S-DISEASE
+cancer	S-Disease
 prevention	O
 has	O
 a	O
@@ -80100,8 +80100,8 @@ absence	O
 of	O
 mutations	O
 in	O
-colon	B-DISEASE
-carcinomas	E-DISEASE
+colon	B-Disease
+carcinomas	E-Disease
 of	O
 low	O
 and	O
@@ -80140,8 +80140,8 @@ node	E-Multi-tissue_structure
 metastases	O
 in	O
 human	S-Organism
-breast	B-DISEASE
-cancers	E-DISEASE
+breast	B-Disease
+cancers	E-Disease
 .	O
 
 More	O
@@ -80179,8 +80179,8 @@ alleles	O
 occurs	O
 in	O
 some	O
-colon	B-DISEASE
-carcinomas	E-DISEASE
+colon	B-Disease
+carcinomas	E-Disease
 associated	O
 with	O
 poor	O
@@ -80198,8 +80198,8 @@ encodes	O
 for	O
 suppression	O
 of	O
-colon	B-DISEASE
-carcinoma	E-DISEASE
+colon	B-Disease
+carcinoma	E-Disease
 metastasis	O
 .	O
 
@@ -80225,8 +80225,8 @@ to	O
 similar	O
 levels	O
 in	O
-colon	B-DISEASE
-tumors	E-DISEASE
+colon	B-Disease
+tumors	E-Disease
 of	O
 both	O
 high	O
@@ -80259,8 +80259,8 @@ allelic	O
 deletion	O
 in	O
 human	S-Organism
-colon	B-DISEASE
-cancers	E-DISEASE
+colon	B-Disease
+cancers	E-Disease
 associated	O
 with	O
 poor	O
@@ -80273,8 +80273,8 @@ was	O
 to	O
 examine	O
 human	S-Organism
-colon	B-DISEASE
-cancers	E-DISEASE
+colon	B-Disease
+cancers	E-Disease
 for	O
 inactivation	O
 of	O
@@ -80313,8 +80313,8 @@ assays	O
 to	O
 analyze	O
 human	S-Organism
-colon	B-DISEASE
-tumors	E-DISEASE
+colon	B-Disease
+tumors	E-Disease
 for	O
 the	O
 level	O
@@ -80324,7 +80324,7 @@ nm23	B-GP
 H1	E-GP
 (	O
 43	O
-samples	S-DISEASE
+samples	S-Disease
 )	O
 and	O
 nm23	B-GP
@@ -80332,7 +80332,7 @@ nm23	B-GP
 H2	E-GP
 (	O
 41	O
-samples	S-DISEASE
+samples	S-Disease
 )	O
 transcript	O
 (	O
@@ -80381,8 +80381,8 @@ in	O
 33	O
 of	O
 41	O
-colon	B-DISEASE
-tumors	E-DISEASE
+colon	B-Disease
+tumors	E-Disease
 ,	O
 and	O
 expression	O
@@ -80397,8 +80397,8 @@ in	O
 28	O
 of	O
 41	O
-colon	B-DISEASE
-tumors	E-DISEASE
+colon	B-Disease
+tumors	E-Disease
 relative	O
 to	O
 that	O
@@ -80416,7 +80416,7 @@ levels	O
 were	O
 similar	O
 in	O
-tumors	S-DISEASE
+tumors	S-Disease
 of	O
 both	O
 low	O
@@ -80442,8 +80442,8 @@ H1	E-GP
 allelic	O
 deletions	O
 with	O
-colon	B-DISEASE
-cancers	E-DISEASE
+colon	B-Disease
+cancers	E-Disease
 associated	O
 with	O
 poor	O
@@ -80464,8 +80464,8 @@ mediate	O
 metastasis	O
 suppression	O
 in	O
-colon	B-DISEASE
-carcinoma	E-DISEASE
+colon	B-Disease
+carcinoma	E-Disease
 .	O
 
 Our	O
@@ -80485,8 +80485,8 @@ with	O
 metastatic	O
 potential	O
 of	O
-colon	B-DISEASE
-carcinomas	E-DISEASE
+colon	B-Disease
+carcinomas	E-Disease
 .	O
 
 IMPLICATIONS	O
@@ -80505,7 +80505,7 @@ suppressor	O
 activity	O
 in	O
 murine	S-Organism
-melanoma	S-DISEASE
+melanoma	S-Disease
 and	O
 with	O
 the	O
@@ -80516,8 +80516,8 @@ of	O
 nm23	S-GP
 expression	O
 in	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 with	O
 poor	O
 prognosis	O
@@ -80608,7 +80608,7 @@ of	O
 age	O
 .	O
 
-Lymphoma	S-DISEASE
+Lymphoma	S-Disease
 prevalence	O
 was	O
 minimal	O
@@ -80638,14 +80638,14 @@ The	O
 principal	O
 types	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 were	O
-plasmacytomas	S-DISEASE
+plasmacytomas	S-Disease
 secreting	O
 immunoglobulin	S-GP
 and	O
 novel	O
-lymphomas	S-DISEASE
+lymphomas	S-Disease
 that	O
 expressed	O
 markers	O
@@ -80692,7 +80692,7 @@ was	O
 common	O
 in	O
 the	O
-plasmacytomas	S-DISEASE
+plasmacytomas	S-Disease
 ,	O
 implying	O
 a	O
@@ -80714,7 +80714,7 @@ not	O
 detected	O
 in	O
 the	O
-lymphomas	S-DISEASE
+lymphomas	S-Disease
 .	O
 
 Tumorigenic	O
@@ -80840,7 +80840,7 @@ in	O
 animal	O
 and	O
 human	S-Organism
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Over	O
@@ -80881,7 +80881,7 @@ were	O
 able	O
 to	O
 induce	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 although	O
 those	O
@@ -80899,13 +80899,13 @@ analysis	O
 indicated	O
 that	O
 generated	O
-tumors	S-DISEASE
+tumors	S-Disease
 corresponded	O
 to	O
 well	O
 -	O
 differentiated	O
-fibrosarcomas	S-DISEASE
+fibrosarcomas	S-Disease
 with	O
 distinct	O
 and	O
@@ -80922,11 +80922,11 @@ contrast	O
 ras	S-GP
 -	O
 induced	O
-tumors	S-DISEASE
+tumors	S-Disease
 were	O
 poorly	O
 differentiated	O
-fibrosarcomas	S-DISEASE
+fibrosarcomas	S-Disease
 .	O
 
 Thus	O
@@ -80962,18 +80962,18 @@ Pancreatic	S-Organ
 somatostatin	S-GP
 -	O
 secreting	O
-gangliocytic	B-DISEASE
-paraganglioma	E-DISEASE
+gangliocytic	B-Disease
+paraganglioma	E-Disease
 with	O
 lymph	B-Multi-tissue_structure
 node	E-Multi-tissue_structure
 metastases	O
 .	O
 
-Gangliocytic	B-DISEASE
-paraganglioma	E-DISEASE
+Gangliocytic	B-Disease
+paraganglioma	E-Disease
 (	O
-GPG	S-DISEASE
+GPG	S-Disease
 )	O
 with	O
 local	O
@@ -81038,7 +81038,7 @@ the	O
 first	O
 description	O
 of	O
-GPG	S-DISEASE
+GPG	S-Disease
 in	O
 this	O
 location	O
@@ -81047,7 +81047,7 @@ the	O
 first	O
 endocrinologically	O
 active	O
-GPG	S-DISEASE
+GPG	S-Disease
 .	O
 
 Stimulation	O
@@ -81384,11 +81384,11 @@ of	O
 adjuvant	O
 tamoxifen	S-Chemical
 in	O
-early	B-DISEASE
--	I-DISEASE
-stage	I-DISEASE
-breast	I-DISEASE
-cancer	E-DISEASE
+early	B-Disease
+-	I-Disease
+stage	I-Disease
+breast	I-Disease
+cancer	E-Disease
 without	O
 axillary	B-Multi-tissue_structure
 lymph	I-Multi-tissue_structure
@@ -81415,8 +81415,8 @@ in	O
 node	S-Multi-tissue_structure
 -	O
 negative	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 patients	S-Organism
 enrolled	O
 in	O
@@ -81561,7 +81561,7 @@ which	O
 directly	O
 correlated	O
 with	O
-tumor	S-DISEASE
+tumor	S-Disease
 size	O
 and	O
 inversely	O
@@ -81622,7 +81622,7 @@ contained	O
 menopausal	O
 status	O
 ,	O
-tumor	S-DISEASE
+tumor	S-Disease
 size	O
 ,	O
 nuclear	S-Cellular_component
@@ -81728,8 +81728,8 @@ In	O
 early	O
 -	O
 stage	O
-breast	B-DISEASE
-cancer	E-DISEASE
+breast	B-Disease
+cancer	E-Disease
 patients	S-Organism
 ,	O
 overexpression	O
@@ -82710,8 +82710,8 @@ invasive	O
 grading	O
 of	O
 primary	O
-brain	B-DISEASE
-tumours	E-DISEASE
+brain	B-Disease
+tumours	E-Disease
 :	O
 results	O
 of	O
@@ -82759,7 +82759,7 @@ acid	E-Amino_acid
 transport	O
 rate	O
 in	O
-gliomas	S-DISEASE
+gliomas	S-Disease
 .	O
 
 It	O
@@ -82794,8 +82794,8 @@ non	O
 invasive	O
 grading	O
 of	O
-brain	B-DISEASE
-tumours	E-DISEASE
+brain	B-Disease
+tumours	E-Disease
 .	O
 
 The	O
@@ -82808,23 +82808,23 @@ with	O
 histopathologically	O
 proven	O
 primary	O
-brain	B-DISEASE
-tumours	E-DISEASE
+brain	B-Disease
+tumours	E-Disease
 ;	O
 14	O
 had	O
-high	B-DISEASE
--	I-DISEASE
-grade	I-DISEASE
-gliomas	E-DISEASE
+high	B-Disease
+-	I-Disease
+grade	I-Disease
+gliomas	E-Disease
 ,	O
 and	O
 nine	O
-low	B-DISEASE
--	I-DISEASE
-grade	I-DISEASE
-brain	I-DISEASE
-neoplasms	E-DISEASE
+low	B-Disease
+-	I-Disease
+grade	I-Disease
+brain	I-Disease
+neoplasms	E-Disease
 .	O
 
 Glucose	S-Chemical
@@ -82896,7 +82896,7 @@ the	O
 uptake	O
 by	O
 the	O
-tumour	S-DISEASE
+tumour	S-Disease
 and	O
 contralateral	O
 regions	O
@@ -82912,8 +82912,8 @@ acid	E-Amino_acid
 uptake	O
 of	O
 the	O
-brain	B-DISEASE
-tumours	E-DISEASE
+brain	B-Disease
+tumours	E-Disease
 correlated	O
 significantly	O
 (	O
@@ -82935,14 +82935,14 @@ Assuming	O
 discrimination	O
 thresholds	O
 between	O
-high	B-DISEASE
--	I-DISEASE
-grade	E-DISEASE
+high	B-Disease
+-	I-Disease
+grade	E-Disease
 and	O
-low	B-DISEASE
--	I-DISEASE
-grade	I-DISEASE
-tumours	E-DISEASE
+low	B-Disease
+-	I-Disease
+grade	I-Disease
+tumours	E-Disease
 of	O
 0	O
 .	O
@@ -82978,14 +82978,14 @@ SPET	O
 for	O
 differentiating	O
 between	O
-high	B-DISEASE
--	I-DISEASE
-grade	E-DISEASE
+high	B-Disease
+-	I-Disease
+grade	E-Disease
 and	O
-low	B-DISEASE
--	I-DISEASE
-grade	I-DISEASE
-tumours	E-DISEASE
+low	B-Disease
+-	I-Disease
+grade	I-Disease
+tumours	E-Disease
 were	O
 21	O
 /	O
@@ -83066,8 +83066,8 @@ malignancy	O
 grade	O
 of	O
 primary	O
-brain	B-DISEASE
-tumours	E-DISEASE
+brain	B-Disease
+tumours	E-Disease
 .	O
 
 This	O
@@ -83094,13 +83094,13 @@ management	O
 of	O
 patients	S-Organism
 with	O
-brain	B-DISEASE
-tumours	E-DISEASE
+brain	B-Disease
+tumours	E-Disease
 .	O
 
 The	O
-Wilms	B-DISEASE
-tumor	E-DISEASE
+Wilms	B-Disease
+tumor	E-Disease
 suppressor	O
 gene	O
 WT1	S-GP
@@ -83121,12 +83121,12 @@ was	O
 isolated	O
 as	O
 a	O
-tumor	S-DISEASE
+tumor	S-Disease
 suppressor	O
 gene	O
 of	O
-Wilms	B-DISEASE
-tumor	E-DISEASE
+Wilms	B-Disease
+tumor	E-Disease
 .	O
 
 However	O
@@ -83140,8 +83140,8 @@ with	O
 poor	O
 prognosis	O
 in	O
-acute	B-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+leukemia	E-Disease
 .	O
 
 In	O
@@ -83282,8 +83282,8 @@ gene	O
 nm23	S-GP
 in	O
 human	S-Organism
-hepatocellular	B-DISEASE
-carcinoma	E-DISEASE
+hepatocellular	B-Disease
+carcinoma	E-Disease
 ]	O
 .	O
 
@@ -83300,7 +83300,7 @@ metastatic	O
 potential	O
 of	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 as	O
 well	O
 as	O
@@ -83325,7 +83325,7 @@ in	O
 the	O
 cells	S-Cell
 ,	O
-tumor	S-DISEASE
+tumor	S-Disease
 metastasis	O
 suppressor	O
 gene	O
@@ -83334,8 +83334,8 @@ nm23	B-GP
 H1	E-GP
 in	O
 human	S-Organism
-hepatocellular	B-DISEASE
-carcinoma	E-DISEASE
+hepatocellular	B-Disease
+carcinoma	E-Disease
 (	O
 and	O
 the	O
@@ -83343,7 +83343,7 @@ nonneoplastic	B-Multi-tissue_structure
 area	E-Multi-tissue_structure
 surrounding	O
 the	O
-tumor	S-DISEASE
+tumor	S-Disease
 )	O
 was	O
 detected	O
@@ -83406,8 +83406,8 @@ rate	O
 of	O
 the	O
 human	S-Organism
-hepatocellular	B-DISEASE
-carcinoma	E-DISEASE
+hepatocellular	B-Disease
+carcinoma	E-Disease
 (	O
 P	O
 <	O
@@ -83434,7 +83434,7 @@ other	O
 factors	O
 such	O
 as	O
-tumor	S-DISEASE
+tumor	S-Disease
 size	O
 and	O
 the	O
@@ -83448,10 +83448,10 @@ diseases	O
 CD56	S-GP
 +	O
 putative	O
-natural	B-DISEASE
-killer	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+natural	B-Disease
+killer	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 :	O
 production	O
 of	O
@@ -83524,10 +83524,10 @@ markers	O
 in	O
 the	O
 putative	O
-NK	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+NK	B-Disease
+-	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 and	O
 whether	O
 there	O
@@ -83540,7 +83540,7 @@ cell	E-Cell
 death	O
 in	O
 these	O
-tumors	S-DISEASE
+tumors	S-Disease
 .	O
 
 Expression	O
@@ -83564,17 +83564,17 @@ examined	O
 in	O
 24	O
 putative	O
-NK	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+NK	B-Disease
+-	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 ,	O
 18	O
 postthymic	O
-T	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+T	B-Disease
+-	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 (	O
 one	O
 case	O
@@ -83584,26 +83584,26 @@ CD56	S-GP
 +	O
 and	O
 three	O
-anaplastic	B-DISEASE
-large	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+anaplastic	B-Disease
+large	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 (	O
-ALCL	S-DISEASE
+ALCL	S-Disease
 )	O
 ,	O
 three	O
-T	B-DISEASE
--	I-DISEASE
-lymphoblastic	I-DISEASE
-lymphomas	E-DISEASE
+T	B-Disease
+-	I-Disease
+lymphoblastic	I-Disease
+lymphomas	E-Disease
 ,	O
 and	O
 20	O
-B	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+B	B-Disease
+-	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 .	O
 
 Nineteen	O
@@ -83612,10 +83612,10 @@ Nineteen	O
 %	O
 )	O
 putative	O
-NK	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+NK	B-Disease
+-	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 expressed	O
 perforin	S-GP
 ,	O
@@ -83656,20 +83656,20 @@ expressed	O
 TIA1	S-GP
 ;	O
 other	O
-postthymic	B-DISEASE
-T	I-DISEASE
--	I-DISEASE
-cell	E-DISEASE
+postthymic	B-Disease
+T	I-Disease
+-	I-Disease
+cell	E-Disease
 ,	O
-T	B-DISEASE
--	I-DISEASE
-lymphoblastic	E-DISEASE
+T	B-Disease
+-	I-Disease
+lymphoblastic	E-Disease
 ,	O
 and	O
-B	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-lymphomas	E-DISEASE
+B	B-Disease
+-	I-Disease
+cell	I-Disease
+lymphomas	E-Disease
 were	O
 consistently	O
 negative	O
@@ -83709,7 +83709,7 @@ proportion	O
 )	O
 of	O
 these	O
-lymphomas	S-DISEASE
+lymphomas	S-Disease
 despite	O
 the	O
 frequent	O
@@ -83799,8 +83799,8 @@ origin	O
 Prophylactic	O
 thyroidectomy	O
 in	O
-MEN	B-DISEASE
-IIA	E-DISEASE
+MEN	B-Disease
+IIA	E-Disease
 :	O
 does	O
 the	O
@@ -83808,7 +83808,7 @@ calcitonin	S-GP
 level	O
 correlate	O
 with	O
-tumor	S-DISEASE
+tumor	S-Disease
 spread	O
 ?	O
 
@@ -83819,24 +83819,24 @@ fate	O
 of	O
 patients	S-Organism
 with	O
-multiple	B-DISEASE
-endocrine	I-DISEASE
-neoplasia	I-DISEASE
-of	I-DISEASE
-type	I-DISEASE
-II	I-DISEASE
-A	E-DISEASE
+multiple	B-Disease
+endocrine	I-Disease
+neoplasia	I-Disease
+of	I-Disease
+type	I-Disease
+II	I-Disease
+A	E-Disease
 (	O
-MEN	B-DISEASE
-II	I-DISEASE
-A	E-DISEASE
+MEN	B-Disease
+II	I-Disease
+A	E-Disease
 )	O
 is	O
 determined	O
 by	O
-medullary	B-DISEASE
-thyroid	I-DISEASE
-carcinoma	E-DISEASE
+medullary	B-Disease
+thyroid	I-Disease
+carcinoma	E-Disease
 ,	O
 which	O
 occurs	O
@@ -83870,7 +83870,7 @@ before	O
 the	O
 manifestation	O
 of	O
-carcinoma	S-DISEASE
+carcinoma	S-Disease
 .	O
 
 We	O
@@ -83878,9 +83878,9 @@ investigated	O
 a	O
 prophylactically	O
 thyroidectomized	O
-MEN	B-DISEASE
-II	I-DISEASE
-A	E-DISEASE
+MEN	B-Disease
+II	I-Disease
+A	E-Disease
 population	O
 to	O
 determine	O
@@ -83890,12 +83890,12 @@ highly	O
 specific	O
 and	O
 sensitive	O
-tumor	S-DISEASE
+tumor	S-Disease
 marker	O
 calcitonin	S-GP
 correlates	O
 with	O
-tumor	S-DISEASE
+tumor	S-Disease
 spread	O
 .	O
 
@@ -83906,9 +83906,9 @@ METHODS	O
 Fifteen	O
 patients	S-Organism
 with	O
-MEN	B-DISEASE
-II	I-DISEASE
-A	E-DISEASE
+MEN	B-Disease
+II	I-Disease
+A	E-Disease
 (	O
 aged	O
 4	O
@@ -84015,8 +84015,8 @@ years	O
 )	O
 ,	O
 unilateral	O
-medullary	B-DISEASE
-microcarcinoma	E-DISEASE
+medullary	B-Disease
+microcarcinoma	E-Disease
 in	O
 six	O
 (	O
@@ -84029,8 +84029,8 @@ years	O
 and	O
 a	O
 bilateral	O
-medullary	B-DISEASE
-microcarcinoma	E-DISEASE
+medullary	B-Disease
+microcarcinoma	E-Disease
 in	O
 three	O
 cases	O
@@ -84052,7 +84052,7 @@ old	O
 boy	S-Organism
 with	O
 bilateral	O
-microcarcinoma	S-DISEASE
+microcarcinoma	S-Disease
 already	O
 had	O
 a	O
@@ -84115,9 +84115,9 @@ P	O
 CONCLUSION	O
 :	O
 In	O
-MEN	B-DISEASE
-II	I-DISEASE
-A	E-DISEASE
+MEN	B-Disease
+II	I-Disease
+A	E-Disease
 patients	S-Organism
 undergoing	O
 prophylactic	O
@@ -84134,7 +84134,7 @@ correlate	O
 with	O
 the	O
 histologic	O
-tumor	S-DISEASE
+tumor	S-Disease
 stage	O
 at	O
 the	O
@@ -84147,8 +84147,8 @@ C	B-Cell
 cell	E-Cell
 hyperplasia	O
 or	O
-medullary	B-DISEASE
-microcarcinoma	E-DISEASE
+medullary	B-Disease
+microcarcinoma	E-Disease
 .	O
 
 However	O
@@ -84167,13 +84167,13 @@ cell	E-Cell
 hyperplasia	O
 to	O
 invasive	O
-microcarcinoma	S-DISEASE
+microcarcinoma	S-Disease
 .	O
 
 Individuals	O
 with	O
-MEN	B-DISEASE
-IIA	E-DISEASE
+MEN	B-Disease
+IIA	E-Disease
 should	O
 therefore	O
 undergo	O
@@ -84552,7 +84552,7 @@ cells	E-Cell
 However	O
 ,	O
 unlike	O
-tumor	S-DISEASE
+tumor	S-Disease
 invasion	O
 ,	O
 trophoblast	S-Cell
@@ -84616,7 +84616,7 @@ the	O
 molecular	O
 basis	O
 of	O
-tumor	S-DISEASE
+tumor	S-Disease
 progression	O
 .	O
 
@@ -84995,7 +84995,7 @@ the	O
 predominant	O
 form	O
 in	O
-hepatomas	S-DISEASE
+hepatomas	S-Disease
 .	O
 
 However	O
@@ -85313,20 +85313,20 @@ a	O
 homeobox	S-GP
 gene	O
 causing	O
-leukemias	S-DISEASE
+leukemias	S-Disease
 in	O
 humans	S-Organism
 .	O
 
 In	O
-pre	B-DISEASE
--	I-DISEASE
-B	I-DISEASE
-acute	I-DISEASE
-lymphoblastic	I-DISEASE
-leukemia	E-DISEASE
+pre	B-Disease
+-	I-Disease
+B	I-Disease
+acute	I-Disease
+lymphoblastic	I-Disease
+leukemia	E-Disease
 (	O
-ALL	S-DISEASE
+ALL	S-Disease
 )	O
 with	O
 t	O
@@ -85352,10 +85352,10 @@ PBX	S-GP
 .	O
 
 In	O
-T	B-DISEASE
--	I-DISEASE
-cell	I-DISEASE
-ALL	E-DISEASE
+T	B-Disease
+-	I-Disease
+cell	I-Disease
+ALL	E-Disease
 with	O
 t	O
 (	O
@@ -85374,11 +85374,11 @@ deregulated	O
 .	O
 
 In	O
-acute	B-DISEASE
-myeloid	I-DISEASE
-leukemia	E-DISEASE
+acute	B-Disease
+myeloid	I-Disease
+leukemia	E-Disease
 (	O
-AML	S-DISEASE
+AML	S-Disease
 )	O
 with	O
 t	O
@@ -85916,7 +85916,7 @@ immunohistochemical	O
 labelling	O
 .	O
 
-Tumors	S-DISEASE
+Tumors	S-Disease
 of	O
 the	O
 retinal	B-Tissue
@@ -86044,7 +86044,7 @@ resulted	O
 in	O
 formation	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 ,	O
 which	O
 were	O
@@ -86111,7 +86111,7 @@ lines	E-Cell
 were	O
 established	O
 from	O
-tumor	S-DISEASE
+tumor	S-Disease
 and	O
 metastases	O
 and	O
@@ -86187,7 +86187,7 @@ biology	O
 and	O
 metastasis	O
 of	O
-tumors	S-DISEASE
+tumors	S-Disease
 derived	O
 from	O
 the	O
@@ -86217,7 +86217,7 @@ angiogenesis	O
 and	O
 anti	O
 -	O
-tumor	S-DISEASE
+tumor	S-Disease
 activities	O
 .	O
 

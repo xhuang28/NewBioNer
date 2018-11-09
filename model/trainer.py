@@ -163,7 +163,7 @@ class Trainer(object):
         print("Epoch: [{:d}/{:d}]".format(args.start_epoch, args.epoch - 1))
         print("Train corpus: ", train_corpus)
         
-        if args.idea[:2] != 'P2':
+        if not args.idea[:2] in ['P2', 'P3']:
             data_iter = itertools.chain.from_iterable(cur_dataset)
         else:
             data_iter = iter(cur_dataset)
@@ -172,17 +172,17 @@ class Trainer(object):
             data_iter, mininterval=2,
             desc=' - Total it %d' % (num_sample), leave=False, file=sys.stdout):
             
-            if args.idea[:2] != 'P2':
+            if args.idea[:2] not in ['P2', 'P3']:
                 f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v = self.packer.repack_vb(f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v)
             else:
-                if args.idea == 'P23':
+                if args.idea in ['P23', 'P33']:
                     proba_dist, tg_v = tg_v
                 f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v, reorder = f_f.cuda(), f_p.cuda(), b_f.cuda(), b_p.cuda(), w_f.cuda(), tg_v.cuda(), mask_v.cuda(), len_v.cuda(), corpus_mask_v.cuda(), reorder.cuda()
             
             self.ner_model.zero_grad()
             scores = self.ner_model(f_f, f_p, b_f, b_p, w_f, crf_no, corpus_mask_v)
             
-            if args.idea == 'P23':
+            if args.idea in ['P23', 'P33']:
                 loss = crit_ner(scores, [proba_dist, tg_v], mask_v, corpus_mask_v, idea = args.idea, sigmoid = args.sigmoid, mask_value = args.mask_value)
             else:
                 loss = crit_ner(scores, tg_v, mask_v, corpus_mask_v, idea = args.idea, sigmoid = args.sigmoid, mask_value = args.mask_value)

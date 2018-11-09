@@ -502,6 +502,7 @@ if __name__ == "__main__":
     f_p22 = open(args.data_loader + prefix + '/P22_' + suffix + '.p', 'wb')
     f_p23 = open(args.data_loader + prefix + '/P23_' + suffix + '.p', 'wb')
     
+    
     for f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v, reorder in itertools.chain.from_iterable(crf2train_dataloader[0]):
         
         f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, corpus_mask_v = packer.repack_vb(f_f, f_p, b_f, b_p, w_f, tg_v, mask_v, len_v, corpus_mask_v)

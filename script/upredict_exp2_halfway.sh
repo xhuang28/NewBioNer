@@ -12,16 +12,16 @@ CHECKPOINT_NAME="${2}"
 SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
 DATA_FOLDER="$SRC_FOLDER/corpus/train"
 LOAD_CHECKPOINT="$SRC_FOLDER/checkpoints/$CHECKPOINT_PATH"
-
+IDX_ITER="_IT${6}"
 
 cd $SRC_FOLDER
-mkdir data_loaders/$CHECKPOINT_PATH
-mkdir data_loaders/$CHECKPOINT_PATH/halfway
+mkdir data_loaders/$CHECKPOINT_PATH$IDX_ITER
+mkdir data_loaders/$CHECKPOINT_PATH$IDX_ITER/halfway
 
 python3 -u $SRC_FOLDER/upredict.py \
   --load_check_point $LOAD_CHECKPOINT/$CHECKPOINT_NAME.model \
   --load_arg $LOAD_CHECKPOINT/$CHECKPOINT_NAME.json \
-  --data_loader $SRC_FOLDER/data_loaders/$CHECKPOINT_PATH \
+  --data_loader $SRC_FOLDER/data_loaders/$CHECKPOINT_PATH$IDX_ITER \
   --emb_file /home/nlg-05/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
   --train_file \
   $DATA_FOLDER/BC2GM-IOBES/train.tsv \

@@ -322,6 +322,7 @@ class CRFLoss_vb(nn.Module):
         
         return partition
     
+    ##### Need change before using #####
     def restricted_forward_algo_v1(self, scores, target, mask, corpus_mask, sigmoid):
         # Restricted Forward Algorithm v1
         # "O": Set scores of all local labels (not including "O") to 0
@@ -382,7 +383,7 @@ class CRFLoss_vb(nn.Module):
         return partition
     
     def restricted_forward_algo_v2(self, scores, target, mask, corpus_mask, sigmoid, mask_value):
-        # Restricted Forward Algorithm v1
+        # Restricted Forward Algorithm v2
         # "O": Set scores of all non-local labels to 0
         # "NE": No changes
         seq_len = scores.size(0)
@@ -540,10 +541,10 @@ class CRFLoss_vb(nn.Module):
         elif idea == "P12":
             numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
             denominator = self.restricted_forward_algo_v2(scores, target, mask, corpus_mask, sigmoid, mask_value)
-        elif idea == "P22":
+        elif idea in ["P22", "P32"]:
             numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
             denominator = self.forward_algo(scores, target, mask, corpus_mask)
-        elif idea == "P23":
+        elif idea in ["P23", "P33"]:
             proba_dist, target = target
             numerator = self.restricted_forward_algo_v3(scores, target, mask, corpus_mask, sigmoid, proba_dist)
             denominator = self.forward_algo(scores, target, mask, corpus_mask)
