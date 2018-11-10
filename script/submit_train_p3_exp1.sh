@@ -50,16 +50,16 @@ C7D="$EVAL_FOLDER/BioNLP13CG-IOBES/devel.tsv"
 # sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P33 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 7 "$C1D"
 
 
-sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P32 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 8 "$C7D"
-sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P33 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 8 "$C7D"
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P32 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 8 "$C7D"
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P33 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 8 "$C7D"
 
 
 # sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P32 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 9 "$C1D"
 # sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P33 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 9 "$C1D"
 
 
-sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P32 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 10 "$C7D"
-sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P33 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 10 "$C7D"
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P32 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 10 "$C7D"
+# sbatch --partition=isi --gres=gpu:1 --time=120:00:00 --mem=64000 ./train_p3_exp1.sh P33 P1/EXP1 P12_M_nosig_C100_W300_MV0.2 N21_0.8487_0.8528_0.8446_49 M nosig 100 300 False 10 "$C7D"
 
 
 

@@ -1,5 +1,5 @@
 eval setting:
-Namespace(annotate=False, corpus_mask_value=0.0, debug_errors=False, error_num=100, eva_matrix='fa', eval_filtered=False, global_eval=False, global_pred=False, gpu=0, if_pred=True, load_arg='/auto/nlg-05/huan183/NewBioNer/checkpoints/P2/EXP2/P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse/N21_0.9762_0.9700_0.9826_29.json', load_check_point='/auto/nlg-05/huan183/NewBioNer/checkpoints/P2/EXP2/P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse/N21_0.9762_0.9700_0.9826_29.model', local_eval=True, pickle='pickle2', post=False, pred_file=['/auto/nlg-05/huan183/NewBioNer/corpus/eval/CELLFINDER-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP13CG-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/CHEMPROT-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP11ID-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/CRAFT-IOBES/test.tsv'], pred_method='M', pred_scope='local', show_collison=False, verbose=0)
+Namespace(annotate=False, corpus_mask_value=0.0, debug_errors=False, error_num=100, eva_matrix='fa', eval_filtered=False, global_eval=False, global_pred=False, gpu=0, if_pred=True, load_arg='/auto/nlg-05/huan183/NewBioNer/checkpoints/P2/EXP2/P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse/N21_BC5CDR-IOBES_0.9666_0.9643_0.9689_6.json', load_check_point='/auto/nlg-05/huan183/NewBioNer/checkpoints/P2/EXP2/P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse/N21_BC5CDR-IOBES_0.9666_0.9643_0.9689_6.model', local_eval=True, pickle='pickle2', post=False, pred_file=['/auto/nlg-05/huan183/NewBioNer/corpus/eval/CELLFINDER-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP13CG-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/CHEMPROT-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP11ID-IOBES/test.tsv', '/auto/nlg-05/huan183/NewBioNer/corpus/eval/CRAFT-IOBES/test.tsv'], pred_method='M', pred_scope='local', show_collison=False, verbose=0)
 train setting:
 Negative Log Likelihood
 corpus2crf {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
@@ -33,59 +33,59 @@ best epoch:  -inf
 best checkpoint 
 Eval on Corpurar
 /auto/nlg-05/huan183/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv
- - Total it 102: 0it [00:00, ?it/s] - Total it 102: 38it [00:02, 18.73it/s] - Total it 102: 73it [00:04, 17.84it/s] - Total it 102: 92it [00:06, 14.60it/s]                                        P: 0.8035 R: 0.7907 F1: 0.7970 vloss: -inf
-Pred:  Counter({'O': 128562, 'I-GP': 5161, 'E-GP': 3519, 'B-GP': 3518, 'S-GP': 2705})
+ - Total it 102: 0it [00:00, ?it/s] - Total it 102: 41it [00:02, 20.27it/s] - Total it 102: 74it [00:04, 18.25it/s] - Total it 102: 93it [00:06, 14.64it/s]                                        P: 0.7956 R: 0.7894 F1: 0.7925 vloss: -inf
+Pred:  Counter({'O': 128033, 'I-GP': 5531, 'E-GP': 3626, 'B-GP': 3625, 'S-GP': 2650})
 Gold:  Counter({'O': 128364, 'I-GP': 5273, 'B-GP': 3503, 'E-GP': 3503, 'S-GP': 2822})
 
 /auto/nlg-05/huan183/NewBioNer/corpus/train/BC4CHEMD-IOBES/test.tsv
- - Total it 529: 0it [00:00, ?it/s] - Total it 529: 49it [00:02, 24.30it/s] - Total it 529: 100it [00:04, 24.75it/s] - Total it 529: 150it [00:06, 24.69it/s] - Total it 529: 186it [00:08, 22.92it/s] - Total it 529: 222it [00:10, 21.87it/s] - Total it 529: 258it [00:12, 21.17it/s] - Total it 529: 294it [00:14, 20.66it/s] - Total it 529: 329it [00:16, 20.15it/s] - Total it 529: 364it [00:19, 19.14it/s] - Total it 529: 396it [00:21, 18.43it/s] - Total it 529: 427it [00:23, 17.89it/s] - Total it 529: 456it [00:26, 17.20it/s] - Total it 529: 483it [00:32, 15.02it/s] - Total it 529: 505it [00:36, 13.67it/s] - Total it 529: 523it [00:40, 12.83it/s]                                         P: 0.9096 R: 0.8722 F1: 0.8905 vloss: -inf
-Pred:  Counter({'O': 712742, 'I-CHEMICAL': 21828, 'S-CHEMICAL': 17143, 'B-CHEMICAL': 7160, 'E-CHEMICAL': 7160})
+ - Total it 529: 0it [00:00, ?it/s] - Total it 529: 48it [00:02, 23.86it/s] - Total it 529: 97it [00:04, 24.15it/s] - Total it 529: 146it [00:06, 24.23it/s] - Total it 529: 181it [00:08, 22.51it/s] - Total it 529: 216it [00:10, 21.44it/s] - Total it 529: 253it [00:12, 20.90it/s] - Total it 529: 290it [00:14, 20.51it/s] - Total it 529: 326it [00:16, 20.16it/s] - Total it 529: 362it [00:18, 19.24it/s] - Total it 529: 395it [00:21, 18.58it/s] - Total it 529: 426it [00:23, 18.10it/s] - Total it 529: 456it [00:26, 17.45it/s] - Total it 529: 484it [00:31, 15.29it/s] - Total it 529: 507it [00:36, 13.81it/s] - Total it 529: 526it [00:40, 12.87it/s]                                         P: 0.8923 R: 0.8834 F1: 0.8878 vloss: -inf
+Pred:  Counter({'O': 713556, 'I-CHEMICAL': 20562, 'S-CHEMICAL': 18273, 'B-CHEMICAL': 6821, 'E-CHEMICAL': 6821})
 Gold:  Counter({'O': 711171, 'I-CHEMICAL': 22246, 'S-CHEMICAL': 18076, 'B-CHEMICAL': 7270, 'E-CHEMICAL': 7270})
 
 /auto/nlg-05/huan183/NewBioNer/corpus/train/BC5CDR-IOBES/test.tsv
- - Total it 97: 0it [00:00, ?it/s] - Total it 97: 50it [00:02, 24.43it/s] - Total it 97: 83it [00:04, 20.25it/s]                                       P: 0.8960 R: 0.8647 F1: 0.8801 vloss: -inf
-Pred:  Counter({'O': 110839, 'S-CHEMICAL': 4434, 'S-DISEASE': 2508, 'B-DISEASE': 1884, 'E-DISEASE': 1884, 'I-CHEMICAL': 1036, 'I-DISEASE': 883, 'B-CHEMICAL': 641, 'E-CHEMICAL': 641})
+ - Total it 97: 0it [00:00, ?it/s] - Total it 97: 48it [00:02, 23.72it/s] - Total it 97: 81it [00:04, 19.85it/s]                                       P: 0.8903 R: 0.8712 F1: 0.8807 vloss: -inf
+Pred:  Counter({'O': 110691, 'S-CHEMICAL': 4544, 'S-DISEASE': 2541, 'B-DISEASE': 1886, 'E-DISEASE': 1886, 'I-CHEMICAL': 1003, 'I-DISEASE': 943, 'B-CHEMICAL': 628, 'E-CHEMICAL': 628})
 Gold:  Counter({'O': 110576, 'S-CHEMICAL': 4741, 'S-DISEASE': 2666, 'B-DISEASE': 1758, 'E-DISEASE': 1758, 'I-CHEMICAL': 984, 'I-DISEASE': 979, 'B-CHEMICAL': 644, 'E-CHEMICAL': 644})
 
 /auto/nlg-05/huan183/NewBioNer/corpus/train/NCBI-IOBES/test.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8582 R: 0.8573 F1: 0.8577 vloss: -inf
-Pred:  Counter({'O': 22458, 'I-DISEASE': 542, 'B-DISEASE': 538, 'E-DISEASE': 538, 'S-DISEASE': 421})
+ - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8582 R: 0.8635 F1: 0.8609 vloss: -inf
+Pred:  Counter({'O': 22454, 'I-DISEASE': 541, 'B-DISEASE': 536, 'E-DISEASE': 536, 'S-DISEASE': 430})
 Gold:  Counter({'O': 22450, 'I-DISEASE': 550, 'B-DISEASE': 537, 'E-DISEASE': 537, 'S-DISEASE': 423})
 
 /auto/nlg-05/huan183/NewBioNer/corpus/train/JNLPBA-IOBES/test.tsv
- - Total it 87: 0it [00:00, ?it/s] - Total it 87: 48it [00:02, 23.71it/s] - Total it 87: 75it [00:04, 17.50it/s]                                       P: 0.7049 R: 0.7477 F1: 0.7257 vloss: -inf
-Pred:  Counter({'O': 81379, 'S-GP': 3437, 'E-GP': 2579, 'B-GP': 2548, 'I-GP': 2211, 'E-CELL_TYPE': 1225, 'B-CELL_TYPE': 1217, 'I-CELL_TYPE': 1164, 'I-DNA': 938, 'E-DNA': 883, 'B-DNA': 860, 'I-CELL_LINE': 673, 'E-CELL_LINE': 548, 'B-CELL_LINE': 533, 'S-CELL_TYPE': 364, 'S-DNA': 131, 'E-RNA': 105, 'B-RNA': 94, 'S-CELL_LINE': 74, 'I-RNA': 64, 'S-RNA': 12})
+ - Total it 87: 0it [00:00, ?it/s] - Total it 87: 47it [00:02, 23.12it/s] - Total it 87: 74it [00:04, 18.11it/s]                                       P: 0.7015 R: 0.7475 F1: 0.7238 vloss: -inf
+Pred:  Counter({'O': 81389, 'S-GP': 3458, 'E-GP': 2601, 'B-GP': 2553, 'I-GP': 2273, 'E-CELL_TYPE': 1164, 'B-CELL_TYPE': 1146, 'I-DNA': 932, 'E-DNA': 899, 'I-CELL_TYPE': 880, 'B-DNA': 876, 'I-CELL_LINE': 800, 'E-CELL_LINE': 596, 'B-CELL_LINE': 591, 'S-CELL_TYPE': 377, 'S-DNA': 149, 'E-RNA': 108, 'B-RNA': 96, 'I-RNA': 71, 'S-CELL_LINE': 67, 'S-RNA': 13})
 Gold:  Counter({'O': 81647, 'S-GP': 2708, 'I-GP': 2415, 'B-GP': 2359, 'E-GP': 2359, 'I-CELL_TYPE': 1532, 'B-CELL_TYPE': 1459, 'E-CELL_TYPE': 1459, 'I-DNA': 939, 'B-DNA': 850, 'E-DNA': 850, 'I-CELL_LINE': 563, 'S-CELL_TYPE': 462, 'B-CELL_LINE': 426, 'E-CELL_LINE': 426, 'S-DNA': 206, 'B-RNA': 102, 'E-RNA': 102, 'I-RNA': 85, 'S-CELL_LINE': 74, 'S-RNA': 16})
 
 /auto/nlg-05/huan183/NewBioNer/corpus/train/linnaeus-IOBES/test.tsv
- - Total it 145: 0it [00:00, ?it/s] - Total it 145: 67it [00:02, 32.90it/s] - Total it 145: 104it [00:04, 25.40it/s] - Total it 145: 129it [00:06, 18.99it/s]                                         P: 0.9305 R: 0.8311 F1: 0.8780 vloss: -inf
-Pred:  Counter({'O': 162831, 'S-SPECIES': 975, 'B-SPECIES': 305, 'E-SPECIES': 305, 'I-SPECIES': 237})
+ - Total it 145: 0it [00:00, ?it/s] - Total it 145: 62it [00:02, 30.82it/s] - Total it 145: 99it [00:04, 24.55it/s] - Total it 145: 124it [00:06, 20.33it/s]                                         P: 0.9299 R: 0.8325 F1: 0.8785 vloss: -inf
+Pred:  Counter({'O': 162838, 'S-SPECIES': 974, 'B-SPECIES': 309, 'E-SPECIES': 309, 'I-SPECIES': 223})
 Gold:  Counter({'O': 162421, 'S-SPECIES': 986, 'B-SPECIES': 447, 'E-SPECIES': 447, 'I-SPECIES': 352})
 
 
 corpus_best_checkpoint_name ['', '', '', '', '', '']
- - Total it 45: 0it [00:00, ?it/s] - Total it 45: 39it [00:02, 19.14it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/CELLFINDER-IOBES/test.tsv
+ - Total it 45: 0it [00:00, ?it/s] - Total it 45: 40it [00:02, 14.57it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/CELLFINDER-IOBES/test.tsv
 Global: 
-P: 0.5380 R: 0.3830 F1: 0.4474
+P: 0.5287 R: 0.3832 F1: 0.4443
 
 ['B-CELL_TYPE', 'I-CELL_TYPE', 'I-CELL_TYPE', 'E-CELL_TYPE', 'O', 'O', 'O', 'O', 'S-SPECIES', 'O', 'S-SPECIES', 'O', 'O', 'O']
- - Total it 40: 0it [00:00, ?it/s] - Total it 40: 36it [00:02, 17.17it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP13CG-IOBES/test.tsv
+ - Total it 40: 0it [00:00, ?it/s] - Total it 40: 36it [00:02, 17.24it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP13CG-IOBES/test.tsv
 Global: 
-P: 0.6720 R: 0.4345 F1: 0.5278
+P: 0.6678 R: 0.4376 F1: 0.5287
 
 ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
- - Total it 18: 0it [00:00, ?it/s] - Total it 18: 6it [00:02,  2.82it/s] - Total it 18: 11it [00:04,  2.42it/s] - Total it 18: 16it [00:07,  2.15it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/CHEMPROT-IOBES/test.tsv
+ - Total it 18: 0it [00:00, ?it/s] - Total it 18: 6it [00:02,  2.81it/s] - Total it 18: 11it [00:04,  2.41it/s] - Total it 18: 16it [00:07,  2.14it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/CHEMPROT-IOBES/test.tsv
 Global: 
-P: 0.7933 R: 0.6989 F1: 0.7431
+P: 0.7820 R: 0.7041 F1: 0.7410
 
-['S-CHEMICAL', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'I-GP', 'I-GP', 'E-GP', 'O', 'O', 'O', 'B-GP', 'I-GP', 'E-GP', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'E-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'I-GP', 'E-GP', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-CHEMICAL', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'S-GP', 'O', 'S-GP', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O']
- - Total it 41: 0it [00:00, ?it/s] - Total it 41: 38it [00:02, 17.99it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP11ID-IOBES/test.tsv
+['S-CHEMICAL', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'I-GP', 'I-GP', 'E-GP', 'O', 'O', 'O', 'B-GP', 'I-GP', 'E-GP', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'E-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-GP', 'I-GP', 'E-GP', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-CHEMICAL', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'S-GP', 'O', 'S-GP', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'S-GP', 'O', 'O']
+ - Total it 41: 0it [00:00, ?it/s] - Total it 41: 37it [00:02, 18.33it/s]                                       /auto/nlg-05/huan183/NewBioNer/corpus/eval/BioNLP11ID-IOBES/test.tsv
 Global: 
-P: 0.5329 R: 0.4184 F1: 0.4688
+P: 0.5068 R: 0.4100 F1: 0.4533
 
 ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
- - Total it 150: 0it [00:00, ?it/s] - Total it 150: 68it [00:02, 33.47it/s] - Total it 150: 108it [00:04, 26.43it/s] - Total it 150: 134it [00:06, 20.46it/s]                                         /auto/nlg-05/huan183/NewBioNer/corpus/eval/CRAFT-IOBES/test.tsv
+ - Total it 150: 0it [00:00, ?it/s] - Total it 150: 67it [00:02, 33.50it/s] - Total it 150: 107it [00:04, 26.54it/s] - Total it 150: 133it [00:06, 20.29it/s]                                         /auto/nlg-05/huan183/NewBioNer/corpus/eval/CRAFT-IOBES/test.tsv
 Global: 
-P: 0.4673 R: 0.1988 F1: 0.2789
+P: 0.4565 R: 0.1976 F1: 0.2758
 
 ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']

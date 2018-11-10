@@ -458,7 +458,7 @@ if __name__ == "__main__":
         for crf_idx, dataloaders in crf2train_dataloader.items():
             trainsets.append((crf_idx, [dl.dataset for dl in dataloaders]))
         print("Dump temp_trainsets")
-        pickle.dump(trainsets, open( args.pickle + "/temp_trainsets.p", "wb" ))
+        pickle.dump(trainsets, open(args.pickle + "/temp_trainsets.p", "wb" ))
 
     print("Up round by batch size")
     print("combined train[idx/len]: ", {crf_idx: sum(map(lambda t: len(t), dataloader)) * args.batch_size  for crf_idx, dataloader in crf2train_dataloader.items()})

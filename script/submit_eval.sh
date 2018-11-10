@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P10_M_nosig_C100_W300_MV0_EP51 N21_0.9652_0.9620_0.9683_51 pickle2
+
 # sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 U P12_M_nosig_C100_W300_MV0.2_EP49 N21_0.9665_0.9618_0.9712_49 pickle2
 # sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P12_M_nosig_C100_W300_MV0.2_EP49 N21_0.9665_0.9618_0.9712_49 pickle2
 
@@ -21,6 +23,18 @@
 # sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P2 U P23_P12_M_nosig_C100_W400_MV0.3_EP53_M_nosig_C100_W400_EP16_RestartFalse N21_0.9711_0.9612_0.9812_16 pickle2
 # sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P2 M P23_P12_M_nosig_C100_W400_MV0.3_EP53_M_nosig_C100_W400_EP16_RestartFalse N21_0.9711_0.9612_0.9812_16 pickle2
 
+# early stopping on single corpus
+#BC5DR
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P12_M_nosig_C100_W300_MV0.2_EP49 N21_0.9592_0.9537_0.9649_36 pickle2
+#NCBI
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P12_M_nosig_C100_W300_MV0.2_EP49 N21_0.9522_0.9486_0.9559_27 pickle2
+
+#BC5DR
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P2 M P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse N21_0.9601_0.9518_0.9686_5 pickle2
+#BC2GM, NCBI
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P2 M P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse N21_0.9607_0.9508_0.9708_7 pickle2
+#linnaeus
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P2 M P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse N21_BC5CDR-IOBES_0.9666_0.9643_0.9689_6 pickle2
 
 
 
