@@ -36,8 +36,7 @@
 #linnaeus
 # sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P2 M P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP29_RestartFalse N21_BC5CDR-IOBES_0.9666_0.9643_0.9689_6 pickle2
 
-
-
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P3 M P33_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP257_RestartFalse_Comb3 N21_0.9943_0.9933_0.9954_214 pickle2
 
 
 squeue -u huan183
