@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source activate base
+source activate bioner
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -12,7 +12,7 @@ ORIG_PATH="${2}"
 CHECKPOINT_PATH="${3}"
 CHECKPOINT_NAME="${4}"
 
-SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
+SRC_FOLDER="/media/storage_e/npeng/bioner/xiao/github/NewBioNer"
 DATA_FOLDER="$SRC_FOLDER/corpus/train"
 LOAD_CHECKPOINT="$SRC_FOLDER/checkpoints/$ORIG_PATH/$CHECKPOINT_PATH"
 
@@ -24,7 +24,7 @@ python3 -u $SRC_FOLDER/upredict_p3_args.py \
   --load_check_point $LOAD_CHECKPOINT/$CHECKPOINT_NAME.model \
   --load_arg $LOAD_CHECKPOINT/$CHECKPOINT_NAME.json \
   --data_loader $SRC_FOLDER/data_loaders/$FOLDER/$CHECKPOINT_PATH \
-  --emb_file /home/nlg-05/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
+  --emb_file /home/npeng/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
   --train_file $9 \
   --test_as_train ${10} \
   --word_dim 200 --char_dim 30 --caseless --fine_tune --shrink_embedding \

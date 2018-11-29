@@ -90,6 +90,7 @@ if __name__ == "__main__":
     parser.add_argument('--eval_filtered',action='store_true', help='gpu id')
     parser.add_argument('--pickle', default='', help='unknow-token in pre-trained embedding')
     parser.add_argument('--annotate', action='store_true', help='unknow-token in pre-trained embedding')
+    parser.add_argument('--test_file', help='test file')
     
     # new params
     parser.add_argument('--pred_method', default="")
@@ -215,7 +216,7 @@ if __name__ == "__main__":
             dev_labels.append(dev_l)
 
             test_lines = []
-            with codecs.open(train_args['test_file'][i], 'r', 'utf-8') as f:
+            with codecs.open(args.test_file, 'r', 'utf-8') as f:
                 test_lines = f.readlines()
             test_features, test_l = utils.read_corpus(test_lines)
             test_tokens.append(test_features)
@@ -261,45 +262,23 @@ if __name__ == "__main__":
             pickle.dump(single_test_datasets, open( args.pickle + "/temp_single_test.p", "wb" ))
         """
         
-        try:
-            print("Load from PICKLE")
-            single_devset = pickle.load(open(args.pickle + "/temp_single_dev.p", "rb" ))
-            dev_dataset_loader = []
-            for datasets_tuple in single_devset:
-                dev_dataset_loader.append([torch.utils.data.DataLoader(tup, 50, shuffle=False, drop_last=False) for tup in datasets_tuple])
-            
-            print("Load from PICKLE")
-            single_testset = pickle.load(open(args.pickle + "/temp_single_test.p", "rb" ))
-            test_dataset_loader = []
-            for datasets_tuple in single_testset:
-                test_dataset_loader.append([torch.utils.data.DataLoader(tup, 50, shuffle=False, drop_last=False) for tup in datasets_tuple])
-        except:
-            dev_dataset_loader = []
-            test_dataset_loader = []
-            for i in range(num_corpus):
-                # construct dataset
-                dev_missing_tagspace = [corpus_missing_tagspace[i]] * len(dev_labels[i])
-                test_missing_tagspace = [corpus_missing_tagspace[i]] * len(test_labels[i])
 
-                dev_dataset_loader.append(build_dataloader(dev_tokens[i], dev_labels[i], 50, dev_missing_tagspace, train_args["corpus_mask_value"], tag2idx, chr2idx, token2idx, train_args['caseless'], shuffle=False, drop_last=False))
-                test_dataset_loader.append(build_dataloader(test_tokens[i], test_labels[i], 50, test_missing_tagspace, train_args["corpus_mask_value"], tag2idx, chr2idx, token2idx, train_args['caseless'], shuffle=False, drop_last=False))
+        dev_dataset_loader = []
+        test_dataset_loader = []
+        for i in range(num_corpus):
+            # construct dataset
+            dev_missing_tagspace = [corpus_missing_tagspace[i]] * len(dev_labels[i])
+            test_missing_tagspace = [corpus_missing_tagspace[i]] * len(test_labels[i])
 
-            single_dev_datasets = []
-            for dataloader in dev_dataset_loader:
-                single_dev_datasets.append([dl.dataset for dl in dataloader])
-            pickle.dump(single_dev_datasets, open( args.pickle + "/temp_single_dev.p", "wb" ))
+            dev_dataset_loader.append(build_dataloader(dev_tokens[i], dev_labels[i], 50, dev_missing_tagspace, train_args["corpus_mask_value"], tag2idx, chr2idx, token2idx, train_args['caseless'], shuffle=False, drop_last=False))
+            test_dataset_loader.append(build_dataloader(test_tokens[i], test_labels[i], 50, test_missing_tagspace, train_args["corpus_mask_value"], tag2idx, chr2idx, token2idx, train_args['caseless'], shuffle=False, drop_last=False))
 
-            single_test_datasets = []
-            for dataloader in test_dataset_loader:
-                single_test_datasets.append([dl.dataset for dl in dataloader])
-            print("DUMP temp_single_test")
-            pickle.dump(single_test_datasets, open( args.pickle + "/temp_single_test.p", "wb" ))
         
 
 
 
         #agent.eval_batch_corpus(dev_dataset_loader, train_args['dev_file'], corpus2crf)
-        agent.eval_batch_corpus(test_dataset_loader, train_args['test_file'], corpus2crf)
+        agent.eval_batch_corpus(test_dataset_loader, args.test_file, corpus2crf)
 
     # global prediction
     if args.if_pred:

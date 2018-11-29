@@ -1,12 +1,12 @@
 #!/bin/bash
 
-source activate base
+source activate bioner
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-FOLDER="P2/EXP1" # Fix me!
+FOLDER="P2/EXP2" # Fix me!
 
 ORIG_PATH="${2}"
 CHECKPOINT_PATH="${3}"
@@ -16,7 +16,7 @@ CHECKPOINT_NAME="${4}"
 # 7: char hidden size; 8: word hidden size;
 EXEC_NAME="${1}_${3}_${5}_${6}_C${7}_W${8}_EP${9}_Restart${10}"
 
-SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
+SRC_FOLDER="/media/storage_e/npeng/bioner/xiao/github/NewBioNer"
 DATA_FOLDER="$SRC_FOLDER/corpus/train"
 CHECKPOINT_FOLDER="$SRC_FOLDER/checkpoints/$FOLDER/$EXEC_NAME._${11}"
 
@@ -30,7 +30,7 @@ python3 -u $SRC_FOLDER/train_p2.py \
   --data_loader $SRC_FOLDER/data_loaders/$ORIG_PATH/$CHECKPOINT_PATH._${11} \
   --load_check_point $SRC_FOLDER/checkpoints/$ORIG_PATH/$CHECKPOINT_PATH/$CHECKPOINT_NAME.model \
   --load_arg $SRC_FOLDER/checkpoints/$ORIG_PATH/$CHECKPOINT_PATH/$CHECKPOINT_NAME.json \
-  --emb_file /home/nlg-05/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
+  --emb_file /home/npeng/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
   --train_file $DATA_FOLDER/${11}/train.tsv \
   --dev_file $DATA_FOLDER/${11}/devel.tsv \
   --test_file \
@@ -54,7 +54,7 @@ python3 -u $SRC_FOLDER/train_p2.py \
   --idea $1 \
   --pred_method $5 \
   --mask_value -1 \
-  --restart $10 \
+  --restart ${10} \
   --combine \
   | tee $SRC_FOLDER/logs/$FOLDER/$EXEC_NAME.log
 

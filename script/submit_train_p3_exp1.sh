@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
+SRC_FOLDER="/media/storage_e/npeng/bioner/xiao/github/NewBioNer"
 TRAIN_FOLDER="$SRC_FOLDER/corpus/train"
 EVAL_FOLDER="$SRC_FOLDER/corpus/eval"
 

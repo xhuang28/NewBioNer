@@ -209,20 +209,6 @@ if __name__ == "__main__":
         chr2idx = train_args['chr2idx']
         in_doc_words = train_args['in_doc_words']
     
-    if not args.rand_embedding:
-        print("feature size: '{}'".format(len(token2idx)))
-        print('loading embedding')
-        if args.fine_tune:  # which means does not do fine-tune
-            token2idx = {'<eof>': 0}
-        try:
-            print("Load from PICKLE")
-            token2idx, embedding_tensor, in_doc_words = pickle.load(open(args.pickle + "/temp_pubmed.p", "rb" ))
-        except:
-            print("Rebuild")
-            token2idx, embedding_tensor, in_doc_words = utils.load_embedding_wlm(args.emb_file, ' ', token2idx, dt_token_set, args.caseless, args.unk, args.word_dim, shrink_to_corpus=args.shrink_embedding)
-            print("DUMP temp_pubmed.p")
-            pickle.dump((token2idx, embedding_tensor, in_doc_words), open( args.pickle + "/temp_pubmed.p", "wb" ))
-        print("embedding size: '{}'".format(len(token2idx)))
     
     print(tag2idx)
     print("Statistic:")

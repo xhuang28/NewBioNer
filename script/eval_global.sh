@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source activate base
+source activate bioner
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -10,7 +10,7 @@ PHASE=$1
 EXEC_NAME=$3
 CHECKPOINT_NAME=$4
 
-SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
+SRC_FOLDER="/media/storage_e/npeng/bioner/xiao/github/NewBioNer"
 DATA_FOLDER="$SRC_FOLDER/corpus/eval"
 LOAD_CHECKPOINT="$SRC_FOLDER/checkpoints"
 

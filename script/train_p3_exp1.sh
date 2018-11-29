@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source activate base
+source activate bioner
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -16,7 +16,7 @@ CHECKPOINT_NAME="${4}"
 # 7: char hidden size; 8: word hidden size; 9: restart training; 10: index of train/dev combination
 EXEC_NAME="${1}_${3}_${5}_${6}_C${7}_W${8}_Restart${9}_Comb${10}"
 
-SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
+SRC_FOLDER="/media/storage_e/npeng/bioner/xiao/github/NewBioNer"
 DATA_FOLDER="$SRC_FOLDER/corpus/train"
 CHECKPOINT_FOLDER="$SRC_FOLDER/checkpoints/$FOLDER/$EXEC_NAME"
 
@@ -29,7 +29,7 @@ python3 -u $SRC_FOLDER/train_p3.py \
   --data_loader $SRC_FOLDER/data_loaders/$FOLDER/$CHECKPOINT_PATH \
   --load_check_point $SRC_FOLDER/checkpoints/$ORIG_PATH/$CHECKPOINT_PATH/$CHECKPOINT_NAME.model \
   --load_arg $SRC_FOLDER/checkpoints/$ORIG_PATH/$CHECKPOINT_PATH/$CHECKPOINT_NAME.json \
-  --emb_file /home/nlg-05/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
+  --emb_file /home/npeng/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
   --train_file ${11} \
   --dev_file ${11} \
   --test_file \

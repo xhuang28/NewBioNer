@@ -368,7 +368,7 @@ class CRFLoss_vb(nn.Module):
             else:
                 neg_inf_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, -1e9))).cuda()
                 neg_inf_values = autograd.Variable(torch.FloatTensor(np.full(cur_values.shape, -1e9))).cuda()
-                cur_partition = utils.switch(neg_inf_partition, cur_partition, partition_mask).view(cur_partition.shape)
+                cur_partition = utils.switch(neg_inf_partition.contiguous(), cur_partition.contiguous(), partition_mask).view(cur_partition.shape)
                 cur_values = utils.switch(neg_inf_values, cur_values, values_mask).view(cur_values.shape)
             
             cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
@@ -505,6 +505,94 @@ class CRFLoss_vb(nn.Module):
         
         return partition
     
+    def restricted_forward_algo_v4(self, scores, target, mask, corpus_mask, sigmoid, proba_dist):
+        # Restricted Forward Algorithm v1
+        # "O": Set scores of all local labels (not including "O") to 0
+        # "NE": Set scores of all other labels to 0
+        seq_len = scores.size(0)
+        bat_size = scores.size(1)
+        
+        seq_iter = enumerate(scores)
+        # the first score should start with <start>
+        _, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
+        # only need start from start_tag
+        cur_partition = inivalues[:, self.start_tag, :]  # bat_size * to_target_size
+        partition = cur_partition
+        # iter over last scores
+        for idx, cur_values in seq_iter:
+            # previous to_target is current from_target
+            # cur_partition: previous->current results log(exp(from_target)), #(batch_size * from_target)
+            # cur_values: bat_size * from_target * to_target
+            curr_proba_dist = proba_dist[idx-1]
+            cur_partition = cur_partition + autograd.Variable(torch.FloatTensor(curr_proba_dist)).cuda()
+            cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
+            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
+                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
+            partition = utils.switch(partition.contiguous(), cur_partition.contiguous(),
+                                     mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
+            
+        #only need end at end_tag
+        partition = partition[:, self.end_tag].sum()
+        
+        return partition
+    
+    
+    def restricted_forward_algo_v5(self, scores, target, mask, corpus_mask, sigmoid, mask_value):
+        # Restricted Forward Algorithm v1
+        # "O": Set scores of all local labels (not including "O") to 0
+        # "NE": Set scores of all other labels to 0
+        log_mask_value = -1e9 if mask_value == 0 else np.log(mask_value)
+        seq_len = scores.size(0)
+        bat_size = scores.size(1)
+        gold_labels = (target / 35).view(target.shape[0], target.shape[1])
+        
+        seq_iter = enumerate(scores)
+        # the first score should start with <start>
+        _, inivalues = seq_iter.__next__()  # bat_size * from_target_size * to_target_size
+        # only need start from start_tag
+        cur_partition = inivalues[:, self.start_tag, :]  # bat_size * to_target_size
+        partition = cur_partition
+        # iter over last scores
+        for idx, cur_values in seq_iter:
+            # previous to_target is current from_target
+            # cur_partition: previous->current results log(exp(from_target)), #(batch_size * from_target)
+            # cur_values: bat_size * from_target * to_target
+            curr_labels = gold_labels[idx,:]
+            
+            # mask cur_partition and cur_values to rule out undesired tag sequences
+            partition_mask = np.ones(cur_partition.shape)
+            partition_offset = np.zeros(cur_partition.shape)
+            for i in range(partition_mask.shape[0]):
+                curr_label = curr_labels[i].cpu().data.numpy()[0]
+                if curr_label == self.O_idx:
+                    idx_annotated = np.where(corpus_mask[0,i,0].data)[0]
+                    idx_annotated = np.array([r for r in idx_annotated if r!=self.O_idx]) # exclude "O"
+                    idx_unannotated = np.where((1-corpus_mask[0,i,0]).data)[0]
+                    partition_mask[i,idx_annotated] = 0
+                    partition_offset[i,idx_unannotated] = log_mask_value
+                else:
+                    partition_mask[i,:] = 0
+                    partition_mask[i,curr_label] = 1
+            
+            partition_mask = autograd.Variable(torch.FloatTensor(partition_mask)).cuda()
+            partition_offset = autograd.Variable(torch.FloatTensor(partition_offset)).cuda()
+            
+            assert sigmoid == 'nosig'
+            neg_inf_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, -1e9))).cuda()
+            cur_partition = utils.switch(neg_inf_partition.contiguous(), cur_partition.contiguous(), partition_mask).view(cur_partition.shape)
+            cur_partition += partition_offset
+            
+            cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
+            cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
+                  # (bat_size * from_target * to_target) -> (bat_size * to_target)
+            partition = utils.switch(partition.contiguous(), cur_partition.contiguous(),
+                                     mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
+            
+        #only need end at end_tag
+        partition = partition[:, self.end_tag].sum()
+        
+        return partition
+    
     
     def forward(self, scores, target, mask, corpus_mask, idea=None, sigmoid="", mask_value=None):
         """
@@ -541,12 +629,19 @@ class CRFLoss_vb(nn.Module):
         elif idea == "P12":
             numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
             denominator = self.restricted_forward_algo_v2(scores, target, mask, corpus_mask, sigmoid, mask_value)
+        elif idea == "P13":
+            numerator = self.restricted_forward_algo_v5(scores, target, mask, corpus_mask, sigmoid, mask_value)
+            denominator = self.forward_algo(scores, target, mask, corpus_mask)
         elif idea in ["P22", "P32"]:
             numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
             denominator = self.forward_algo(scores, target, mask, corpus_mask)
-        elif idea in ["P23", "P33"]:
+        elif idea in "P23":
             proba_dist, target = target
             numerator = self.restricted_forward_algo_v3(scores, target, mask, corpus_mask, sigmoid, proba_dist)
+            denominator = self.forward_algo(scores, target, mask, corpus_mask)
+        elif idea == "P33":
+            proba_dist, target = target
+            numerator = self.restricted_forward_algo_v4(scores, target, mask, corpus_mask, sigmoid, proba_dist)
             denominator = self.forward_algo(scores, target, mask, corpus_mask)
         else:
             print("\n\n**********Idea not implemented!**********\n\n")

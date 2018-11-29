@@ -75,16 +75,16 @@
 # sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP1_RestartFalse_Comb21 N21_LAST_0.9471_0.9363_0.9582_1 pickle2
 
 
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb5_IT2 N21_0.9159_0.9618_0.8742_1 pickle2
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb9_IT2 N21_0.9436_0.9400_0.9473_1 pickle2
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb13_IT2 N21_0.8565_0.8433_0.8701_1 pickle2
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb17_IT2 N21_0.9451_0.9541_0.9364_1 pickle2
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb21_IT2 N21_0.9449_0.9361_0.9539_1 pickle2
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP4_RestartFalse_Comb6_IT2 N21_0.8948_0.8482_0.9469_4 pickle2
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP73_RestartFalse_Comb14_IT2 N21_LAST_0.7629_0.7951_0.7333_73 pickle2
-sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP90_RestartFalse_Comb10_IT2 N21_LAST_0.8487_0.8590_0.8387_90 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb5_IT2 N21_0.9159_0.9618_0.8742_1 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb9_IT2 N21_0.9436_0.9400_0.9473_1 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb13_IT2 N21_0.8565_0.8433_0.8701_1 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb17_IT2 N21_0.9451_0.9541_0.9364_1 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP1_RestartFalse_Comb21_IT2 N21_0.9449_0.9361_0.9539_1 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP4_RestartFalse_Comb6_IT2 N21_0.8948_0.8482_0.9469_4 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP73_RestartFalse_Comb14_IT2 N21_LAST_0.7629_0.7951_0.7333_73 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval_global.sh P3 M P33_M_nosig_C100_W300_EP90_RestartFalse_Comb10_IT2 N21_LAST_0.8487_0.8590_0.8387_90 pickle2
 
-
+bash eval_global.sh P3 M P33_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP67_RestartFalse_Comb14 N21_0.4147_0.4386_0.3933_10 pickle2
 
 
 squeue -u huan183
