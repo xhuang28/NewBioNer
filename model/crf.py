@@ -429,14 +429,14 @@ class CRFLoss_vb(nn.Module):
                 cur_values = utils.switch(neg_inf_values, cur_values.contiguous(), values_mask).view(cur_values.shape)
             else:
                 neg_inf_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, np.log(mask_value)))).cuda()
-                neg_inf_values = autograd.Variable(torch.FloatTensor(np.full(cur_values.shape, np.log(mask_value)))).cuda()
-                cur_partition = utils.switch(neg_inf_partition, cur_partition.contiguous(), partition_mask).view(cur_partition.shape)
-                cur_values = utils.switch(neg_inf_values, cur_values.contiguous(), values_mask).view(cur_values.shape)
+                zero_partition = autograd.Variable(torch.FloatTensor(np.full(cur_partition.shape, 0))).cuda()
+                partition_offset = utils.switch(neg_inf_partition.contiguous(), zero_partition.contiguous(), partition_mask).view(cur_partition.shape)
+                cur_partition = cur_partition + partition_offset.contiguous()
             
-            cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
+            cur_values = cur_values.contiguous() + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
             cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
                   # (bat_size * from_target * to_target) -> (bat_size * to_target)
-            partition = utils.switch(partition, cur_partition,
+            partition = utils.switch(partition.contiguous(), cur_partition.contiguous(),
                                      mask[idx].contiguous().view(bat_size, 1).expand(bat_size, self.tagset_size)).contiguous().view(bat_size, -1)
             
         #only need end at end_tag
@@ -445,9 +445,6 @@ class CRFLoss_vb(nn.Module):
         return partition
     
     def restricted_forward_algo_v3(self, scores, target, mask, corpus_mask, sigmoid, proba_dist):
-        # Restricted Forward Algorithm v1
-        # "O": Set scores of all local labels (not including "O") to 0
-        # "NE": Set scores of all other labels to 0
         seq_len = scores.size(0)
         bat_size = scores.size(1)
         gold_labels = (target / 35).view(target.shape[0], target.shape[1])
@@ -506,9 +503,6 @@ class CRFLoss_vb(nn.Module):
         return partition
     
     def restricted_forward_algo_v4(self, scores, target, mask, corpus_mask, sigmoid, proba_dist):
-        # Restricted Forward Algorithm v1
-        # "O": Set scores of all local labels (not including "O") to 0
-        # "NE": Set scores of all other labels to 0
         seq_len = scores.size(0)
         bat_size = scores.size(1)
         
@@ -538,9 +532,6 @@ class CRFLoss_vb(nn.Module):
     
     
     def restricted_forward_algo_v5(self, scores, target, mask, corpus_mask, sigmoid, mask_value):
-        # Restricted Forward Algorithm v1
-        # "O": Set scores of all local labels (not including "O") to 0
-        # "NE": Set scores of all other labels to 0
         log_mask_value = -1e9 if mask_value == 0 else np.log(mask_value)
         seq_len = scores.size(0)
         bat_size = scores.size(1)
@@ -632,6 +623,9 @@ class CRFLoss_vb(nn.Module):
         elif idea == "P13":
             numerator = self.restricted_forward_algo_v5(scores, target, mask, corpus_mask, sigmoid, mask_value)
             denominator = self.forward_algo(scores, target, mask, corpus_mask)
+        elif idea == "P14":
+            numerator = self.restricted_forward_algo_v5(scores, target, mask, corpus_mask, sigmoid, mask_value[0])
+            denominator = self.restricted_forward_algo_v2(scores, target, mask, corpus_mask, sigmoid, mask_value[1])
         elif idea in ["P22", "P32"]:
             numerator = self.calc_energy_gold_ts(scores, target, mask, corpus_mask)
             denominator = self.forward_algo(scores, target, mask, corpus_mask)

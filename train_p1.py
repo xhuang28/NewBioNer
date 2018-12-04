@@ -99,9 +99,14 @@ if __name__ == "__main__":
     parser.add_argument('--pred_method', default='')
     parser.add_argument('--sigmoid', default='')
     parser.add_argument('--mask_value', type=float, default=None)
+    parser.add_argument('--multi_mask', nargs='+', default=None)
     
     
     args = parser.parse_args()
+    
+    
+    if not args.multi_mask is None:
+        args.mask_value = [float(r) for r in args.multi_mask]
     
     assert args.pred_method in ['U', 'M']
     assert args.sigmoid in ['nosig', 'relu']

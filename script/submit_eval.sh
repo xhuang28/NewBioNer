@@ -56,7 +56,14 @@
 # bash eval_single.sh P2 M P22_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP100_RestartFalse._BC5CDR-IOBES N21_0.9987_0.9974_1.0000_81 NCBI-IOBES
 # bash eval_single.sh P2 M P22_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP100_RestartFalse._NCBI-IOBES N21_0.9862_0.9740_0.9987_49 NCBI-IOBES
 # bash eval_single.sh P2 M P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP100_RestartFalse._BC5CDR-IOBES N21_0.9986_0.9972_1.0000_88 NCBI-IOBES
-bash eval_single.sh P2 M P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP100_RestartFalse._NCBI-IOBES N21_0.9868_0.9752_0.9987_55 NCBI-IOBES
+# bash eval_single.sh P2 M P23_P12_M_nosig_C100_W300_MV0.2_EP49_M_nosig_C100_W300_EP100_RestartFalse._NCBI-IOBES N21_0.9868_0.9752_0.9987_55 NCBI-IOBES
+
+
+sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P14_M_nosig_C100_W300_MV0.25_0.25_EP56 N21_LAST_0.9691_0.9637_0.9746_56 pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P14_M_nosig_C100_W300_MV0.3_0.3_EP49 ?? pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P14_M_nosig_C100_W300_MV0.2_0.2_EP56 ?? pickle2
+# sbatch --partition=isi --gres=gpu:1 --time=1:00:00 ./eval.sh P1 M P14_M_nosig_C100_W300_MV0.1_0.1_EP50 ?? pickle2
+
 
 
 squeue -u huan183
