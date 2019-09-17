@@ -1,617 +1,0 @@
-OCCPUIED the GPU
-Original GPU:  0 Current GPU:  0
-setting:
-Namespace(batch_size=10, caseless=True, change_gold=False, change_prob=1.0, char_dim=30, char_hidden=100, char_layers=1, checkpoint='/media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES', clip_grad=5.0, co_train=False, combine=False, corpus_mask_value=0.0, cost_value=1.0, data_loader='/media/storage_e/npeng/bioner/xiao/github/NewBioNer/data_loaders/P1/EXP1/P12_M_nosig_C100_W300_MV0.2._NCBI-IOBES', dev_file=['/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv'], dispatch='N21', drop_out=0.5, emb_file='/home/npeng/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt', epoch=500, eva_matrix='fa', fine_tune=False, gpu=0, high_way=False, highway_layers=1, idea='P22', lambda0=1, least_iters=50, load_arg='/media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P1/EXP1/P12_M_nosig_C100_W300_MV0.2/N21_0.8487_0.8528_0.8446_49.json', load_check_point='/media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P1/EXP1/P12_M_nosig_C100_W300_MV0.2/N21_0.8487_0.8528_0.8446_49.model', load_opt=False, lr=0.01, lr_decay=0.05, mask_value='-1', max_margin=False, mini_count=5, momentum=0.9, nll_rp=False, patience=30, pickle='/media/storage_e/npeng/bioner/xiao/github/NewBioNer/pickle/NCBI-IOBES', plateau=False, pred_method='M', rand_embedding=False, restart=False, seed=42, shrink_embedding=True, sigmoid='nosig', small_crf=True, softmax_margin=False, start_epoch=0, stop_on_single=True, test_file=['/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC4CHEMD-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC5CDR-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/JNLPBA-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/linnaeus-IOBES/test.tsv'], train_file=['/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/train.tsv'], unk='unk', update='sgd', word_dim=200, word_hidden=300, word_layers=1)
-can_load_check_point:  True
-can_load_arg:  True
-load_opt:  False
-loading corpus
-['/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/train.tsv']
-['/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv']
-['/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC4CHEMD-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC5CDR-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/JNLPBA-IOBES/test.tsv', '/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/linnaeus-IOBES/test.tsv']
-load from checkpoint
-{'O': 0, 'B-GP': 1, 'I-GP': 2, 'E-GP': 3, 'S-GP': 4, '<start>': 5, '<pad>': 6, 'S-CHEMICAL': 7, 'B-CHEMICAL': 8, 'E-CHEMICAL': 9, 'I-CHEMICAL': 10, 'B-DISEASE': 11, 'E-DISEASE': 12, 'I-DISEASE': 13, 'S-DISEASE': 14, 'B-DNA': 15, 'E-DNA': 16, 'B-CELL_TYPE': 17, 'I-CELL_TYPE': 18, 'E-CELL_TYPE': 19, 'I-DNA': 20, 'S-CELL_TYPE': 21, 'S-DNA': 22, 'S-CELL_LINE': 23, 'B-CELL_LINE': 24, 'E-CELL_LINE': 25, 'I-CELL_LINE': 26, 'B-RNA': 27, 'I-RNA': 28, 'E-RNA': 29, 'S-RNA': 30, 'S-SPECIES': 31, 'B-SPECIES': 32, 'E-SPECIES': 33, 'I-SPECIES': 34}
-Statistic:
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/train.tsv 5424
-Counter({'O': 124452, 'I-DISEASE': 3239, 'B-DISEASE': 2876, 'E-DISEASE': 2876, 'S-DISEASE': 2258})
-
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv 923
-Counter({'O': 22092, 'I-DISEASE': 586, 'B-DISEASE': 504, 'E-DISEASE': 504, 'S-DISEASE': 283})
-
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv 5038
-Counter({'O': 128364, 'I-GP': 5273, 'B-GP': 3503, 'E-GP': 3503, 'S-GP': 2822})
-
-constructing dataset
-corpus_missing_tagspace [[1, 2, 3, 4, 7, 8, 9, 10, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]]
-corpus2crf {0: 0}
-corpus_str2crf {'1 2 3 4 7 8 9 10 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34': [0]}
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/train.tsv -> CRF:  0
-crf2corpus {0: [0]}
-Load from PICKLE
-Rebuild
-DUMP temp_devsets
-combined dev[idx/len]:  {0: 1000}
-Load from PICKLE
-Rebuild
-DUMP temp_single_dev
-peek cropus mask
-
-    1     0     0  ...      0     0     0
-    0     0     0  ...      0     0     0
-    0     0     0  ...      0     0     0
-       ...          ⋱          ...       
-    0     0     0  ...      0     0     0
-    0     0     0  ...      0     0     0
-    0     0     0  ...      0     0     0
-[torch.FloatTensor of size 35x35]
-
-building model
-LM_LSTM_CRF(
-  (char_embeds): Embedding(97, 30)
-  (forw_char_lstm): LSTM(30, 100, dropout=0.5)
-  (back_char_lstm): LSTM(30, 100, dropout=0.5)
-  (word_embeds): Embedding(71725, 200)
-  (word_lstm): LSTM(400, 150, dropout=0.5, bidirectional=True)
-  (dropout): Dropout(p=0.5)
-  (crflist): ModuleList(
-    (0): CRF_L(
-      (transitions): Linear(in_features=300, out_features=1225, bias=True)
-      (hidden2tag): Linear(in_features=300, out_features=35, bias=True)
-      (ReLU): ReLU()
-      (Sigmoid): Sigmoid()
-    )
-  )
-  (char_pre_train_out): Linear(in_features=100, out_features=97, bias=True)
-  (word_pre_train_out): Linear(in_features=100, out_features=71725, bias=True)
-)
-tagset_size:  35
-
-Objective Function: Negative Log Liklihood
-Epoch: [1/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 49it [00:02, 24.43it/s] - Total it 5440: 102it [00:04, 25.46it/s] - Total it 5440: 151it [00:06, 25.09it/s] - Total it 5440: 190it [00:08, 23.60it/s] - Total it 5440: 229it [00:10, 22.75it/s] - Total it 5440: 268it [00:12, 22.18it/s] - Total it 5440: 307it [00:14, 21.75it/s] - Total it 5440: 345it [00:16, 20.76it/s] - Total it 5440: 381it [00:19, 19.94it/s] - Total it 5440: 415it [00:21, 19.32it/s] - Total it 5440: 447it [00:23, 18.84it/s] - Total it 5440: 478it [00:27, 17.38it/s] - Total it 5440: 505it [00:30, 16.31it/s] - Total it 5440: 529it [00:34, 15.50it/s]                                          training loss: 0.1275
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8076 R: 0.8691 F1: 0.8372 vloss: -inf
-Prev Best F1: -inf Curr Best F1: 0.8372
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_0.8372_0.8076_0.8691_1
-
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8076 R: 0.8691 F1: 0.8372 vloss: -inf
-Prev Best F1: -inf Curr Best F1: 0.8372
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_NCBI-IOBES_0.8372_0.8076_0.8691_1
-
-Epoch: [1/500]	 Patient: 0	 Current: 38.40	 Total:  0: 0:38.40
-
-Epoch: [2/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 44it [00:02, 21.74it/s] - Total it 5440: 84it [00:04, 20.77it/s] - Total it 5440: 124it [00:06, 20.44it/s] - Total it 5440: 157it [00:08, 19.41it/s] - Total it 5440: 186it [00:10, 17.62it/s] - Total it 5440: 213it [00:13, 16.20it/s] - Total it 5440: 239it [00:15, 15.32it/s] - Total it 5440: 263it [00:17, 14.76it/s] - Total it 5440: 287it [00:20, 14.27it/s] - Total it 5440: 310it [00:22, 13.86it/s] - Total it 5440: 332it [00:24, 13.30it/s] - Total it 5440: 353it [00:27, 12.77it/s] - Total it 5440: 372it [00:30, 12.38it/s] - Total it 5440: 391it [00:32, 12.05it/s] - Total it 5440: 409it [00:34, 11.79it/s] - Total it 5440: 427it [00:37, 11.53it/s] - Total it 5440: 444it [00:39, 11.31it/s] - Total it 5440: 461it [00:42, 10.86it/s] - Total it 5440: 476it [00:45, 10.45it/s] - Total it 5440: 490it [00:48, 10.11it/s] - Total it 5440: 502it [00:50,  9.84it/s] - Total it 5440: 514it [00:53,  9.59it/s] - Total it 5440: 525it [00:56,  9.36it/s] - Total it 5440: 536it [00:58,  9.16it/s]                                          training loss: 0.1053
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8268 R: 0.8615 F1: 0.8438 vloss: -inf
-Prev Best F1: 0.8372 Curr Best F1: 0.8438
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_0.8438_0.8268_0.8615_2
-
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8268 R: 0.8615 F1: 0.8438 vloss: -inf
-Prev Best F1: 0.8372 Curr Best F1: 0.8438
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_NCBI-IOBES_0.8438_0.8268_0.8615_2
-
-Epoch: [2/500]	 Patient: 0	 Current: 63.64	 Total:  0: 1:42.04
-
-Epoch: [3/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.49it/s] - Total it 5440: 59it [00:04, 14.47it/s] - Total it 5440: 88it [00:06, 14.41it/s] - Total it 5440: 118it [00:08, 14.50it/s] - Total it 5440: 145it [00:10, 14.29it/s] - Total it 5440: 169it [00:12, 13.63it/s] - Total it 5440: 192it [00:14, 13.09it/s] - Total it 5440: 215it [00:16, 12.78it/s] - Total it 5440: 237it [00:18, 12.53it/s] - Total it 5440: 259it [00:21, 12.31it/s] - Total it 5440: 281it [00:23, 12.19it/s] - Total it 5440: 303it [00:25, 12.04it/s] - Total it 5440: 325it [00:27, 11.80it/s] - Total it 5440: 346it [00:30, 11.44it/s] - Total it 5440: 365it [00:32, 11.18it/s] - Total it 5440: 384it [00:34, 10.97it/s] - Total it 5440: 402it [00:37, 10.79it/s] - Total it 5440: 420it [00:39, 10.62it/s] - Total it 5440: 437it [00:41, 10.51it/s] - Total it 5440: 454it [00:44, 10.31it/s] - Total it 5440: 470it [00:47,  9.89it/s] - Total it 5440: 484it [00:50,  9.57it/s] - Total it 5440: 497it [00:53,  9.29it/s] - Total it 5440: 509it [00:56,  9.04it/s] - Total it 5440: 520it [00:58,  8.86it/s] - Total it 5440: 531it [01:01,  8.68it/s] - Total it 5440: 541it [01:03,  8.53it/s]                                          training loss: 0.0946
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8087 R: 0.8704 F1: 0.8384 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8087 R: 0.8704 F1: 0.8384 vloss: -inf
-Epoch: [3/500]	 Patient: 1	 Current: 66.61	 Total:  0: 2:48.64
-
-Epoch: [4/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.36it/s] - Total it 5440: 59it [00:04, 14.50it/s] - Total it 5440: 89it [00:06, 14.56it/s] - Total it 5440: 118it [00:08, 14.53it/s] - Total it 5440: 145it [00:10, 14.23it/s] - Total it 5440: 169it [00:12, 13.53it/s] - Total it 5440: 192it [00:14, 13.06it/s] - Total it 5440: 215it [00:16, 12.70it/s] - Total it 5440: 238it [00:18, 12.53it/s] - Total it 5440: 260it [00:21, 12.36it/s] - Total it 5440: 282it [00:23, 12.17it/s] - Total it 5440: 304it [00:25, 12.03it/s] - Total it 5440: 326it [00:27, 11.79it/s] - Total it 5440: 347it [00:30, 11.44it/s] - Total it 5440: 367it [00:32, 11.17it/s] - Total it 5440: 386it [00:35, 10.97it/s] - Total it 5440: 404it [00:37, 10.78it/s] - Total it 5440: 422it [00:39, 10.62it/s] - Total it 5440: 439it [00:41, 10.49it/s] - Total it 5440: 456it [00:44, 10.21it/s] - Total it 5440: 472it [00:47,  9.84it/s] - Total it 5440: 486it [00:50,  9.54it/s] - Total it 5440: 499it [00:53,  9.29it/s] - Total it 5440: 511it [00:56,  9.08it/s] - Total it 5440: 522it [00:58,  8.90it/s] - Total it 5440: 533it [01:01,  8.72it/s] - Total it 5440: 543it [01:03,  8.54it/s]                                          training loss: 0.0856
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8157 R: 0.8602 F1: 0.8374 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8157 R: 0.8602 F1: 0.8374 vloss: -inf
-Epoch: [4/500]	 Patient: 2	 Current: 66.20	 Total:  0: 3:54.84
-
-Epoch: [5/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.82it/s] - Total it 5440: 60it [00:04, 14.58it/s] - Total it 5440: 91it [00:06, 14.60it/s] - Total it 5440: 121it [00:08, 14.63it/s] - Total it 5440: 148it [00:10, 14.32it/s] - Total it 5440: 172it [00:12, 13.68it/s] - Total it 5440: 195it [00:14, 13.26it/s] - Total it 5440: 218it [00:16, 12.97it/s] - Total it 5440: 241it [00:19, 12.68it/s] - Total it 5440: 263it [00:21, 12.50it/s] - Total it 5440: 285it [00:23, 12.32it/s] - Total it 5440: 307it [00:25, 12.18it/s] - Total it 5440: 329it [00:27, 11.89it/s] - Total it 5440: 350it [00:30, 11.56it/s] - Total it 5440: 370it [00:32, 11.34it/s] - Total it 5440: 389it [00:34, 11.13it/s] - Total it 5440: 407it [00:37, 10.95it/s] - Total it 5440: 425it [00:39, 10.79it/s] - Total it 5440: 443it [00:41, 10.66it/s] - Total it 5440: 460it [00:44, 10.30it/s] - Total it 5440: 476it [00:48,  9.91it/s] - Total it 5440: 490it [00:51,  9.60it/s] - Total it 5440: 503it [00:53,  9.36it/s] - Total it 5440: 515it [00:56,  9.15it/s] - Total it 5440: 526it [00:58,  8.97it/s] - Total it 5440: 537it [01:01,  8.79it/s]                                          training loss: 0.0790
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8133 R: 0.8691 F1: 0.8403 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8133 R: 0.8691 F1: 0.8403 vloss: -inf
-Epoch: [5/500]	 Patient: 3	 Current: 65.29	 Total:  0: 5:0.13
-
-Epoch: [6/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.41it/s] - Total it 5440: 59it [00:04, 14.62it/s] - Total it 5440: 90it [00:06, 14.81it/s] - Total it 5440: 120it [00:08, 14.70it/s] - Total it 5440: 147it [00:10, 14.45it/s] - Total it 5440: 171it [00:12, 13.76it/s] - Total it 5440: 194it [00:14, 13.24it/s] - Total it 5440: 217it [00:16, 12.89it/s] - Total it 5440: 239it [00:18, 12.66it/s] - Total it 5440: 261it [00:20, 12.45it/s] - Total it 5440: 283it [00:23, 12.29it/s] - Total it 5440: 305it [00:25, 12.13it/s] - Total it 5440: 327it [00:27, 11.88it/s] - Total it 5440: 348it [00:30, 11.55it/s] - Total it 5440: 368it [00:32, 11.30it/s] - Total it 5440: 387it [00:34, 11.10it/s] - Total it 5440: 405it [00:37, 10.93it/s] - Total it 5440: 423it [00:39, 10.78it/s] - Total it 5440: 441it [00:41, 10.65it/s] - Total it 5440: 458it [00:44, 10.31it/s] - Total it 5440: 474it [00:47,  9.93it/s] - Total it 5440: 488it [00:50,  9.62it/s] - Total it 5440: 501it [00:53,  9.37it/s] - Total it 5440: 513it [00:56,  9.15it/s] - Total it 5440: 524it [00:58,  8.96it/s] - Total it 5440: 535it [01:00,  8.79it/s]                                          training loss: 0.0724
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8244 R: 0.8590 F1: 0.8413 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8244 R: 0.8590 F1: 0.8413 vloss: -inf
-Epoch: [6/500]	 Patient: 4	 Current: 65.52	 Total:  0: 6:5.66
-
-Epoch: [7/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.95it/s] - Total it 5440: 61it [00:04, 15.04it/s] - Total it 5440: 91it [00:06, 14.92it/s] - Total it 5440: 121it [00:08, 14.87it/s] - Total it 5440: 148it [00:10, 14.46it/s] - Total it 5440: 172it [00:12, 13.76it/s] - Total it 5440: 195it [00:14, 13.29it/s] - Total it 5440: 218it [00:16, 13.00it/s] - Total it 5440: 241it [00:18, 12.72it/s] - Total it 5440: 263it [00:21, 12.50it/s] - Total it 5440: 285it [00:23, 12.36it/s] - Total it 5440: 307it [00:25, 12.17it/s] - Total it 5440: 329it [00:27, 11.89it/s] - Total it 5440: 350it [00:30, 11.55it/s] - Total it 5440: 369it [00:32, 11.31it/s] - Total it 5440: 388it [00:34, 11.12it/s] - Total it 5440: 406it [00:37, 10.95it/s] - Total it 5440: 424it [00:39, 10.81it/s] - Total it 5440: 442it [00:41, 10.67it/s] - Total it 5440: 459it [00:44, 10.33it/s] - Total it 5440: 475it [00:47,  9.97it/s] - Total it 5440: 489it [00:50,  9.67it/s] - Total it 5440: 502it [00:53,  9.43it/s] - Total it 5440: 514it [00:55,  9.19it/s] - Total it 5440: 525it [00:58,  8.99it/s] - Total it 5440: 536it [01:00,  8.81it/s]                                          training loss: 0.0669
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8140 R: 0.8729 F1: 0.8424 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8140 R: 0.8729 F1: 0.8424 vloss: -inf
-Epoch: [7/500]	 Patient: 5	 Current: 65.42	 Total:  0: 7:11.07
-
-Epoch: [8/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 31it [00:02, 15.02it/s] - Total it 5440: 60it [00:04, 14.63it/s] - Total it 5440: 90it [00:06, 14.70it/s] - Total it 5440: 118it [00:08, 14.52it/s] - Total it 5440: 146it [00:10, 14.33it/s] - Total it 5440: 170it [00:12, 13.70it/s] - Total it 5440: 193it [00:14, 13.26it/s] - Total it 5440: 216it [00:16, 12.87it/s] - Total it 5440: 238it [00:18, 12.66it/s] - Total it 5440: 260it [00:20, 12.41it/s] - Total it 5440: 282it [00:23, 12.23it/s] - Total it 5440: 305it [00:25, 12.14it/s] - Total it 5440: 327it [00:27, 11.84it/s] - Total it 5440: 348it [00:30, 11.57it/s] - Total it 5440: 368it [00:32, 11.31it/s] - Total it 5440: 387it [00:34, 11.12it/s] - Total it 5440: 405it [00:37, 10.91it/s] - Total it 5440: 423it [00:39, 10.77it/s] - Total it 5440: 441it [00:41, 10.64it/s] - Total it 5440: 458it [00:44, 10.31it/s] - Total it 5440: 474it [00:47,  9.94it/s] - Total it 5440: 488it [00:50,  9.61it/s] - Total it 5440: 501it [00:53,  9.36it/s] - Total it 5440: 513it [00:56,  9.14it/s] - Total it 5440: 524it [00:58,  8.98it/s] - Total it 5440: 535it [01:00,  8.78it/s]                                          training loss: 0.0642
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8219 R: 0.8679 F1: 0.8443 vloss: -inf
-Prev Best F1: 0.8438 Curr Best F1: 0.8443
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_0.8443_0.8219_0.8679_8
-
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8219 R: 0.8679 F1: 0.8443 vloss: -inf
-Prev Best F1: 0.8438 Curr Best F1: 0.8443
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_NCBI-IOBES_0.8443_0.8219_0.8679_8
-
-Epoch: [8/500]	 Patient: 0	 Current: 65.96	 Total:  0: 8:17.04
-
-Epoch: [9/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 28it [00:02, 13.66it/s] - Total it 5440: 59it [00:04, 14.48it/s] - Total it 5440: 87it [00:06, 14.12it/s] - Total it 5440: 118it [00:08, 14.41it/s] - Total it 5440: 146it [00:10, 14.25it/s] - Total it 5440: 170it [00:12, 13.51it/s] - Total it 5440: 193it [00:14, 13.16it/s] - Total it 5440: 216it [00:16, 12.78it/s] - Total it 5440: 239it [00:18, 12.64it/s] - Total it 5440: 262it [00:21, 12.43it/s] - Total it 5440: 284it [00:23, 12.20it/s] - Total it 5440: 306it [00:25, 12.06it/s] - Total it 5440: 328it [00:27, 11.82it/s] - Total it 5440: 349it [00:30, 11.46it/s] - Total it 5440: 368it [00:32, 11.21it/s] - Total it 5440: 387it [00:34, 11.11it/s] - Total it 5440: 406it [00:37, 10.90it/s] - Total it 5440: 424it [00:39, 10.74it/s] - Total it 5440: 442it [00:41, 10.59it/s] - Total it 5440: 459it [00:44, 10.26it/s] - Total it 5440: 475it [00:48,  9.88it/s] - Total it 5440: 489it [00:51,  9.57it/s] - Total it 5440: 502it [00:53,  9.34it/s] - Total it 5440: 514it [00:56,  9.09it/s] - Total it 5440: 525it [00:58,  8.93it/s] - Total it 5440: 536it [01:01,  8.74it/s]                                          training loss: 0.0588
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8282 R: 0.8577 F1: 0.8427 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8282 R: 0.8577 F1: 0.8427 vloss: -inf
-Epoch: [9/500]	 Patient: 1	 Current: 65.70	 Total:  0: 9:22.73
-
-Epoch: [10/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.40it/s] - Total it 5440: 60it [00:04, 14.63it/s] - Total it 5440: 92it [00:06, 15.06it/s] - Total it 5440: 122it [00:08, 14.96it/s] - Total it 5440: 148it [00:10, 14.45it/s] - Total it 5440: 172it [00:12, 13.70it/s] - Total it 5440: 195it [00:14, 13.28it/s] - Total it 5440: 218it [00:16, 12.87it/s] - Total it 5440: 245it [00:19, 12.83it/s] - Total it 5440: 268it [00:21, 12.51it/s] - Total it 5440: 290it [00:23, 12.33it/s] - Total it 5440: 312it [00:25, 12.13it/s] - Total it 5440: 334it [00:28, 11.81it/s] - Total it 5440: 354it [00:30, 11.54it/s] - Total it 5440: 373it [00:33, 11.28it/s] - Total it 5440: 392it [00:35, 11.07it/s] - Total it 5440: 410it [00:37, 10.90it/s] - Total it 5440: 428it [00:39, 10.78it/s] - Total it 5440: 446it [00:41, 10.68it/s] - Total it 5440: 464it [00:45, 10.26it/s] - Total it 5440: 480it [00:48,  9.85it/s] - Total it 5440: 494it [00:51,  9.54it/s] - Total it 5440: 507it [00:54,  9.29it/s] - Total it 5440: 519it [00:57,  9.08it/s] - Total it 5440: 530it [00:59,  8.89it/s] - Total it 5440: 541it [01:02,  8.68it/s]                                          training loss: 0.0577
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8261 R: 0.8755 F1: 0.8501 vloss: -inf
-Prev Best F1: 0.8443 Curr Best F1: 0.8501
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_0.8501_0.8261_0.8755_10
-
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8261 R: 0.8755 F1: 0.8501 vloss: -inf
-Prev Best F1: 0.8443 Curr Best F1: 0.8501
-NOW SAVING,  /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_NCBI-IOBES_0.8501_0.8261_0.8755_10
-
-Epoch: [10/500]	 Patient: 0	 Current: 66.04	 Total:  0:10:28.77
-
-Epoch: [11/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.32it/s] - Total it 5440: 60it [00:04, 14.32it/s] - Total it 5440: 89it [00:06, 14.21it/s] - Total it 5440: 118it [00:08, 14.19it/s] - Total it 5440: 146it [00:10, 14.14it/s] - Total it 5440: 170it [00:12, 13.57it/s] - Total it 5440: 193it [00:14, 12.99it/s] - Total it 5440: 215it [00:16, 12.68it/s] - Total it 5440: 238it [00:18, 12.56it/s] - Total it 5440: 261it [00:21, 12.33it/s] - Total it 5440: 283it [00:23, 12.15it/s] - Total it 5440: 305it [00:25, 12.00it/s] - Total it 5440: 327it [00:27, 11.78it/s] - Total it 5440: 348it [00:30, 11.46it/s] - Total it 5440: 368it [00:32, 11.22it/s] - Total it 5440: 387it [00:35, 11.05it/s] - Total it 5440: 405it [00:37, 10.87it/s] - Total it 5440: 423it [00:39, 10.70it/s] - Total it 5440: 440it [00:41, 10.58it/s] - Total it 5440: 457it [00:44, 10.28it/s] - Total it 5440: 473it [00:47,  9.89it/s] - Total it 5440: 487it [00:50,  9.59it/s] - Total it 5440: 500it [00:53,  9.35it/s] - Total it 5440: 512it [00:56,  9.14it/s] - Total it 5440: 523it [00:58,  8.90it/s] - Total it 5440: 534it [01:01,  8.68it/s] - Total it 5440: 544it [01:03,  8.51it/s]                                          training loss: 0.0561
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8267 R: 0.8666 F1: 0.8462 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8267 R: 0.8666 F1: 0.8462 vloss: -inf
-Epoch: [11/500]	 Patient: 1	 Current: 66.47	 Total:  0:11:35.25
-
-Epoch: [12/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 26it [00:02, 12.76it/s] - Total it 5440: 56it [00:04, 13.61it/s] - Total it 5440: 86it [00:06, 14.04it/s] - Total it 5440: 119it [00:08, 14.56it/s] - Total it 5440: 146it [00:10, 14.29it/s] - Total it 5440: 170it [00:12, 13.47it/s] - Total it 5440: 193it [00:14, 13.09it/s] - Total it 5440: 216it [00:16, 12.82it/s] - Total it 5440: 239it [00:19, 12.51it/s] - Total it 5440: 262it [00:21, 12.33it/s] - Total it 5440: 284it [00:23, 12.16it/s] - Total it 5440: 306it [00:25, 12.02it/s] - Total it 5440: 328it [00:28, 11.69it/s] - Total it 5440: 348it [00:30, 11.38it/s] - Total it 5440: 367it [00:32, 11.14it/s] - Total it 5440: 385it [00:35, 10.94it/s] - Total it 5440: 403it [00:37, 10.77it/s] - Total it 5440: 420it [00:39, 10.61it/s] - Total it 5440: 437it [00:41, 10.47it/s] - Total it 5440: 454it [00:44, 10.26it/s] - Total it 5440: 470it [00:47,  9.85it/s] - Total it 5440: 484it [00:50,  9.55it/s] - Total it 5440: 497it [00:53,  9.32it/s] - Total it 5440: 509it [00:55,  9.10it/s] - Total it 5440: 520it [00:58,  8.93it/s] - Total it 5440: 531it [01:00,  8.75it/s] - Total it 5440: 542it [01:03,  8.58it/s]                                          training loss: 0.0541
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8221 R: 0.8513 F1: 0.8365 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8221 R: 0.8513 F1: 0.8365 vloss: -inf
-Epoch: [12/500]	 Patient: 2	 Current: 66.23	 Total:  0:12:41.47
-
-Epoch: [13/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.82it/s] - Total it 5440: 60it [00:04, 14.82it/s] - Total it 5440: 89it [00:06, 14.65it/s] - Total it 5440: 121it [00:08, 14.83it/s] - Total it 5440: 146it [00:10, 14.33it/s] - Total it 5440: 170it [00:12, 13.65it/s] - Total it 5440: 193it [00:14, 13.22it/s] - Total it 5440: 216it [00:16, 12.79it/s] - Total it 5440: 238it [00:18, 12.55it/s] - Total it 5440: 260it [00:21, 12.35it/s] - Total it 5440: 282it [00:23, 12.20it/s] - Total it 5440: 304it [00:25, 12.05it/s] - Total it 5440: 326it [00:27, 11.83it/s] - Total it 5440: 347it [00:30, 11.47it/s] - Total it 5440: 367it [00:32, 11.23it/s] - Total it 5440: 386it [00:35, 11.02it/s] - Total it 5440: 404it [00:37, 10.84it/s] - Total it 5440: 422it [00:39, 10.72it/s] - Total it 5440: 440it [00:41, 10.60it/s] - Total it 5440: 458it [00:44, 10.27it/s] - Total it 5440: 474it [00:47,  9.88it/s] - Total it 5440: 488it [00:50,  9.57it/s] - Total it 5440: 501it [00:53,  9.34it/s] - Total it 5440: 513it [00:56,  9.11it/s] - Total it 5440: 524it [00:58,  8.93it/s] - Total it 5440: 535it [01:01,  8.76it/s]                                          training loss: 0.0497
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8303 R: 0.8577 F1: 0.8437 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8303 R: 0.8577 F1: 0.8437 vloss: -inf
-Epoch: [13/500]	 Patient: 3	 Current: 65.91	 Total:  0:13:47.39
-
-Epoch: [14/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.15it/s] - Total it 5440: 58it [00:04, 14.25it/s] - Total it 5440: 85it [00:06, 13.90it/s] - Total it 5440: 114it [00:08, 13.86it/s] - Total it 5440: 144it [00:10, 13.97it/s] - Total it 5440: 168it [00:12, 13.17it/s] - Total it 5440: 192it [00:14, 12.96it/s] - Total it 5440: 215it [00:17, 12.65it/s] - Total it 5440: 238it [00:19, 12.42it/s] - Total it 5440: 260it [00:21, 12.23it/s] - Total it 5440: 282it [00:23, 12.10it/s] - Total it 5440: 304it [00:25, 11.96it/s] - Total it 5440: 326it [00:27, 11.73it/s] - Total it 5440: 347it [00:30, 11.41it/s] - Total it 5440: 367it [00:32, 11.17it/s] - Total it 5440: 386it [00:35, 10.97it/s] - Total it 5440: 404it [00:37, 10.80it/s] - Total it 5440: 422it [00:39, 10.65it/s] - Total it 5440: 439it [00:41, 10.53it/s] - Total it 5440: 456it [00:44, 10.26it/s] - Total it 5440: 472it [00:47,  9.89it/s] - Total it 5440: 486it [00:50,  9.58it/s] - Total it 5440: 499it [00:53,  9.34it/s] - Total it 5440: 511it [00:55,  9.13it/s] - Total it 5440: 522it [00:58,  8.94it/s] - Total it 5440: 533it [01:00,  8.75it/s] - Total it 5440: 543it [01:03,  8.59it/s]                                          training loss: 0.0467
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8219 R: 0.8501 F1: 0.8357 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8219 R: 0.8501 F1: 0.8357 vloss: -inf
-Epoch: [14/500]	 Patient: 4	 Current: 65.92	 Total:  0:14:53.31
-
-Epoch: [15/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.63it/s] - Total it 5440: 60it [00:04, 14.66it/s] - Total it 5440: 90it [00:06, 14.66it/s] - Total it 5440: 120it [00:08, 14.65it/s] - Total it 5440: 147it [00:10, 14.36it/s] - Total it 5440: 171it [00:12, 13.72it/s] - Total it 5440: 194it [00:14, 13.25it/s] - Total it 5440: 217it [00:16, 12.87it/s] - Total it 5440: 240it [00:18, 12.64it/s] - Total it 5440: 262it [00:21, 12.46it/s] - Total it 5440: 284it [00:23, 12.32it/s] - Total it 5440: 306it [00:25, 12.16it/s] - Total it 5440: 328it [00:27, 11.92it/s] - Total it 5440: 349it [00:30, 11.59it/s] - Total it 5440: 369it [00:32, 11.35it/s] - Total it 5440: 388it [00:34, 11.14it/s] - Total it 5440: 406it [00:37, 10.96it/s] - Total it 5440: 424it [00:39, 10.80it/s] - Total it 5440: 442it [00:41, 10.66it/s] - Total it 5440: 459it [00:44, 10.33it/s] - Total it 5440: 475it [00:47,  9.94it/s] - Total it 5440: 489it [00:50,  9.64it/s] - Total it 5440: 502it [00:53,  9.40it/s] - Total it 5440: 514it [00:56,  9.17it/s] - Total it 5440: 525it [00:58,  8.99it/s] - Total it 5440: 536it [01:00,  8.80it/s]                                          training loss: 0.0462
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8174 R: 0.8475 F1: 0.8322 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8174 R: 0.8475 F1: 0.8322 vloss: -inf
-Epoch: [15/500]	 Patient: 5	 Current: 65.31	 Total:  0:15:58.62
-
-Epoch: [16/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.79it/s] - Total it 5440: 60it [00:04, 14.84it/s] - Total it 5440: 90it [00:06, 14.79it/s] - Total it 5440: 121it [00:08, 14.83it/s] - Total it 5440: 148it [00:10, 14.52it/s] - Total it 5440: 172it [00:12, 13.76it/s] - Total it 5440: 195it [00:14, 13.29it/s] - Total it 5440: 218it [00:16, 12.89it/s] - Total it 5440: 240it [00:18, 12.67it/s] - Total it 5440: 262it [00:21, 12.46it/s] - Total it 5440: 284it [00:23, 12.32it/s] - Total it 5440: 306it [00:25, 12.13it/s] - Total it 5440: 328it [00:27, 11.88it/s] - Total it 5440: 349it [00:30, 11.56it/s] - Total it 5440: 369it [00:32, 11.33it/s] - Total it 5440: 388it [00:34, 11.11it/s] - Total it 5440: 406it [00:37, 10.93it/s] - Total it 5440: 424it [00:39, 10.77it/s] - Total it 5440: 441it [00:41, 10.63it/s] - Total it 5440: 458it [00:44, 10.32it/s] - Total it 5440: 474it [00:47,  9.94it/s] - Total it 5440: 488it [00:50,  9.65it/s] - Total it 5440: 501it [00:53,  9.40it/s] - Total it 5440: 513it [00:55,  9.18it/s] - Total it 5440: 524it [00:58,  8.99it/s] - Total it 5440: 535it [01:00,  8.81it/s]                                          training loss: 0.0456
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8040 R: 0.8704 F1: 0.8359 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8040 R: 0.8704 F1: 0.8359 vloss: -inf
-Epoch: [16/500]	 Patient: 6	 Current: 65.29	 Total:  0:17:3.91
-
-Epoch: [17/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.65it/s] - Total it 5440: 60it [00:04, 14.79it/s] - Total it 5440: 89it [00:06, 14.69it/s] - Total it 5440: 119it [00:08, 14.74it/s] - Total it 5440: 147it [00:10, 14.48it/s] - Total it 5440: 171it [00:12, 13.79it/s] - Total it 5440: 195it [00:14, 13.26it/s] - Total it 5440: 218it [00:16, 12.93it/s] - Total it 5440: 241it [00:18, 12.71it/s] - Total it 5440: 264it [00:21, 12.54it/s] - Total it 5440: 287it [00:23, 12.34it/s] - Total it 5440: 309it [00:25, 12.18it/s] - Total it 5440: 331it [00:27, 11.87it/s] - Total it 5440: 352it [00:30, 11.55it/s] - Total it 5440: 372it [00:32, 11.32it/s] - Total it 5440: 391it [00:35, 11.11it/s] - Total it 5440: 409it [00:37, 10.92it/s] - Total it 5440: 427it [00:39, 10.77it/s] - Total it 5440: 444it [00:41, 10.64it/s] - Total it 5440: 461it [00:44, 10.29it/s] - Total it 5440: 477it [00:48,  9.91it/s] - Total it 5440: 491it [00:51,  9.61it/s] - Total it 5440: 504it [00:53,  9.36it/s] - Total it 5440: 516it [00:56,  9.18it/s] - Total it 5440: 528it [00:58,  8.96it/s] - Total it 5440: 539it [01:01,  8.79it/s]                                          training loss: 0.0417
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8099 R: 0.8551 F1: 0.8319 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8099 R: 0.8551 F1: 0.8319 vloss: -inf
-Epoch: [17/500]	 Patient: 7	 Current: 65.20	 Total:  0:18:9.11
-
-Epoch: [18/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.40it/s] - Total it 5440: 57it [00:04, 14.04it/s] - Total it 5440: 88it [00:06, 14.38it/s] - Total it 5440: 116it [00:08, 14.24it/s] - Total it 5440: 145it [00:10, 14.19it/s] - Total it 5440: 169it [00:12, 13.49it/s] - Total it 5440: 192it [00:14, 12.94it/s] - Total it 5440: 214it [00:16, 12.66it/s] - Total it 5440: 237it [00:18, 12.51it/s] - Total it 5440: 259it [00:21, 12.26it/s] - Total it 5440: 281it [00:23, 12.14it/s] - Total it 5440: 303it [00:25, 11.98it/s] - Total it 5440: 325it [00:27, 11.74it/s] - Total it 5440: 346it [00:30, 11.42it/s] - Total it 5440: 366it [00:32, 11.20it/s] - Total it 5440: 385it [00:34, 11.02it/s] - Total it 5440: 403it [00:37, 10.87it/s] - Total it 5440: 421it [00:39, 10.69it/s] - Total it 5440: 439it [00:41, 10.57it/s] - Total it 5440: 456it [00:44, 10.30it/s] - Total it 5440: 472it [00:47,  9.93it/s] - Total it 5440: 486it [00:50,  9.61it/s] - Total it 5440: 499it [00:53,  9.38it/s] - Total it 5440: 511it [00:55,  9.13it/s] - Total it 5440: 522it [00:58,  8.96it/s] - Total it 5440: 533it [01:00,  8.75it/s] - Total it 5440: 543it [01:03,  8.58it/s]                                          training loss: 0.0411
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8130 R: 0.8729 F1: 0.8419 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8130 R: 0.8729 F1: 0.8419 vloss: -inf
-Epoch: [18/500]	 Patient: 8	 Current: 66.04	 Total:  0:19:15.15
-
-Epoch: [19/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.59it/s] - Total it 5440: 60it [00:04, 14.65it/s] - Total it 5440: 90it [00:06, 14.68it/s] - Total it 5440: 120it [00:08, 14.76it/s] - Total it 5440: 146it [00:10, 14.35it/s] - Total it 5440: 170it [00:12, 13.78it/s] - Total it 5440: 194it [00:14, 13.21it/s] - Total it 5440: 217it [00:16, 12.89it/s] - Total it 5440: 240it [00:18, 12.72it/s] - Total it 5440: 263it [00:21, 12.45it/s] - Total it 5440: 285it [00:23, 12.30it/s] - Total it 5440: 307it [00:25, 12.13it/s] - Total it 5440: 329it [00:27, 11.89it/s] - Total it 5440: 350it [00:30, 11.54it/s] - Total it 5440: 370it [00:32, 11.28it/s] - Total it 5440: 389it [00:35, 11.11it/s] - Total it 5440: 407it [00:37, 10.92it/s] - Total it 5440: 425it [00:39, 10.74it/s] - Total it 5440: 444it [00:41, 10.65it/s] - Total it 5440: 462it [00:45, 10.26it/s] - Total it 5440: 478it [00:48,  9.84it/s] - Total it 5440: 492it [00:51,  9.53it/s] - Total it 5440: 505it [00:54,  9.28it/s] - Total it 5440: 517it [00:56,  9.08it/s] - Total it 5440: 528it [00:59,  8.88it/s] - Total it 5440: 539it [01:01,  8.71it/s]                                          training loss: 0.0417
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8172 R: 0.8691 F1: 0.8424 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8172 R: 0.8691 F1: 0.8424 vloss: -inf
-Epoch: [19/500]	 Patient: 9	 Current: 65.65	 Total:  0:20:20.80
-
-Epoch: [20/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.93it/s] - Total it 5440: 59it [00:04, 14.57it/s] - Total it 5440: 91it [00:06, 14.79it/s] - Total it 5440: 120it [00:08, 14.69it/s] - Total it 5440: 147it [00:10, 14.45it/s] - Total it 5440: 171it [00:12, 13.86it/s] - Total it 5440: 195it [00:14, 13.38it/s] - Total it 5440: 218it [00:16, 13.08it/s] - Total it 5440: 241it [00:18, 12.72it/s] - Total it 5440: 264it [00:21, 12.56it/s] - Total it 5440: 286it [00:23, 12.31it/s] - Total it 5440: 311it [00:25, 12.32it/s] - Total it 5440: 334it [00:28, 11.89it/s] - Total it 5440: 355it [00:30, 11.56it/s] - Total it 5440: 375it [00:33, 11.34it/s] - Total it 5440: 394it [00:35, 11.11it/s] - Total it 5440: 412it [00:37, 10.95it/s] - Total it 5440: 430it [00:39, 10.80it/s] - Total it 5440: 448it [00:42, 10.65it/s] - Total it 5440: 465it [00:45, 10.22it/s] - Total it 5440: 480it [00:48,  9.90it/s] - Total it 5440: 494it [00:51,  9.58it/s] - Total it 5440: 507it [00:54,  9.33it/s] - Total it 5440: 519it [00:56,  9.13it/s] - Total it 5440: 530it [00:59,  8.93it/s] - Total it 5440: 541it [01:01,  8.74it/s]                                          training loss: 0.0391
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8192 R: 0.8691 F1: 0.8434 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8192 R: 0.8691 F1: 0.8434 vloss: -inf
-Epoch: [20/500]	 Patient: 10	 Current: 64.99	 Total:  0:21:25.79
-
-Epoch: [21/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.29it/s] - Total it 5440: 61it [00:04, 14.59it/s] - Total it 5440: 92it [00:06, 14.83it/s] - Total it 5440: 119it [00:08, 14.49it/s] - Total it 5440: 147it [00:10, 14.18it/s] - Total it 5440: 171it [00:12, 13.54it/s] - Total it 5440: 194it [00:14, 12.99it/s] - Total it 5440: 216it [00:16, 12.75it/s] - Total it 5440: 238it [00:19, 12.51it/s] - Total it 5440: 260it [00:21, 12.34it/s] - Total it 5440: 282it [00:23, 12.20it/s] - Total it 5440: 304it [00:25, 12.05it/s] - Total it 5440: 326it [00:27, 11.79it/s] - Total it 5440: 347it [00:30, 11.46it/s] - Total it 5440: 367it [00:32, 11.24it/s] - Total it 5440: 386it [00:34, 11.03it/s] - Total it 5440: 404it [00:37, 10.89it/s] - Total it 5440: 422it [00:39, 10.72it/s] - Total it 5440: 440it [00:41, 10.57it/s] - Total it 5440: 457it [00:44, 10.30it/s] - Total it 5440: 473it [00:47,  9.90it/s] - Total it 5440: 487it [00:50,  9.64it/s] - Total it 5440: 500it [00:53,  9.37it/s] - Total it 5440: 512it [00:56,  9.13it/s] - Total it 5440: 523it [00:58,  8.94it/s] - Total it 5440: 534it [01:00,  8.76it/s] - Total it 5440: 544it [01:03,  8.59it/s]                                          training loss: 0.0394
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8170 R: 0.8564 F1: 0.8362 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8170 R: 0.8564 F1: 0.8362 vloss: -inf
-Epoch: [21/500]	 Patient: 11	 Current: 66.19	 Total:  0:22:31.98
-
-Epoch: [22/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 13.89it/s] - Total it 5440: 62it [00:04, 15.08it/s] - Total it 5440: 90it [00:06, 14.49it/s] - Total it 5440: 115it [00:08, 13.94it/s] - Total it 5440: 143it [00:10, 13.84it/s] - Total it 5440: 166it [00:12, 13.24it/s] - Total it 5440: 188it [00:14, 12.84it/s] - Total it 5440: 210it [00:16, 12.59it/s] - Total it 5440: 232it [00:18, 12.38it/s] - Total it 5440: 254it [00:20, 12.15it/s] - Total it 5440: 277it [00:23, 12.01it/s] - Total it 5440: 299it [00:25, 11.93it/s] - Total it 5440: 321it [00:27, 11.72it/s] - Total it 5440: 342it [00:30, 11.37it/s] - Total it 5440: 362it [00:32, 11.13it/s] - Total it 5440: 381it [00:34, 10.94it/s] - Total it 5440: 399it [00:37, 10.74it/s] - Total it 5440: 417it [00:39, 10.56it/s] - Total it 5440: 434it [00:41, 10.46it/s] - Total it 5440: 451it [00:43, 10.26it/s] - Total it 5440: 467it [00:47,  9.92it/s] - Total it 5440: 482it [00:50,  9.58it/s] - Total it 5440: 495it [00:53,  9.31it/s] - Total it 5440: 507it [00:55,  9.10it/s] - Total it 5440: 518it [00:57,  8.93it/s] - Total it 5440: 529it [01:00,  8.73it/s] - Total it 5440: 539it [01:02,  8.59it/s]                                          training loss: 0.0353
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8213 R: 0.8640 F1: 0.8421 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8213 R: 0.8640 F1: 0.8421 vloss: -inf
-Epoch: [22/500]	 Patient: 12	 Current: 66.51	 Total:  0:23:38.49
-
-Epoch: [23/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.22it/s] - Total it 5440: 58it [00:04, 14.35it/s] - Total it 5440: 88it [00:06, 14.46it/s] - Total it 5440: 117it [00:08, 14.39it/s] - Total it 5440: 145it [00:10, 14.24it/s] - Total it 5440: 169it [00:12, 13.51it/s] - Total it 5440: 192it [00:14, 13.08it/s] - Total it 5440: 215it [00:16, 12.73it/s] - Total it 5440: 237it [00:18, 12.51it/s] - Total it 5440: 259it [00:21, 12.32it/s] - Total it 5440: 281it [00:23, 12.15it/s] - Total it 5440: 303it [00:25, 11.98it/s] - Total it 5440: 325it [00:27, 11.81it/s] - Total it 5440: 346it [00:30, 11.47it/s] - Total it 5440: 366it [00:32, 11.23it/s] - Total it 5440: 385it [00:34, 11.04it/s] - Total it 5440: 403it [00:37, 10.87it/s] - Total it 5440: 421it [00:39, 10.71it/s] - Total it 5440: 439it [00:41, 10.57it/s] - Total it 5440: 456it [00:44, 10.27it/s] - Total it 5440: 472it [00:47,  9.92it/s] - Total it 5440: 486it [00:50,  9.61it/s] - Total it 5440: 499it [00:53,  9.35it/s] - Total it 5440: 511it [00:56,  9.12it/s] - Total it 5440: 522it [00:58,  8.94it/s] - Total it 5440: 533it [01:00,  8.76it/s] - Total it 5440: 543it [01:03,  8.58it/s]                                          training loss: 0.0354
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8158 R: 0.8666 F1: 0.8404 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8158 R: 0.8666 F1: 0.8404 vloss: -inf
-Epoch: [23/500]	 Patient: 13	 Current: 66.00	 Total:  0:24:44.49
-
-Epoch: [24/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.25it/s] - Total it 5440: 59it [00:04, 14.16it/s] - Total it 5440: 91it [00:06, 14.70it/s] - Total it 5440: 121it [00:08, 14.69it/s] - Total it 5440: 147it [00:10, 14.28it/s] - Total it 5440: 171it [00:12, 13.53it/s] - Total it 5440: 194it [00:14, 13.07it/s] - Total it 5440: 217it [00:17, 12.75it/s] - Total it 5440: 239it [00:19, 12.56it/s] - Total it 5440: 261it [00:21, 12.39it/s] - Total it 5440: 283it [00:23, 12.19it/s] - Total it 5440: 305it [00:25, 12.01it/s] - Total it 5440: 327it [00:27, 11.78it/s] - Total it 5440: 348it [00:30, 11.47it/s] - Total it 5440: 368it [00:32, 11.20it/s] - Total it 5440: 387it [00:35, 11.02it/s] - Total it 5440: 405it [00:37, 10.84it/s] - Total it 5440: 423it [00:39, 10.69it/s] - Total it 5440: 440it [00:41, 10.54it/s] - Total it 5440: 457it [00:44, 10.25it/s] - Total it 5440: 473it [00:48,  9.84it/s] - Total it 5440: 487it [00:51,  9.55it/s] - Total it 5440: 500it [00:53,  9.31it/s] - Total it 5440: 512it [00:56,  9.10it/s] - Total it 5440: 523it [00:58,  8.91it/s] - Total it 5440: 534it [01:01,  8.73it/s] - Total it 5440: 544it [01:03,  8.59it/s]                                          training loss: 0.0343
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8144 R: 0.8640 F1: 0.8385 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8144 R: 0.8640 F1: 0.8385 vloss: -inf
-Epoch: [24/500]	 Patient: 14	 Current: 66.02	 Total:  0:25:50.51
-
-Epoch: [25/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.77it/s] - Total it 5440: 62it [00:04, 14.81it/s] - Total it 5440: 93it [00:06, 14.98it/s] - Total it 5440: 122it [00:08, 14.67it/s] - Total it 5440: 149it [00:10, 14.40it/s] - Total it 5440: 173it [00:12, 13.76it/s] - Total it 5440: 196it [00:14, 13.24it/s] - Total it 5440: 219it [00:17, 12.88it/s] - Total it 5440: 241it [00:19, 12.65it/s] - Total it 5440: 263it [00:21, 12.45it/s] - Total it 5440: 285it [00:23, 12.28it/s] - Total it 5440: 307it [00:25, 12.14it/s] - Total it 5440: 329it [00:27, 11.83it/s] - Total it 5440: 350it [00:30, 11.52it/s] - Total it 5440: 370it [00:32, 11.25it/s] - Total it 5440: 389it [00:35, 11.10it/s] - Total it 5440: 407it [00:37, 10.92it/s] - Total it 5440: 425it [00:39, 10.75it/s] - Total it 5440: 442it [00:41, 10.63it/s] - Total it 5440: 459it [00:44, 10.30it/s] - Total it 5440: 475it [00:47,  9.90it/s] - Total it 5440: 489it [00:50,  9.61it/s] - Total it 5440: 502it [00:53,  9.37it/s] - Total it 5440: 514it [00:56,  9.13it/s] - Total it 5440: 525it [00:58,  8.96it/s] - Total it 5440: 536it [01:00,  8.79it/s]                                          training loss: 0.0343
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8194 R: 0.8704 F1: 0.8441 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8194 R: 0.8704 F1: 0.8441 vloss: -inf
-Epoch: [25/500]	 Patient: 15	 Current: 65.41	 Total:  0:26:55.92
-
-Epoch: [26/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.75it/s] - Total it 5440: 59it [00:04, 14.61it/s] - Total it 5440: 90it [00:06, 14.83it/s] - Total it 5440: 119it [00:08, 14.66it/s] - Total it 5440: 143it [00:10, 14.09it/s] - Total it 5440: 166it [00:12, 13.54it/s] - Total it 5440: 189it [00:14, 12.85it/s] - Total it 5440: 212it [00:16, 12.68it/s] - Total it 5440: 235it [00:18, 12.51it/s] - Total it 5440: 257it [00:20, 12.34it/s] - Total it 5440: 279it [00:22, 12.20it/s] - Total it 5440: 301it [00:24, 12.07it/s] - Total it 5440: 323it [00:27, 11.88it/s] - Total it 5440: 345it [00:29, 11.52it/s] - Total it 5440: 365it [00:32, 11.27it/s] - Total it 5440: 384it [00:34, 11.05it/s] - Total it 5440: 402it [00:36, 10.88it/s] - Total it 5440: 420it [00:39, 10.73it/s] - Total it 5440: 438it [00:41, 10.57it/s] - Total it 5440: 455it [00:44, 10.30it/s] - Total it 5440: 471it [00:47,  9.94it/s] - Total it 5440: 485it [00:50,  9.64it/s] - Total it 5440: 498it [00:53,  9.39it/s] - Total it 5440: 510it [00:55,  9.17it/s] - Total it 5440: 521it [00:57,  8.99it/s] - Total it 5440: 532it [01:00,  8.81it/s] - Total it 5440: 543it [01:02,  8.64it/s]                                          training loss: 0.0334
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8080 R: 0.8767 F1: 0.8410 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8080 R: 0.8767 F1: 0.8410 vloss: -inf
-Epoch: [26/500]	 Patient: 16	 Current: 65.53	 Total:  0:28:1.45
-
-Epoch: [27/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 29it [00:02, 14.46it/s] - Total it 5440: 58it [00:04, 14.46it/s] - Total it 5440: 88it [00:06, 14.59it/s] - Total it 5440: 118it [00:08, 14.60it/s] - Total it 5440: 146it [00:10, 14.38it/s] - Total it 5440: 170it [00:12, 13.70it/s] - Total it 5440: 193it [00:14, 13.20it/s] - Total it 5440: 216it [00:16, 12.92it/s] - Total it 5440: 239it [00:18, 12.68it/s] - Total it 5440: 261it [00:20, 12.47it/s] - Total it 5440: 283it [00:23, 12.30it/s] - Total it 5440: 305it [00:25, 12.15it/s] - Total it 5440: 327it [00:27, 11.91it/s] - Total it 5440: 348it [00:30, 11.60it/s] - Total it 5440: 368it [00:32, 11.35it/s] - Total it 5440: 387it [00:34, 11.15it/s] - Total it 5440: 405it [00:36, 10.98it/s] - Total it 5440: 423it [00:39, 10.82it/s] - Total it 5440: 441it [00:41, 10.68it/s] - Total it 5440: 458it [00:44, 10.37it/s] - Total it 5440: 474it [00:47,  9.99it/s] - Total it 5440: 488it [00:50,  9.66it/s] - Total it 5440: 501it [00:53,  9.43it/s] - Total it 5440: 513it [00:55,  9.21it/s] - Total it 5440: 524it [00:57,  9.05it/s] - Total it 5440: 535it [01:00,  8.84it/s]                                          training loss: 0.0311
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8061 R: 0.8666 F1: 0.8353 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8061 R: 0.8666 F1: 0.8353 vloss: -inf
-Epoch: [27/500]	 Patient: 17	 Current: 64.86	 Total:  0:29:6.31
-
-Epoch: [28/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.68it/s] - Total it 5440: 59it [00:04, 14.43it/s] - Total it 5440: 87it [00:06, 14.20it/s] - Total it 5440: 117it [00:08, 14.35it/s] - Total it 5440: 145it [00:10, 14.26it/s] - Total it 5440: 169it [00:12, 13.56it/s] - Total it 5440: 192it [00:14, 13.03it/s] - Total it 5440: 215it [00:16, 12.76it/s] - Total it 5440: 237it [00:18, 12.50it/s] - Total it 5440: 259it [00:20, 12.34it/s] - Total it 5440: 281it [00:23, 12.20it/s] - Total it 5440: 303it [00:25, 12.03it/s] - Total it 5440: 325it [00:27, 11.77it/s] - Total it 5440: 346it [00:30, 11.44it/s] - Total it 5440: 366it [00:32, 11.22it/s] - Total it 5440: 385it [00:34, 11.01it/s] - Total it 5440: 403it [00:37, 10.84it/s] - Total it 5440: 421it [00:39, 10.68it/s] - Total it 5440: 438it [00:41, 10.56it/s] - Total it 5440: 455it [00:43, 10.35it/s] - Total it 5440: 471it [00:47,  9.99it/s] - Total it 5440: 486it [00:50,  9.61it/s] - Total it 5440: 499it [00:53,  9.39it/s] - Total it 5440: 511it [00:55,  9.16it/s] - Total it 5440: 522it [00:58,  9.00it/s] - Total it 5440: 533it [01:00,  8.80it/s] - Total it 5440: 544it [01:03,  8.61it/s]                                          training loss: 0.0312
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8172 R: 0.8691 F1: 0.8424 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8172 R: 0.8691 F1: 0.8424 vloss: -inf
-Epoch: [28/500]	 Patient: 18	 Current: 65.69	 Total:  0:30:12.00
-
-Epoch: [29/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 28it [00:02, 13.57it/s] - Total it 5440: 59it [00:04, 14.14it/s] - Total it 5440: 89it [00:06, 14.36it/s] - Total it 5440: 120it [00:08, 14.52it/s] - Total it 5440: 146it [00:10, 14.14it/s] - Total it 5440: 170it [00:12, 13.53it/s] - Total it 5440: 193it [00:14, 13.14it/s] - Total it 5440: 216it [00:16, 12.77it/s] - Total it 5440: 239it [00:18, 12.60it/s] - Total it 5440: 262it [00:21, 12.35it/s] - Total it 5440: 284it [00:23, 12.20it/s] - Total it 5440: 306it [00:25, 12.07it/s] - Total it 5440: 328it [00:27, 11.86it/s] - Total it 5440: 349it [00:30, 11.53it/s] - Total it 5440: 369it [00:32, 11.28it/s] - Total it 5440: 388it [00:35, 11.05it/s] - Total it 5440: 406it [00:37, 10.88it/s] - Total it 5440: 424it [00:39, 10.71it/s] - Total it 5440: 441it [00:41, 10.59it/s] - Total it 5440: 458it [00:44, 10.26it/s] - Total it 5440: 474it [00:48,  9.86it/s] - Total it 5440: 488it [00:50,  9.59it/s] - Total it 5440: 501it [00:53,  9.36it/s] - Total it 5440: 513it [00:56,  9.14it/s] - Total it 5440: 524it [00:58,  8.95it/s] - Total it 5440: 535it [01:01,  8.76it/s]                                          training loss: 0.0306
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8161 R: 0.8513 F1: 0.8333 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8161 R: 0.8513 F1: 0.8333 vloss: -inf
-Epoch: [29/500]	 Patient: 19	 Current: 65.69	 Total:  0:31:17.70
-
-Epoch: [30/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.76it/s] - Total it 5440: 59it [00:04, 14.59it/s] - Total it 5440: 89it [00:06, 14.51it/s] - Total it 5440: 120it [00:08, 14.68it/s] - Total it 5440: 146it [00:10, 14.30it/s] - Total it 5440: 170it [00:12, 13.74it/s] - Total it 5440: 194it [00:14, 13.21it/s] - Total it 5440: 217it [00:16, 12.92it/s] - Total it 5440: 240it [00:18, 12.73it/s] - Total it 5440: 263it [00:20, 12.56it/s] - Total it 5440: 286it [00:23, 12.40it/s] - Total it 5440: 309it [00:25, 12.18it/s] - Total it 5440: 331it [00:27, 11.85it/s] - Total it 5440: 352it [00:30, 11.51it/s] - Total it 5440: 371it [00:32, 11.34it/s] - Total it 5440: 390it [00:34, 11.15it/s] - Total it 5440: 408it [00:37, 10.98it/s] - Total it 5440: 426it [00:39, 10.81it/s] - Total it 5440: 444it [00:41, 10.69it/s] - Total it 5440: 462it [00:44, 10.27it/s] - Total it 5440: 478it [00:48,  9.89it/s] - Total it 5440: 492it [00:51,  9.59it/s] - Total it 5440: 505it [00:54,  9.32it/s] - Total it 5440: 517it [00:56,  9.15it/s] - Total it 5440: 528it [00:58,  8.98it/s] - Total it 5440: 539it [01:01,  8.78it/s]                                          training loss: 0.0289
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8047 R: 0.8691 F1: 0.8357 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8047 R: 0.8691 F1: 0.8357 vloss: -inf
-Epoch: [30/500]	 Patient: 20	 Current: 64.96	 Total:  0:32:22.66
-
-Epoch: [31/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 28it [00:02, 13.98it/s] - Total it 5440: 58it [00:04, 14.35it/s] - Total it 5440: 86it [00:06, 14.19it/s] - Total it 5440: 118it [00:08, 14.57it/s] - Total it 5440: 145it [00:10, 14.26it/s] - Total it 5440: 169it [00:12, 13.74it/s] - Total it 5440: 193it [00:14, 13.16it/s] - Total it 5440: 216it [00:16, 12.82it/s] - Total it 5440: 238it [00:18, 12.60it/s] - Total it 5440: 260it [00:21, 12.36it/s] - Total it 5440: 282it [00:23, 12.21it/s] - Total it 5440: 304it [00:25, 12.08it/s] - Total it 5440: 326it [00:27, 11.81it/s] - Total it 5440: 347it [00:30, 11.48it/s] - Total it 5440: 367it [00:32, 11.26it/s] - Total it 5440: 386it [00:34, 11.07it/s] - Total it 5440: 404it [00:37, 10.87it/s] - Total it 5440: 422it [00:39, 10.69it/s] - Total it 5440: 439it [00:41, 10.57it/s] - Total it 5440: 456it [00:44, 10.32it/s] - Total it 5440: 472it [00:47,  9.92it/s] - Total it 5440: 486it [00:50,  9.60it/s] - Total it 5440: 499it [00:53,  9.37it/s] - Total it 5440: 511it [00:55,  9.13it/s] - Total it 5440: 522it [00:58,  8.96it/s] - Total it 5440: 533it [01:00,  8.76it/s] - Total it 5440: 543it [01:03,  8.60it/s]                                          training loss: 0.0308
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8066 R: 0.8640 F1: 0.8344 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8066 R: 0.8640 F1: 0.8344 vloss: -inf
-Epoch: [31/500]	 Patient: 21	 Current: 65.90	 Total:  0:33:28.56
-
-Epoch: [32/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 30it [00:02, 14.45it/s] - Total it 5440: 59it [00:04, 14.34it/s] - Total it 5440: 88it [00:06, 14.30it/s] - Total it 5440: 113it [00:08, 13.75it/s] - Total it 5440: 141it [00:10, 13.78it/s] - Total it 5440: 164it [00:12, 13.23it/s] - Total it 5440: 188it [00:14, 13.05it/s] - Total it 5440: 211it [00:16, 12.45it/s] - Total it 5440: 233it [00:19, 12.13it/s] - Total it 5440: 255it [00:21, 12.00it/s] - Total it 5440: 277it [00:23, 11.87it/s] - Total it 5440: 299it [00:25, 11.58it/s] - Total it 5440: 320it [00:28, 11.41it/s] - Total it 5440: 340it [00:30, 11.19it/s] - Total it 5440: 359it [00:33, 10.83it/s] - Total it 5440: 377it [00:35, 10.53it/s] - Total it 5440: 395it [00:37, 10.45it/s] - Total it 5440: 413it [00:39, 10.37it/s] - Total it 5440: 431it [00:42, 10.25it/s] - Total it 5440: 449it [00:44, 10.17it/s] - Total it 5440: 466it [00:46,  9.93it/s] - Total it 5440: 482it [00:49,  9.70it/s] - Total it 5440: 497it [00:52,  9.52it/s] - Total it 5440: 511it [00:54,  9.38it/s] - Total it 5440: 525it [00:56,  9.24it/s] - Total it 5440: 538it [00:59,  9.09it/s]                                          training loss: 0.0286
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8049 R: 0.8755 F1: 0.8387 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8049 R: 0.8755 F1: 0.8387 vloss: -inf
-Epoch: [32/500]	 Patient: 22	 Current: 62.24	 Total:  0:34:30.79
-
-Epoch: [33/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 39it [00:02, 19.40it/s] - Total it 5440: 79it [00:04, 19.64it/s] - Total it 5440: 118it [00:06, 19.59it/s] - Total it 5440: 153it [00:08, 18.94it/s] - Total it 5440: 182it [00:10, 17.88it/s] - Total it 5440: 211it [00:12, 17.16it/s] - Total it 5440: 239it [00:14, 16.70it/s] - Total it 5440: 267it [00:16, 16.36it/s] - Total it 5440: 295it [00:18, 16.10it/s] - Total it 5440: 323it [00:20, 15.75it/s] - Total it 5440: 351it [00:23, 15.12it/s] - Total it 5440: 377it [00:25, 14.71it/s] - Total it 5440: 402it [00:28, 14.35it/s] - Total it 5440: 426it [00:30, 14.08it/s] - Total it 5440: 449it [00:32, 13.80it/s] - Total it 5440: 471it [00:36, 13.06it/s] - Total it 5440: 491it [00:39, 12.42it/s] - Total it 5440: 508it [00:42, 11.95it/s] - Total it 5440: 524it [00:45, 11.56it/s] - Total it 5440: 539it [00:47, 11.23it/s]                                          training loss: 0.0284
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8206 R: 0.8717 F1: 0.8453 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8206 R: 0.8717 F1: 0.8453 vloss: -inf
-Epoch: [33/500]	 Patient: 23	 Current: 51.00	 Total:  0:35:21.80
-
-Epoch: [34/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 40it [00:02, 19.35it/s] - Total it 5440: 80it [00:04, 19.40it/s] - Total it 5440: 120it [00:06, 19.54it/s] - Total it 5440: 152it [00:08, 18.60it/s] - Total it 5440: 180it [00:10, 17.60it/s] - Total it 5440: 208it [00:12, 16.96it/s] - Total it 5440: 236it [00:14, 16.51it/s] - Total it 5440: 264it [00:16, 16.18it/s] - Total it 5440: 292it [00:18, 15.82it/s] - Total it 5440: 320it [00:20, 15.53it/s] - Total it 5440: 347it [00:23, 14.94it/s] - Total it 5440: 372it [00:25, 14.48it/s] - Total it 5440: 396it [00:27, 14.16it/s] - Total it 5440: 419it [00:30, 13.88it/s] - Total it 5440: 442it [00:32, 13.65it/s] - Total it 5440: 464it [00:35, 13.06it/s] - Total it 5440: 484it [00:39, 12.41it/s] - Total it 5440: 502it [00:42, 11.95it/s] - Total it 5440: 518it [00:44, 11.53it/s] - Total it 5440: 533it [00:47, 11.18it/s]                                          training loss: 0.0288
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8206 R: 0.8717 F1: 0.8453 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8206 R: 0.8717 F1: 0.8453 vloss: -inf
-Epoch: [34/500]	 Patient: 24	 Current: 51.75	 Total:  0:36:13.55
-
-Epoch: [35/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 38it [00:02, 18.79it/s] - Total it 5440: 76it [00:04, 18.74it/s] - Total it 5440: 115it [00:06, 18.85it/s] - Total it 5440: 149it [00:08, 18.38it/s] - Total it 5440: 177it [00:10, 17.30it/s] - Total it 5440: 206it [00:12, 16.69it/s] - Total it 5440: 234it [00:14, 16.23it/s] - Total it 5440: 263it [00:16, 15.98it/s] - Total it 5440: 291it [00:18, 15.67it/s] - Total it 5440: 319it [00:20, 15.42it/s] - Total it 5440: 347it [00:23, 14.81it/s] - Total it 5440: 373it [00:25, 14.44it/s] - Total it 5440: 398it [00:28, 14.10it/s] - Total it 5440: 422it [00:30, 13.78it/s] - Total it 5440: 445it [00:32, 13.54it/s] - Total it 5440: 467it [00:36, 12.88it/s] - Total it 5440: 487it [00:39, 12.28it/s] - Total it 5440: 504it [00:42, 11.84it/s] - Total it 5440: 520it [00:45, 11.46it/s] - Total it 5440: 535it [00:48, 11.12it/s]                                          training loss: 0.0276
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8107 R: 0.8704 F1: 0.8395 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8107 R: 0.8704 F1: 0.8395 vloss: -inf
-Epoch: [35/500]	 Patient: 25	 Current: 51.86	 Total:  0:37:5.40
-
-Epoch: [36/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 41it [00:02, 20.15it/s] - Total it 5440: 79it [00:04, 19.49it/s] - Total it 5440: 117it [00:06, 19.31it/s] - Total it 5440: 150it [00:08, 18.60it/s] - Total it 5440: 178it [00:10, 17.68it/s] - Total it 5440: 206it [00:12, 17.03it/s] - Total it 5440: 234it [00:14, 16.54it/s] - Total it 5440: 262it [00:16, 16.13it/s] - Total it 5440: 290it [00:18, 15.81it/s] - Total it 5440: 318it [00:20, 15.53it/s] - Total it 5440: 345it [00:23, 14.92it/s] - Total it 5440: 370it [00:25, 14.49it/s] - Total it 5440: 394it [00:27, 14.17it/s] - Total it 5440: 417it [00:30, 13.87it/s] - Total it 5440: 440it [00:32, 13.59it/s] - Total it 5440: 462it [00:35, 13.06it/s] - Total it 5440: 482it [00:38, 12.44it/s] - Total it 5440: 500it [00:41, 11.98it/s] - Total it 5440: 516it [00:44, 11.59it/s] - Total it 5440: 531it [00:47, 11.24it/s]                                          training loss: 0.0268
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8191 R: 0.8628 F1: 0.8403 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8191 R: 0.8628 F1: 0.8403 vloss: -inf
-Epoch: [36/500]	 Patient: 26	 Current: 51.66	 Total:  0:37:57.06
-
-Epoch: [37/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 39it [00:02, 19.25it/s] - Total it 5440: 78it [00:04, 19.24it/s] - Total it 5440: 115it [00:06, 18.97it/s] - Total it 5440: 150it [00:08, 18.44it/s] - Total it 5440: 178it [00:10, 17.35it/s] - Total it 5440: 206it [00:12, 16.72it/s] - Total it 5440: 234it [00:14, 16.30it/s] - Total it 5440: 262it [00:16, 16.00it/s] - Total it 5440: 290it [00:18, 15.68it/s] - Total it 5440: 318it [00:20, 15.45it/s] - Total it 5440: 346it [00:23, 14.84it/s] - Total it 5440: 372it [00:25, 14.44it/s] - Total it 5440: 396it [00:28, 14.14it/s] - Total it 5440: 420it [00:30, 13.80it/s] - Total it 5440: 443it [00:32, 13.57it/s] - Total it 5440: 465it [00:35, 12.96it/s] - Total it 5440: 485it [00:39, 12.36it/s] - Total it 5440: 503it [00:42, 11.90it/s] - Total it 5440: 519it [00:45, 11.48it/s] - Total it 5440: 534it [00:47, 11.13it/s]                                          training loss: 0.0257
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8108 R: 0.8767 F1: 0.8425 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8108 R: 0.8767 F1: 0.8425 vloss: -inf
-Epoch: [37/500]	 Patient: 27	 Current: 52.34	 Total:  0:38:49.40
-
-Epoch: [38/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 33it [00:02, 16.28it/s] - Total it 5440: 70it [00:04, 17.35it/s] - Total it 5440: 109it [00:06, 18.05it/s] - Total it 5440: 146it [00:08, 18.11it/s] - Total it 5440: 174it [00:10, 17.25it/s] - Total it 5440: 202it [00:12, 16.71it/s] - Total it 5440: 231it [00:14, 16.36it/s] - Total it 5440: 260it [00:16, 16.10it/s] - Total it 5440: 289it [00:18, 15.84it/s] - Total it 5440: 318it [00:20, 15.59it/s] - Total it 5440: 346it [00:23, 15.00it/s] - Total it 5440: 372it [00:25, 14.60it/s] - Total it 5440: 397it [00:27, 14.24it/s] - Total it 5440: 421it [00:30, 13.96it/s] - Total it 5440: 444it [00:32, 13.73it/s] - Total it 5440: 467it [00:35, 13.06it/s] - Total it 5440: 487it [00:39, 12.48it/s] - Total it 5440: 505it [00:41, 12.08it/s] - Total it 5440: 522it [00:44, 11.71it/s] - Total it 5440: 537it [00:47, 11.40it/s]                                          training loss: 0.0252
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8133 R: 0.8691 F1: 0.8403 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8133 R: 0.8691 F1: 0.8403 vloss: -inf
-Epoch: [38/500]	 Patient: 28	 Current: 50.37	 Total:  0:39:39.78
-
-Epoch: [39/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 39it [00:02, 19.45it/s] - Total it 5440: 78it [00:04, 19.43it/s] - Total it 5440: 117it [00:06, 19.42it/s] - Total it 5440: 151it [00:08, 18.81it/s] - Total it 5440: 180it [00:10, 17.81it/s] - Total it 5440: 209it [00:12, 17.13it/s] - Total it 5440: 238it [00:14, 16.70it/s] - Total it 5440: 267it [00:16, 16.36it/s] - Total it 5440: 296it [00:18, 16.10it/s] - Total it 5440: 325it [00:20, 15.72it/s] - Total it 5440: 353it [00:23, 15.14it/s] - Total it 5440: 379it [00:25, 14.74it/s] - Total it 5440: 404it [00:28, 14.39it/s] - Total it 5440: 428it [00:30, 14.11it/s] - Total it 5440: 451it [00:32, 13.81it/s] - Total it 5440: 473it [00:36, 13.03it/s] - Total it 5440: 492it [00:39, 12.47it/s] - Total it 5440: 509it [00:42, 12.03it/s] - Total it 5440: 525it [00:44, 11.67it/s] - Total it 5440: 540it [00:47, 11.32it/s]                                          training loss: 0.0250
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8197 R: 0.8666 F1: 0.8425 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8197 R: 0.8666 F1: 0.8425 vloss: -inf
-Epoch: [39/500]	 Patient: 29	 Current: 50.35	 Total:  0:40:30.13
-
-Epoch: [40/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 40it [00:02, 19.49it/s] - Total it 5440: 80it [00:04, 19.69it/s] - Total it 5440: 120it [00:06, 19.67it/s] - Total it 5440: 154it [00:08, 18.96it/s] - Total it 5440: 183it [00:10, 17.86it/s] - Total it 5440: 211it [00:12, 17.19it/s] - Total it 5440: 239it [00:14, 16.73it/s] - Total it 5440: 268it [00:16, 16.41it/s] - Total it 5440: 296it [00:18, 16.14it/s] - Total it 5440: 324it [00:20, 15.77it/s] - Total it 5440: 352it [00:23, 15.17it/s] - Total it 5440: 378it [00:25, 14.75it/s] - Total it 5440: 403it [00:27, 14.43it/s] - Total it 5440: 427it [00:30, 14.13it/s] - Total it 5440: 450it [00:32, 13.87it/s] - Total it 5440: 473it [00:36, 13.05it/s] - Total it 5440: 493it [00:39, 12.42it/s] - Total it 5440: 510it [00:42, 12.02it/s] - Total it 5440: 526it [00:45, 11.67it/s] - Total it 5440: 541it [00:47, 11.29it/s]                                          training loss: 0.0238
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8131 R: 0.8679 F1: 0.8396 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8131 R: 0.8679 F1: 0.8396 vloss: -inf
-Epoch: [40/500]	 Patient: 30	 Current: 50.37	 Total:  0:41:20.50
-
-Epoch: [41/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 39it [00:02, 19.41it/s] - Total it 5440: 78it [00:04, 19.41it/s] - Total it 5440: 118it [00:06, 19.59it/s] - Total it 5440: 153it [00:08, 18.93it/s] - Total it 5440: 182it [00:10, 17.91it/s] - Total it 5440: 211it [00:12, 17.19it/s] - Total it 5440: 240it [00:14, 16.78it/s] - Total it 5440: 269it [00:16, 16.41it/s] - Total it 5440: 298it [00:18, 16.14it/s] - Total it 5440: 327it [00:20, 15.71it/s] - Total it 5440: 355it [00:23, 15.12it/s] - Total it 5440: 381it [00:25, 14.72it/s] - Total it 5440: 406it [00:28, 14.34it/s] - Total it 5440: 430it [00:30, 14.07it/s] - Total it 5440: 453it [00:32, 13.73it/s] - Total it 5440: 475it [00:36, 12.95it/s] - Total it 5440: 494it [00:39, 12.40it/s] - Total it 5440: 511it [00:42, 11.99it/s] - Total it 5440: 527it [00:45, 11.62it/s] - Total it 5440: 542it [00:48, 11.25it/s]                                          training loss: 0.0227
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8049 R: 0.8806 F1: 0.8410 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8049 R: 0.8806 F1: 0.8410 vloss: -inf
-Epoch: [41/500]	 Patient: 31	 Current: 50.46	 Total:  0:42:10.96
-
-Epoch: [42/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 40it [00:02, 19.57it/s] - Total it 5440: 79it [00:04, 19.40it/s] - Total it 5440: 118it [00:06, 19.42it/s] - Total it 5440: 153it [00:08, 18.83it/s] - Total it 5440: 182it [00:10, 17.73it/s] - Total it 5440: 210it [00:12, 17.04it/s] - Total it 5440: 239it [00:14, 16.61it/s] - Total it 5440: 267it [00:16, 16.26it/s] - Total it 5440: 295it [00:18, 16.00it/s] - Total it 5440: 323it [00:20, 15.65it/s] - Total it 5440: 351it [00:23, 15.04it/s] - Total it 5440: 377it [00:25, 14.62it/s] - Total it 5440: 401it [00:28, 14.30it/s] - Total it 5440: 425it [00:30, 13.99it/s] - Total it 5440: 448it [00:32, 13.75it/s] - Total it 5440: 470it [00:36, 13.02it/s] - Total it 5440: 490it [00:39, 12.43it/s] - Total it 5440: 507it [00:42, 11.96it/s] - Total it 5440: 523it [00:45, 11.62it/s] - Total it 5440: 538it [00:47, 11.27it/s]                                          training loss: 0.0233
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8218 R: 0.8729 F1: 0.8466 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8218 R: 0.8729 F1: 0.8466 vloss: -inf
-Epoch: [42/500]	 Patient: 32	 Current: 50.86	 Total:  0:43:1.81
-
-Epoch: [43/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 39it [00:02, 19.50it/s] - Total it 5440: 79it [00:04, 19.68it/s] - Total it 5440: 119it [00:06, 19.69it/s] - Total it 5440: 153it [00:08, 18.99it/s] - Total it 5440: 182it [00:10, 17.83it/s] - Total it 5440: 210it [00:12, 17.16it/s] - Total it 5440: 238it [00:14, 16.72it/s] - Total it 5440: 266it [00:16, 16.37it/s] - Total it 5440: 294it [00:18, 16.08it/s] - Total it 5440: 322it [00:20, 15.74it/s] - Total it 5440: 350it [00:23, 15.11it/s] - Total it 5440: 376it [00:25, 14.69it/s] - Total it 5440: 401it [00:27, 14.32it/s] - Total it 5440: 425it [00:30, 14.05it/s] - Total it 5440: 448it [00:32, 13.82it/s] - Total it 5440: 471it [00:36, 13.03it/s] - Total it 5440: 491it [00:39, 12.45it/s] - Total it 5440: 509it [00:42, 11.99it/s] - Total it 5440: 525it [00:45, 11.64it/s] - Total it 5440: 540it [00:47, 11.27it/s]                                          training loss: 0.0244
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8173 R: 0.8640 F1: 0.8400 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8173 R: 0.8640 F1: 0.8400 vloss: -inf
-Epoch: [43/500]	 Patient: 33	 Current: 50.59	 Total:  0:43:52.41
-
-Epoch: [44/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 40it [00:02, 19.43it/s] - Total it 5440: 79it [00:04, 19.44it/s] - Total it 5440: 119it [00:06, 19.55it/s] - Total it 5440: 153it [00:08, 18.84it/s] - Total it 5440: 182it [00:10, 17.76it/s] - Total it 5440: 210it [00:12, 17.13it/s] - Total it 5440: 239it [00:14, 16.71it/s] - Total it 5440: 267it [00:16, 16.35it/s] - Total it 5440: 295it [00:18, 16.03it/s] - Total it 5440: 323it [00:20, 15.66it/s] - Total it 5440: 350it [00:23, 15.09it/s] - Total it 5440: 376it [00:25, 14.68it/s] - Total it 5440: 401it [00:28, 14.32it/s] - Total it 5440: 425it [00:30, 14.04it/s] - Total it 5440: 448it [00:32, 13.82it/s] - Total it 5440: 471it [00:36, 13.03it/s] - Total it 5440: 491it [00:39, 12.45it/s] - Total it 5440: 509it [00:42, 11.96it/s] - Total it 5440: 525it [00:45, 11.60it/s] - Total it 5440: 540it [00:47, 11.25it/s]                                          training loss: 0.0219
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8108 R: 0.8767 F1: 0.8425 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8108 R: 0.8767 F1: 0.8425 vloss: -inf
-Epoch: [44/500]	 Patient: 34	 Current: 50.71	 Total:  0:44:43.11
-
-Epoch: [45/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 40it [00:02, 19.14it/s] - Total it 5440: 80it [00:04, 19.53it/s] - Total it 5440: 120it [00:06, 19.58it/s] - Total it 5440: 154it [00:08, 18.80it/s] - Total it 5440: 182it [00:10, 17.78it/s] - Total it 5440: 210it [00:12, 17.12it/s] - Total it 5440: 239it [00:14, 16.68it/s] - Total it 5440: 267it [00:16, 16.35it/s] - Total it 5440: 295it [00:18, 16.05it/s] - Total it 5440: 323it [00:20, 15.60it/s] - Total it 5440: 350it [00:23, 14.99it/s] - Total it 5440: 375it [00:25, 14.57it/s] - Total it 5440: 399it [00:28, 14.21it/s] - Total it 5440: 422it [00:30, 13.93it/s] - Total it 5440: 445it [00:32, 13.69it/s] - Total it 5440: 467it [00:35, 13.03it/s] - Total it 5440: 487it [00:39, 12.42it/s] - Total it 5440: 504it [00:42, 11.99it/s] - Total it 5440: 520it [00:44, 11.58it/s] - Total it 5440: 535it [00:47, 11.24it/s]                                          training loss: 0.0208
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8095 R: 0.8691 F1: 0.8382 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8095 R: 0.8691 F1: 0.8382 vloss: -inf
-Epoch: [45/500]	 Patient: 35	 Current: 51.33	 Total:  0:45:34.44
-
-Epoch: [46/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 38it [00:02, 19.00it/s] - Total it 5440: 76it [00:04, 18.84it/s] - Total it 5440: 115it [00:06, 18.85it/s] - Total it 5440: 150it [00:08, 18.42it/s] - Total it 5440: 178it [00:10, 17.37it/s] - Total it 5440: 206it [00:12, 16.72it/s] - Total it 5440: 234it [00:14, 16.28it/s] - Total it 5440: 262it [00:16, 15.93it/s] - Total it 5440: 290it [00:18, 15.70it/s] - Total it 5440: 318it [00:20, 15.38it/s] - Total it 5440: 345it [00:23, 14.82it/s] - Total it 5440: 370it [00:25, 14.39it/s] - Total it 5440: 394it [00:27, 14.09it/s] - Total it 5440: 417it [00:30, 13.82it/s] - Total it 5440: 440it [00:32, 13.58it/s] - Total it 5440: 462it [00:35, 13.01it/s] - Total it 5440: 482it [00:38, 12.41it/s] - Total it 5440: 500it [00:42, 11.90it/s] - Total it 5440: 516it [00:44, 11.53it/s] - Total it 5440: 531it [00:47, 11.18it/s]                                          training loss: 0.0207
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8173 R: 0.8640 F1: 0.8400 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8173 R: 0.8640 F1: 0.8400 vloss: -inf
-Epoch: [46/500]	 Patient: 36	 Current: 51.83	 Total:  0:46:26.27
-
-Epoch: [47/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 37it [00:02, 18.39it/s] - Total it 5440: 75it [00:04, 18.61it/s] - Total it 5440: 113it [00:06, 18.66it/s] - Total it 5440: 148it [00:08, 18.31it/s] - Total it 5440: 176it [00:10, 17.41it/s] - Total it 5440: 204it [00:12, 16.70it/s] - Total it 5440: 232it [00:14, 16.24it/s] - Total it 5440: 260it [00:16, 15.95it/s] - Total it 5440: 289it [00:18, 15.72it/s] - Total it 5440: 317it [00:20, 15.48it/s] - Total it 5440: 345it [00:23, 14.86it/s] - Total it 5440: 371it [00:25, 14.48it/s] - Total it 5440: 396it [00:28, 14.13it/s] - Total it 5440: 420it [00:30, 13.81it/s] - Total it 5440: 443it [00:32, 13.62it/s] - Total it 5440: 466it [00:35, 12.97it/s] - Total it 5440: 486it [00:39, 12.33it/s] - Total it 5440: 504it [00:42, 11.88it/s] - Total it 5440: 520it [00:45, 11.49it/s] - Total it 5440: 535it [00:47, 11.18it/s]                                          training loss: 0.0214
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8129 R: 0.8666 F1: 0.8389 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8129 R: 0.8666 F1: 0.8389 vloss: -inf
-Epoch: [47/500]	 Patient: 37	 Current: 51.64	 Total:  0:47:17.92
-
-Epoch: [48/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 38it [00:02, 18.69it/s] - Total it 5440: 76it [00:04, 18.78it/s] - Total it 5440: 114it [00:06, 18.79it/s] - Total it 5440: 149it [00:08, 18.28it/s] - Total it 5440: 177it [00:10, 17.24it/s] - Total it 5440: 205it [00:12, 16.65it/s] - Total it 5440: 233it [00:14, 16.15it/s] - Total it 5440: 262it [00:16, 15.90it/s] - Total it 5440: 290it [00:18, 15.63it/s] - Total it 5440: 318it [00:20, 15.34it/s] - Total it 5440: 345it [00:23, 14.86it/s] - Total it 5440: 371it [00:25, 14.42it/s] - Total it 5440: 395it [00:28, 14.09it/s] - Total it 5440: 418it [00:30, 13.86it/s] - Total it 5440: 441it [00:32, 13.58it/s] - Total it 5440: 463it [00:35, 13.03it/s] - Total it 5440: 483it [00:39, 12.37it/s] - Total it 5440: 501it [00:42, 11.90it/s] - Total it 5440: 517it [00:44, 11.51it/s] - Total it 5440: 532it [00:47, 11.15it/s]                                          training loss: 0.0220
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8118 R: 0.8717 F1: 0.8407 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8118 R: 0.8717 F1: 0.8407 vloss: -inf
-Epoch: [48/500]	 Patient: 38	 Current: 51.98	 Total:  0:48:9.89
-
-Epoch: [49/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 40it [00:02, 19.11it/s] - Total it 5440: 78it [00:04, 18.94it/s] - Total it 5440: 117it [00:06, 19.10it/s] - Total it 5440: 152it [00:08, 18.68it/s] - Total it 5440: 181it [00:10, 17.55it/s] - Total it 5440: 209it [00:12, 16.87it/s] - Total it 5440: 238it [00:14, 16.48it/s] - Total it 5440: 266it [00:16, 16.14it/s] - Total it 5440: 294it [00:18, 15.90it/s] - Total it 5440: 322it [00:20, 15.51it/s] - Total it 5440: 349it [00:23, 14.96it/s] - Total it 5440: 375it [00:25, 14.51it/s] - Total it 5440: 399it [00:28, 14.19it/s] - Total it 5440: 422it [00:30, 13.81it/s] - Total it 5440: 444it [00:32, 13.46it/s] - Total it 5440: 465it [00:36, 12.78it/s] - Total it 5440: 484it [00:39, 12.25it/s] - Total it 5440: 501it [00:42, 11.88it/s] - Total it 5440: 517it [00:44, 11.53it/s] - Total it 5440: 532it [00:47, 11.21it/s]                                          training loss: 0.0222
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8109 R: 0.8717 F1: 0.8402 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8109 R: 0.8717 F1: 0.8402 vloss: -inf
-Epoch: [49/500]	 Patient: 39	 Current: 51.41	 Total:  0:49:1.30
-
-Epoch: [50/500]
-Train corpus:  ['NCBI-IOBES']
- - Total it 5440: 0it [00:00, ?it/s] - Total it 5440: 39it [00:02, 19.50it/s] - Total it 5440: 79it [00:04, 19.56it/s] - Total it 5440: 119it [00:06, 19.53it/s] - Total it 5440: 153it [00:08, 18.85it/s] - Total it 5440: 182it [00:10, 17.83it/s] - Total it 5440: 211it [00:12, 17.24it/s] - Total it 5440: 240it [00:14, 16.77it/s] - Total it 5440: 269it [00:16, 16.42it/s] - Total it 5440: 298it [00:18, 16.15it/s] - Total it 5440: 327it [00:20, 15.72it/s] - Total it 5440: 355it [00:23, 15.12it/s] - Total it 5440: 381it [00:25, 14.72it/s] - Total it 5440: 406it [00:28, 14.41it/s] - Total it 5440: 430it [00:30, 14.12it/s] - Total it 5440: 453it [00:32, 13.77it/s] - Total it 5440: 475it [00:36, 13.02it/s] - Total it 5440: 494it [00:39, 12.46it/s] - Total it 5440: 511it [00:42, 12.06it/s] - Total it 5440: 527it [00:45, 11.70it/s] - Total it 5440: 542it [00:47, 11.35it/s]                                          training loss: 0.0207
-N21 Dev Corpus:  ['NCBI-IOBES']
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8182 R: 0.8691 F1: 0.8429 vloss: -inf
-Drop the best check point for single corpus
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8182 R: 0.8691 F1: 0.8429 vloss: -inf
-Epoch: [50/500]	 Patient: 40	 Current: 50.14	 Total:  0:49:51.45
-
-Sample Frequence
-0 ['NCBI-IOBES'] 50
-
-best epoch:  10
-best checkpoint /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_0.8501_0.8261_0.8755_10
-Eval on Corpurar
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/NCBI-IOBES/devel.tsv
- - Total it 20: 0it [00:00, ?it/s]                                  P: 0.8261 R: 0.8755 F1: 0.8501 vloss: -inf
-Pred:  Counter({'O': 22009, 'I-DISEASE': 605, 'B-DISEASE': 521, 'E-DISEASE': 521, 'S-DISEASE': 313})
-Gold:  Counter({'O': 22092, 'I-DISEASE': 586, 'B-DISEASE': 504, 'E-DISEASE': 504, 'S-DISEASE': 283})
-
-
-corpus_best_checkpoint_name ['/media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_NCBI-IOBES_0.8501_0.8261_0.8755_10']
-Load from PICKLE
-Rebuild
-DUMP temp_single_test
-best epoch:  10
-best checkpoint /media/storage_e/npeng/bioner/xiao/github/NewBioNer/checkpoints/P2/EXP1/P22_P12_M_nosig_C100_W300_MV0.2_M_nosig_C100_W300_RestartFalse._NCBI-IOBES/N21_0.8501_0.8261_0.8755_10
-Eval on Corpurar
-/media/storage_e/npeng/bioner/xiao/github/NewBioNer/corpus/train/BC2GM-IOBES/test.tsv
- - Total it 102: 0it [00:00, ?it/s] - Total it 102: 55it [00:02, 27.12it/s] - Total it 102: 88it [00:04, 20.95it/s]                                        P: 0.0000 R: 0.0000 F1: 0.0000 vloss: -inf
-Pred:  Counter({'O': 140182, 'B-DISEASE': 861, 'E-DISEASE': 860, 'I-DISEASE': 851, 'S-DISEASE': 711})
-Gold:  Counter({'O': 128364, 'I-GP': 5273, 'B-GP': 3503, 'E-GP': 3503, 'S-GP': 2822})
-

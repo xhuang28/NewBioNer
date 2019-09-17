@@ -48,13 +48,47 @@ class CRF_L(nn.Module):
             output from crf layer (batch_size, seq_len, tag_size, tag_size)
         """
         ins_num = feats.size(0) * feats.size(1)
-        scores = self.hidden2tag(feats).view(ins_num, self.tagset_size, 1).expand(ins_num, self.tagset_size, self.tagset_size)
+        # This is the original code:
+        # scores = self.hidden2tag(feats).view(ins_num, self.tagset_size, 1).expand(ins_num, self.tagset_size, self.tagset_size)
+        # This is my code:
+        scores = self.hidden2tag(feats).view(ins_num, 1, self.tagset_size).expand(ins_num, self.tagset_size, self.tagset_size)
         trans_ = self.transitions(feats).view(ins_num, self.tagset_size, self.tagset_size)
         
         if self.sigmoid == "nosig":
             return scores + trans_
         elif self.sigmoid == "relu":
             return self.ReLU(scores + trans_)
+
+
+# class CRF_L(nn.Module):
+    # """Conditional Random Field (CRF) layer. This version is used in Ma et al. 2016, has more parameters than CRF_S
+
+    # args:
+        # hidden_dim : input dim size
+        # tagset_size: target_set_size
+        # if_biase: whether allow bias in linear trans
+    # """
+
+
+    # def __init__(self, hidden_dim, tagset_size, if_bias=True, sigmoid=""):
+        # super(CRF_L, self).__init__()
+        # self.tagset_size = tagset_size
+        # self.hidden2tag = nn.Linear(hidden_dim, self.tagset_size * self.tagset_size, bias=if_bias)
+
+    # def rand_init(self):
+        # """random initialization
+        # """
+        # utils.init_linear(self.hidden2tag)
+
+    # def forward(self, feats):
+        # """
+        # args:
+            # feats (batch_size, seq_len, hidden_dim) : input score from previous layers
+        # return:
+            # output from crf layer (batch_size, seq_len, tag_size, tag_size)
+        # """
+        # return self.hidden2tag(feats).view(-1, self.tagset_size, self.tagset_size)
+
 
 
 class CRF_S(nn.Module):
@@ -329,7 +363,7 @@ class CRFLoss_vb(nn.Module):
         # "NE": Set scores of all other labels to 0
         seq_len = scores.size(0)
         bat_size = scores.size(1)
-        gold_labels = (target / 35).view(target.shape[0], target.shape[1])
+        gold_labels = (target / self.tagset_size).view(target.shape[0], target.shape[1])
         
         seq_iter = enumerate(scores)
         # the first score should start with <start>
@@ -388,7 +422,7 @@ class CRFLoss_vb(nn.Module):
         # "NE": No changes
         seq_len = scores.size(0)
         bat_size = scores.size(1)
-        gold_labels = (target / 35).view(target.shape[0], target.shape[1])
+        gold_labels = (target / self.tagset_size).view(target.shape[0], target.shape[1])
         
         seq_iter = enumerate(scores)
         # the first score should start with <start>
@@ -433,6 +467,7 @@ class CRFLoss_vb(nn.Module):
                 partition_offset = utils.switch(neg_inf_partition.contiguous(), zero_partition.contiguous(), partition_mask).view(cur_partition.shape)
                 cur_partition = cur_partition + partition_offset.contiguous()
             
+            # cur_values = cur_values.contiguous() + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
             cur_values = cur_values.contiguous() + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
             cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
                   # (bat_size * from_target * to_target) -> (bat_size * to_target)
@@ -447,7 +482,7 @@ class CRFLoss_vb(nn.Module):
     def restricted_forward_algo_v3(self, scores, target, mask, corpus_mask, sigmoid, proba_dist):
         seq_len = scores.size(0)
         bat_size = scores.size(1)
-        gold_labels = (target / 35).view(target.shape[0], target.shape[1])
+        gold_labels = (target / self.tagset_size).view(target.shape[0], target.shape[1])
         
         seq_iter = enumerate(scores)
         # the first score should start with <start>
@@ -535,7 +570,7 @@ class CRFLoss_vb(nn.Module):
         log_mask_value = -1e9 if mask_value == 0 else np.log(mask_value)
         seq_len = scores.size(0)
         bat_size = scores.size(1)
-        gold_labels = (target / 35).view(target.shape[0], target.shape[1])
+        gold_labels = (target / self.tagset_size).view(target.shape[0], target.shape[1])
         
         seq_iter = enumerate(scores)
         # the first score should start with <start>
@@ -557,7 +592,7 @@ class CRFLoss_vb(nn.Module):
                 curr_label = curr_labels[i].cpu().data.numpy()[0]
                 if curr_label == self.O_idx:
                     idx_annotated = np.where(corpus_mask[0,i,0].data)[0]
-                    idx_annotated = np.array([r for r in idx_annotated if r!=self.O_idx]) # exclude "O"
+                    idx_annotated = np.array([r for r in idx_annotated if r!=self.O_idx], dtype=int) # exclude "O"
                     idx_unannotated = np.where((1-corpus_mask[0,i,0]).data)[0]
                     partition_mask[i,idx_annotated] = 0
                     partition_offset[i,idx_unannotated] = log_mask_value
@@ -573,6 +608,7 @@ class CRFLoss_vb(nn.Module):
             cur_partition = utils.switch(neg_inf_partition.contiguous(), cur_partition.contiguous(), partition_mask).view(cur_partition.shape)
             cur_partition += partition_offset
             
+            # cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
             cur_values = cur_values + cur_partition.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
             cur_partition = utils.log_sum_exp(cur_values, self.tagset_size)
                   # (bat_size * from_target * to_target) -> (bat_size * to_target)
@@ -624,6 +660,12 @@ class CRFLoss_vb(nn.Module):
             numerator = self.restricted_forward_algo_v5(scores, target, mask, corpus_mask, sigmoid, mask_value)
             denominator = self.forward_algo(scores, target, mask, corpus_mask)
         elif idea == "P14":
+            
+            # import pickle
+            # pickle.dump([self, scores, target, mask, corpus_mask, sigmoid, mask_value], open('/auto/nlg-05/huan183/NewBioNer/crf_biomed.p', 'wb'))
+            # assert False
+            # self, scores, target, mask, corpus_mask, sigmoid, mask_value = pickle.load(open('/auto/nlg-05/huan183/NewBioNer/crf_biomed.p', 'rb'))
+            
             numerator = self.restricted_forward_algo_v5(scores, target, mask, corpus_mask, sigmoid, mask_value[0])
             denominator = self.restricted_forward_algo_v2(scores, target, mask, corpus_mask, sigmoid, mask_value[1])
         elif idea in ["P22", "P32"]:
@@ -1628,6 +1670,7 @@ class CRFDecode_vb():
             # previous to_target is current from_target
             # partition: previous results log(exp(from_target)), #(batch_size * from_target)
             # cur_values: bat_size * from_target * to_target
+            # cur_values = cur_values + forscores.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
             cur_values = cur_values + forscores.contiguous().view(bat_size, self.tagset_size, 1).expand(bat_size, self.tagset_size, self.tagset_size)
 
             forscores, cur_bp = torch.max(cur_values, 1)

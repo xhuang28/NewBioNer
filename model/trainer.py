@@ -56,9 +56,9 @@ class Trainer(object):
             print(args.dispatch, "Dev Corpus: ", corpus_name)
 
             dev_f1, dev_pre, dev_rec, dev_acc = self.eval_epoch(crf2dev_dataloader[crf_no], crf_no, args)
-
+            
             if_add_patience = True
-            if dev_f1 > self.best_f1[crf_no]:
+            if dev_f1 > self.best_f1[crf_no] and not args.combine:
                 print("Prev Best F1: {:.4f} Curr Best F1: {:.4f}".format(self.best_f1[crf_no], dev_f1))
                 self.best_epoch_idx = epoch_idx
                 self.patience_count = 0
@@ -98,15 +98,19 @@ class Trainer(object):
                 self.drop_check_point(last_checkpoint_name, args)
                 print()
                 
+                if args.combine:
+                    self.best_state_dict = deepcopy(self.ner_model.state_dict())
+                
             # save check point for each corpus 
             if args.dispatch in ["N21", "N2K"]:
-                print("Drop the best check point for single corpus")
+                
+                # print("Drop the best check point for single corpus")
                 
                 for cid in self.crf2corpus[crf_no]:
                     print(args.dev_file[cid])
                     cid_f1, cid_pre, cid_rec, cid_acc = self.eval_epoch(dev_dataset_loader[cid], crf_no, args)
                     # F1
-                    if cid_f1 > self.corpus_best_vec[cid][0]:
+                    if cid_f1 > self.corpus_best_vec[cid][0] and not args.combine:
                         print("Prev Best F1: {:.4f} Curr Best F1: {:.4f}".format(self.corpus_best_vec[cid][0], cid_f1))
                         self.corpus_best_vec[cid] = [cid_f1, cid_pre, cid_rec]
                         

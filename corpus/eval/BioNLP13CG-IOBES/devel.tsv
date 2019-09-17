@@ -7,7 +7,7 @@ the	O
 angiogenesis	O
 induced	O
 by	O
-murine	S-Organism
+murine	O
 renal	B-Disease
 cell	I-Disease
 carcinoma	E-Disease
@@ -16,12 +16,12 @@ as	O
 determined	O
 by	O
 a	O
-dorsal	B-Multi-tissue_structure
-air	I-Multi-tissue_structure
-sac	E-Multi-tissue_structure
+dorsal	O
+air	O
+sac	O
 assay	O
 in	O
-mice	S-Organism
+mice	O
 .	O
 
 UFT	S-Chemical
@@ -59,7 +59,7 @@ Japan	O
 to	O
 treat	O
 cancer	S-Disease
-patients	S-Organism
+patients	O
 requiring	O
 a	O
 long	O
@@ -93,8 +93,8 @@ effect	O
 of	O
 UFT	S-Chemical
 against	O
-RENCA	B-Cell
-cell	E-Cell
+RENCA	O
+cell	O
 -	O
 induced	O
 angiogenesis	O
@@ -116,10 +116,10 @@ of	O
 a	O
 chamber	O
 containing	O
-RENCA	B-Cell
-cells	E-Cell
+RENCA	O
+cells	O
 into	O
-mice	S-Organism
+mice	O
 .	O
 
 In	O
@@ -218,7 +218,7 @@ reflect	O
 a	O
 transition	O
 in	O
-blood	S-Organism_substance
+blood	O
 concentration	O
 of	O
 each	O
@@ -277,7 +277,7 @@ and	O
 long	O
 -	O
 lasting	O
-blood	S-Organism_substance
+blood	O
 levels	O
 of	O
 5	B-Chemical
@@ -327,7 +327,7 @@ alpha	E-GP
 -	O
 based	O
 isolated	O
-limb	S-Organism_subdivision
+limb	O
 perfusions	O
 .	O
 
@@ -343,7 +343,7 @@ molecule	O
 in	O
 regulating	O
 tumour	S-Disease
-blood	S-Organism_substance
+blood	O
 flow	O
 and	O
 stimulating	O
@@ -373,11 +373,11 @@ and	O
 oxygen	S-Chemical
 to	O
 reach	O
-tumour	B-Tissue
-tissue	E-Tissue
+tumour	O
+tissue	O
 or	O
 affecting	O
-vascular	S-Multi-tissue_structure
+vascular	O
 growth	O
 .	O
 
@@ -403,7 +403,7 @@ CC531	I-Disease
 adenocarcinoma	E-Disease
 model	O
 in	O
-rats	S-Organism
+rats	O
 .	O
 
 Moreover	O
@@ -427,7 +427,7 @@ studied	O
 in	O
 an	O
 isolated	O
-limb	S-Organism_subdivision
+limb	O
 perfusion	O
 (	O
 ILP	O
@@ -457,7 +457,7 @@ was	O
 accompanied	O
 by	O
 impaired	O
-renal	S-Organ
+renal	O
 function	O
 .	O
 
@@ -621,10 +621,10 @@ by	O
 acetoxychavicol	I-Chemical
 acetate	E-Chemical
 in	O
-Ehrlich	B-Cell
-ascites	I-Cell
-tumor	I-Cell
-cells	E-Cell
+Ehrlich	O
+ascites	O
+tumor	O
+cells	O
 is	O
 associated	O
 with	O
@@ -668,10 +668,10 @@ carcinogenesis	O
 was	O
 evaluated	O
 in	O
-Ehrlich	B-Cell
-ascites	I-Cell
-tumor	I-Cell
-cells	E-Cell
+Ehrlich	O
+ascites	O
+tumor	O
+cells	O
 .	O
 
 ACA	S-Chemical
@@ -688,7 +688,7 @@ dose	O
 dependent	O
 suppression	O
 of	O
-cell	S-Cell
+cell	O
 viability	O
 .	O
 
@@ -696,13 +696,13 @@ Apoptosis	O
 ,	O
 characterized	O
 by	O
-nuclear	S-Cellular_component
+nuclear	O
 condensation	O
 ,	O
-membrane	S-Cellular_component
+membrane	O
 blebbing	O
 ,	O
-cell	S-Cell
+cell	O
 shrinkage	O
 and	O
 a	O
@@ -731,14 +731,14 @@ observed	O
 
 Formation	O
 of	O
-apoptotic	B-Cellular_component
-bodies	E-Cellular_component
+apoptotic	O
+bodies	O
 was	O
 preceded	O
 by	O
 lowering	O
 of	O
-intracellular	S-Immaterial_anatomical_entity
+intracellular	O
 polyamines	O
 ,	O
 particularly	O
@@ -798,8 +798,8 @@ in	O
 the	O
 number	O
 of	O
-apoptotic	B-Cellular_component
-bodies	E-Cellular_component
+apoptotic	O
+bodies	O
 and	O
 also	O
 caused	O
@@ -1023,9 +1023,9 @@ RPA	O
 )	O
 in	O
 26	O
-normal	B-Multi-tissue_structure
-kidney	I-Multi-tissue_structure
-samples	E-Multi-tissue_structure
+normal	O
+kidney	O
+samples	O
 and	O
 45	O
 renal	B-Disease
@@ -1064,12 +1064,12 @@ P	O
 3	O
 )	O
 in	O
-neoplastic	B-Organ
-kidney	E-Organ
+neoplastic	O
+kidney	O
 compared	O
 with	O
-normal	B-Tissue
-tissues	E-Tissue
+normal	O
+tissues	O
 .	O
 
 In	O
@@ -1084,7 +1084,7 @@ in	O
 tumors	S-Disease
 than	O
 normal	O
-kidney	S-Organ
+kidney	O
 ,	O
 there	O
 was	O
@@ -1247,8 +1247,8 @@ P	O
 )	O
 expression	O
 in	O
-clear	B-Cell
-cell	E-Cell
+clear	O
+cell	O
 compared	O
 with	O
 chromophil	B-Disease
@@ -1283,10 +1283,10 @@ flt	B-GP
 -	I-GP
 4	E-GP
 with	O
-patient	S-Organism
+patient	O
 sex	O
 ,	O
-patient	S-Organism
+patient	O
 age	O
 ,	O
 or	O
@@ -1326,13 +1326,13 @@ C	E-GP
 expression	O
 in	O
 the	O
-renal	B-Cell
-carcinoma	I-Cell
-cell	I-Cell
-line	I-Cell
-786	I-Cell
--	I-Cell
-0	E-Cell
+renal	O
+carcinoma	O
+cell	O
+line	O
+786	O
+-	O
+0	O
 transfected	O
 with	O
 wild	O
@@ -1345,7 +1345,7 @@ was	O
 determined	O
 by	O
 growing	O
-cells	S-Cell
+cells	O
 under	O
 21	O
 %	O
@@ -1543,8 +1543,8 @@ types	O
 Glucose	S-Chemical
 catabolism	O
 in	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 :	O
 identification	O
 and	O
@@ -1587,7 +1587,7 @@ lactic	B-Chemical
 acid	E-Chemical
 than	O
 their	O
-tissues	S-Tissue
+tissues	O
 of	O
 origin	O
 .	O
@@ -1685,8 +1685,8 @@ show	O
 that	O
 subjecting	O
 transfected	O
-hepatoma	B-Cell
-cells	E-Cell
+hepatoma	O
+cells	O
 to	O
 hypoxic	O
 conditions	O
@@ -1803,7 +1803,7 @@ the	O
 binding	O
 of	O
 several	O
-nuclear	S-Cellular_component
+nuclear	O
 proteins	O
 .	O
 
@@ -1835,8 +1835,8 @@ conditions	O
 within	O
 highly	O
 glycolytic	O
-hepatoma	B-Cell
-cells	E-Cell
+hepatoma	O
+cells	O
 ,	O
 a	O
 property	O
@@ -1846,7 +1846,7 @@ help	O
 assure	O
 that	O
 such	O
-cells	S-Cell
+cells	O
 exhibit	O
 a	O
 growth	O
@@ -1855,8 +1855,8 @@ survival	O
 advantage	O
 over	O
 their	O
-parental	B-Cell
-cells	E-Cell
+parental	O
+cells	O
 of	O
 origin	O
 .	O
@@ -1869,33 +1869,33 @@ suppresses	O
 Hck	S-GP
 protein	O
 -	O
-tyrosine	S-Amino_acid
+tyrosine	O
 kinase	O
 mediated	O
-cellular	S-Cell
+cellular	O
 transformation	O
 .	O
 
 The	O
-mammalian	S-Organism
+mammalian	O
 proto	O
 -	O
 oncogene	O
 Cbl	S-GP
 and	O
 its	O
-cellular	S-Cell
+cellular	O
 homologues	O
 in	O
-Caenorhabditis	B-Organism
-elegans	E-Organism
+Caenorhabditis	O
+elegans	O
 (	O
 Sli	B-GP
 -	I-GP
 1	E-GP
 )	O
 and	O
-Drosophila	S-Organism
+Drosophila	O
 (	O
 D	B-GP
 -	I-GP
@@ -1941,11 +1941,11 @@ degradation	O
 Hck	S-GP
 -	O
 mediated	O
-cellular	S-Cell
+cellular	O
 transformation	O
 of	O
-murine	S-Organism
-fibroblasts	S-Cell
+murine	O
+fibroblasts	O
 is	O
 reverted	O
 by	O
@@ -1953,7 +1953,7 @@ ectopic	O
 expression	O
 of	O
 a	O
-membrane	S-Cellular_component
+membrane	O
 -	O
 anchored	O
 allele	O
@@ -1963,7 +1963,7 @@ as	O
 assessed	O
 by	O
 the	O
-cellular	S-Cell
+cellular	O
 morphology	O
 ,	O
 suppression	O
@@ -1979,12 +1979,12 @@ reduction	O
 in	O
 the	O
 total	O
-tyrosine	S-Amino_acid
+tyrosine	O
 phosphorylation	O
 levels	O
 within	O
 the	O
-cells	S-Cell
+cells	O
 .	O
 
 The	O
@@ -1993,8 +1993,8 @@ of	O
 Cbl	S-GP
 at	O
 the	O
-plasma	B-Cellular_component
-membrane	E-Cellular_component
+plasma	O
+membrane	O
 targets	O
 both	O
 Hck	S-GP
@@ -2028,17 +2028,17 @@ an	O
 increase	O
 in	O
 the	O
-phosphotyrosine	S-Amino_acid
+phosphotyrosine	O
 levels	O
 within	O
 the	O
-cells	S-Cell
+cells	O
 .	O
 
 Activated	O
 Hck	S-GP
 and	O
-membrane	S-Cellular_component
+membrane	O
 -	O
 anchored	O
 Cbl	S-GP
@@ -2046,7 +2046,7 @@ are	O
 present	O
 in	O
 similar	O
-subcellular	S-Cellular_component
+subcellular	O
 localizations	O
 and	O
 co	O
@@ -2128,9 +2128,9 @@ of	O
 malignant	O
 transformation	O
 of	O
-human	S-Organism
-endothelial	B-Cell
-cells	E-Cell
+human	O
+endothelial	O
+cells	O
 modelled	O
 by	O
 co	O
@@ -2160,11 +2160,11 @@ of	O
 malignant	O
 transformation	O
 of	O
-human	S-Organism
-endothelial	B-Cell
-cells	E-Cell
+human	O
+endothelial	O
+cells	O
 (	O
-ECs	S-Cell
+ECs	O
 )	O
 by	O
 overexpressing	O
@@ -2172,7 +2172,7 @@ the	O
 catalytic	O
 subunit	O
 of	O
-human	S-Organism
+human	O
 telomerase	S-GP
 (	O
 hTERT	S-GP
@@ -2180,7 +2180,7 @@ hTERT	S-GP
 ,	O
 together	O
 with	O
-SV40	S-Organism
+SV40	O
 T	B-GP
 antigen	E-GP
 (	O
@@ -2209,20 +2209,20 @@ of	O
 three	O
 cultures	O
 of	O
-bone	B-Cell
-marrow	I-Cell
--	I-Cell
-derived	I-Cell
-ECs	E-Cell
+bone	O
+marrow	O
+-	O
+derived	O
+ECs	O
 (	O
-BMECs	S-Cell
+BMECs	O
 )	O
 .	O
 
 One	O
 hTERT	S-GP
 transduced	O
-BMEC	S-Cell
+BMEC	O
 culture	O
 underwent	O
 a	O
@@ -2234,7 +2234,7 @@ resuming	O
 proliferation	O
 .	O
 
-BMECs	S-Cell
+BMECs	O
 transfected	O
 with	O
 hTERT	S-GP
@@ -2246,12 +2246,12 @@ phenotypically	O
 normal	O
 .	O
 
-BMECs	S-Cell
+BMECs	O
 transfected	O
 with	O
 SV40T	S-GP
 (	O
-BMSVTs	S-Cell
+BMSVTs	O
 )	O
 had	O
 an	O
@@ -2265,7 +2265,7 @@ to	O
 crisis	O
 .	O
 
-BMSVTs	S-Cell
+BMSVTs	O
 exhibited	O
 a	O
 partially	O
@@ -2292,7 +2292,7 @@ vitro	O
 
 Transduction	O
 of	O
-BMSVTs	S-Cell
+BMSVTs	O
 with	O
 hTERT	S-GP
 resulted	O
@@ -2303,10 +2303,10 @@ of	O
 out	O
 of	O
 4	O
-cultures	S-Cell
+cultures	O
 .	O
 
-BMSVTs	S-Cell
+BMSVTs	O
 immortalized	O
 with	O
 hTERT	S-GP
@@ -2323,7 +2323,7 @@ in	O
 vivo	O
 .	O
 
-BMECs	S-Cell
+BMECs	O
 co	O
 -	O
 expressing	O
@@ -2362,8 +2362,8 @@ investigations	O
 demonstrate	O
 transformation	O
 of	O
-human	S-Organism
-ECs	S-Cell
+human	O
+ECs	O
 to	O
 an	O
 overtly	O
@@ -2380,10 +2380,10 @@ for	O
 understanding	O
 mechanisms	O
 underlying	O
-vascular	S-Pathological_formation
+vascular	O
 and	O
-angiogenic	B-Pathological_formation
-neoplasias	E-Pathological_formation
+angiogenic	O
+neoplasias	O
 ,	O
 as	O
 well	O
@@ -2395,21 +2395,21 @@ designed	O
 to	O
 curtail	O
 aberrant	O
-EC	S-Cell
+EC	O
 growth	O
 .	O
 
-Retinal	S-Multi-tissue_structure
+Retinal	O
 microangiopathies	O
 overlying	O
-pigment	B-Tissue
-epithelial	E-Tissue
+pigment	O
+epithelial	O
 detachment	O
 in	O
 age	O
 -	O
 related	O
-macular	S-Tissue
+macular	O
 degeneration	O
 .	O
 
@@ -2420,21 +2420,21 @@ evaluate	O
 alterations	O
 in	O
 the	O
-retinal	B-Multi-tissue_structure
-vasculature	E-Multi-tissue_structure
+retinal	O
+vasculature	O
 overlying	O
-pigment	B-Pathological_formation
-epithelial	I-Pathological_formation
-detachments	E-Pathological_formation
+pigment	O
+epithelial	O
+detachments	O
 (	O
-PED	S-Pathological_formation
+PED	O
 )	O
 in	O
 exudative	O
 age	O
 -	O
 related	O
-macular	S-Tissue
+macular	O
 degeneration	O
 (	O
 ARMD	O
@@ -2452,10 +2452,10 @@ METHODS	O
 Forty	O
 -	O
 one	O
-patients	S-Organism
+patients	O
 (	O
 41	O
-eyes	S-Organ
+eyes	O
 )	O
 with	O
 a	O
@@ -2465,7 +2465,7 @@ of	O
 exudative	O
 ARMD	O
 with	O
-PED	S-Pathological_formation
+PED	O
 underwent	O
 simultaneous	O
 fluorescein	S-Chemical
@@ -2484,15 +2484,15 @@ degrees	O
 magnification	O
 .	O
 
-Vascular	S-Multi-tissue_structure
+Vascular	O
 abnormalities	O
 in	O
 the	O
-retina	S-Multi-tissue_structure
+retina	O
 were	O
 compared	O
 between	O
-patients	S-Organism
+patients	O
 with	O
 vascularized	O
 (	O
@@ -2513,7 +2513,7 @@ n	O
 group	O
 2	O
 )	O
-PED	S-Pathological_formation
+PED	O
 on	O
 indocyanine	B-Chemical
 green	E-Chemical
@@ -2525,13 +2525,13 @@ the	O
 size	O
 of	O
 the	O
-PED	S-Pathological_formation
+PED	O
 and	O
 the	O
 presence	O
 of	O
-serous	B-Multi-tissue_structure
-retinal	E-Multi-tissue_structure
+serous	O
+retinal	O
 detachment	O
 .	O
 
@@ -2541,7 +2541,7 @@ In	O
 all	O
 ,	O
 67	O
-vascular	S-Multi-tissue_structure
+vascular	O
 abnormalities	O
 were	O
 found	O
@@ -2574,17 +2574,17 @@ than	O
 The	O
 finding	O
 of	O
-retinal	S-Multi-tissue_structure
+retinal	O
 vasculopathy	O
 (	O
 32	O
-patients	S-Organism
+patients	O
 in	O
 group	O
 1	O
 and	O
 two	O
-patients	S-Organism
+patients	O
 in	O
 group	O
 2	O
@@ -2596,7 +2596,7 @@ with	O
 the	O
 presence	O
 of	O
-choroidal	S-Multi-tissue_structure
+choroidal	O
 neovascularizations	O
 (	O
 P	O
@@ -2617,13 +2617,13 @@ between	O
 the	O
 presence	O
 of	O
-choroidal	S-Multi-tissue_structure
+choroidal	O
 neovascularization	O
 and	O
 size	O
 of	O
 the	O
-PED	S-Pathological_formation
+PED	O
 (	O
 P	O
 =	O
@@ -2636,32 +2636,32 @@ P	O
 The	O
 number	O
 of	O
-retinal	B-Multi-tissue_structure
-vascular	E-Multi-tissue_structure
+retinal	O
+vascular	O
 findings	O
 was	O
 not	O
 significantly	O
 correlated	O
 with	O
-serous	S-Organism_substance
+serous	O
 elevation	O
 of	O
 the	O
-retina	S-Multi-tissue_structure
+retina	O
 .	O
 
 CONCLUSIONS	O
 :	O
-Retinal	S-Multi-tissue_structure
+Retinal	O
 vasculopathies	O
 may	O
 be	O
 observed	O
 in	O
-eyes	S-Organ
+eyes	O
 with	O
-PED	S-Pathological_formation
+PED	O
 and	O
 are	O
 detectable	O
@@ -2689,7 +2689,7 @@ induced	O
 rejection	O
 of	O
 a	O
-murine	S-Organism
+murine	O
 prostate	B-Disease
 tumor	E-Disease
 system	O
@@ -2733,7 +2733,7 @@ is	O
 a	O
 type	O
 I	O
-membrane	S-Cellular_component
+membrane	O
 protein	O
 that	O
 is	O
@@ -2792,39 +2792,39 @@ expression	O
 vector	O
 driven	O
 by	O
-cytomegalovirus	S-Organism
+cytomegalovirus	O
 promoter	O
 was	O
 used	O
 to	O
 express	O
-murine	S-Organism
+murine	O
 IL	B-GP
 -	I-GP
 12	E-GP
 cDNA	O
 in	O
 the	O
-RM	B-Cell
--	I-Cell
-9	I-Cell
-murine	I-Cell
-prostate	I-Cell
-carcinoma	I-Cell
-cell	I-Cell
-line	E-Cell
+RM	O
+-	O
+9	O
+murine	O
+prostate	O
+carcinoma	O
+cell	O
+line	O
 .	O
 
 Control	O
-RM	B-Cell
--	I-Cell
-9	I-Cell
-cells	E-Cell
+RM	O
+-	O
+9	O
+cells	O
 and	O
-RM	B-Cell
--	I-Cell
-9	I-Cell
-cells	E-Cell
+RM	O
+-	O
+9	O
+cells	O
 stably	O
 transfected	O
 with	O
@@ -2841,7 +2841,7 @@ IL12	S-GP
 )	O
 were	O
 inoculated	O
-subcutaneously	S-Immaterial_anatomical_entity
+subcutaneously	O
 in	O
 4	O
 -	O
@@ -2852,10 +2852,10 @@ week	O
 -	O
 old	O
 male	O
-C57BL	B-Organism
-/	I-Organism
-J6	I-Organism
-mice	E-Organism
+C57BL	O
+/	O
+J6	O
+mice	O
 .	O
 
 Tumor	S-Disease
@@ -2893,7 +2893,7 @@ used	O
 to	O
 label	O
 apoptotic	O
-cells	S-Cell
+cells	O
 .	O
 
 RESULTS	O
@@ -2903,36 +2903,36 @@ IL	B-GP
 12	E-GP
 -	O
 expressing	O
-RM	B-Cell
--	I-Cell
-9	I-Cell
-prostate	I-Cell
-carcinoma	I-Cell
-cells	E-Cell
+RM	O
+-	O
+9	O
+prostate	O
+carcinoma	O
+cells	O
 transplanted	O
 into	O
-C57BL	B-Organism
-/	I-Organism
-J6	I-Organism
-mice	E-Organism
+C57BL	O
+/	O
+J6	O
+mice	O
 grew	O
 more	O
 slowly	O
 than	O
 control	O
-RM	B-Cell
--	I-Cell
-9	I-Cell
-cells	E-Cell
+RM	O
+-	O
+9	O
+cells	O
 and	O
 vector	O
 control	O
-RM	B-Cell
--	I-Cell
-9	I-Cell
--	I-Cell
-Luc	I-Cell
-cells	E-Cell
+RM	O
+-	O
+9	O
+-	O
+Luc	O
+cells	O
 .	O
 
 The	O
@@ -2941,12 +2941,12 @@ survival	O
 time	O
 of	O
 the	O
-RM	B-Organism
--	I-Organism
-9	I-Organism
--	I-Organism
-IL12	I-Organism
-mice	E-Organism
+RM	O
+-	O
+9	O
+-	O
+IL12	O
+mice	O
 was	O
 longer	O
 than	O
@@ -2958,14 +2958,14 @@ the	O
 mean	O
 survival	O
 for	O
-mice	S-Organism
+mice	O
 transplanted	O
 with	O
 control	O
-RM	B-Cell
--	I-Cell
-9	I-Cell
-cells	E-Cell
+RM	O
+-	O
+9	O
+cells	O
 was	O
 only	O
 16	O
@@ -2973,7 +2973,7 @@ days	O
 .	O
 
 Apoptotic	O
-cells	S-Cell
+cells	O
 were	O
 more	O
 numerous	O
@@ -3083,21 +3083,21 @@ ephrin	B-GP
 B1	E-GP
 -	O
 induced	O
-membrane	S-Cellular_component
+membrane	O
 ruffling	O
 and	O
-focal	B-Cellular_component
-complex	E-Cellular_component
+focal	O
+complex	O
 assembly	O
 of	O
-human	S-Organism
-aortic	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+human	O
+aortic	O
+endothelial	O
+cells	O
 .	O
 
-Endothelial	B-Cell
-cell	E-Cell
+Endothelial	O
+cell	O
 migration	O
 is	O
 an	O
@@ -3129,20 +3129,20 @@ ephrin	B-GP
 -	I-GP
 B1	E-GP
 promotes	O
-membrane	S-Cellular_component
+membrane	O
 ruffling	O
 in	O
-human	S-Organism
-aortic	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+human	O
+aortic	O
+endothelial	O
+cells	O
 ,	O
 because	O
-membrane	S-Cellular_component
+membrane	O
 ruffling	O
 heralds	O
-cell	B-Cell
-body	E-Cell
+cell	O
+body	O
 migration	O
 .	O
 
@@ -3184,9 +3184,9 @@ was	O
 recruited	O
 to	O
 the	O
-nascent	B-Cellular_component
-focal	I-Cellular_component
-complex	E-Cellular_component
+nascent	O
+focal	O
+complex	O
 after	O
 ephrin	B-GP
 -	I-GP
@@ -3212,9 +3212,9 @@ recruited	O
 Crk	S-GP
 to	O
 the	O
-nascent	B-Cellular_component
-focal	I-Cellular_component
-complex	E-Cellular_component
+nascent	O
+focal	O
+complex	O
 .	O
 
 The	O
@@ -3227,7 +3227,7 @@ ephrin	B-GP
 B1	E-GP
 -	O
 induced	O
-membrane	S-Cellular_component
+membrane	O
 ruffling	O
 was	O
 shown	O
@@ -3284,11 +3284,11 @@ ephrin	B-GP
 B1	E-GP
 -	O
 induced	O
-membrane	S-Cellular_component
+membrane	O
 ruffling	O
 and	O
-focal	B-Cellular_component
-complex	E-Cellular_component
+focal	O
+complex	O
 assembly	O
 .	O
 
@@ -3311,7 +3311,7 @@ ephrin	B-GP
 B1	E-GP
 -	O
 induced	O
-membrane	S-Cellular_component
+membrane	O
 ruffling	O
 .	O
 
@@ -3329,7 +3329,7 @@ B1	E-GP
 did	O
 not	O
 induce	O
-membrane	S-Cellular_component
+membrane	O
 spreading	O
 ,	O
 probably	O
@@ -3338,8 +3338,8 @@ to	O
 instability	O
 of	O
 the	O
-focal	B-Cellular_component
-complex	E-Cellular_component
+focal	O
+complex	O
 .	O
 
 These	O
@@ -3355,15 +3355,15 @@ in	O
 Rac1	S-GP
 -	O
 induced	O
-membrane	S-Cellular_component
+membrane	O
 ruffling	O
 and	O
 Rap1	S-GP
 -	O
 mediated	O
-nascent	B-Cellular_component
-focal	I-Cellular_component
-complex	E-Cellular_component
+nascent	O
+focal	O
+complex	O
 stabilization	O
 contributing	O
 to	O
@@ -3372,17 +3372,17 @@ ephrin	B-GP
 B1	E-GP
 -	O
 induced	O
-human	S-Organism
-aortic	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+human	O
+aortic	O
+endothelial	O
+cells	O
 migration	O
 .	O
 
 Postoperative	O
 progression	O
 of	O
-pulmonary	S-Organ
+pulmonary	O
 metastasis	O
 in	O
 osteosarcoma	S-Disease
@@ -3397,7 +3397,7 @@ often	O
 is	O
 observed	O
 in	O
-patients	S-Organism
+patients	O
 with	O
 cancer	S-Disease
 after	O
@@ -3443,7 +3443,7 @@ tumor	E-Disease
 enhances	O
 progression	O
 of	O
-pulmonary	S-Organ
+pulmonary	O
 metastasis	O
 in	O
 animal	O
@@ -3506,7 +3506,7 @@ dL	O
 In	O
 addition	O
 ,	O
-serum	S-Organism_substance
+serum	O
 concentration	O
 of	O
 the	O
@@ -3535,7 +3535,7 @@ suppressed	O
 postoperative	O
 progression	O
 of	O
-pulmonary	S-Organ
+pulmonary	O
 metastasis	O
 .	O
 
@@ -3557,7 +3557,7 @@ tumors	E-Disease
 enhances	O
 progression	O
 of	O
-pulmonary	S-Organ
+pulmonary	O
 metastasis	O
 .	O
 
@@ -3575,7 +3575,7 @@ can	O
 prevent	O
 progression	O
 of	O
-pulmonary	S-Organ
+pulmonary	O
 metastasis	O
 in	O
 osteosarcoma	S-Disease
@@ -3599,7 +3599,7 @@ FVIIa	S-GP
 )	O
 to	O
 its	O
-cellular	S-Cell
+cellular	O
 receptor	O
 tissue	B-GP
 factor	E-GP
@@ -3612,7 +3612,7 @@ shown	O
 to	O
 induce	O
 various	O
-intracellular	S-Immaterial_anatomical_entity
+intracellular	O
 signaling	O
 events	O
 ,	O
@@ -3658,32 +3658,32 @@ on	O
 apoptosis	O
 .	O
 
-Serum	S-Organism_substance
+Serum	O
 deprivation	O
 -	O
 induced	O
 apoptosis	O
 of	O
-BHK	B-Cell
-(	I-Cell
-+	I-Cell
-TF	I-Cell
-)	I-Cell
-cells	E-Cell
+BHK	O
+(	O
++	O
+TF	O
+)	O
+cells	O
 was	O
 characterized	O
 by	O
 apoptotic	O
-blebs	S-Cellular_component
+blebs	O
 ,	O
-nuclei	S-Cellular_component
+nuclei	O
 with	O
-chromatin	S-Cellular_component
+chromatin	O
 -	O
 condensed	O
 bodies	O
 ,	O
-DNA	S-Cellular_component
+DNA	O
 degradation	O
 ,	O
 and	O
@@ -3699,14 +3699,14 @@ decreased	O
 the	O
 number	O
 of	O
-cells	S-Cell
+cells	O
 with	O
 apoptotic	O
 morphology	O
 and	O
 prevented	O
 the	O
-DNA	S-Cellular_component
+DNA	O
 degradation	O
 as	O
 measured	O
@@ -3768,7 +3768,7 @@ thrombin	S-GP
 FVIIa	S-GP
 -	O
 induced	O
-cell	S-Cell
+cell	O
 survival	O
 correlated	O
 with	O
@@ -3829,7 +3829,7 @@ of	O
 FVIIa	S-GP
 to	O
 promote	O
-cell	S-Cell
+cell	O
 survival	O
 .	O
 
@@ -3888,10 +3888,10 @@ LMP	S-GP
 of	O
 a	O
 specific	O
-Epstein	B-Organism
--	I-Organism
-Barr	I-Organism
-virus	E-Organism
+Epstein	O
+-	O
+Barr	O
+virus	O
 variant	O
 derived	O
 from	O
@@ -3908,12 +3908,12 @@ A	O
 DNA	O
 fragment	O
 containing	O
-Epstein	B-Organism
--	I-Organism
-Barr	I-Organism
-virus	E-Organism
+Epstein	O
+-	O
+Barr	O
+virus	O
 (	O
-EBV	S-Organism
+EBV	O
 )	O
 terminal	O
 fragment	O
@@ -3968,9 +3968,9 @@ LMP	S-GP
 sequence	O
 of	O
 the	O
-B95	B-Organism
--	I-Organism
-8	E-Organism
+B95	O
+-	O
+8	O
 strain	O
 .	O
 
@@ -4024,8 +4024,8 @@ designed	O
 to	O
 synthesize	O
 the	O
-EBV	S-Organism
-DNA	S-Cellular_component
+EBV	O
+DNA	O
 fragment	O
 from	O
 nucleotides	O
@@ -4059,7 +4059,7 @@ XhoI	S-GP
 digestion	O
 and	O
 to	O
-DNA	S-Cellular_component
+DNA	O
 sequencing	O
 analysis	O
 .	O
@@ -4079,14 +4079,14 @@ also	O
 observed	O
 in	O
 50	O
-biopsy	B-Tissue
-tissues	E-Tissue
+biopsy	O
+tissues	O
 as	O
 well	O
 as	O
 in	O
 the	O
-throat	S-Organism_subdivision
+throat	O
 washings	O
 of	O
 6	O
@@ -4094,7 +4094,7 @@ out	O
 of	O
 20	O
 healthy	O
-individuals	S-Organism
+individuals	O
 that	O
 we	O
 examined	O
@@ -4102,31 +4102,31 @@ examined	O
 indicating	O
 that	O
 the	O
-EBV	S-Organism
+EBV	O
 strain	O
 predominantly	O
 existing	O
 in	O
 these	O
-biopsy	B-Tissue
-tissues	E-Tissue
+biopsy	O
+tissues	O
 was	O
 different	O
 from	O
 strains	O
 of	O
-B95	B-Organism
--	I-Organism
-8	E-Organism
+B95	O
+-	O
+8	O
 ,	O
-Jijoye	S-Organism
+Jijoye	O
 or	O
-nude	B-Organism
-mouse	E-Organism
+nude	O
+mouse	O
 passaged	O
-cells	S-Cell
+cells	O
 (	O
-C15	S-Cell
+C15	O
 )	O
 with	O
 an	O
@@ -4137,11 +4137,11 @@ but	O
 closely	O
 resembled	O
 other	O
-nude	B-Organism
-mouse	E-Organism
+nude	O
+mouse	O
 passaged	O
-CAO	B-Cell
-cells	E-Cell
+CAO	O
+cells	O
 which	O
 were	O
 originally	O
@@ -4150,11 +4150,11 @@ from	O
 China	O
 .	O
 
-Balb	B-Cell
-/	I-Cell
-c	I-Cell
-3T3	I-Cell
-cells	E-Cell
+Balb	O
+/	O
+c	O
+3T3	O
+cells	O
 carrying	O
 this	O
 NPC	S-Disease
@@ -4164,14 +4164,14 @@ gene	O
 showed	O
 a	O
 transformed	O
-cell	S-Cell
+cell	O
 morphology	O
 and	O
 were	O
 tumorigenic	O
 in	O
-nude	B-Organism
-mice	E-Organism
+nude	O
+mice	O
 .	O
 
 The	O
@@ -4181,7 +4181,7 @@ this	O
 unique	O
 type	O
 of	O
-EBV	S-Organism
+EBV	O
 and	O
 NPC	S-Disease
 has	O
@@ -4205,7 +4205,7 @@ a	O
 role	O
 in	O
 congestive	O
-heart	S-Organ
+heart	O
 failure	O
 ?	O
 
@@ -4264,17 +4264,17 @@ at	O
 the	O
 core	O
 of	O
-cardiovascular	S-ANATOMY
+cardiovascular	O
 disease	O
 states	O
 such	O
 as	O
-coronary	B-Multi-tissue_structure
-artery	E-Multi-tissue_structure
+coronary	O
+artery	O
 disease	O
 and	O
 congestive	O
-heart	S-Organ
+heart	O
 failure	O
 .	O
 
@@ -4320,7 +4320,7 @@ these	O
 angiogenic	O
 factors	O
 in	O
-heart	S-Organ
+heart	O
 disease	O
 also	O
 have	O
@@ -4330,7 +4330,7 @@ into	O
 clinically	O
 significant	O
 new	O
-vessel	S-Multi-tissue_structure
+vessel	O
 formation	O
 ,	O
 as	O
@@ -4365,11 +4365,11 @@ necessarily	O
 translate	O
 into	O
 new	O
-vessel	S-Multi-tissue_structure
+vessel	O
 formation	O
 in	O
 congestive	O
-heart	S-Organ
+heart	O
 failure	O
 (	O
 CHF	O
@@ -4381,7 +4381,7 @@ well	O
 reflect	O
 disturbances	O
 of	O
-endothelial	S-Tissue
+endothelial	O
 integrity	O
 in	O
 CHF	O
@@ -4399,12 +4399,12 @@ factor	I-GP
 -	I-GP
 C	E-GP
 in	O
-tumor	B-Cell
--	I-Cell
-associated	I-Cell
-macrophages	E-Cell
+tumor	O
+-	O
+associated	O
+macrophages	O
 and	O
-lymphatic	S-Organ
+lymphatic	O
 metastasis	O
 in	O
 oral	B-Disease
@@ -4435,17 +4435,17 @@ VEGF	B-GP
 C	E-GP
 )	O
 and	O
-tumor	B-Cell
--	I-Cell
-associated	I-Cell
-macrophages	E-Cell
+tumor	O
+-	O
+associated	O
+macrophages	O
 (	O
-TAMs	S-Cell
+TAMs	O
 )	O
 are	O
 related	O
 to	O
-lymphatic	S-Organ
+lymphatic	O
 metastasis	O
 .	O
 
@@ -4464,12 +4464,12 @@ VEGF	B-GP
 -	I-GP
 C	E-GP
 in	O
-TAMs	S-Cell
+TAMs	O
 and	O
-lymphatic	S-Organ
+lymphatic	O
 metastasis	O
 in	O
-human	S-Organism
+human	O
 oral	B-Disease
 squamous	I-Disease
 -	I-Disease
@@ -4492,7 +4492,7 @@ was	O
 used	O
 for	O
 counting	O
-macrophages	S-Cell
+macrophages	O
 and	O
 automated	O
 image	O
@@ -4534,7 +4534,7 @@ VEGF	B-GP
 C	E-GP
 expression	O
 in	O
-TAMs	S-Cell
+TAMs	O
 .	O
 
 RESULTS	O
@@ -4546,7 +4546,7 @@ expression	O
 was	O
 higher	O
 in	O
-lymphatic	S-Organ
+lymphatic	O
 metastasis	O
 group	O
 (	O
@@ -4589,7 +4589,7 @@ P	O
 )	O
 .	O
 
-TAMs	S-Cell
+TAMs	O
 counts	O
 was	O
 related	O
@@ -4622,7 +4622,7 @@ double	O
 staining	O
 indicated	O
 that	O
-macrophage	S-Cell
+macrophage	O
 with	O
 positive	O
 VEGF	B-GP
@@ -4645,11 +4645,11 @@ CONCLUSION	O
 :	O
 Not	O
 only	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 but	O
 also	O
-TAMs	S-Cell
+TAMs	O
 secrete	O
 the	O
 VEGF	B-GP
@@ -4659,18 +4659,18 @@ in	O
 OSCC	S-Disease
 ,	O
 and	O
-TAMs	S-Cell
+TAMs	O
 may	O
 play	O
 a	O
 major	O
 role	O
 in	O
-peritumoral	B-Multi-tissue_structure
-lymphatic	E-Multi-tissue_structure
+peritumoral	O
+lymphatic	O
 neoangiogenesis	O
 and	O
-lymphatic	S-Organ
+lymphatic	O
 metastasis	O
 .	O
 
@@ -4687,7 +4687,7 @@ node	O
 positive	O
 breast	B-Disease
 cancer	E-Disease
-patients	S-Organism
+patients	O
 is	O
 a	O
 major	O
@@ -4701,7 +4701,7 @@ particularly	O
 well	O
 for	O
 those	O
-patients	S-Organism
+patients	O
 .	O
 
 BACKGROUND	O
@@ -4726,7 +4726,7 @@ premenopausal	O
 node	O
 -	O
 positive	O
-patients	S-Organism
+patients	O
 .	O
 
 These	O
@@ -4740,7 +4740,7 @@ of	O
 surgery	O
 for	O
 untreated	O
-patients	S-Organism
+patients	O
 .	O
 
 The	O
@@ -4772,7 +4772,7 @@ the	O
 mammography	O
 paradox	O
 for	O
-women	S-Organism
+women	O
 aged	O
 40	O
 -	O
@@ -4808,7 +4808,7 @@ premenopausal	O
 node	O
 -	O
 positive	O
-patients	S-Organism
+patients	O
 .	O
 
 HYPOTHESIS	O
@@ -4837,7 +4837,7 @@ premenopausal	O
 node	O
 -	O
 positive	O
-patients	S-Organism
+patients	O
 .	O
 
 We	O
@@ -4866,7 +4866,7 @@ particularly	O
 well	O
 for	O
 that	O
-patient	S-Organism
+patient	O
 category	O
 .	O
 
@@ -4879,7 +4879,7 @@ why	O
 cancer	S-Disease
 in	O
 younger	O
-patients	S-Organism
+patients	O
 is	O
 more	O
 often	O
@@ -4972,7 +4972,7 @@ to	O
 successfully	O
 treat	O
 more	O
-patients	S-Organism
+patients	O
 .	O
 
 In	O
@@ -4991,11 +4991,11 @@ designed	O
 to	O
 find	O
 more	O
-patients	S-Organism
+patients	O
 without	O
 involved	O
-lymph	B-Multi-tissue_structure
-nodes	E-Multi-tissue_structure
+lymph	O
+nodes	O
 ,	O
 may	O
 not	O
@@ -5012,9 +5012,9 @@ works	O
 best	O
 with	O
 positive	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
-patients	S-Organism
+lymph	O
+node	O
+patients	O
 .	O
 
 Vascular	B-GP
@@ -5054,11 +5054,11 @@ the	O
 development	O
 of	O
 new	O
-blood	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+blood	O
+vessels	O
 )	O
 ,	O
-vascular	S-Multi-tissue_structure
+vascular	O
 permeability	O
 ,	O
 and	O
@@ -5066,7 +5066,7 @@ inflammation	O
 .	O
 
 In	O
-brain	S-Organ
+brain	O
 ,	O
 receptors	O
 for	O
@@ -5075,13 +5075,13 @@ have	O
 been	O
 localized	O
 to	O
-vascular	B-Tissue
-endothelium	E-Tissue
+vascular	O
+endothelium	O
 ,	O
-neurons	S-Cell
+neurons	O
 ,	O
 and	O
-glia	S-Cell
+glia	O
 .	O
 
 VEGF	S-GP
@@ -5092,19 +5092,19 @@ hypoxic	O
 injury	O
 to	O
 the	O
-brain	S-Organ
+brain	O
 ,	O
 which	O
 can	O
 occur	O
 during	O
-cerebral	S-Organ
+cerebral	O
 ischemia	O
 or	O
 high	O
 -	O
 altitude	O
-edema	S-Pathological_formation
+edema	O
 ,	O
 and	O
 has	O
@@ -5112,10 +5112,10 @@ been	O
 implicated	O
 in	O
 the	O
-blood	B-Multi-tissue_structure
--	I-Multi-tissue_structure
-brain	I-Multi-tissue_structure
-barrier	E-Multi-tissue_structure
+blood	O
+-	O
+brain	O
+barrier	O
 breakdown	O
 associated	O
 with	O
@@ -5144,17 +5144,17 @@ inflammatory	O
 responses	O
 observed	O
 in	O
-cerebral	S-Organ
+cerebral	O
 ischemia	O
 .	O
 
 After	O
 seizures	O
 ,	O
-blood	B-Multi-tissue_structure
--	I-Multi-tissue_structure
-brain	I-Multi-tissue_structure
-barrier	E-Multi-tissue_structure
+blood	O
+-	O
+brain	O
+barrier	O
 breakdown	O
 and	O
 inflammation	O
@@ -5162,7 +5162,7 @@ is	O
 also	O
 observed	O
 in	O
-brain	S-Organ
+brain	O
 ,	O
 albeit	O
 on	O
@@ -5199,9 +5199,9 @@ VEGF	S-GP
 protein	O
 in	O
 both	O
-neurons	S-Cell
+neurons	O
 and	O
-glia	S-Cell
+glia	O
 after	O
 pilocarpine	S-Chemical
 -	O
@@ -5210,7 +5210,7 @@ status	O
 epilepticus	O
 in	O
 the	O
-brain	S-Organ
+brain	O
 .	O
 
 Increases	O
@@ -5220,10 +5220,10 @@ could	O
 contribute	O
 to	O
 the	O
-blood	B-Multi-tissue_structure
--	I-Multi-tissue_structure
-brain	I-Multi-tissue_structure
-barrier	E-Multi-tissue_structure
+blood	O
+-	O
+brain	O
+barrier	O
 breakdown	O
 and	O
 inflammation	O
@@ -5253,7 +5253,7 @@ could	O
 potentially	O
 protect	O
 vulnerable	O
-cells	S-Cell
+cells	O
 from	O
 damage	O
 associated	O
@@ -5313,16 +5313,16 @@ verteporfin	S-Chemical
 for	O
 treatment	O
 of	O
-subfoveal	B-Multi-tissue_structure
-choroidal	I-Multi-tissue_structure
-neovascular	I-Multi-tissue_structure
-membranes	E-Multi-tissue_structure
+subfoveal	O
+choroidal	O
+neovascular	O
+membranes	O
 associated	O
 with	O
 age	O
 -	O
 related	O
-macular	S-Tissue
+macular	O
 degeneration	O
 .	O
 
@@ -5358,7 +5358,7 @@ targeted	O
 photooxidation	O
 and	O
 subsequent	O
-tissue	S-Tissue
+tissue	O
 destruction	O
 .	O
 
@@ -5373,10 +5373,10 @@ adapted	O
 for	O
 treatment	O
 of	O
-subfoveal	B-Multi-tissue_structure
-choroidal	I-Multi-tissue_structure
-neovascular	I-Multi-tissue_structure
-membranes	E-Multi-tissue_structure
+subfoveal	O
+choroidal	O
+neovascular	O
+membranes	O
 due	O
 to	O
 disease	O
@@ -5386,7 +5386,7 @@ as	O
 age	O
 -	O
 related	O
-macular	S-Tissue
+macular	O
 degeneration	O
 (	O
 AMD	O
@@ -5445,9 +5445,9 @@ a	O
 high	O
 affinity	O
 for	O
-choroidal	B-Multi-tissue_structure
-neovascular	I-Multi-tissue_structure
-membranes	E-Multi-tissue_structure
+choroidal	O
+neovascular	O
+membranes	O
 ,	O
 typically	O
 found	O
@@ -5461,14 +5461,14 @@ photoactivation	O
 results	O
 in	O
 targeted	O
-microvascular	S-Tissue
+microvascular	O
 damage	O
 and	O
-thrombus	S-Pathological_formation
+thrombus	O
 formation	O
 with	O
 resultant	O
-vessel	S-Multi-tissue_structure
+vessel	O
 occlusion	O
 .	O
 
@@ -5485,7 +5485,7 @@ critical	O
 angiographic	O
 evaluation	O
 of	O
-lesion	S-Pathological_formation
+lesion	O
 size	O
 and	O
 visual	O
@@ -5499,7 +5499,7 @@ success	O
 .	O
 
 Large	O
-lesions	S-Pathological_formation
+lesions	O
 with	O
 relatively	O
 good	O
@@ -5526,7 +5526,7 @@ verteporfin	S-Chemical
 administration	O
 .	O
 
-Lesion	S-Pathological_formation
+Lesion	O
 composition	O
 also	O
 appears	O
@@ -5572,7 +5572,7 @@ appropriately	O
 and	O
 with	O
 adequate	O
-patient	S-Organism
+patient	O
 education	O
 regarding	O
 photosensitivity	O
@@ -5598,8 +5598,8 @@ Retrospective	O
 case	O
 series	O
 of	O
-juxtafoveal	B-Multi-tissue_structure
-choroidal	E-Multi-tissue_structure
+juxtafoveal	O
+choroidal	O
 neovascularization	O
 treated	O
 with	O
@@ -5619,8 +5619,8 @@ and	O
 angiographic	O
 outcomes	O
 of	O
-juxtafoveal	B-Multi-tissue_structure
-choroidal	E-Multi-tissue_structure
+juxtafoveal	O
+choroidal	O
 neovascularization	O
 (	O
 CNV	O
@@ -5644,10 +5644,10 @@ eighty	O
 -	O
 four	O
 consecutive	O
-eyes	S-Organ
+eyes	O
 of	O
 446	O
-patients	S-Organism
+patients	O
 treated	O
 with	O
 PDT	O
@@ -5677,12 +5677,12 @@ reviewed	O
 retrospectively	O
 to	O
 identify	O
-juxtafoveal	S-Immaterial_anatomical_entity
+juxtafoveal	O
 CNV	O
 .	O
 
 Eligible	O
-patients	S-Organism
+patients	O
 had	O
 CNV	O
 in	O
@@ -5692,7 +5692,7 @@ central	O
 boundary	O
 of	O
 the	O
-lesion	S-Pathological_formation
+lesion	O
 was	O
 between	O
 1	O
@@ -5705,15 +5705,15 @@ geometric	O
 center	O
 of	O
 the	O
-foveal	B-Tissue
-avascular	I-Tissue
-zone	E-Tissue
+foveal	O
+avascular	O
+zone	O
 (	O
-FAZ	S-Tissue
+FAZ	O
 )	O
 .	O
 
-Patient	S-Organism
+Patient	O
 charts	O
 were	O
 reviewed	O
@@ -5723,7 +5723,7 @@ acuity	O
 of	O
 the	O
 treated	O
-eye	S-Organ
+eye	O
 before	O
 PDT	O
 and	O
@@ -5763,7 +5763,7 @@ angiograms	O
 .	O
 
 A	O
-lesion	S-Pathological_formation
+lesion	O
 was	O
 considered	O
 subfoveal	O
@@ -5776,7 +5776,7 @@ geometric	O
 center	O
 of	O
 the	O
-FAZ	S-Tissue
+FAZ	O
 .	O
 
 RESULTS	O
@@ -5784,9 +5784,9 @@ RESULTS	O
 Twenty	O
 -	O
 one	O
-eyes	S-Organ
+eyes	O
 had	O
-juxtafoveal	S-Immaterial_anatomical_entity
+juxtafoveal	O
 CNV	O
 .	O
 
@@ -5841,7 +5841,7 @@ lines	O
 .	O
 
 Eleven	O
-lesions	S-Pathological_formation
+lesions	O
 progressed	O
 to	O
 a	O
@@ -5855,10 +5855,10 @@ months	O
 Visual	O
 acuity	O
 in	O
-eyes	S-Organ
+eyes	O
 with	O
 progressive	O
-lesions	S-Pathological_formation
+lesions	O
 decreased	O
 a	O
 median	O
@@ -5903,15 +5903,15 @@ months	O
 after	O
 PDT	O
 of	O
-juxtafoveal	B-Pathological_formation
-lesions	E-Pathological_formation
+juxtafoveal	O
+lesions	O
 .	O
 
 Growth	O
 through	O
 the	O
-foveal	B-Tissue
-center	E-Tissue
+foveal	O
+center	O
 still	O
 can	O
 occur	O
@@ -5938,13 +5938,13 @@ netrin	B-GP
 1	E-GP
 in	O
 normal	O
-human	S-Organism
-endometrium	S-Multi-tissue_structure
+human	O
+endometrium	O
 and	O
 its	O
 implication	O
 in	O
-endometrial	S-Multi-tissue_structure
+endometrial	O
 carcinogenesis	O
 .	O
 
@@ -5967,8 +5967,8 @@ it	O
 plays	O
 in	O
 the	O
-uterine	B-Multi-tissue_structure
-endometrium	E-Multi-tissue_structure
+uterine	O
+endometrium	O
 and	O
 in	O
 the	O
@@ -6002,7 +6002,7 @@ netrin	B-GP
 in	O
 the	O
 normal	O
-endometrium	S-Multi-tissue_structure
+endometrium	O
 and	O
 in	O
 endometrial	B-Disease
@@ -6021,13 +6021,13 @@ netrin	B-GP
 1	E-GP
 in	O
 normal	O
-endometrial	B-Multi-tissue_structure
-glands	E-Multi-tissue_structure
+endometrial	O
+glands	O
 and	O
 in	O
-cancer	B-Cell
-cell	I-Cell
-lines	E-Cell
+cancer	O
+cell	O
+lines	O
 was	O
 examined	O
 by	O
@@ -6061,8 +6061,8 @@ transfection	O
 
 RESULTS	O
 :	O
-Endometrial	B-Multi-tissue_structure
-glands	E-Multi-tissue_structure
+Endometrial	O
+glands	O
 in	O
 the	O
 proliferative	O
@@ -6079,7 +6079,7 @@ netrin	B-GP
 1	E-GP
 ,	O
 but	O
-glands	S-Multi-tissue_structure
+glands	O
 in	O
 the	O
 late	O
@@ -6099,10 +6099,10 @@ addition	O
 all	O
 of	O
 the	O
-endometrial	B-Cell
-cancer	I-Cell
-cell	I-Cell
-lines	E-Cell
+endometrial	O
+cancer	O
+cell	O
+lines	O
 lost	O
 normal	O
 DCC	S-GP
@@ -6114,9 +6114,9 @@ DCC	S-GP
 expression	O
 in	O
 the	O
-cancer	B-Cell
-cell	I-Cell
-lines	E-Cell
+cancer	O
+cell	O
+lines	O
 in	O
 the	O
 absence	O
@@ -6157,13 +6157,13 @@ netrin	B-GP
 signaling	O
 may	O
 commit	O
-cells	S-Cell
+cells	O
 to	O
 the	O
 transition	O
 of	O
-endometrial	B-Multi-tissue_structure
-gland	E-Multi-tissue_structure
+endometrial	O
+gland	O
 architecture	O
 or	O
 function	O
@@ -6190,9 +6190,9 @@ to	O
 the	O
 escape	O
 of	O
-endometrial	B-Cell
-cancer	I-Cell
-cells	E-Cell
+endometrial	O
+cancer	O
+cells	O
 from	O
 a	O
 DCC	S-GP
@@ -6227,7 +6227,7 @@ intra	O
 abdominal	O
 adhesions	O
 and	O
-wound	S-Pathological_formation
+wound	O
 healing	O
 .	O
 
@@ -6284,7 +6284,7 @@ formation	O
 of	O
 adhesions	O
 and	O
-wound	S-Pathological_formation
+wound	O
 healing	O
 .	O
 
@@ -6293,9 +6293,9 @@ METHODS	O
 Thirty	O
 -	O
 eight	O
-Wistar	B-Organism
-albino	I-Organism
-rats	E-Organism
+Wistar	O
+albino	O
+rats	O
 underwent	O
 laparotomy	O
 to	O
@@ -6309,14 +6309,14 @@ mechanical	O
 abrasion	O
 of	O
 the	O
-cecum	S-Multi-tissue_structure
+cecum	O
 and	O
 ethanol	S-Chemical
 application	O
 .	O
 
 The	O
-rats	S-Organism
+rats	O
 were	O
 divided	O
 into	O
@@ -6407,8 +6407,8 @@ hydroxyproline	O
 content	O
 of	O
 the	O
-abdominal	B-Pathological_formation
-wounds	E-Pathological_formation
+abdominal	O
+wounds	O
 .	O
 
 In	O
@@ -6417,8 +6417,8 @@ pathologic	O
 analysis	O
 of	O
 the	O
-abdominal	B-Pathological_formation
-wounds	E-Pathological_formation
+abdominal	O
+wounds	O
 ,	O
 there	O
 was	O
@@ -6503,7 +6503,7 @@ no	O
 harmful	O
 effects	O
 on	O
-wound	S-Pathological_formation
+wound	O
 healing	O
 ,	O
 and	O
@@ -6513,7 +6513,7 @@ increased	O
 the	O
 process	O
 of	O
-wound	S-Pathological_formation
+wound	O
 healing	O
 .	O
 
@@ -6558,7 +6558,7 @@ reality	O
 
 Normal	O
 adult	O
-vasculature	S-ANATOMY
+vasculature	O
 is	O
 generally	O
 quiescent	O
@@ -6566,8 +6566,8 @@ in	O
 nature	O
 ,	O
 with	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 dividing	O
 approximately	O
 every	O
@@ -6584,7 +6584,7 @@ of	O
 tumors	S-Disease
 requires	O
 constant	O
-vascular	S-Multi-tissue_structure
+vascular	O
 growth	O
 and	O
 remodeling	O
@@ -6719,7 +6719,7 @@ p53	S-GP
 and	O
 consequently	O
 affecting	O
-cell	S-Cell
+cell	O
 cycle	O
 arrest	O
 and	O
@@ -6753,7 +6753,7 @@ and	O
 overall	O
 mortality	O
 in	O
-men	S-Organism
+men	O
 treated	O
 in	O
 Radiation	O
@@ -6779,7 +6779,7 @@ the	O
 eligible	O
 and	O
 analyzable	O
-patients	S-Organism
+patients	O
 (	O
 parent	O
 cohort	O
@@ -6788,11 +6788,11 @@ cohort	O
 adequate	O
 archival	O
 diagnostic	O
-tissue	B-Tissue
-specimens	E-Tissue
+tissue	O
+specimens	O
 from	O
 108	O
-patients	S-Organism
+patients	O
 were	O
 available	O
 for	O
@@ -6834,7 +6834,7 @@ as	O
 >	O
 5	O
 %	O
-nuclear	S-Cellular_component
+nuclear	O
 staining	O
 .	O
 
@@ -6851,7 +6851,7 @@ the	O
 proportion	O
 of	O
 tumor	S-Disease
-nuclei	S-Cellular_component
+nuclei	O
 with	O
 MDM2	S-GP
 staining	O
@@ -6884,7 +6884,7 @@ n	O
 )	O
 of	O
 the	O
-patients	S-Organism
+patients	O
 .	O
 
 In	O
@@ -7003,7 +7003,7 @@ small	O
 and	O
 with	O
 larger	O
-patient	S-Organism
+patient	O
 numbers	O
 ,	O
 MDM2	S-GP
@@ -7087,21 +7087,21 @@ thrombospondin	S-GP
 is	O
 expressed	O
 in	O
-benign	B-Pathological_formation
-prostatic	I-Pathological_formation
-hyperplasia	E-Pathological_formation
+benign	O
+prostatic	O
+hyperplasia	O
 (	O
-BPH	S-Pathological_formation
+BPH	O
 )	O
 and	O
 high	O
 -	O
 grade	O
-prostatic	B-Pathological_formation
-intraepithelial	I-Pathological_formation
-neoplasia	E-Pathological_formation
+prostatic	O
+intraepithelial	O
+neoplasia	O
 (	O
-PIN	S-Pathological_formation
+PIN	O
 )	O
 but	O
 is	O
@@ -7159,7 +7159,7 @@ MMP	B-GP
 )	O
 in	O
 a	O
-rat	S-Organism
+rat	O
 prostate	B-Disease
 cancer	E-Disease
 model	O
@@ -7205,15 +7205,15 @@ were	O
 investigated	O
 in	O
 normal	O
-rat	S-Organism
-prostate	B-Tissue
-tissue	E-Tissue
+rat	O
+prostate	O
+tissue	O
 and	O
 five	O
-malignant	B-Tissue
-Dunning	I-Tissue
-sublines	I-Tissue
-tissue	E-Tissue
+malignant	O
+Dunning	O
+sublines	O
+tissue	O
 .	O
 
 TSP	B-GP
@@ -7229,7 +7229,7 @@ tumours	S-Disease
 compared	O
 with	O
 normal	O
-prostate	S-Organ
+prostate	O
 .	O
 
 However	O
@@ -7293,7 +7293,7 @@ is	O
 expressed	O
 in	O
 normal	O
-prostate	S-Organ
+prostate	O
 but	O
 not	O
 in	O
@@ -7301,7 +7301,7 @@ prostate	B-Disease
 tumours	E-Disease
 in	O
 a	O
-rat	S-Organism
+rat	O
 model	O
 .	O
 
@@ -7316,14 +7316,14 @@ with	O
 malignancy	O
 .	O
 
-Bovine	B-Organism
-papillomavirus	E-Organism
+Bovine	O
+papillomavirus	O
 E7	S-GP
 transformation	O
 function	O
 correlates	O
 with	O
-cellular	S-Cell
+cellular	O
 p600	S-GP
 protein	O
 binding	O
@@ -7333,14 +7333,14 @@ The	O
 E7	S-GP
 oncoprotein	O
 of	O
-bovine	B-Organism
-papillomavirus	I-Organism
-type	I-Organism
-1	E-Organism
+bovine	O
+papillomavirus	O
+type	O
+1	O
 (	O
-BPV	B-Organism
--	I-Organism
-1	E-Organism
+BPV	O
+-	O
+1	O
 )	O
 is	O
 required	O
@@ -7363,7 +7363,7 @@ which	O
 E7	S-GP
 contributes	O
 to	O
-cellular	S-Cell
+cellular	O
 transformation	O
 is	O
 unknown	O
@@ -7385,7 +7385,7 @@ affinity	O
 purification	O
 to	O
 identify	O
-cellular	S-Cell
+cellular	O
 proteins	O
 that	O
 are	O
@@ -7429,13 +7429,13 @@ enhance	O
 anchorage	O
 independence	O
 of	O
-BPV	S-Organism
+BPV	O
 -	O
 1	O
 E6	S-GP
 -	O
 expressing	O
-cells	S-Cell
+cells	O
 .	O
 
 Furthermore	O
@@ -7463,12 +7463,12 @@ p600	S-GP
 reduced	O
 transformation	O
 of	O
-cells	S-Cell
+cells	O
 expressing	O
 both	O
-BPV	B-Organism
--	I-Organism
-1	E-Organism
+BPV	O
+-	O
+1	O
 E6	S-GP
 and	O
 E7	S-GP
@@ -7487,7 +7487,7 @@ of	O
 E7	S-GP
 to	O
 transformed	O
-cells	S-Cell
+cells	O
 is	O
 mediated	O
 ,	O
@@ -7511,7 +7511,7 @@ work	O
 that	O
 shows	O
 that	O
-HPV16	S-Organism
+HPV16	O
 E7	S-GP
 also	O
 interacts	O
@@ -7527,11 +7527,11 @@ with	O
 the	O
 ability	O
 of	O
-HPV16	S-Organism
+HPV16	O
 E7	S-GP
 to	O
 transform	O
-cells	S-Cell
+cells	O
 .	O
 
 These	O
@@ -7549,24 +7549,24 @@ E7	S-GP
 proteins	O
 of	O
 multiple	O
-papillomaviruses	S-Organism
+papillomaviruses	O
 .	O
 
 Molecular	O
 requirements	O
 for	O
-epithelial	S-Cell
+epithelial	O
 -	O
-mesenchymal	S-Cell
+mesenchymal	O
 transition	O
 during	O
 tumor	S-Disease
 progression	O
 .	O
 
-Epithelial	S-Cell
+Epithelial	O
 -	O
-mesenchymal	S-Cell
+mesenchymal	O
 transitions	O
 (	O
 EMTs	O
@@ -7576,7 +7576,7 @@ as	O
 key	O
 steps	O
 during	O
-embryonic	S-Developing_anatomical_structure
+embryonic	O
 morphogenesis	O
 ,	O
 and	O
@@ -7697,7 +7697,7 @@ in	O
 the	O
 migration	O
 of	O
-cells	S-Cell
+cells	O
 from	O
 a	O
 primary	O
@@ -7721,23 +7721,23 @@ therapies	O
 Minimal	O
 contribution	O
 of	O
-marrow	B-Cell
--	I-Cell
-derived	I-Cell
-endothelial	I-Cell
-precursors	E-Cell
+marrow	O
+-	O
+derived	O
+endothelial	O
+precursors	O
 to	O
-tumor	B-Multi-tissue_structure
-vasculature	E-Multi-tissue_structure
+tumor	O
+vasculature	O
 .	O
 
 During	O
 embryogenesis	O
 ,	O
-vascular	S-Cell
+vascular	O
 and	O
-hemopoietic	B-Cell
-cells	E-Cell
+hemopoietic	O
+cells	O
 originate	O
 from	O
 a	O
@@ -7745,7 +7745,7 @@ common	O
 precursor	O
 ,	O
 the	O
-hemangioblast	S-Cell
+hemangioblast	O
 .	O
 
 Recent	O
@@ -7754,13 +7754,13 @@ suggests	O
 the	O
 existence	O
 of	O
-endothelial	B-Cell
-precursors	E-Cell
+endothelial	O
+precursors	O
 in	O
 adult	O
-bone	B-Cell
-marrow	I-Cell
-cells	E-Cell
+bone	O
+marrow	O
+cells	O
 ,	O
 but	O
 it	O
@@ -7784,18 +7784,18 @@ report	O
 we	O
 demonstrate	O
 that	O
-murine	S-Organism
-bone	B-Multi-tissue_structure
-marrow	E-Multi-tissue_structure
+murine	O
+bone	O
+marrow	O
 contains	O
-endothelial	B-Cell
-progenitors	E-Cell
+endothelial	O
+progenitors	O
 ,	O
 which	O
 arise	O
 from	O
 a	O
-cell	S-Cell
+cell	O
 with	O
 self	O
 -	O
@@ -7806,8 +7806,8 @@ and	O
 can	O
 integrate	O
 into	O
-tumor	B-Tissue
-microvasculature	E-Tissue
+tumor	O
+microvasculature	O
 ,	O
 albeit	O
 at	O
@@ -7829,28 +7829,28 @@ to	O
 demonstrate	O
 definitively	O
 that	O
-tumor	B-Cell
-bone	I-Cell
-marrow	I-Cell
--	I-Cell
-derived	I-Cell
-endothelial	I-Cell
-cells	E-Cell
+tumor	O
+bone	O
+marrow	O
+-	O
+derived	O
+endothelial	O
+cells	O
 arise	O
 by	O
 transdifferentiation	O
 of	O
-marrow	B-Cell
-progenitors	E-Cell
+marrow	O
+progenitors	O
 rather	O
 than	O
 by	O
-cell	S-Cell
+cell	O
 fusion	O
 .	O
 
 Single	O
-cell	S-Cell
+cell	O
 transplants	O
 showed	O
 that	O
@@ -7861,10 +7861,10 @@ contributes	O
 to	O
 both	O
 the	O
-hemopoietic	S-Cell
+hemopoietic	O
 and	O
-endothelial	B-Cell
-lineages	E-Cell
+endothelial	O
+lineages	O
 ,	O
 thus	O
 demonstrating	O
@@ -7873,7 +7873,7 @@ presence	O
 of	O
 an	O
 adult	O
-hemangioblast	S-Cell
+hemangioblast	O
 .	O
 
 Furthermore	O
@@ -7893,8 +7893,8 @@ VEGF	I-GP
 A	E-GP
 secretion	O
 by	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 ,	O
 as	O
 well	O
@@ -7906,9 +7906,9 @@ receptor	I-GP
 -	I-GP
 2	E-GP
 in	O
-bone	B-Cell
-marrow	I-Cell
-cells	E-Cell
+bone	O
+marrow	O
+cells	O
 does	O
 not	O
 alter	O
@@ -7917,30 +7917,30 @@ mobilization	O
 and	O
 incorporation	O
 of	O
-marrow	B-Cell
--	I-Cell
-derived	I-Cell
-endothelial	I-Cell
-progenitors	E-Cell
+marrow	O
+-	O
+derived	O
+endothelial	O
+progenitors	O
 into	O
-tumor	B-Tissue
-vasculature	E-Tissue
+tumor	O
+vasculature	O
 .	O
 
 Finally	O
 ,	O
 in	O
-human	S-Organism
-umbilical	B-Cell
-cord	I-Cell
-blood	I-Cell
-cells	E-Cell
+human	O
+umbilical	O
+cord	O
+blood	O
+cells	O
 ,	O
 we	O
 show	O
 that	O
-endothelial	B-Cell
-precursors	E-Cell
+endothelial	O
+precursors	O
 make	O
 up	O
 only	O
@@ -7951,8 +7951,8 @@ in	O
 (	O
 7	O
 )	O
-mononuclear	B-Cell
-cells	E-Cell
+mononuclear	O
+cells	O
 but	O
 are	O
 highly	O
@@ -7968,7 +7968,7 @@ population	O
 By	O
 ruling	O
 out	O
-cell	S-Cell
+cell	O
 fusion	O
 ,	O
 we	O
@@ -7979,19 +7979,19 @@ existence	O
 of	O
 an	O
 adult	O
-hemangioblast	S-Cell
+hemangioblast	O
 ,	O
 but	O
 the	O
 differentiation	O
 of	O
-marrow	B-Cell
-stem	I-Cell
-cells	E-Cell
+marrow	O
+stem	O
+cells	O
 toward	O
 the	O
-endothelial	B-Cell
-lineage	E-Cell
+endothelial	O
+lineage	O
 is	O
 an	O
 extremely	O
@@ -8009,8 +8009,8 @@ VEGF	B-GP
 A	E-GP
 stimulation	O
 of	O
-hemopoietic	B-Cell
-cells	E-Cell
+hemopoietic	O
+cells	O
 does	O
 not	O
 significantly	O
@@ -8039,7 +8039,7 @@ N	I-Chemical
 -	I-Chemical
 nitrosoguanidine	E-Chemical
 in	O
-rats	S-Organism
+rats	O
 .	O
 
 The	O
@@ -8050,8 +8050,8 @@ was	O
 examined	O
 in	O
 male	O
-Wistar	B-Organism
-rats	E-Organism
+Wistar	O
+rats	O
 (	O
 n	O
 =	O
@@ -8093,7 +8093,7 @@ After	O
 MNNG	S-Chemical
 administration	O
 ,	O
-rats	S-Organism
+rats	O
 were	O
 investigated	O
 by	O
@@ -8102,7 +8102,7 @@ observation	O
 ,	O
 visualization	O
 of	O
-microvascular	S-Tissue
+microvascular	O
 structure	O
 ,	O
 and	O
@@ -8115,11 +8115,11 @@ sites	O
 
 Changes	O
 of	O
-bile	S-Organism_substance
+bile	O
 reflux	O
 to	O
 the	O
-stomach	S-Organ
+stomach	O
 was	O
 observed	O
 endoscopically	O
@@ -8132,9 +8132,9 @@ as	O
 the	O
 development	O
 of	O
-gastric	B-Pathological_formation
-mucosal	I-Pathological_formation
-erosions	E-Pathological_formation
+gastric	O
+mucosal	O
+erosions	O
 .	O
 
 Protruding	O
@@ -8149,13 +8149,13 @@ weeks	O
 and	O
 had	O
 a	O
-microvascular	S-Tissue
+microvascular	O
 pattern	O
 similar	O
 to	O
 that	O
 of	O
-human	S-Organism
+human	O
 adenocarcinoma	S-Disease
 .	O
 
@@ -8174,7 +8174,7 @@ the	O
 malignant	O
 potential	O
 of	O
-cell	S-Cell
+cell	O
 proliferation	O
 .	O
 
@@ -8194,7 +8194,7 @@ gastric	B-Disease
 carcinoma	E-Disease
 ,	O
 and	O
-microvascular	S-Tissue
+microvascular	O
 structure	O
 and	O
 lectin	S-GP
@@ -8221,8 +8221,8 @@ c	B-GP
 Myc	E-GP
 activity	O
 enhances	O
-cancer	B-Cell
-cell	E-Cell
+cancer	O
+cell	O
 sensitivity	O
 to	O
 vinblastine	S-Chemical
@@ -8241,7 +8241,7 @@ factor	O
 involved	O
 in	O
 many	O
-cellular	S-Cell
+cellular	O
 processes	O
 such	O
 as	O
@@ -8266,7 +8266,7 @@ c	B-GP
 Myc	E-GP
 protein	O
 in	O
-cellular	S-Cell
+cellular	O
 sensitivity	O
 to	O
 anti	O
@@ -8286,8 +8286,8 @@ c	B-GP
 -	I-GP
 Myc	E-GP
 in	O
-cancer	B-Cell
-cell	E-Cell
+cancer	O
+cell	O
 sensitivity	O
 to	O
 vinblastine	S-Chemical
@@ -8295,12 +8295,12 @@ vinblastine	S-Chemical
 VLB	S-Chemical
 )	O
 using	O
-human	S-Organism
-colon	B-Cell
-cancer	I-Cell
-cells	E-Cell
+human	O
+colon	O
+cancer	O
+cells	O
 :	O
-LoVo	S-Cell
+LoVo	O
 wild	O
 -	O
 type	O
@@ -8311,7 +8311,7 @@ a	O
 plasmid	O
 containing	O
 the	O
-human	S-Organism
+human	O
 c	B-GP
 -	I-GP
 myc	E-GP
@@ -8320,9 +8320,9 @@ in	O
 antisense	O
 orientation	O
 (	O
-LoVo	B-Cell
--	I-Cell
-mycANS	E-Cell
+LoVo	O
+-	O
+mycANS	O
 )	O
 .	O
 
@@ -8340,15 +8340,15 @@ in	O
 VLB	S-Chemical
 sensitivity	O
 in	O
-LoVo	B-Cell
--	I-Cell
-mycANS	I-Cell
-cells	E-Cell
+LoVo	O
+-	O
+mycANS	O
+cells	O
 .	O
 
 Comparison	O
 between	O
-cells	S-Cell
+cells	O
 revealed	O
 different	O
 apoptosis	O
@@ -8356,7 +8356,7 @@ kinetics	O
 :	O
 accumulation	O
 of	O
-cells	S-Cell
+cells	O
 in	O
 sub	O
 -	O
@@ -8374,9 +8374,9 @@ cleavage	O
 occurred	O
 earlier	O
 in	O
-LoVo	B-Cell
--	I-Cell
-mycANS	E-Cell
+LoVo	O
+-	O
+mycANS	O
 .	O
 
 Then	O
@@ -8384,8 +8384,8 @@ Then	O
 we	O
 demonstrated	O
 a	O
-mitochondrial	B-Cellular_component
-membrane	E-Cellular_component
+mitochondrial	O
+membrane	O
 potential	O
 disruption	O
 followed	O
@@ -8398,7 +8398,7 @@ indicates	O
 the	O
 involvement	O
 of	O
-mitochondria	S-Cellular_component
+mitochondria	O
 in	O
 this	O
 apoptotic	O
@@ -8525,12 +8525,12 @@ N	B-GP
 ras	E-GP
 transformation	O
 of	O
-PA	B-Cell
--	I-Cell
-1	I-Cell
-human	I-Cell
-teratocarcinoma	I-Cell
-cells	E-Cell
+PA	O
+-	O
+1	O
+human	O
+teratocarcinoma	O
+cells	O
 .	O
 
 We	O
@@ -8538,18 +8538,18 @@ used	O
 a	O
 series	O
 of	O
-cell	B-Cell
-clones	E-Cell
+cell	O
+clones	O
 from	O
 a	O
-human	S-Organism
-teratocarcinoma	B-Cell
-cell	I-Cell
-line	E-Cell
+human	O
+teratocarcinoma	O
+cell	O
+line	O
 ,	O
-PA	B-Cell
--	I-Cell
-1	E-Cell
+PA	O
+-	O
+1	O
 ,	O
 to	O
 study	O
@@ -8593,7 +8593,7 @@ shown	O
 that	O
 expression	O
 of	O
-human	S-Organism
+human	O
 HOX	B-GP
 2	E-GP
 genes	O
@@ -8704,8 +8704,8 @@ N	B-GP
 ras	E-GP
 -	O
 transformed	O
-cell	B-Cell
-clones	E-Cell
+cell	O
+clones	O
 ,	O
 RA	S-Chemical
 -	O
@@ -8734,7 +8734,7 @@ abundantly	O
 induced	O
 in	O
 nontransformed	O
-clones	S-Cell
+clones	O
 after	O
 3	O
 days	O
@@ -8750,7 +8750,7 @@ N	B-GP
 ras	E-GP
 -	O
 transformed	O
-cells	S-Cell
+cells	O
 only	O
 after	O
 10	O
@@ -8765,7 +8765,7 @@ this	O
 time	O
 ,	O
 the	O
-cells	S-Cell
+cells	O
 '	O
 growth	O
 is	O
@@ -8799,14 +8799,14 @@ the	O
 control	O
 of	O
 a	O
-simian	B-Organism
-virus	I-Organism
-40	E-Organism
+simian	O
+virus	O
+40	O
 promotor	O
 leads	O
 to	O
 differentiated	O
-cell	S-Cell
+cell	O
 morphology	O
 similar	O
 to	O
@@ -8832,7 +8832,7 @@ N	B-GP
 ras	E-GP
 -	O
 transformed	O
-cells	S-Cell
+cells	O
 .	O
 
 These	O
@@ -8848,10 +8848,10 @@ N	B-GP
 ras	E-GP
 -	O
 transformed	O
-cells	S-Cell
+cells	O
 compromises	O
-teratocarcinoma	B-Cell
-cell	E-Cell
+teratocarcinoma	O
+cell	O
 differentiation	O
 by	O
 a	O
@@ -8874,7 +8874,7 @@ in	O
 RA	S-Chemical
 -	O
 induced	O
-cell	S-Cell
+cell	O
 differentiation	O
 .	O
 
@@ -8907,7 +8907,7 @@ factors	O
 functionally	O
 involved	O
 in	O
-cell	S-Cell
+cell	O
 growth	O
 and	O
 differentiation	O
@@ -8932,7 +8932,7 @@ and	O
 safe	O
 therapy	O
 in	O
-patients	S-Organism
+patients	O
 with	O
 relapsed	O
 and	O
@@ -9028,7 +9028,7 @@ d	O
 )	O
 in	O
 adult	O
-patients	S-Organism
+patients	O
 with	O
 relapsed	O
 or	O
@@ -9056,7 +9056,7 @@ Thirty	O
 two	O
 of	O
 35	O
-patients	S-Organism
+patients	O
 (	O
 median	O
 age	O
@@ -9070,7 +9070,7 @@ for	O
 response	O
 .	O
 
-Patients	S-Organism
+Patients	O
 had	O
 primarily	O
 relapsed	O
@@ -9116,8 +9116,8 @@ were	O
 relapsed	O
 after	O
 autologous	O
-stem	B-Cell
-cell	E-Cell
+stem	O
+cell	O
 transplant	O
 .	O
 
@@ -9201,7 +9201,7 @@ most	O
 common	O
 toxicity	O
 was	O
-skin	S-Organ
+skin	O
 rash	O
 (	O
 40	O
@@ -9210,7 +9210,7 @@ rash	O
 ;	O
 myelosuppression	O
 and	O
-gastrointestinal	S-Organism_subdivision
+gastrointestinal	O
 side	O
 effects	O
 were	O
@@ -9218,16 +9218,16 @@ uncommon	O
 .	O
 
 Three	O
-patients	S-Organism
+patients	O
 developed	O
-deep	B-Pathological_formation
-vein	I-Pathological_formation
-thromboses	E-Pathological_formation
+deep	O
+vein	O
+thromboses	O
 and	O
 two	O
 heavily	O
 pretreated	O
-patients	S-Organism
+patients	O
 developed	O
 treatment	O
 -	O
@@ -9236,7 +9236,7 @@ acute	B-Disease
 myelogenous	I-Disease
 leukemia	E-Disease
 or	O
-myelodysplasia	S-Pathological_formation
+myelodysplasia	O
 after	O
 3	O
 .	O
@@ -9249,8 +9249,8 @@ therapy	O
 .	O
 
 Circulating	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 and	O
 their	O
 precursors	O
@@ -9262,7 +9262,7 @@ in	O
 responders	O
 ,	O
 whereas	O
-plasma	S-Organism_substance
+plasma	O
 vascular	B-GP
 endothelial	I-GP
 growth	I-GP
@@ -9272,7 +9272,7 @@ to	O
 decline	O
 in	O
 responding	O
-patients	S-Organism
+patients	O
 but	O
 increase	O
 in	O
@@ -9320,9 +9320,9 @@ lymphoma	E-Disease
 Close	O
 surveillance	O
 for	O
-arterial	S-Multi-tissue_structure
+arterial	O
 and	O
-venous	S-Multi-tissue_structure
+venous	O
 thrombotic	O
 events	O
 is	O
@@ -9333,8 +9333,8 @@ The	O
 decline	O
 in	O
 circulating	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 and	O
 their	O
 precursors	O
@@ -9355,7 +9355,7 @@ validated	O
 in	O
 a	O
 larger	O
-patient	S-Organism
+patient	O
 sample	O
 .	O
 
@@ -9364,8 +9364,8 @@ therapy	O
 with	O
 verteporfin	S-Chemical
 for	O
-subfoveal	B-Multi-tissue_structure
-choroidal	E-Multi-tissue_structure
+subfoveal	O
+choroidal	O
 neovascularization	O
 secondary	O
 to	O
@@ -9395,8 +9395,8 @@ PDT	O
 with	O
 verteporfin	S-Chemical
 for	O
-subfoveal	B-Multi-tissue_structure
-choroidal	E-Multi-tissue_structure
+subfoveal	O
+choroidal	O
 neovascularization	O
 (	O
 CNV	O
@@ -9415,10 +9415,10 @@ METHODS	O
 Sixty	O
 -	O
 two	O
-patients	S-Organism
+patients	O
 (	O
 62	O
-eyes	S-Organ
+eyes	O
 )	O
 with	O
 PM	O
@@ -9460,12 +9460,12 @@ lamp	O
 biomicroscopy	O
 ,	O
 and	O
-fundus	S-Multi-tissue_structure
+fundus	O
 fluorescein	S-Chemical
 angiography	O
 .	O
 
-Patients	S-Organism
+Patients	O
 were	O
 followed	O
 up	O
@@ -9495,7 +9495,7 @@ acuity	O
 of	O
 the	O
 study	O
-patients	S-Organism
+patients	O
 ,	O
 after	O
 a	O
@@ -9518,7 +9518,7 @@ Snellen	O
 lines	O
 in	O
 8	O
-patients	S-Organism
+patients	O
 (	O
 13	O
 %	O
@@ -9612,7 +9612,7 @@ final	O
 visual	O
 acuity	O
 in	O
-eyes	S-Organ
+eyes	O
 with	O
 higher	O
 refractive	O
@@ -9639,7 +9639,7 @@ P	O
 than	O
 that	O
 in	O
-eyes	S-Organ
+eyes	O
 with	O
 lower	O
 refractive	O
@@ -9669,7 +9669,7 @@ PDT	O
 preserves	O
 vision	O
 in	O
-patients	S-Organism
+patients	O
 with	O
 CNV	O
 associated	O
@@ -9678,9 +9678,9 @@ PM	O
 .	O
 
 Younger	O
-patients	S-Organism
+patients	O
 and	O
-eyes	S-Organ
+eyes	O
 with	O
 higher	O
 refractive	O
@@ -9730,8 +9730,8 @@ genetic	O
 disease	O
 .	O
 
-Cancer	B-Cell
-cells	E-Cell
+Cancer	O
+cells	O
 typically	O
 display	O
 gene	O
@@ -9753,8 +9753,8 @@ carcinogenic	O
 Recent	O
 advances	O
 in	O
-stem	B-Cell
-cell	E-Cell
+stem	O
+cell	O
 biology	O
 added	O
 the	O
@@ -9769,7 +9769,7 @@ single	O
 cancer	S-Disease
 -	O
 initiating	O
-cell	S-Cell
+cell	O
 .	O
 
 To	O
@@ -9803,11 +9803,11 @@ those	O
 guarding	O
 and	O
 stabilizing	O
-genomes	S-Cellular_component
+genomes	O
 ,	O
 those	O
 regulating	O
-cell	S-Cell
+cell	O
 proliferation	O
 ,	O
 and	O
@@ -9886,11 +9886,11 @@ are	O
 very	O
 important	O
 for	O
-cellular	S-Cell
+cellular	O
 protection	O
 of	O
 the	O
-genome	S-Cellular_component
+genome	O
 from	O
 xenobiotic	O
 and	O
@@ -9940,9 +9940,9 @@ is	O
 characteristically	O
 observed	O
 in	O
-lung	B-Cell
-cancer	I-Cell
-cells	E-Cell
+lung	O
+cancer	O
+cells	O
 ,	O
 suggesting	O
 that	O
@@ -9956,8 +9956,8 @@ favors	O
 the	O
 prevalence	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 .	O
 
 Angiotensin	B-GP
@@ -9981,7 +9981,7 @@ pregnancy	O
 .	O
 
 Maternal	O
-endothelial	S-Cell
+endothelial	O
 dysfunction	O
 in	O
 preeclampsia	O
@@ -10075,7 +10075,7 @@ sFlt	B-GP
 1	E-GP
 in	O
 pregnant	O
-mice	S-Organism
+mice	O
 ,	O
 thereby	O
 demonstrating	O
@@ -10113,21 +10113,21 @@ time	O
 dependent	O
 manner	O
 from	O
-human	S-Organism
+human	O
 villous	O
 explants	O
 and	O
 cultured	O
-trophoblasts	S-Cell
+trophoblasts	O
 but	O
 not	O
 from	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 ,	O
 suggesting	O
 that	O
-trophoblasts	S-Cell
+trophoblasts	O
 are	O
 the	O
 primary	O
@@ -10156,13 +10156,13 @@ in	O
 the	O
 inhibition	O
 of	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 migration	O
 and	O
 in	O
 vitro	O
-tube	S-Tissue
+tube	O
 formation	O
 .	O
 
@@ -10225,9 +10225,9 @@ sFlt	B-GP
 1	E-GP
 expression	O
 in	O
-murine	S-Organism
+murine	O
 and	O
-human	S-Organism
+human	O
 pregnancy	O
 and	O
 suggest	O
@@ -10261,7 +10261,7 @@ onset	O
 by	O
 preservation	O
 of	O
-chromosomal	S-Cellular_component
+chromosomal	O
 stability	O
 .	O
 
@@ -10272,11 +10272,11 @@ suppresses	O
 tumorigenesis	O
 by	O
 initiating	O
-cellular	S-Cell
+cellular	O
 functions	O
 such	O
 as	O
-cell	S-Cell
+cell	O
 cycle	O
 arrest	O
 and	O
@@ -10284,7 +10284,7 @@ apoptosis	O
 in	O
 response	O
 to	O
-DNA	S-Cellular_component
+DNA	O
 damage	O
 .	O
 
@@ -10303,7 +10303,7 @@ but	O
 retains	O
 a	O
 partial	O
-cell	S-Cell
+cell	O
 cycle	O
 arrest	O
 function	O
@@ -10312,7 +10312,7 @@ delays	O
 tumor	S-Disease
 onset	O
 in	O
-mice	S-Organism
+mice	O
 .	O
 
 Remarkably	O
@@ -10344,7 +10344,7 @@ of	O
 p21	S-GP
 in	O
 p53	S-GP
-cell	S-Cell
+cell	O
 cycle	O
 control	O
 ,	O
@@ -10371,7 +10371,7 @@ was	O
 required	O
 for	O
 maintaining	O
-chromosomal	S-Cellular_component
+chromosomal	O
 stability	O
 and	O
 delaying	O
@@ -10385,7 +10385,7 @@ p21	S-GP
 completely	O
 abolished	O
 the	O
-cell	S-Cell
+cell	O
 cycle	O
 arrest	O
 function	O
@@ -10424,10 +10424,10 @@ sarcomas	S-Disease
 and	O
 lymphomas	S-Disease
 revealed	O
-aneuploidy	S-Pathological_formation
+aneuploidy	O
 and	O
-chromosomal	B-Pathological_formation
-aberrations	E-Pathological_formation
+chromosomal	O
+aberrations	O
 that	O
 were	O
 absent	O
@@ -10453,7 +10453,7 @@ control	O
 and	O
 preservation	O
 of	O
-chromosomal	S-Cellular_component
+chromosomal	O
 stability	O
 ,	O
 and	O
@@ -10465,7 +10465,7 @@ suppressing	O
 tumor	S-Disease
 onset	O
 in	O
-mice	S-Organism
+mice	O
 .	O
 
 Mechanisms	O
@@ -10474,16 +10474,16 @@ the	O
 magnolol	S-Chemical
 -	O
 induced	O
-cell	S-Cell
+cell	O
 death	O
 of	O
-CGTH	B-Cell
-W	I-Cell
--	I-Cell
-2	I-Cell
-thyroid	I-Cell
-carcinoma	I-Cell
-cells	E-Cell
+CGTH	O
+W	O
+-	O
+2	O
+thyroid	O
+carcinoma	O
+cells	O
 .	O
 
 Magnolol	S-Chemical
@@ -10493,13 +10493,13 @@ substance	O
 purified	O
 from	O
 the	O
-bark	S-Tissue
+bark	O
 of	O
-Magnolia	B-Organism
-officialis	E-Organism
+Magnolia	O
+officialis	O
 ,	O
 inhibits	O
-cell	S-Cell
+cell	O
 proliferation	O
 and	O
 induces	O
@@ -10508,8 +10508,8 @@ in	O
 a	O
 variety	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 .	O
 
 The	O
@@ -10525,13 +10525,13 @@ effects	O
 of	O
 magnolol	S-Chemical
 on	O
-CGTH	B-Cell
-W	I-Cell
--	I-Cell
-2	I-Cell
-thyroid	I-Cell
-carcinoma	I-Cell
-cells	E-Cell
+CGTH	O
+W	O
+-	O
+2	O
+thyroid	O
+carcinoma	O
+cells	O
 .	O
 
 After	O
@@ -10543,7 +10543,7 @@ with	O
 microM	O
 magnolol	S-Chemical
 in	O
-serum	S-Organism_substance
+serum	O
 -	O
 containing	O
 medium	O
@@ -10553,7 +10553,7 @@ about	O
 %	O
 of	O
 the	O
-cells	S-Cell
+cells	O
 exhibited	O
 apoptotic	O
 features	O
@@ -10572,20 +10572,20 @@ was	O
 diffused	O
 in	O
 the	O
-cytoplasm	S-Organism_substance
+cytoplasm	O
 of	O
 the	O
 apoptotic	O
-cells	S-Cell
+cells	O
 ,	O
 but	O
 restricted	O
 to	O
 the	O
-mitochondria	S-Cellular_component
+mitochondria	O
 in	O
 control	O
-cells	S-Cell
+cells	O
 .	O
 
 Western	O
@@ -10642,10 +10642,10 @@ dependent	O
 translocation	O
 from	O
 the	O
-mitochondria	S-Cellular_component
+mitochondria	O
 to	O
 the	O
-nucleus	S-Cellular_component
+nucleus	O
 .	O
 
 Inhibition	O
@@ -10752,7 +10752,7 @@ caused	O
 by	O
 depletion	O
 of	O
-intracellular	S-Immaterial_anatomical_entity
+intracellular	O
 ATP	S-Chemical
 levels	O
 due	O
@@ -10876,7 +10876,7 @@ of	O
 metastatic	B-Disease
 cancer	E-Disease
 in	O
-humans	S-Organism
+humans	O
 .	O
 
 These	O
@@ -11031,7 +11031,7 @@ its	O
 remarkable	O
 prevalence	O
 in	O
-human	S-Organism
+human	O
 cancers	S-Disease
 .	O
 
@@ -11073,8 +11073,8 @@ acid	S-Chemical
 which	O
 gives	O
 the	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 a	O
 competitive	O
 advantage	O
@@ -11118,10 +11118,10 @@ regulates	O
 VEGF	S-GP
 expression	O
 in	O
-mouse	S-Organism
-cerebral	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+mouse	O
+cerebral	O
+endothelial	O
+cells	O
 via	O
 activation	O
 of	O
@@ -11225,13 +11225,13 @@ pathways	O
 in	O
 DCN	S-GP
 transfected	O
-mouse	S-Organism
-cerebral	B-Cell
-endothelial	I-Cell
-(	I-Cell
-MCE	I-Cell
-)	I-Cell
-cells	E-Cell
+mouse	O
+cerebral	O
+endothelial	O
+(	O
+MCE	O
+)	O
+cells	O
 .	O
 
 Treatment	O
@@ -11301,12 +11301,12 @@ respectively	O
 in	O
 DCN	S-GP
 synthesizing	O
-MCE	B-Cell
-cells	E-Cell
+MCE	O
+cells	O
 .	O
 
 The	O
-cell	S-Cell
+cell	O
 type	O
 specific	O
 glycosylation	O
@@ -11332,8 +11332,8 @@ VEGF	S-GP
 in	O
 DCN	S-GP
 transfected	O
-MCE	B-Cell
-cells	E-Cell
+MCE	O
+cells	O
 .	O
 
 Induction	O
@@ -11359,11 +11359,11 @@ by	O
 DCN	S-GP
 transfection	O
 in	O
-MCE	B-Cell
-cells	E-Cell
+MCE	O
+cells	O
 leads	O
 to	O
-extracellular	S-Immaterial_anatomical_entity
+extracellular	O
 proteolysis	O
 and	O
 to	O
@@ -11437,20 +11437,20 @@ transcription	O
 and	O
 angiogenesis	O
 in	O
-MCE	B-Cell
-cells	E-Cell
+MCE	O
+cells	O
 .	O
 
 Effects	O
 of	O
 spironolactone	S-Chemical
 on	O
-corneal	B-Multi-tissue_structure
-allograft	E-Multi-tissue_structure
+corneal	O
+allograft	O
 survival	O
 in	O
 the	O
-rat	S-Organism
+rat	O
 .	O
 
 PURPOSE	O
@@ -11486,8 +11486,8 @@ on	O
 the	O
 prevention	O
 of	O
-corneal	B-Multi-tissue_structure
-allograft	E-Multi-tissue_structure
+corneal	O
+allograft	O
 rejection	O
 in	O
 a	O
@@ -11497,8 +11497,8 @@ I	E-GP
 /	O
 II	S-GP
 mismatch	O
-rat	S-Organism
-corneal	S-Multi-tissue_structure
+rat	O
+corneal	O
 transplant	O
 model	O
 .	O
@@ -11508,7 +11508,7 @@ METHODS	O
 Grafted	O
 animals	O
 for	O
-corneal	S-Multi-tissue_structure
+corneal	O
 survival	O
 analysis	O
 were	O
@@ -11563,7 +11563,7 @@ n	O
 
 Additional	O
 grafted	O
-rats	S-Organism
+rats	O
 treated	O
 with	O
 spironolactone	S-Chemical
@@ -11604,7 +11604,7 @@ Mean	O
 -	O
 SEM	O
 )	O
-graft	S-Multi-tissue_structure
+graft	O
 survival	O
 was	O
 significantly	O
@@ -11677,13 +11677,13 @@ found	O
 a	O
 decrease	O
 in	O
-corneal	S-Multi-tissue_structure
+corneal	O
 neovascularization	O
 in	O
 spironolactone	S-Chemical
 -	O
 treated	O
-rats	S-Organism
+rats	O
 compared	O
 with	O
 the	O
@@ -11714,7 +11714,7 @@ CD25	S-GP
 +	O
 cells	O
 in	O
-spleen	S-Organ
+spleen	O
 )	O
 and	O
 local	O
@@ -11729,7 +11729,7 @@ IL	B-GP
 -	I-GP
 10	E-GP
 in	O
-cornea	S-Multi-tissue_structure
+cornea	O
 )	O
 .	O
 
@@ -11759,8 +11759,8 @@ and	O
 the	O
 risk	O
 of	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 in	O
 cervical	B-Disease
@@ -11827,15 +11827,15 @@ relationship	O
 Genotypes	O
 of	O
 155	O
-patients	S-Organism
+patients	O
 with	O
 cervical	B-Disease
 cancer	E-Disease
 and	O
 160	O
-healthy	B-Organism
-control	I-Organism
-subjects	E-Organism
+healthy	O
+control	O
+subjects	O
 were	O
 determined	O
 using	O
@@ -11876,8 +11876,8 @@ significantly	O
 increased	O
 risk	O
 of	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 associated	O
 with	O
@@ -11939,7 +11939,7 @@ an	O
 increased	O
 incidence	O
 of	O
-node	S-Multi-tissue_structure
+node	O
 metastasis	O
 ,	O
 but	O
@@ -12039,19 +12039,19 @@ an	O
 increased	O
 risk	O
 of	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 in	O
 Korean	O
 cervical	B-Disease
 cancer	E-Disease
-patients	S-Organism
+patients	O
 .	O
 
 Detection	O
 of	O
-lymphovascular	S-Multi-tissue_structure
+lymphovascular	O
 invasion	O
 in	O
 early	O
@@ -12071,8 +12071,8 @@ useful	O
 predictor	O
 for	O
 axillary	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastases	O
 .	O
 
@@ -12096,7 +12096,7 @@ for	O
 the	O
 detection	O
 of	O
-lymphovascular	S-Multi-tissue_structure
+lymphovascular	O
 invasion	O
 (	O
 LVI	O
@@ -12115,9 +12115,9 @@ LVI	O
 is	O
 associated	O
 with	O
-axillary	B-Multi-tissue_structure
-lymph	I-Multi-tissue_structure
-node	E-Multi-tissue_structure
+axillary	O
+lymph	O
+node	O
 metastases	O
 (	O
 ALNM	O
@@ -12145,7 +12145,7 @@ impact	O
 for	O
 breast	B-Disease
 cancer	E-Disease
-patients	S-Organism
+patients	O
 .	O
 
 METHODS	O
@@ -12168,8 +12168,8 @@ fixed	O
 paraffin	O
 -	O
 embedded	O
-tissue	B-Tissue
-sections	E-Tissue
+tissue	O
+sections	O
 of	O
 254	O
 invasive	O
@@ -12177,7 +12177,7 @@ breast	B-Disease
 tumors	E-Disease
 of	O
 247	O
-patients	S-Organism
+patients	O
 with	O
 node	O
 negative	O
@@ -12222,7 +12222,7 @@ E	I-Chemical
 .	E-Chemical
 )	O
 stained	O
-sections	S-Tissue
+sections	O
 and	O
 the	O
 eligibility	O
@@ -12484,7 +12484,7 @@ frequency	O
 of	O
 detection	O
 of	O
-lymphatic	S-Multi-tissue_structure
+lymphatic	O
 invasion	O
 compared	O
 to	O
@@ -12566,8 +12566,8 @@ Bcl	B-GP
 in	O
 trophically	O
 stressed	O
-neuroblastoma	B-Cell
-cells	E-Cell
+neuroblastoma	O
+cells	O
 .	O
 
 N	B-GP
@@ -12596,8 +12596,8 @@ to	O
 be	O
 operative	O
 in	O
-neuroblastoma	B-Cell
-cells	E-Cell
+neuroblastoma	O
+cells	O
 that	O
 antagonize	O
 the	O
@@ -12616,18 +12616,18 @@ N	B-GP
 -	I-GP
 myc	E-GP
 in	O
-SH	B-Cell
--	I-Cell
-EP	I-Cell
-neuroblastoma	I-Cell
-cells	E-Cell
+SH	O
+-	O
+EP	O
+neuroblastoma	O
+cells	O
 subjected	O
 to	O
 the	O
 trophic	O
 stress	O
 of	O
-serum	S-Organism_substance
+serum	O
 or	O
 nutrient	O
 deprivation	O
@@ -12661,10 +12661,10 @@ Bcl	B-GP
 -	I-GP
 2	E-GP
 protected	O
-SH	B-Cell
--	I-Cell
-EP	I-Cell
-cells	E-Cell
+SH	O
+-	O
+EP	O
+cells	O
 from	O
 death	O
 during	O
@@ -12725,13 +12725,13 @@ N	B-GP
 -	I-GP
 myc	E-GP
 in	O
-SH	B-Cell
--	I-Cell
-EP	I-Cell
-neuroblastoma	I-Cell
-cells	E-Cell
+SH	O
+-	O
+EP	O
+neuroblastoma	O
+cells	O
 during	O
-serum	S-Organism_substance
+serum	O
 deprivation	O
 whereas	O
 FLIP	B-GP
@@ -12755,8 +12755,8 @@ N	B-GP
 -	I-GP
 myc	E-GP
 in	O
-neuroblastoma	B-Cell
-cells	E-Cell
+neuroblastoma	O
+cells	O
 .	O
 
 The	O
@@ -12911,8 +12911,8 @@ VEGFR	I-GP
 3	E-GP
 -	O
 mediated	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 function	O
 and	O
 lymphangiogenesis	O
@@ -12962,9 +12962,9 @@ C156S	E-GP
 .	O
 
 In	O
-human	S-Organism
-endothelial	B-Cell
-cells	E-Cell
+human	O
+endothelial	O
+cells	O
 ,	O
 cediranib	S-Chemical
 inhibited	O
@@ -13030,12 +13030,12 @@ survival	O
 and	O
 migration	O
 of	O
-lymphatic	S-Cell
+lymphatic	O
 and	O
-blood	B-Cell
-vascular	I-Cell
-endothelial	I-Cell
-cells	E-Cell
+blood	O
+vascular	O
+endothelial	O
+cells	O
 .	O
 
 In	O
@@ -13067,7 +13067,7 @@ VEGF	B-GP
 C156S	E-GP
 -	O
 expressing	O
-adenoviruses	S-Organism
+adenoviruses	O
 ,	O
 respectively	O
 .	O
@@ -13088,7 +13088,7 @@ and	O
 lymphangiogenesis	O
 induced	O
 by	O
-adenoviruses	S-Organism
+adenoviruses	O
 expressing	O
 VEGF	B-GP
 -	I-GP
@@ -13100,10 +13100,10 @@ C	E-GP
 and	O
 compromised	O
 the	O
-blood	S-Organism_substance
+blood	O
 and	O
-lymphatic	B-Multi-tissue_structure
-vasculatures	E-Multi-tissue_structure
+lymphatic	O
+vasculatures	O
 of	O
 VEGF	B-GP
 -	I-GP
@@ -13180,12 +13180,12 @@ potent	O
 ability	O
 in	O
 influencing	O
-lymphatic	B-Cell
-endothelial	I-Cell
-cell	E-Cell
+lymphatic	O
+endothelial	O
+cell	O
 migration	O
 and	O
-tube	S-Tissue
+tube	O
 formation	O
 .	O
 
@@ -13209,7 +13209,7 @@ metastasis	O
 and	O
 survival	O
 in	O
-mouse	S-Organism
+mouse	O
 Lewis	B-Disease
 lung	I-Disease
 carcinoma	E-Disease
@@ -13222,14 +13222,14 @@ models	O
 We	O
 found	O
 that	O
-orally	S-Organism_subdivision
+orally	O
 administered	O
 artemisinin	S-Chemical
 inhibited	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 and	O
-lung	S-Organ
+lung	O
 metastasis	O
 and	O
 prolonged	O
@@ -13245,8 +13245,8 @@ with	O
 the	O
 decrease	O
 in	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 ,	O
 tumor	S-Disease
@@ -13271,13 +13271,13 @@ in	O
 artemisinin	S-Chemical
 -	O
 treated	O
-mice	S-Organism
+mice	O
 ,	O
 as	O
 compared	O
 to	O
 control	O
-mice	S-Organism
+mice	O
 .	O
 
 Furthermore	O
@@ -13307,8 +13307,8 @@ mRNA	O
 and	O
 protein	O
 in	O
-LLC	B-Cell
-cells	E-Cell
+LLC	O
+cells	O
 was	O
 also	O
 suppressed	O
@@ -13356,8 +13356,8 @@ for	O
 the	O
 prevention	O
 of	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 by	O
 downregulating	O
@@ -13387,7 +13387,7 @@ cases	O
 
 OBJECT	O
 :	O
-Endothelial	S-Cell
+Endothelial	O
 proliferation	O
 has	O
 been	O
@@ -13442,7 +13442,7 @@ case	O
 series	O
 of	O
 13	O
-patients	S-Organism
+patients	O
 with	O
 recurrent	O
 heavily	O
@@ -13478,7 +13478,7 @@ had	O
 failed	O
 in	O
 all	O
-patients	S-Organism
+patients	O
 .	O
 
 The	O
@@ -13504,7 +13504,7 @@ therapies	O
 .	O
 
 Nine	O
-patients	S-Organism
+patients	O
 were	O
 started	O
 on	O
@@ -13523,7 +13523,7 @@ weeks	O
 .	O
 
 Four	O
-patients	S-Organism
+patients	O
 received	O
 bevacizumab	S-Chemical
 at	O
@@ -13559,7 +13559,7 @@ Of	O
 the	O
 13	O
 treated	O
-patients	S-Organism
+patients	O
 ,	O
 10	O
 (	O
@@ -13584,7 +13584,7 @@ disease	O
 .	O
 
 Six	O
-patients	S-Organism
+patients	O
 (	O
 46	O
 %	O
@@ -13623,7 +13623,7 @@ disease	O
 progressed	O
 in	O
 8	O
-patients	S-Organism
+patients	O
 ,	O
 despite	O
 an	O
@@ -13632,7 +13632,7 @@ response	O
 .	O
 
 Five	O
-patients	S-Organism
+patients	O
 are	O
 still	O
 responding	O
@@ -13644,7 +13644,7 @@ Six	O
 of	O
 the	O
 8	O
-patients	S-Organism
+patients	O
 whose	O
 disease	O
 progressed	O
@@ -13657,11 +13657,11 @@ was	O
 discontinued	O
 in	O
 2	O
-patients	S-Organism
+patients	O
 because	O
 of	O
 nonfatal	O
-intracranial	S-Immaterial_anatomical_entity
+intracranial	O
 bleeding	O
 .	O
 
@@ -13688,7 +13688,7 @@ heavily	O
 pretreated	O
 population	O
 of	O
-patients	S-Organism
+patients	O
 with	O
 high	O
 -	O
@@ -13716,10 +13716,10 @@ TEM	B-GP
 CD248	S-GP
 is	O
 a	O
-pericyte	S-Cell
+pericyte	O
 marker	O
 of	O
-embryonic	S-Developing_anatomical_structure
+embryonic	O
 and	O
 tumor	S-Disease
 neovascularization	O
@@ -13731,17 +13731,17 @@ of	O
 functional	O
 ,	O
 mature	O
-blood	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+blood	O
+vessels	O
 depends	O
 on	O
 the	O
 interaction	O
 between	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 and	O
-pericytes	S-Cell
+pericytes	O
 .	O
 
 Commonality	O
@@ -13751,10 +13751,10 @@ the	O
 processes	O
 involved	O
 in	O
-vasculature	S-Multi-tissue_structure
+vasculature	O
 development	O
 between	O
-tissues	S-Tissue
+tissues	O
 whether	O
 healthy	O
 or	O
@@ -13767,15 +13767,15 @@ TEM	B-GP
 1	E-GP
 is	O
 a	O
-cell	B-Cellular_component
-membrane	E-Cellular_component
+cell	O
+membrane	O
 protein	O
 that	O
 is	O
 expressed	O
 in	O
-blood	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+blood	O
+vessels	O
 during	O
 embryogenesis	O
 and	O
@@ -13784,14 +13784,14 @@ but	O
 not	O
 in	O
 normal	O
-mature	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+mature	O
+vessels	O
 .	O
 
 Antibodies	O
 developed	O
 to	O
-human	S-Organism
+human	O
 endosialin	S-GP
 were	O
 used	O
@@ -13802,12 +13802,12 @@ expression	O
 and	O
 function	O
 in	O
-human	S-Organism
-prenatal	B-Cell
-brain	I-Cell
-pericytes	E-Cell
+human	O
+prenatal	O
+brain	O
+pericytes	O
 and	O
-pericytes	S-Cell
+pericytes	O
 residing	O
 in	O
 tumors	S-Disease
@@ -13820,18 +13820,18 @@ was	O
 capable	O
 of	O
 preventing	O
-pericyte	S-Cell
-tube	S-Tissue
+pericyte	O
+tube	O
 formation	O
 in	O
-culture	S-Cell
+culture	O
 and	O
 inhibited	O
 migration	O
 .	O
 
-Brain	B-Cell
-pericytes	E-Cell
+Brain	O
+pericytes	O
 in	O
 culture	O
 had	O
@@ -13872,8 +13872,8 @@ was	O
 present	O
 in	O
 the	O
-cytoplasmic	B-Organism_substance
-body	E-Organism_substance
+cytoplasmic	O
+body	O
 and	O
 in	O
 the	O
@@ -13881,16 +13881,16 @@ elongated	O
 extensions	O
 essential	O
 to	O
-pericyte	S-Cell
+pericyte	O
 function	O
 .	O
 
 Transgenic	O
-mice	S-Organism
+mice	O
 engineered	O
 to	O
 express	O
-human	S-Organism
+human	O
 endosialin	S-GP
 bred	O
 on	O
@@ -13901,13 +13901,13 @@ allowed	O
 the	O
 growth	O
 of	O
-human	S-Organism
+human	O
 tumor	B-Disease
 xenografts	E-Disease
 .	O
 
 In	O
-human	S-Organism
+human	O
 colon	B-Disease
 carcinoma	I-Disease
 Colo205	E-Disease
@@ -13916,11 +13916,11 @@ HT29	B-Disease
 xenografts	E-Disease
 grown	O
 in	O
-human	S-Organism
+human	O
 endosialin	S-GP
 -	O
 transgenic	O
-mice	S-Organism
+mice	O
 ,	O
 endosialin	S-GP
 expression	O
@@ -13931,22 +13931,22 @@ to	O
 NG2	S-GP
 -	O
 expressing	O
-perivascular	B-Cell
-cells	E-Cell
+perivascular	O
+cells	O
 and	O
 not	O
 CD31	S-GP
 -	O
 positive	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 .	O
 
 Similar	O
 methods	O
 applied	O
 to	O
-human	S-Organism
+human	O
 ovarian	S-Disease
 and	O
 colon	B-Disease
@@ -13955,7 +13955,7 @@ confirmed	O
 endosialin	S-GP
 expression	O
 by	O
-pericytes	S-Cell
+pericytes	O
 .	O
 
 The	O
@@ -13967,14 +13967,14 @@ is	O
 strongly	O
 expressed	O
 by	O
-pericytes	S-Cell
+pericytes	O
 during	O
 periods	O
 of	O
 active	O
 angiogenesis	O
 during	O
-embryonic	S-Developing_anatomical_structure
+embryonic	O
 and	O
 tumor	S-Disease
 development	O
@@ -13989,10 +13989,10 @@ have	O
 value	O
 in	O
 identifying	O
-vasculature	S-Multi-tissue_structure
+vasculature	O
 in	O
-malignant	B-Tissue
-tissues	E-Tissue
+malignant	O
+tissues	O
 .	O
 
 With	O
@@ -14005,8 +14005,8 @@ endosialin	S-GP
 may	O
 interfere	O
 with	O
-blood	B-Multi-tissue_structure
-vessel	E-Multi-tissue_structure
+blood	O
+vessel	O
 growth	O
 during	O
 tumor	S-Disease
@@ -14038,7 +14038,7 @@ hPNAS	B-GP
 ,	O
 in	O
 a	O
-mouse	S-Organism
+mouse	O
 model	O
 .	O
 
@@ -14054,9 +14054,9 @@ OBJECTIVE	O
 :	O
 We	O
 transfected	O
-ovarian	B-Cell
-cancer	I-Cell
-cells	E-Cell
+ovarian	O
+cancer	O
+cells	O
 and	O
 administered	O
 recombinant	O
@@ -14066,8 +14066,8 @@ hPNAS	B-GP
 -	I-GP
 4	E-GP
 to	O
-nude	B-Organism
-mice	E-Organism
+nude	O
+mice	O
 bearing	O
 ovarian	B-Disease
 cancer	E-Disease
@@ -14093,10 +14093,10 @@ vivo	O
 
 METHODS	O
 :	O
-Ovarian	B-Cell
-cancer	I-Cell
-SKOV3	I-Cell
-cells	E-Cell
+Ovarian	O
+cancer	O
+SKOV3	O
+cells	O
 were	O
 transfected	O
 with	O
@@ -14107,7 +14107,7 @@ hPNAS	B-GP
 plasmid	O
 ,	O
 and	O
-cell	S-Cell
+cell	O
 proliferation	O
 was	O
 evaluated	O
@@ -14119,7 +14119,7 @@ apoptosis	O
 was	O
 examined	O
 by	O
-DNA	S-Cellular_component
+DNA	O
 ladder	O
 ,	O
 Hoechst33258	O
@@ -14131,8 +14131,8 @@ cytometric	O
 assays	O
 .	O
 
-Nude	B-Organism
-mice	E-Organism
+Nude	O
+mice	O
 bearing	O
 ovarian	B-Disease
 cancers	E-Disease
@@ -14161,7 +14161,7 @@ recorded	O
 TUNEL	O
 assay	O
 and	O
-microvessel	S-Tissue
+microvessel	O
 density	O
 was	O
 assessed	O
@@ -14199,8 +14199,8 @@ p	O
 were	O
 observed	O
 in	O
-SKOV3	B-Cell
-cells	E-Cell
+SKOV3	O
+cells	O
 transfected	O
 with	O
 hPNAS	B-GP
@@ -14220,8 +14220,8 @@ hPNAS	B-GP
 p	O
 -	O
 treated	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 in	O
 vivo	O
 ,	O
@@ -14238,7 +14238,7 @@ of	O
 tumor	S-Disease
 -	O
 bearing	O
-mice	S-Organism
+mice	O
 was	O
 prolonged	O
 compared	O
@@ -14257,14 +14257,14 @@ p	O
 Increased	O
 apoptosis	O
 of	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 and	O
 decreased	O
 angiogenesis	O
 in	O
-tumor	B-Tissue
-tissue	E-Tissue
+tumor	O
+tissue	O
 were	O
 also	O
 observed	O
@@ -14323,7 +14323,7 @@ new	O
 gene	O
 therapy	O
 for	O
-human	S-Organism
+human	O
 ovarian	B-Disease
 cancer	E-Disease
 .	O
@@ -14575,7 +14575,7 @@ doses	O
 using	O
 adult	O
 female	O
-rats	S-Organism
+rats	O
 .	O
 
 The	O
@@ -14629,9 +14629,9 @@ oncological	O
 conditions	O
 .	O
 
-Grape	B-Organism_substance
-seed	I-Organism_substance
-extract	E-Organism_substance
+Grape	O
+seed	O
+extract	O
 inhibits	O
 angiogenesis	O
 via	O
@@ -14730,11 +14730,11 @@ known	O
 safety	O
 .	O
 
-Grape	B-Organism_substance
-seed	I-Organism_substance
-extract	E-Organism_substance
+Grape	O
+seed	O
+extract	O
 (	O
-GSE	S-Organism_substance
+GSE	O
 )	O
 ,	O
 a	O
@@ -14761,7 +14761,7 @@ explored	O
 the	O
 activity	O
 of	O
-GSE	S-Organism_substance
+GSE	O
 on	O
 VEGF	B-GP
 receptor	E-GP
@@ -14772,7 +14772,7 @@ angiogenesis	O
 We	O
 found	O
 that	O
-GSE	S-Organism_substance
+GSE	O
 could	O
 directly	O
 inhibit	O
@@ -14789,7 +14789,7 @@ a	O
 novel	O
 activity	O
 of	O
-GSE	S-Organism_substance
+GSE	O
 that	O
 has	O
 not	O
@@ -14797,7 +14797,7 @@ been	O
 characterized	O
 .	O
 
-GSE	S-Organism_substance
+GSE	O
 could	O
 also	O
 inhibit	O
@@ -14815,33 +14815,33 @@ mediated	O
 signaling	O
 pathway	O
 in	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 .	O
 
 As	O
 a	O
 result	O
 ,	O
-GSE	S-Organism_substance
+GSE	O
 could	O
 inhibit	O
 VEGF	S-GP
 -	O
 induced	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 proliferation	O
 and	O
 migration	O
 as	O
 well	O
 as	O
-sprout	S-Tissue
+sprout	O
 formation	O
 from	O
-aorta	B-Multi-tissue_structure
-ring	E-Multi-tissue_structure
+aorta	O
+ring	O
 .	O
 
 In	O
@@ -14850,7 +14850,7 @@ assay	O
 further	O
 showed	O
 that	O
-GSE	S-Organism_substance
+GSE	O
 could	O
 inhibit	O
 tumor	S-Disease
@@ -14859,16 +14859,16 @@ and	O
 tumor	S-Disease
 angiogenesis	O
 of	O
-MDA	B-Cell
--	I-Cell
-MB	I-Cell
--	I-Cell
-231	I-Cell
-breast	I-Cell
-cancer	I-Cell
-cells	E-Cell
+MDA	O
+-	O
+MB	O
+-	O
+231	O
+breast	O
+cancer	O
+cells	O
 in	O
-mice	S-Organism
+mice	O
 .	O
 
 Consistent	O
@@ -14878,20 +14878,20 @@ in	O
 vitro	O
 data	O
 ,	O
-GSE	S-Organism_substance
+GSE	O
 treatment	O
 of	O
 tumor	S-Disease
 -	O
 bearing	O
-mice	S-Organism
+mice	O
 led	O
 to	O
 concomitant	O
 reduction	O
 of	O
-blood	B-Multi-tissue_structure
-vessel	E-Multi-tissue_structure
+blood	O
+vessel	O
 density	O
 and	O
 phosphorylation	O
@@ -14913,7 +14913,7 @@ the	O
 antiangiogenic	O
 activity	O
 of	O
-GSE	S-Organism_substance
+GSE	O
 ,	O
 suggesting	O
 a	O
@@ -14924,7 +14924,7 @@ fraction	O
 of	O
 polyphenol	S-Chemical
 in	O
-GSE	S-Organism_substance
+GSE	O
 is	O
 responsible	O
 for	O
@@ -14940,7 +14940,7 @@ this	O
 study	O
 indicates	O
 that	O
-GSE	S-Organism_substance
+GSE	O
 is	O
 a	O
 well	O
@@ -15004,7 +15004,7 @@ by	O
 oxidative	O
 stress	O
 and	O
-cell	S-Cell
+cell	O
 density	O
 ,	O
 in	O
@@ -15020,11 +15020,11 @@ in	O
 the	O
 regulation	O
 of	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 proliferation	O
 and	O
-vessel	S-Multi-tissue_structure
+vessel	O
 formation	O
 in	O
 vitro	O
@@ -15159,8 +15159,8 @@ process	O
 
 Impact	O
 of	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 VEGF	S-GP
 expression	O
 on	O
@@ -15218,22 +15218,22 @@ MATERIALS	O
 AND	O
 METHODS	O
 :	O
-Human	S-Organism
+Human	O
 colon	B-Disease
 carcinoma	E-Disease
 (	O
-HT29	S-Cell
+HT29	O
 )	O
 and	O
-murine	S-Organism
+murine	O
 squamous	B-Disease
 carcinoma	E-Disease
 (	O
-SCCVII	S-Cell
+SCCVII	O
 )	O
 clonal	O
-cell	B-Cell
-lines	E-Cell
+cell	O
+lines	O
 expressing	O
 varying	O
 levels	O
@@ -15249,7 +15249,7 @@ vandetanib	S-Chemical
 was	O
 assessed	O
 in	O
-tissue	S-Tissue
+tissue	O
 culture	O
 and	O
 as	O
@@ -15265,10 +15265,10 @@ had	O
 no	O
 effect	O
 on	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 clonogenic	O
-cell	S-Cell
+cell	O
 survival	O
 in	O
 vitro	O
@@ -15281,8 +15281,8 @@ or	O
 nM	O
 significantly	O
 reduced	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 migration	O
 .	O
 
@@ -15292,8 +15292,8 @@ vivo	O
 tumors	S-Disease
 derived	O
 from	O
-cell	B-Cell
-clones	E-Cell
+cell	O
+clones	O
 expressing	O
 high	O
 levels	O
@@ -15310,7 +15310,7 @@ growth	O
 .	O
 
 An	O
-intradermal	S-Multi-tissue_structure
+intradermal	O
 angiogenesis	O
 assay	O
 was	O
@@ -15338,8 +15338,8 @@ able	O
 to	O
 significantly	O
 inhibit	O
-blood	B-Multi-tissue_structure
-vessel	E-Multi-tissue_structure
+blood	O
+vessel	O
 growth	O
 induced	O
 by	O
@@ -15350,9 +15350,9 @@ high	O
 VEGF	S-GP
 -	O
 expressing	O
-tumor	B-Cell
-cell	I-Cell
-clones	E-Cell
+tumor	O
+cell	O
+clones	O
 .	O
 
 In	O
@@ -15391,8 +15391,8 @@ highest	O
 VEGF	S-GP
 -	O
 expressing	O
-cell	B-Cell
-clones	E-Cell
+cell	O
+clones	O
 .	O
 
 A	O
@@ -15428,8 +15428,8 @@ VEGF	S-GP
 over	O
 -	O
 expressing	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 and	O
 suggest	O
 that	O
@@ -15595,16 +15595,16 @@ c	B-GP
 -	I-GP
 Ski	E-GP
 in	O
-human	S-Organism
+human	O
 diffuse	O
 -	O
 type	O
 gastric	B-Disease
 carcinoma	E-Disease
-OCUM	B-Cell
--	I-Cell
-2MLN	I-Cell
-cells	E-Cell
+OCUM	O
+-	O
+2MLN	O
+cells	O
 .	O
 
 Overexpression	O
@@ -15618,10 +15618,10 @@ TGF	B-GP
 beta	E-GP
 signaling	O
 in	O
-OCUM	B-Cell
--	I-Cell
-2MLN	I-Cell
-cells	E-Cell
+OCUM	O
+-	O
+2MLN	O
+cells	O
 .	O
 
 Interestingly	O
@@ -15641,14 +15641,14 @@ of	O
 subcutaneous	O
 xenografts	S-Disease
 in	O
-BALB	B-Organism
-/	I-Organism
-c	I-Organism
-nu	I-Organism
-/	I-Organism
-nu	I-Organism
-female	I-Organism
-mice	E-Organism
+BALB	O
+/	O
+c	O
+nu	O
+/	O
+nu	O
+female	O
+mice	O
 (	O
 6	O
 weeks	O
@@ -15764,8 +15764,8 @@ short	O
 variant	O
 promoters	O
 direct	O
-vascular	B-Multi-tissue_structure
-bed	E-Multi-tissue_structure
+vascular	O
+bed	O
 -	O
 specific	O
 gene	O
@@ -15773,7 +15773,7 @@ expression	O
 during	O
 inflammation	O
 in	O
-mice	S-Organism
+mice	O
 .	O
 
 Down	B-GP
@@ -15823,8 +15823,8 @@ DSCR	B-GP
 1s	E-GP
 expression	O
 in	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 ,	O
 which	O
 in	O
@@ -15834,8 +15834,8 @@ feeds	O
 back	O
 to	O
 attenuate	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 activation	O
 .	O
 
@@ -15878,7 +15878,7 @@ inflammation	O
 we	O
 targeted	O
 a	O
-DNA	S-Cellular_component
+DNA	O
 construct	O
 containing	O
 1	O
@@ -15887,7 +15887,7 @@ containing	O
 kb	O
 of	O
 the	O
-human	S-Organism
+human	O
 DSCR1s	S-GP
 promoter	O
 coupled	O
@@ -15906,7 +15906,7 @@ Hprt	S-GP
 )	O
 locus	O
 of	O
-mice	S-Organism
+mice	O
 .	O
 
 We	O
@@ -15918,10 +15918,10 @@ uniformly	O
 expressed	O
 in	O
 the	O
-endothelium	S-Tissue
+endothelium	O
 of	O
-transgenic	B-Developing_anatomical_structure
-embryos	E-Developing_anatomical_structure
+transgenic	O
+embryos	O
 but	O
 was	O
 markedly	O
@@ -15937,7 +15937,7 @@ or	O
 LPS	S-Chemical
 in	O
 adult	O
-mice	S-Organism
+mice	O
 resulted	O
 in	O
 cyclosporine	B-Chemical
@@ -15957,13 +15957,13 @@ in	O
 a	O
 subset	O
 of	O
-organs	S-Organ
+organs	O
 ,	O
 including	O
 the	O
-heart	S-Organ
+heart	O
 and	O
-brain	S-Organ
+brain	O
 .	O
 
 The	O
@@ -15974,7 +15974,7 @@ similarly	O
 induced	O
 in	O
 the	O
-endothelium	S-Tissue
+endothelium	O
 of	O
 tumor	B-Disease
 xenografts	E-Disease
@@ -15982,7 +15982,7 @@ xenografts	E-Disease
 
 In	O
 a	O
-mouse	S-Organism
+mouse	O
 model	O
 of	O
 endotoxemia	O
@@ -15992,14 +15992,14 @@ DSCR	B-GP
 1s	E-GP
 -	O
 deficient	O
-mice	S-Organism
+mice	O
 demonstrated	O
 increased	O
 sepsis	O
 mortality	O
 ,	O
 whereas	O
-adenovirus	S-Organism
+adenovirus	O
 -	O
 mediated	O
 DSCR	B-GP
@@ -16024,14 +16024,14 @@ the	O
 DSCR1s	S-GP
 promoter	O
 directs	O
-vascular	B-Multi-tissue_structure
-bed	E-Multi-tissue_structure
+vascular	O
+bed	O
 -	O
 specific	O
 expression	O
 in	O
 activated	O
-endothelium	S-Tissue
+endothelium	O
 and	O
 that	O
 DSCR	B-GP
@@ -16130,8 +16130,8 @@ autoproteolysis	O
 and	O
 present	O
 in	O
-human	S-Organism
-plasma	S-Organism_substance
+human	O
+plasma	O
 .	O
 
 beta2	B-GP
@@ -16238,25 +16238,25 @@ in	O
 the	O
 proliferation	O
 of	O
-arterial	S-Cell
+arterial	O
 /	O
-venous	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+venous	O
+endothelial	O
+cells	O
 ,	O
 in	O
 the	O
-extracellular	B-Cellular_component
-matrix	E-Cellular_component
+extracellular	O
+matrix	O
 invasion	O
 and	O
 the	O
-tube	S-Tissue
+tube	O
 formation	O
 of	O
-venous	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+venous	O
+endothelial	O
+cells	O
 ,	O
 and	O
 in	O
@@ -16350,7 +16350,7 @@ increased	O
 fibrinolysis	O
 such	O
 as	O
-thrombus	S-Pathological_formation
+thrombus	O
 .	O
 
 [	O
@@ -16363,12 +16363,12 @@ of	O
 non	O
 -	O
 vascularized	O
-autogenous	B-Multi-tissue_structure
-bone	I-Multi-tissue_structure
-graft	E-Multi-tissue_structure
+autogenous	O
+bone	O
+graft	O
 with	O
-vascular	B-Multi-tissue_structure
-bundle	E-Multi-tissue_structure
+vascular	O
+bundle	O
 implantation	O
 ]	O
 
@@ -16379,13 +16379,13 @@ investigate	O
 the	O
 effect	O
 of	O
-vascular	B-Multi-tissue_structure
-bundle	E-Multi-tissue_structure
+vascular	O
+bundle	O
 implantation	O
 in	O
-autogenous	B-Multi-tissue_structure
-bone	I-Multi-tissue_structure
-graft	E-Multi-tissue_structure
+autogenous	O
+bone	O
+graft	O
 on	O
 angiogenesis	O
 .	O
@@ -16395,10 +16395,10 @@ METHODS	O
 Thirty	O
 -	O
 six	O
-New	B-Organism
-Zealand	I-Organism
-white	I-Organism
-rabbits	E-Organism
+New	O
+Zealand	O
+white	O
+rabbits	O
 were	O
 evaluated	O
 in	O
@@ -16409,21 +16409,21 @@ study	O
 A	O
 portion	O
 of	O
-bilateral	B-Organ
-radial	I-Organ
-bones	E-Organ
+bilateral	O
+radial	O
+bones	O
 of	O
 a	O
-rabbit	S-Organism
+rabbit	O
 were	O
 removed	O
 as	O
 free	O
-bone	B-Multi-tissue_structure
-grafts	E-Multi-tissue_structure
+bone	O
+grafts	O
 ,	O
 whose	O
-periostea	S-Tissue
+periostea	O
 were	O
 peeled	O
 off	O
@@ -16434,19 +16434,19 @@ test	O
 group	O
 ,	O
 the	O
-external	B-Multi-tissue_structure
-maxillary	I-Multi-tissue_structure
-artery	I-Multi-tissue_structure
-bundle	E-Multi-tissue_structure
+external	O
+maxillary	O
+artery	O
+bundle	O
 was	O
 passed	O
 through	O
 the	O
-marrow	B-Immaterial_anatomical_entity
-cavity	E-Immaterial_anatomical_entity
+marrow	O
+cavity	O
 of	O
 the	O
-bone	S-Organ
+bone	O
 .	O
 
 In	O
@@ -16456,28 +16456,28 @@ group	O
 there	O
 was	O
 no	O
-vascular	B-Multi-tissue_structure
-bundle	E-Multi-tissue_structure
+vascular	O
+bundle	O
 implantation	O
 .	O
 
 Each	O
-bone	S-Organ
+bone	O
 was	O
 placed	O
 in	O
-masseter	B-Organ
-muscle	E-Organ
+masseter	O
+muscle	O
 separately	O
 .	O
 
 The	O
-rabbits	S-Organism
+rabbits	O
 were	O
 sacrificed	O
 and	O
 the	O
-specimens	S-Multi-tissue_structure
+specimens	O
 were	O
 procured	O
 at	O
@@ -16508,7 +16508,7 @@ CD34	S-GP
 immunohistochemistry	O
 .	O
 
-Microvessel	S-Tissue
+Microvessel	O
 density	O
 (	O
 MVD	O
@@ -16521,16 +16521,16 @@ to	O
 evaluate	O
 angiogenesis	O
 of	O
-autogenous	B-Multi-tissue_structure
-bone	I-Multi-tissue_structure
-grafts	E-Multi-tissue_structure
+autogenous	O
+bone	O
+grafts	O
 .	O
 
 RESULTS	O
 :	O
 The	O
-bone	B-Multi-tissue_structure
-grafts	E-Multi-tissue_structure
+bone	O
+grafts	O
 were	O
 found	O
 revascularization	O
@@ -16604,8 +16604,8 @@ peak	O
 
 CONCLUSION	O
 :	O
-Vascular	B-Multi-tissue_structure
-bundle	E-Multi-tissue_structure
+Vascular	O
+bundle	O
 implantation	O
 improved	O
 angiogenesis	O
@@ -16613,9 +16613,9 @@ in	O
 non	O
 -	O
 vascularized	O
-autogenous	B-Multi-tissue_structure
-bone	I-Multi-tissue_structure
-graft	E-Multi-tissue_structure
+autogenous	O
+bone	O
+graft	O
 in	O
 this	O
 study	O
@@ -16651,7 +16651,7 @@ is	O
 characterized	O
 by	O
 altered	O
-cellular	S-Cell
+cellular	O
 metabolism	O
 and	O
 resistance	O
@@ -16712,8 +16712,8 @@ glucose	B-GP
 transporters	E-GP
 .	O
 
-Myeloma	B-Cell
-cells	E-Cell
+Myeloma	O
+cells	O
 counteracted	O
 the	O
 metabolic	O
@@ -16735,7 +16735,7 @@ in	O
 marked	O
 enhancement	O
 of	O
-cell	S-Cell
+cell	O
 death	O
 .	O
 
@@ -16745,8 +16745,8 @@ by	O
 drug	O
 -	O
 resistant	O
-myeloma	B-Cell
-cells	E-Cell
+myeloma	O
+cells	O
 was	O
 unaffected	O
 by	O
@@ -16768,7 +16768,7 @@ observed	O
 However	O
 ,	O
 these	O
-cells	S-Cell
+cells	O
 can	O
 be	O
 sensitized	O
@@ -16911,13 +16911,13 @@ VEGFR	B-GP
 2	E-GP
 )	O
 ,	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 proliferation	O
 ,	O
 migration	O
 ,	O
-microvascular	S-Tissue
+microvascular	O
 permeability	O
 ,	O
 and	O
@@ -16964,8 +16964,8 @@ VEGFR	B-GP
 2	E-GP
 at	O
 the	O
-cell	B-Cellular_component
-surface	E-Cellular_component
+cell	O
+surface	O
 .	O
 
 Dopamine	S-Chemical
@@ -16997,8 +16997,8 @@ with	O
 D2DR	S-GP
 at	O
 the	O
-cell	B-Cellular_component
-surface	E-Cellular_component
+cell	O
+surface	O
 .	O
 
 Dopamine	S-Chemical
@@ -17107,12 +17107,12 @@ VEGFR	B-GP
 phosphorylation	O
 .	O
 
-Glioma	B-Cell
-tumor	I-Cell
-stem	I-Cell
--	I-Cell
-like	I-Cell
-cells	E-Cell
+Glioma	O
+tumor	O
+stem	O
+-	O
+like	O
+cells	O
 promote	O
 tumor	S-Disease
 angiogenesis	O
@@ -17131,11 +17131,11 @@ factor	I-GP
 1	E-GP
 .	O
 
-Cancer	B-Cell
-stem	I-Cell
-cells	E-Cell
+Cancer	O
+stem	O
+cells	O
 (	O
-CSC	S-Cell
+CSC	O
 )	O
 are	O
 predicted	O
@@ -17166,7 +17166,7 @@ of	O
 research	O
 suggests	O
 that	O
-CSC	S-Cell
+CSC	O
 may	O
 also	O
 support	O
@@ -17181,11 +17181,11 @@ angiogenesis	O
 To	O
 investigate	O
 how	O
-CSC	S-Cell
+CSC	O
 contribute	O
 to	O
-tumor	B-Multi-tissue_structure
-vascular	E-Multi-tissue_structure
+tumor	O
+vascular	O
 development	O
 ,	O
 we	O
@@ -17197,10 +17197,10 @@ tumor	B-Disease
 xenografts	E-Disease
 of	O
 the	O
-C6	B-Cell
-glioma	I-Cell
-cell	I-Cell
-line	E-Cell
+C6	O
+glioma	O
+cell	O
+line	O
 containing	O
 either	O
 a	O
@@ -17210,7 +17210,7 @@ a	O
 high	O
 fraction	O
 of	O
-CSC	S-Cell
+CSC	O
 .	O
 
 Compared	O
@@ -17226,10 +17226,10 @@ high	I-Disease
 tumors	E-Disease
 exhibited	O
 increased	O
-microvessel	S-Tissue
+microvessel	O
 density	O
 and	O
-blood	S-Organism_substance
+blood	O
 perfusion	O
 and	O
 induced	O
@@ -17239,49 +17239,49 @@ and	O
 tumor	S-Disease
 recruitment	O
 of	O
-bone	B-Multi-tissue_structure
-marrow	E-Multi-tissue_structure
+bone	O
+marrow	O
 -	O
 derived	O
-endothelial	B-Cell
-progenitor	I-Cell
-cells	E-Cell
+endothelial	O
+progenitor	O
+cells	O
 (	O
-EPC	S-Cell
+EPC	O
 )	O
 .	O
 
-CSC	B-Cell
--	I-Cell
-high	I-Cell
-C6	I-Cell
-cell	I-Cell
-cultures	E-Cell
+CSC	O
+-	O
+high	O
+C6	O
+cell	O
+cultures	O
 also	O
 induced	O
 higher	O
 levels	O
 of	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 proliferation	O
 and	O
-tubule	S-Tissue
+tubule	O
 organization	O
 in	O
 vitro	O
 compared	O
 with	O
-CSC	B-Cell
--	I-Cell
-low	I-Cell
-cultures	E-Cell
+CSC	O
+-	O
+low	O
+cultures	O
 .	O
 
-CSC	B-Cell
--	I-Cell
-high	I-Cell
-cultures	E-Cell
+CSC	O
+-	O
+high	O
+cultures	O
 and	O
 tumors	S-Disease
 expressed	O
@@ -17317,20 +17317,20 @@ of	O
 angiogenesis	O
 observed	O
 in	O
-CSC	B-Cell
--	I-Cell
-high	I-Cell
-cultures	E-Cell
+CSC	O
+-	O
+high	O
+cultures	O
 and	O
 tumors	S-Disease
 ,	O
 including	O
-microvessel	S-Tissue
+microvessel	O
 density	O
 ,	O
 perfusion	O
 ,	O
-EPC	S-Cell
+EPC	O
 mobilization	O
 /	O
 recruitment	O
@@ -17338,8 +17338,8 @@ recruitment	O
 and	O
 stimulation	O
 of	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 activity	O
 ,	O
 were	O
@@ -17351,10 +17351,10 @@ with	O
 those	O
 observed	O
 in	O
-CSC	B-Cell
--	I-Cell
-low	I-Cell
-cultures	E-Cell
+CSC	O
+-	O
+low	O
+cultures	O
 /	O
 tumors	S-Disease
 .	O
@@ -17363,7 +17363,7 @@ These	O
 results	O
 suggest	O
 that	O
-CSC	S-Cell
+CSC	O
 contribute	O
 to	O
 tumor	S-Disease
@@ -17372,19 +17372,19 @@ by	O
 promoting	O
 both	O
 local	O
-endothelial	B-Cell
-cell	E-Cell
+endothelial	O
+cell	O
 activity	O
 and	O
 systemic	O
 angiogenic	O
 processes	O
 involving	O
-bone	B-Multi-tissue_structure
-marrow	E-Multi-tissue_structure
+bone	O
+marrow	O
 -	O
 derived	O
-EPC	S-Cell
+EPC	O
 in	O
 a	O
 vascular	B-GP
@@ -17412,9 +17412,9 @@ modulates	O
 angiogenesis	O
 in	O
 ischemic	O
-hindlimb	S-Organism_subdivision
+hindlimb	O
 of	O
-rat	S-Organism
+rat	O
 .	O
 
 BACKGROUND	O
@@ -17475,8 +17475,8 @@ may	O
 promote	O
 survival	O
 of	O
-ischemic	B-Tissue
-tissue	E-Tissue
+ischemic	O
+tissue	O
 through	O
 angiogenesis	O
 .	O
@@ -17503,7 +17503,7 @@ on	O
 angiogenesis	O
 in	O
 a	O
-hindlimb	S-Organism_subdivision
+hindlimb	O
 ischemia	O
 model	O
 .	O
@@ -17514,8 +17514,8 @@ Thirty	O
 -	O
 two	O
 male	O
-wistar	B-Organism
-rats	E-Organism
+wistar	O
+rats	O
 randomly	O
 divided	O
 into	O
@@ -17529,15 +17529,15 @@ groups	O
 &	O
 2	O
 ,	O
-hindlimb	S-Organism_subdivision
+hindlimb	O
 ischemia	O
 was	O
 induced	O
 by	O
 ligation	O
 of	O
-femoral	B-Multi-tissue_structure
-artery	E-Multi-tissue_structure
+femoral	O
+artery	O
 and	O
 they	O
 received	O
@@ -17574,12 +17574,12 @@ After	O
 days	O
 ,	O
 the	O
-serum	S-Organism_substance
+serum	O
 concentration	O
 of	O
 nitrite	S-Chemical
 ,	O
-capillary	S-Tissue
+capillary	O
 density	O
 and	O
 expression	O
@@ -17591,7 +17591,7 @@ determined	O
 
 RESULTS	O
 :	O
-Serum	S-Organism_substance
+Serum	O
 nitrite	S-Chemical
 levels	O
 were	O
@@ -17612,7 +17612,7 @@ p	O
 .	O
 
 The	O
-capillary	S-Tissue
+capillary	O
 density	O
 in	O
 group	O
@@ -17704,9 +17704,9 @@ inhibits	O
 angiogenesis	O
 in	O
 a	O
-hindlimb	S-Organism_subdivision
+hindlimb	O
 ischemic	O
-rat	S-Organism
+rat	O
 model	O
 .	O
 
@@ -17719,8 +17719,8 @@ expression	O
 of	O
 HIF1alpha	S-GP
 in	O
-hypoxic	B-Tissue
-tissue	E-Tissue
+hypoxic	O
+tissue	O
 .	O
 
 Phenolic	O
@@ -17739,7 +17739,7 @@ diol	I-Chemical
 epoxide	E-Chemical
 -	O
 induced	O
-cell	S-Cell
+cell	O
 transformation	O
 :	O
 role	O
@@ -17790,9 +17790,9 @@ of	O
 promotion	O
 -	O
 sensitive	O
-JB6	B-Cell
-Cl41	I-Cell
-cells	E-Cell
+JB6	O
+Cl41	O
+cells	O
 that	O
 showed	O
 anchorage	O
@@ -17828,12 +17828,12 @@ pyrene	E-Chemical
 Anchorage	O
 -	O
 independent	O
-cell	S-Cell
+cell	O
 growth	O
 is	O
 indicative	O
 of	O
-cell	S-Cell
+cell	O
 transformation	O
 resulting	O
 in	O
@@ -17954,14 +17954,14 @@ with	O
 significant	O
 decrease	O
 of	O
-intracellular	S-Immaterial_anatomical_entity
+intracellular	O
 PKC	S-GP
 substrate	O
 phosphorylation	O
 in	O
 BPDE	S-Chemical
 treated	O
-cells	S-Cell
+cells	O
 .	O
 
 Non	O
@@ -17999,7 +17999,7 @@ activation	O
 in	O
 BPDE	S-Chemical
 treated	O
-cells	S-Cell
+cells	O
 to	O
 a	O
 varying	O
@@ -18029,7 +18029,7 @@ fraction	E-Chemical
 
 Treatment	O
 of	O
-cells	S-Cell
+cells	O
 with	O
 PKC	S-GP
 inhibitors	O
@@ -18042,7 +18042,7 @@ growth	O
 of	O
 BPDE	S-Chemical
 treated	O
-cells	S-Cell
+cells	O
 on	O
 soft	O
 agar	O
@@ -18073,8 +18073,8 @@ fraction	E-Chemical
 .	O
 
 Killing	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 through	O
 their	O
 surface	O
@@ -18112,8 +18112,8 @@ studies	O
 have	O
 demonstrated	O
 that	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 treated	O
 with	O
 antibodies	O
@@ -18150,7 +18150,7 @@ and	O
 in	O
 vivo	O
 (	O
-mouse	S-Organism
+mouse	O
 models	O
 )	O
 .	O
@@ -18167,8 +18167,8 @@ MHC	B-GP
 class	I-GP
 I	E-GP
 induce	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 apoptosis	O
 by	O
 1	O
@@ -18179,8 +18179,8 @@ class	I-GP
 I	E-GP
 molecules	O
 to	O
-lipid	B-Cellular_component
-rafts	E-Cellular_component
+lipid	O
+rafts	O
 and	O
 activating	O
 LYN	S-GP
@@ -18222,8 +18222,8 @@ factor	I-GP
 receptors	E-GP
 out	O
 of	O
-lipid	B-Cellular_component
-rafts	E-Cellular_component
+lipid	O
+rafts	O
 and	O
 inhibiting	O
 the	O
@@ -18253,7 +18253,7 @@ pathways	O
 
 Consequently	O
 ,	O
-mitochondrial	S-Cellular_component
+mitochondrial	O
 integrity	O
 is	O
 compromised	O
@@ -18270,8 +18270,8 @@ is	O
 activated	O
 in	O
 treated	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 .	O
 
 However	O
@@ -18290,8 +18290,8 @@ are	O
 expressed	O
 on	O
 normal	O
-hematopoietic	B-Cell
-cells	E-Cell
+hematopoietic	O
+cells	O
 ,	O
 which	O
 is	O
@@ -18306,22 +18306,22 @@ antibodies	O
 were	O
 selective	O
 to	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 and	O
 did	O
 not	O
 damage	O
 normal	O
-cells	S-Cell
+cells	O
 in	O
 vitro	O
 or	O
 in	O
-human	S-Organism
+human	O
 -	O
 like	O
-mouse	S-Organism
+mouse	O
 models	O
 .	O
 
@@ -18430,7 +18430,7 @@ the	O
 frequent	O
 losses	O
 on	O
-4q	S-Cellular_component
+4q	O
 described	O
 in	O
 gastric	B-Disease
@@ -18445,7 +18445,7 @@ CDC4	S-GP
 /	O
 FBXW7	S-GP
 in	O
-gastric	S-Organ
+gastric	O
 carcinogenesis	O
 .	O
 
@@ -18539,7 +18539,7 @@ on	O
 gastric	B-Disease
 carcinomas	E-Disease
 using	O
-tissue	S-Tissue
+tissue	O
 microarrays	O
 (	O
 TMAs	O
@@ -18556,10 +18556,10 @@ was	O
 carried	O
 out	O
 on	O
-gastric	B-Cell
-carcinoma	I-Cell
-cell	I-Cell
-lines	E-Cell
+gastric	O
+carcinoma	O
+cell	O
+lines	O
 and	O
 xenografts	S-Disease
 .	O
@@ -18663,7 +18663,7 @@ both	O
 EOGC	S-Disease
 and	O
 conventional	O
-gastric	S-Organ
+gastric	O
 carcinogenesis	O
 ,	O
 and	O
@@ -18888,11 +18888,11 @@ BI	B-GP
 1	E-GP
 )	O
 induces	O
-cell	S-Cell
+cell	O
 transformation	O
 in	O
-NIH3T3	B-Cell
-cells	E-Cell
+NIH3T3	O
+cells	O
 .	O
 
 BI	B-GP
@@ -18924,7 +18924,7 @@ an	O
 important	O
 role	O
 in	O
-mitochondrial	S-Cellular_component
+mitochondrial	O
 apoptosis	O
 pathway	O
 to	O
@@ -18946,7 +18946,7 @@ BI	B-GP
 1	E-GP
 in	O
 promoting	O
-cell	S-Cell
+cell	O
 growth	O
 and	O
 tumorigenesis	O
@@ -18963,11 +18963,11 @@ BI	B-GP
 1	E-GP
 gene	O
 in	O
-NIH3T3	B-Cell
-cells	E-Cell
+NIH3T3	O
+cells	O
 using	O
 the	O
-lentivirus	S-Organism
+lentivirus	O
 -	O
 mediated	O
 gene	O
@@ -18981,8 +18981,8 @@ vitro	O
 studies	O
 showed	O
 that	O
-NIH3T3	B-Cell
-cells	E-Cell
+NIH3T3	O
+cells	O
 overexpressing	O
 BI	B-GP
 -	I-GP
@@ -19001,8 +19001,8 @@ larger	O
 colonies	O
 than	O
 the	O
-control	B-Cell
-cells	E-Cell
+control	O
+cells	O
 .	O
 
 In	O
@@ -19022,7 +19022,7 @@ BI	B-GP
 1	E-GP
 -	O
 infected	O
-cells	S-Cell
+cells	O
 formed	O
 obvious	O
 tumours	S-Disease
@@ -19034,14 +19034,14 @@ were	O
 formed	O
 by	O
 the	O
-control	B-Cell
-cells	E-Cell
+control	O
+cells	O
 after	O
 subcutaneously	O
 injected	O
 into	O
-nude	B-Organism
-mice	E-Organism
+nude	O
+mice	O
 .	O
 
 These	O
@@ -19074,9 +19074,9 @@ of	O
 gallic	B-Chemical
 acid	E-Chemical
 on	O
-gastric	B-Cell
-cancer	I-Cell
-cells	E-Cell
+gastric	O
+cancer	O
+cells	O
 involves	O
 inhibition	O
 of	O
@@ -19108,7 +19108,7 @@ contribute	O
 to	O
 prevention	O
 of	O
-cardiovascular	S-ANATOMY
+cardiovascular	O
 disease	O
 and	O
 malignancy	O
@@ -19156,7 +19156,7 @@ acids	E-Chemical
 found	O
 abundantly	O
 in	O
-vegetables	S-Organism_subdivision
+vegetables	O
 ,	O
 i	O
 .	O
@@ -19184,12 +19184,12 @@ on	O
 the	O
 inhibition	O
 of	O
-gastric	B-Cell
-adenocarcinoma	I-Cell
-(	I-Cell
-AGS	I-Cell
-)	I-Cell
-cell	E-Cell
+gastric	O
+adenocarcinoma	O
+(	O
+AGS	O
+)	O
+cell	O
 metastasis	O
 .	O
 
@@ -19206,7 +19206,7 @@ the	O
 same	O
 level	O
 of	O
-cell	S-Cell
+cell	O
 toxicity	O
 as	O
 4	O
@@ -19216,7 +19216,7 @@ PCA	S-Chemical
 .	O
 
 Using	O
-wound	S-Pathological_formation
+wound	O
 -	O
 healing	O
 assay	O
@@ -19231,8 +19231,8 @@ potent	O
 inhibitory	O
 effects	O
 on	O
-AGS	B-Cell
-cell	E-Cell
+AGS	O
+cell	O
 migration	O
 .	O
 
@@ -19245,8 +19245,8 @@ MMP	B-GP
 /	O
 9	S-GP
 of	O
-AGS	B-Cell
-cells	E-Cell
+AGS	O
+cells	O
 was	O
 inhibited	O
 by	O
@@ -19291,7 +19291,7 @@ in	O
 metastasis	O
 and	O
 the	O
-cytoskeletal	S-Cellular_component
+cytoskeletal	O
 reorganization	O
 signal	O
 pathway	O
@@ -19323,7 +19323,7 @@ Furthermore	O
 immunoreactivity	O
 assay	O
 of	O
-cytoskeletal	S-Cellular_component
+cytoskeletal	O
 F	B-GP
 -	I-GP
 actin	E-GP
@@ -19381,10 +19381,10 @@ and	O
 Akt	S-GP
 signaling	O
 in	O
-human	S-Organism
-prostate	B-Cell
-cancer	I-Cell
-cells	E-Cell
+human	O
+prostate	O
+cancer	O
+cells	O
 .	O
 
 The	O
@@ -19395,14 +19395,14 @@ for	O
 worried	O
 -	O
 well	O
-patients	S-Organism
+patients	O
 with	O
 high	O
 -	O
 grade	O
-prostatic	B-Pathological_formation
-intraepithelial	I-Pathological_formation
-neoplasia	E-Pathological_formation
+prostatic	O
+intraepithelial	O
+neoplasia	O
 combined	O
 with	O
 issues	O
@@ -19538,10 +19538,10 @@ XSC	E-Chemical
 )	O
 can	O
 inhibit	O
-human	S-Organism
-prostate	B-Cell
-cancer	I-Cell
-cell	E-Cell
+human	O
+prostate	O
+cancer	O
+cell	O
 viability	O
 ;	O
 however	O
@@ -19592,19 +19592,19 @@ in	O
 androgen	S-Chemical
 -	O
 responsive	O
-LNCaP	S-Cell
+LNCaP	O
 and	O
 androgen	S-Chemical
 -	O
 independent	O
-LNCaP	B-Cell
-C4	I-Cell
--	I-Cell
-2	I-Cell
-human	I-Cell
-prostate	I-Cell
-cancer	I-Cell
-cells	E-Cell
+LNCaP	O
+C4	O
+-	O
+2	O
+human	O
+prostate	O
+cancer	O
+cells	O
 .	O
 
 p	B-Chemical
@@ -19619,8 +19619,8 @@ transcriptional	O
 activity	O
 in	O
 both	O
-cell	B-Cell
-lines	E-Cell
+cell	O
+lines	O
 .	O
 
 p	B-Chemical
@@ -19721,9 +19721,9 @@ Sanguinarine	S-Chemical
 induces	O
 apoptosis	O
 of	O
-human	S-Organism
-osteosarcoma	B-Cell
-cells	E-Cell
+human	O
+osteosarcoma	O
+cells	O
 through	O
 the	O
 extrinsic	O
@@ -19745,20 +19745,20 @@ inhibits	O
 the	O
 proliferation	O
 of	O
-cancerous	B-Cell
-cells	E-Cell
+cancerous	O
+cells	O
 from	O
 different	O
 origins	O
 ,	O
 including	O
-lung	S-Organ
+lung	O
 ,	O
-breast	S-Organism_subdivision
+breast	O
 ,	O
-pancreatic	S-Organ
+pancreatic	O
 and	O
-colon	S-Organ
+colon	O
 ,	O
 but	O
 nothing	O
@@ -19790,17 +19790,17 @@ reduces	O
 the	O
 viability	O
 of	O
-MG	B-Cell
--	I-Cell
-63	E-Cell
+MG	O
+-	O
+63	O
 and	O
-SaOS	B-Cell
--	I-Cell
-2	I-Cell
-human	I-Cell
-osteosarcoma	I-Cell
-cell	I-Cell
-lines	E-Cell
+SaOS	O
+-	O
+2	O
+human	O
+osteosarcoma	O
+cell	O
+lines	O
 in	O
 concentration	O
 -	O
@@ -19825,15 +19825,15 @@ and	O
 killed	O
 more	O
 efficiently	O
-MG	B-Cell
--	I-Cell
-63	I-Cell
-cells	E-Cell
+MG	O
+-	O
+63	O
+cells	O
 than	O
-SaOS	B-Cell
--	I-Cell
-2	I-Cell
-cells	E-Cell
+SaOS	O
+-	O
+2	O
+cells	O
 ,	O
 while	O
 incubation	O
@@ -19849,8 +19849,8 @@ almost	O
 %	O
 of	O
 both	O
-cell	B-Cell
-populations	E-Cell
+cell	O
+populations	O
 within	O
 24h	O
 .	O
@@ -19860,31 +19860,31 @@ treatment	O
 also	O
 changed	O
 the	O
-mitochondrial	B-Cellular_component
-membrane	E-Cellular_component
+mitochondrial	O
+membrane	O
 potential	O
 in	O
 both	O
-MG	B-Cell
--	I-Cell
-63	E-Cell
+MG	O
+-	O
+63	O
 and	O
-SaOS	B-Cell
--	I-Cell
-2	I-Cell
-cells	E-Cell
+SaOS	O
+-	O
+2	O
+cells	O
 within	O
 1h	O
 ,	O
 caused	O
-chromatin	S-Cellular_component
+chromatin	O
 condensation	O
 and	O
 the	O
 formation	O
 of	O
-apoptotic	B-Cellular_component
-bodies	E-Cellular_component
+apoptotic	O
+bodies	O
 .	O
 
 It	O
@@ -19905,14 +19905,14 @@ caspase	B-GP
 9	E-GP
 in	O
 both	O
-MG	B-Cell
--	I-Cell
-63	E-Cell
+MG	O
+-	O
+63	O
 and	O
-SaOS	B-Cell
--	I-Cell
-2	I-Cell
-cells	E-Cell
+SaOS	O
+-	O
+2	O
+cells	O
 .	O
 
 These	O
@@ -19965,8 +19965,8 @@ VEGF	S-GP
 )	O
 released	O
 from	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 in	O
 hypoxia	O
 .	O
@@ -19984,11 +19984,11 @@ to	O
 establish	O
 metastasis	O
 at	O
-peripheral	B-Multi-tissue_structure
-sites	E-Multi-tissue_structure
+peripheral	O
+sites	O
 by	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 migration	O
 .	O
 
@@ -20007,7 +20007,7 @@ sequestering	O
 protein	O
 to	O
 control	O
-cytoskeletal	S-Cellular_component
+cytoskeletal	O
 reorganization	O
 .	O
 
@@ -20030,16 +20030,16 @@ induced	O
 TB4	S-GP
 expression	O
 in	O
-B16F10	B-Cell
-melanoma	I-Cell
-cells	E-Cell
+B16F10	O
+melanoma	O
+cells	O
 .	O
 
 TB4	S-GP
 expression	O
 in	O
-B16F10	B-Cell
-cells	E-Cell
+B16F10	O
+cells	O
 was	O
 increased	O
 by	O
@@ -20079,11 +20079,11 @@ as	O
 compared	O
 to	O
 wildtype	O
-mice	S-Organism
+mice	O
 .	O
 
 When	O
-wound	S-Pathological_formation
+wound	O
 healing	O
 assay	O
 was	O
@@ -20092,8 +20092,8 @@ to	O
 assess	O
 in	O
 vitro	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 migration	O
 ,	O
 hypoxia	O
@@ -20102,8 +20102,8 @@ for	O
 1	O
 h	O
 enhanced	O
-B16F10	B-Cell
-cell	E-Cell
+B16F10	O
+cell	O
 migration	O
 .	O
 
@@ -20111,8 +20111,8 @@ When	O
 TB4	S-GP
 expression	O
 in	O
-B16F10	B-Cell
-cells	E-Cell
+B16F10	O
+cells	O
 was	O
 inhibited	O
 by	O
@@ -20129,11 +20129,11 @@ of	O
 TB4	S-GP
 cloned	O
 in	O
-lentiviral	S-Organism
+lentiviral	O
 vector	O
 ,	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 migration	O
 was	O
 retarded	O
@@ -20146,8 +20146,8 @@ hypoxia	O
 conditioning	O
 -	O
 induced	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 migration	O
 was	O
 reduced	O
@@ -20155,7 +20155,7 @@ by	O
 the	O
 infection	O
 of	O
-lentiviral	S-Organism
+lentiviral	O
 shRNA	O
 of	O
 TB4	S-GP
@@ -20183,13 +20183,13 @@ by	O
 the	O
 infection	O
 of	O
-lentiviral	S-Organism
+lentiviral	O
 shRNA	O
 of	O
 TB4	S-GP
 in	O
-B16F10	B-Cell
-cells	E-Cell
+B16F10	O
+cells	O
 .	O
 
 We	O
@@ -20201,7 +20201,7 @@ of	O
 tumor	S-Disease
 growth	O
 and	O
-lung	S-Organ
+lung	O
 metastasis	O
 count	O
 in	O
@@ -20213,7 +20213,7 @@ as	O
 compared	O
 to	O
 wildtype	O
-mice	S-Organism
+mice	O
 .	O
 
 Collectively	O
@@ -20221,8 +20221,8 @@ Collectively	O
 hypoxia	O
 conditioning	O
 induced	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 migration	O
 by	O
 TB4	S-GP
@@ -20247,8 +20247,8 @@ responsive	O
 regulator	O
 to	O
 control	O
-tumor	B-Cell
-cell	E-Cell
+tumor	O
+cell	O
 migration	O
 in	O
 angiogenesis	O
@@ -20290,9 +20290,9 @@ fructose	I-GP
 bisphosphatase	I-GP
 2	E-GP
 in	O
-prostate	B-Cell
-cancer	I-Cell
-cells	E-Cell
+prostate	O
+cancer	O
+cells	O
 .	O
 
 Up	O
@@ -20311,10 +20311,10 @@ characteristic	O
 metabolic	O
 features	O
 of	O
-LNCaP	B-Cell
-prostate	I-Cell
-cancer	I-Cell
-cells	E-Cell
+LNCaP	O
+prostate	O
+cancer	O
+cells	O
 .	O
 
 The	O
@@ -20331,8 +20331,8 @@ de	O
 novo	O
 lipogenesis	O
 in	O
-LNCaP	B-Cell
-cells	E-Cell
+LNCaP	O
+cells	O
 through	O
 the	O
 activation	O
@@ -20346,7 +20346,7 @@ and	O
 activation	O
 of	O
 the	O
-cardiac	S-Organ
+cardiac	O
 isoform	O
 of	O
 PFKFB2	S-GP
@@ -20459,8 +20459,8 @@ Akt	S-GP
 signalling	O
 pathway	O
 in	O
-LNCaP	B-Cell
-cells	E-Cell
+LNCaP	O
+cells	O
 contributes	O
 to	O
 the	O
@@ -20468,9 +20468,9 @@ phosphorylation	O
 of	O
 PFKFB2	S-GP
 at	O
-Ser466	S-Amino_acid
+Ser466	O
 and	O
-Ser483	S-Amino_acid
+Ser483	O
 ,	O
 resulting	O
 in	O
@@ -20574,9 +20574,9 @@ lipogenesis	O
 from	O
 glucose	S-Chemical
 in	O
-prostate	B-Cell
-cancer	I-Cell
-cells	E-Cell
+prostate	O
+cancer	O
+cells	O
 .	O
 
 Diallyl	B-Chemical
@@ -20585,15 +20585,15 @@ trisulfide	E-Chemical
 DATS	S-Chemical
 )	O
 inhibits	O
-mouse	S-Organism
+mouse	O
 colon	B-Disease
 tumor	E-Disease
 in	O
-mouse	S-Organism
-CT	B-Cell
--	I-Cell
-26	I-Cell
-cells	E-Cell
+mouse	O
+CT	O
+-	O
+26	O
+cells	O
 allograft	O
 model	O
 in	O
@@ -20609,15 +20609,15 @@ DATS	S-Chemical
 induced	O
 apoptosis	O
 in	O
-human	S-Organism
-colon	B-Cell
-cancer	I-Cell
-HT29	E-Cell
+human	O
+colon	O
+cancer	O
+HT29	O
 and	O
-colo	B-Cell
-205	I-Cell
-cell	I-Cell
-lines	E-Cell
+colo	O
+205	O
+cell	O
+lines	O
 in	O
 vitro	O
 .	O
@@ -20638,14 +20638,14 @@ in	O
 vitro	O
 and	O
 inhibited	O
-CT26	B-Cell
-cancer	I-Cell
-cells	E-Cell
+CT26	O
+cancer	O
+cells	O
 in	O
 vivo	O
 on	O
 a	O
-murine	S-Organism
+murine	O
 allograft	O
 animal	O
 model	O
@@ -20668,28 +20668,28 @@ induction	O
 of	O
 apoptosis	O
 in	O
-CT26	B-Cell
-cells	E-Cell
+CT26	O
+cells	O
 .	O
 
 In	O
 vivo	O
 studies	O
 ,	O
-CT26	B-Cell
-cancer	I-Cell
-cells	E-Cell
+CT26	O
+cancer	O
+cells	O
 were	O
 implanted	O
 into	O
-BALB	B-Organism
-/	I-Organism
-c	I-Organism
-mice	E-Organism
+BALB	O
+/	O
+c	O
+mice	O
 and	O
 groups	O
 of	O
-mice	S-Organism
+mice	O
 were	O
 treated	O
 with	O
@@ -20704,7 +20704,7 @@ mg	O
 /	O
 kg	O
 of	O
-body	S-Organism_subdivision
+body	O
 weight	O
 )	O
 .	O
@@ -20716,7 +20716,7 @@ once	O
 per	O
 four	O
 days	O
-intraperitoneally	S-Immaterial_anatomical_entity
+intraperitoneally	O
 (	O
 i	O
 .	O
@@ -20731,7 +20731,7 @@ starting	O
 weeks	O
 prior	O
 to	O
-cells	S-Cell
+cells	O
 inoculation	O
 .	O
 
@@ -20766,7 +20766,7 @@ total	O
 hemoglobin	S-GP
 in	O
 allograft	O
-mice	S-Organism
+mice	O
 treated	O
 with	O
 50	O
@@ -20852,7 +20852,7 @@ frequently	O
 amplified	O
 genes	O
 in	O
-human	S-Organism
+human	O
 cancers	S-Disease
 .	O
 
@@ -20875,8 +20875,8 @@ of	O
 its	O
 targets	O
 in	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 .	O
 
 Our	O
@@ -20891,7 +20891,7 @@ and	O
 the	O
 regulation	O
 of	O
-human	S-Organism
+human	O
 telomerase	B-GP
 reverse	I-GP
 transcriptase	E-GP
@@ -20929,14 +20929,14 @@ hTERT	S-GP
 ,	O
 resulting	O
 in	O
-cells	S-Cell
+cells	O
 with	O
 enhanced	O
 telomerase	S-GP
 activities	O
 and	O
 increased	O
-telomere	S-Cellular_component
+telomere	O
 length	O
 .	O
 
@@ -21013,12 +21013,12 @@ short	O
 hairpin	O
 HMGA2	S-GP
 in	O
-HepG2	B-Cell
-cells	E-Cell
+HepG2	O
+cells	O
 leads	O
 to	O
 progressive	O
-telomere	S-Cellular_component
+telomere	O
 shortening	O
 and	O
 a	O
@@ -21058,8 +21058,8 @@ tumorigenic	O
 transformation	O
 of	O
 normal	O
-human	S-Organism
-fibroblasts	S-Cell
+human	O
+fibroblasts	O
 .	O
 
 These	O
@@ -21081,10 +21081,10 @@ in	O
 a	O
 number	O
 of	O
-human	S-Organism
+human	O
 cancers	S-Disease
 as	O
-telomere	S-Cellular_component
+telomere	O
 maintenance	O
 is	O
 essential	O
@@ -21110,7 +21110,7 @@ to	O
 its	O
 role	O
 in	O
-embryonic	S-Developing_anatomical_structure
+embryonic	O
 development	O
 ,	O
 the	O
@@ -21153,7 +21153,7 @@ initiate	O
 paracrine	O
 signaling	O
 with	O
-cells	S-Cell
+cells	O
 in	O
 the	O
 microenvironment	O
@@ -21173,8 +21173,8 @@ malignant	O
 behavior	O
 of	O
 the	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 .	O
 
 As	O
@@ -21194,8 +21194,8 @@ most	O
 profoundly	O
 influence	O
 the	O
-stromal	B-Cell
-cells	E-Cell
+stromal	O
+cells	O
 that	O
 constitute	O
 the	O
@@ -21204,8 +21204,8 @@ microenvironment	O
 .	O
 
 The	O
-stromal	B-Cell
-cells	E-Cell
+stromal	O
+cells	O
 in	O
 turn	O
 produce	O
@@ -21281,8 +21281,8 @@ the	O
 signature	O
 characteristics	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 that	O
 determine	O
 tumor	S-Disease
@@ -21336,7 +21336,7 @@ for	O
 identifying	O
 the	O
 appropriate	O
-patients	S-Organism
+patients	O
 for	O
 therapy	O
 ,	O
@@ -21417,8 +21417,8 @@ role	O
 in	O
 transforming	O
 a	O
-normal	B-Tissue
-tissue	E-Tissue
+normal	O
+tissue	O
 into	O
 a	O
 malignant	B-Disease
@@ -21473,12 +21473,12 @@ tumour	S-Disease
 and	O
 normal	O
 -	O
-tissue	B-Tissue
-specimens	E-Tissue
+tissue	O
+specimens	O
 of	O
 86	O
 CRC	S-Disease
-patients	S-Organism
+patients	O
 for	O
 the	O
 occurrence	O
@@ -21616,7 +21616,7 @@ location	O
 tumour	S-Disease
 grade	O
 and	O
-node	S-Multi-tissue_structure
+node	O
 status	O
 and	O
 the	O
@@ -21694,8 +21694,8 @@ of	O
 rhizochalin	S-Chemical
 from	O
 the	O
-Rhizochalina	B-Organism
-incrustata	E-Organism
+Rhizochalina	O
+incrustata	O
 induces	O
 apoptosis	O
 via	O
@@ -21707,12 +21707,12 @@ activated	I-GP
 protein	I-GP
 kinase	E-GP
 in	O
-HT	B-Cell
--	I-Cell
-29	I-Cell
-colon	I-Cell
-cancer	I-Cell
-cells	E-Cell
+HT	O
+-	O
+29	O
+colon	O
+cancer	O
+cells	O
 .	O
 
 Rhizochalin	S-Chemical
@@ -21729,8 +21729,8 @@ isolated	O
 from	O
 the	O
 sponge	O
-Rhizochalina	B-Organism
-incrustata	E-Organism
+Rhizochalina	O
+incrustata	O
 .	O
 
 It	O
@@ -21776,8 +21776,8 @@ AglRhz	S-Chemical
 )	O
 from	O
 the	O
-Rhizochalina	B-Organism
-incrustata	E-Organism
+Rhizochalina	O
+incrustata	O
 induces	O
 AMP	B-GP
 -	I-GP
@@ -21827,10 +21827,10 @@ phosphorylation	O
 of	O
 Raptor	S-GP
 in	O
-HT	B-Cell
--	I-Cell
-29	I-Cell
-cells	E-Cell
+HT	O
+-	O
+29	O
+cells	O
 .	O
 
 In	O
@@ -21856,13 +21856,13 @@ PARP	S-GP
 )	O
 ,	O
 and	O
-DNA	S-Cellular_component
+DNA	O
 fragmentation	O
 in	O
-HT	B-Cell
--	I-Cell
-29	I-Cell
-cells	E-Cell
+HT	O
+-	O
+29	O
+cells	O
 ,	O
 leads	O
 to	O
@@ -21876,10 +21876,10 @@ suppression	O
 of	O
 tumorigenicity	O
 of	O
-HT	B-Cell
--	I-Cell
-29	I-Cell
-cells	E-Cell
+HT	O
+-	O
+29	O
+cells	O
 .	O
 
 Notably	O
@@ -21903,12 +21903,12 @@ AP	B-GP
 1	E-GP
 activity	O
 and	O
-cell	S-Cell
+cell	O
 transformation	O
 in	O
-JB6	B-Cell
-Cl41	I-Cell
-cells	E-Cell
+JB6	O
+Cl41	O
+cells	O
 .	O
 
 Overall	O
@@ -21932,12 +21932,12 @@ properties	O
 of	O
 AglRhz	S-Chemical
 in	O
-HT	B-Cell
--	I-Cell
-29	I-Cell
-colon	I-Cell
-cancer	I-Cell
-cells	E-Cell
+HT	O
+-	O
+29	O
+colon	O
+cancer	O
+cells	O
 and	O
 have	O
 important	O
@@ -21973,9 +21973,9 @@ and	O
 corresponding	O
 metastases	O
 in	O
-cervical	B-Multi-tissue_structure
-lymph	I-Multi-tissue_structure
-nodes	E-Multi-tissue_structure
+cervical	O
+lymph	O
+nodes	O
 :	O
 association	O
 with	O
@@ -22015,7 +22015,7 @@ the	O
 sensitivity	O
 of	O
 carcinoma	S-Disease
-patients	S-Organism
+patients	O
 to	O
 5	B-Chemical
 -	I-Chemical
@@ -22049,9 +22049,9 @@ of	O
 these	O
 enzymes	O
 in	O
-metastatic	B-Multi-tissue_structure
-lymph	I-Multi-tissue_structure
-nodes	E-Multi-tissue_structure
+metastatic	O
+lymph	O
+nodes	O
 or	O
 of	O
 their	O
@@ -22083,8 +22083,8 @@ often	O
 metastasizes	O
 to	O
 the	O
-lymph	B-Multi-tissue_structure
-nodes	E-Multi-tissue_structure
+lymph	O
+nodes	O
 ,	O
 and	O
 these	O
@@ -22096,7 +22096,7 @@ in	O
 the	O
 survival	O
 of	O
-patients	S-Organism
+patients	O
 with	O
 this	O
 disease	O
@@ -22112,9 +22112,9 @@ TS	S-GP
 and	O
 DPD	S-GP
 in	O
-cervical	B-Multi-tissue_structure
-lymph	I-Multi-tissue_structure
-node	E-Multi-tissue_structure
+cervical	O
+lymph	O
+node	O
 metastases	O
 and	O
 its	O
@@ -22148,15 +22148,15 @@ protein	O
 .	O
 
 Surgical	O
-specimens	S-Multi-tissue_structure
+specimens	O
 from	O
 20	O
 cases	O
 of	O
 OSCC	S-Disease
 with	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 ,	O
 20	O
@@ -22164,8 +22164,8 @@ cases	O
 of	O
 OSCC	S-Disease
 without	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 ,	O
 and	O
@@ -22173,7 +22173,7 @@ and	O
 cases	O
 of	O
 normal	O
-mucosa	S-Multi-tissue_structure
+mucosa	O
 were	O
 examined	O
 by	O
@@ -22208,7 +22208,7 @@ to	O
 that	O
 in	O
 normal	O
-mucosa	S-Multi-tissue_structure
+mucosa	O
 .	O
 
 TS	S-GP
@@ -22216,15 +22216,15 @@ expression	O
 of	O
 the	O
 primary	O
-oral	B-Cell
-cancer	I-Cell
-cells	E-Cell
+oral	O
+cancer	O
+cells	O
 in	O
 the	O
 group	O
 with	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 was	O
 higher	O
@@ -22245,8 +22245,8 @@ with	O
 the	O
 occurrence	O
 of	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 ,	O
 nor	O
@@ -22255,11 +22255,11 @@ it	O
 different	O
 between	O
 primary	O
-oral	B-Cell
-cancer	I-Cell
-cells	E-Cell
+oral	O
+cancer	O
+cells	O
 and	O
-cervical	S-Multi-tissue_structure
+cervical	O
 metastases	O
 .	O
 
@@ -22269,8 +22269,8 @@ was	O
 significantly	O
 reduced	O
 in	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastases	O
 .	O
 
@@ -22288,8 +22288,8 @@ great	O
 value	O
 in	O
 assessing	O
-lymph	B-Multi-tissue_structure
-node	E-Multi-tissue_structure
+lymph	O
+node	O
 metastasis	O
 of	O
 OSCC	S-Disease
@@ -22313,26 +22313,26 @@ CK1	B-GP
 delta	E-GP
 activity	O
 attenuates	O
-SV40	S-Organism
+SV40	O
 -	O
 induced	O
-cellular	S-Cell
+cellular	O
 transformation	O
 in	O
 vitro	O
 and	O
-mouse	S-Organism
-mammary	S-Organ
+mouse	O
+mammary	O
 carcinogenesis	O
 in	O
 vivo	O
 .	O
 
-Simian	B-Organism
-virus	I-Organism
-40	E-Organism
+Simian	O
+virus	O
+40	O
 (	O
-SV40	S-Organism
+SV40	O
 )	O
 is	O
 a	O
@@ -22340,7 +22340,7 @@ powerful	O
 tool	O
 to	O
 study	O
-cellular	S-Cell
+cellular	O
 transformation	O
 in	O
 vitro	O
@@ -22357,7 +22357,7 @@ vivo	O
 .	O
 
 Various	O
-cellular	S-Cell
+cellular	O
 kinases	O
 ,	O
 among	O
@@ -22378,7 +22378,7 @@ the	O
 transforming	O
 activity	O
 of	O
-SV40	S-Organism
+SV40	O
 ,	O
 including	O
 the	O
@@ -22394,7 +22394,7 @@ major	O
 transforming	O
 protein	O
 of	O
-SV40	S-Organism
+SV40	O
 ,	O
 itself	O
 .	O
@@ -22413,31 +22413,31 @@ impaired	O
 kinase	O
 activity	O
 on	O
-SV40	S-Organism
+SV40	O
 -	O
 induced	O
-cell	S-Cell
+cell	O
 transformation	O
 in	O
 vitro	O
 ,	O
 and	O
 on	O
-SV40	S-Organism
+SV40	O
 -	O
 induced	O
-mammary	S-Organ
+mammary	O
 carcinogenesis	O
 in	O
 vivo	O
 in	O
 a	O
-transgenic	B-Organism
-/	I-Organism
-bi	I-Organism
--	I-Organism
-transgenic	I-Organism
-mouse	E-Organism
+transgenic	O
+/	O
+bi	O
+-	O
+transgenic	O
+mouse	O
 model	O
 .	O
 
@@ -22490,10 +22490,10 @@ expressed	O
 in	O
 maximal	O
 transformed	O
-SV	B-Cell
--	I-Cell
-52	I-Cell
-cells	E-Cell
+SV	O
+-	O
+52	O
+cells	O
 ,	O
 CK1delta	S-GP
 mutants	O
@@ -22521,16 +22521,16 @@ effects	O
 of	O
 CK1delta	S-GP
 on	O
-SV40	S-Organism
+SV40	O
 -	O
 induced	O
-mammary	S-Organ
+mammary	O
 carcinogenesis	O
 ,	O
 we	O
 generated	O
-transgenic	B-Organism
-mice	E-Organism
+transgenic	O
+mice	O
 expressing	O
 mutant	O
 CK1delta	S-GP
@@ -22552,7 +22552,7 @@ and	O
 crossed	O
 them	O
 with	O
-SV40	S-Organism
+SV40	O
 transgenic	O
 WAP	B-GP
 -	I-GP
@@ -22571,7 +22571,7 @@ Both	O
 WAP	B-GP
 -	I-GP
 T	E-GP
-mice	S-Organism
+mice	O
 as	O
 well	O
 as	O
@@ -22625,7 +22625,7 @@ did	O
 not	O
 affect	O
 early	O
-lesion	S-Pathological_formation
+lesion	O
 formation	O
 during	O
 tumorigenesis	O
@@ -22654,7 +22654,7 @@ different	O
 tumorigenic	O
 potential	O
 of	O
-SV40	S-Organism
+SV40	O
 in	O
 WAP	B-GP
 -	I-GP
@@ -22696,7 +22696,7 @@ wnt	S-GP
 -	O
 signaling	O
 and	O
-DNA	S-Cellular_component
+DNA	O
 repair	O
 .	O
 
@@ -22709,16 +22709,16 @@ mutations	O
 in	O
 CK1delta	S-GP
 impair	O
-SV40	S-Organism
+SV40	O
 -	O
 induced	O
-cellular	S-Cell
+cellular	O
 transformation	O
 in	O
 vitro	O
 and	O
-mouse	S-Organism
-mammary	S-Organ
+mouse	O
+mammary	O
 carcinogenesis	O
 in	O
 vivo	O
@@ -22736,7 +22736,7 @@ Ki	I-GP
 -	I-GP
 ras	E-GP
 transformed	O
-fibroblasts	S-Cell
+fibroblasts	O
 .	O
 
 Osteonectin	S-GP
@@ -22750,7 +22750,7 @@ non	O
 collagenous	O
 proteins	O
 of	O
-bone	S-Tissue
+bone	O
 .	O
 
 However	O
@@ -22762,13 +22762,13 @@ been	O
 found	O
 in	O
 many	O
-soft	B-Tissue
-,	I-Tissue
-extracellular	I-Tissue
-matrix	I-Tissue
--	I-Tissue
-producing	I-Tissue
-tissues	E-Tissue
+soft	O
+,	O
+extracellular	O
+matrix	O
+-	O
+producing	O
+tissues	O
 ;	O
 an	O
 osteonectin	S-GP
@@ -22778,9 +22778,9 @@ protein	O
 was	O
 detected	O
 in	O
-tumor	B-Cellular_component
-basement	I-Cellular_component
-membrane	E-Cellular_component
+tumor	O
+basement	O
+membrane	O
 .	O
 
 We	O
@@ -22793,10 +22793,10 @@ osteonectin	S-GP
 gene	O
 in	O
 fresh	O
-BALB	B-Cell
-/	I-Cell
-c	I-Cell
-fibroblasts	E-Cell
+BALB	O
+/	O
+c	O
+fibroblasts	O
 transformed	O
 by	O
 v	B-GP
@@ -22807,7 +22807,7 @@ ras	E-GP
 .	O
 
 Transformed	O
-cells	S-Cell
+cells	O
 exhibited	O
 lower	O
 levels	O
@@ -22817,12 +22817,12 @@ as	O
 compared	O
 with	O
 normal	O
-fibroblasts	S-Cell
+fibroblasts	O
 .	O
 
 The	O
 transformed	O
-cells	S-Cell
+cells	O
 were	O
 cloned	O
 after	O
@@ -22833,7 +22833,7 @@ assay	O
 ,	O
 and	O
 4	O
-clones	S-Cell
+clones	O
 were	O
 analyzed	O
 for	O
@@ -22874,7 +22874,7 @@ was	O
 correlated	O
 with	O
 high	O
-lung	S-Organ
+lung	O
 colonization	O
 .	O
 
@@ -22883,16 +22883,16 @@ When	O
 (	O
 5	O
 )	O
-cells	S-Cell
+cells	O
 were	O
 injected	O
-i	B-Immaterial_anatomical_entity
-.	I-Immaterial_anatomical_entity
-v	I-Immaterial_anatomical_entity
-.	E-Immaterial_anatomical_entity
+i	O
+.	O
+v	O
+.	O
 ,	O
 median	O
-colony	S-Cell
+colony	O
 value	O
 was	O
 55	O
@@ -22931,7 +22931,7 @@ align	O
 osteonectin	S-GP
 with	O
 other	O
-matrix	S-Cellular_component
+matrix	O
 -	O
 components	O
 and	O
@@ -22943,8 +22943,8 @@ potential	O
 metastatic	O
 spreading	O
 of	O
-transformed	B-Cell
-cells	E-Cell
+transformed	O
+cells	O
 .	O
 
 [	O
@@ -22952,8 +22952,8 @@ Intraepithelial	B-Disease
 neoplasm	E-Disease
 of	O
 the	O
-uterine	B-Multi-tissue_structure
-cervix	E-Multi-tissue_structure
+uterine	O
+cervix	O
 and	O
 angiogenesis	O
 :	O
@@ -22962,9 +22962,9 @@ study	O
 ]	O
 
 Thirty	O
-uterine	B-Multi-tissue_structure
-cervix	I-Multi-tissue_structure
-specimens	E-Multi-tissue_structure
+uterine	O
+cervix	O
+specimens	O
 sampled	O
 following	O
 conization	O
@@ -22978,7 +22978,7 @@ histology	O
 ,	O
 histoenzymology	O
 (	O
-vessel	S-Multi-tissue_structure
+vessel	O
 phosphatase	O
 alkaline	O
 activity	O
@@ -22995,11 +22995,11 @@ type	B-GP
 IV	I-GP
 collagen	E-GP
 in	O
-epithelium	S-Tissue
+epithelium	O
 and	O
-vessel	B-Cellular_component
-basement	I-Cellular_component
-membranes	E-Cellular_component
+vessel	O
+basement	O
+membranes	O
 )	O
 .	O
 
@@ -23036,7 +23036,7 @@ that	O
 the	O
 severity	O
 of	O
-vascular	S-Multi-tissue_structure
+vascular	O
 abnormalities	O
 correlated	O
 positively	O
@@ -23045,8 +23045,8 @@ the	O
 severity	O
 of	O
 histologic	O
-epithelial	B-Pathological_formation
-lesions	E-Pathological_formation
+epithelial	O
+lesions	O
 ;	O
 this	O
 finding	O
@@ -23065,7 +23065,7 @@ large	O
 moniliform	O
 ,	O
 tortuous	O
-vessels	S-Multi-tissue_structure
+vessels	O
 was	O
 seen	O
 in	O
@@ -23076,7 +23076,7 @@ carcinomas	S-Disease
 .	O
 
 The	O
-vascular	S-Multi-tissue_structure
+vascular	O
 anomalies	O
 seem	O
 to	O
@@ -23084,8 +23084,8 @@ precede	O
 the	O
 development	O
 of	O
-histologic	B-Pathological_formation
-lesions	E-Pathological_formation
+histologic	O
+lesions	O
 in	O
 some	O
 instances	O
@@ -23094,8 +23094,8 @@ instances	O
 Histogenesis	O
 of	O
 the	O
-abnormal	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+abnormal	O
+vessels	O
 may	O
 involve	O
 production	O
@@ -23105,8 +23105,8 @@ angiogenic	O
 factor	O
 by	O
 the	O
-cancerized	B-Tissue
-epithelia	E-Tissue
+cancerized	O
+epithelia	O
 .	O
 
 Glycolysis	O
@@ -23114,10 +23114,10 @@ and	O
 glutaminolysis	O
 in	O
 perifused	O
-Ehrlich	B-Cell
-ascites	I-Cell
-tumour	I-Cell
-cells	E-Cell
+Ehrlich	O
+ascites	O
+tumour	O
+cells	O
 .	O
 
 A	O
@@ -23131,22 +23131,22 @@ to	O
 study	O
 glucose	S-Chemical
 and	O
-glutamine	S-Amino_acid
+glutamine	O
 metabolism	O
 by	O
 freshly	O
 harvested	O
-Ehrlich	B-Cell
-ascites	I-Cell
-tumour	I-Cell
-cells	E-Cell
+Ehrlich	O
+ascites	O
+tumour	O
+cells	O
 in	O
 steady	O
 state	O
 conditions	O
 .	O
 
-Cells	S-Cell
+Cells	O
 were	O
 perifused	O
 in	O
@@ -23161,7 +23161,7 @@ glucose	S-Chemical
 .	O
 5	O
 mM	O
-glutamine	S-Amino_acid
+glutamine	O
 or	O
 5	O
 mM	O
@@ -23171,7 +23171,7 @@ and	O
 .	O
 5	O
 mM	O
-glutamine	S-Amino_acid
+glutamine	O
 .	O
 
 The	O
@@ -23185,13 +23185,13 @@ both	O
 substrates	O
 glucose	S-Chemical
 and	O
-glutamine	S-Amino_acid
+glutamine	O
 are	O
 continuously	O
 wasted	O
 by	O
-tumour	B-Cell
-cells	E-Cell
+tumour	O
+cells	O
 ,	O
 excreting	O
 two	O
@@ -23206,20 +23206,20 @@ and	O
 one	O
 mol	O
 of	O
-glutamate	S-Amino_acid
+glutamate	O
 and	O
 ammonia	S-Chemical
 per	O
 mol	O
 of	O
-glutamine	S-Amino_acid
+glutamine	O
 consumed	O
 into	O
 the	O
 medium	O
 .	O
 
-Glutamine	S-Amino_acid
+Glutamine	O
 consumption	O
 in	O
 the	O
@@ -23230,7 +23230,7 @@ was	O
 higher	O
 than	O
 with	O
-glutamine	S-Amino_acid
+glutamine	O
 alone	O
 .	O
 
@@ -23241,8 +23241,8 @@ neoplastic	O
 transformation	O
 of	O
 normal	O
-human	S-Organism
-fibroblasts	S-Cell
+human	O
+fibroblasts	O
 by	O
 Co	B-Chemical
 -	I-Chemical
@@ -23273,13 +23273,13 @@ Namba	O
 )	O
 ,	O
 normal	O
-human	S-Organism
-fibroblasts	S-Cell
+human	O
+fibroblasts	O
 were	O
 transformed	O
 into	O
-immortal	B-Cell
-cells	E-Cell
+immortal	O
+cells	O
 with	O
 abnormal	O
 karyotypes	O
@@ -23296,11 +23296,11 @@ irradiation	O
 These	O
 immortally	O
 transformed	O
-cells	S-Cell
+cells	O
 (	O
-KMST	B-Cell
--	I-Cell
-6	E-Cell
+KMST	O
+-	O
+6	O
 )	O
 showed	O
 no	O
@@ -23326,20 +23326,20 @@ oncogenes	O
 derived	O
 from	O
 a	O
-human	B-Organism
-lung	I-Organism
-carcinoma	E-Organism
+human	O
+lung	O
+carcinoma	O
 or	O
-Harvey	B-Organism
-murine	I-Organism
-sarcoma	I-Organism
-virus	E-Organism
+Harvey	O
+murine	O
+sarcoma	O
+virus	O
 ,	O
 the	O
-KMST	B-Cell
--	I-Cell
-6	I-Cell
-cells	E-Cell
+KMST	O
+-	O
+6	O
+cells	O
 acquired	O
 elevated	O
 clonability	O
@@ -23349,8 +23349,8 @@ agar	O
 and	O
 transplantability	O
 in	O
-nude	B-Organism
-mice	E-Organism
+nude	O
+mice	O
 .	O
 
 All	O
@@ -23365,7 +23365,7 @@ regression	O
 and	O
 killed	O
 the	O
-mice	S-Organism
+mice	O
 .	O
 
 The	O
@@ -23376,7 +23376,7 @@ serially	O
 transplantable	O
 into	O
 other	O
-mice	S-Organism
+mice	O
 .	O
 
 The	O
@@ -23389,14 +23389,14 @@ did	O
 not	O
 convert	O
 normal	O
-human	S-Organism
-fibroblasts	S-Cell
+human	O
+fibroblasts	O
 into	O
 either	O
-immortal	S-Cell
+immortal	O
 or	O
-tumorigenic	B-Cell
-cells	E-Cell
+tumorigenic	O
+cells	O
 .	O
 
 Our	O
@@ -23414,13 +23414,13 @@ of	O
 carcinogenesis	O
 in	O
 normal	O
-human	S-Organism
-cells	S-Cell
+human	O
+cells	O
 ,	O
 giving	O
 rise	O
 to	O
-chromosome	S-Cellular_component
+chromosome	O
 aberrations	O
 and	O
 immortality	O
@@ -23441,7 +23441,7 @@ of	O
 the	O
 immortally	O
 transformed	O
-cell	S-Cell
+cell	O
 population	O
 to	O
 a	O
@@ -23457,8 +23457,8 @@ agar	O
 and	O
 tumorigenicity	O
 in	O
-nude	B-Organism
-mice	E-Organism
+nude	O
+mice	O
 .	O
 
 New	O
@@ -23470,12 +23470,12 @@ factor	E-GP
 :	O
 stimulation	O
 of	O
-capillary	B-Cell
-endothelial	I-Cell
-cell	E-Cell
+capillary	O
+endothelial	O
+cell	O
 migration	O
 and	O
-matrix	S-Cellular_component
+matrix	O
 dependent	O
 proliferation	O
 .	O
@@ -23484,11 +23484,11 @@ The	O
 proliferative	O
 response	O
 of	O
-bovine	S-Organism
-retinal	B-Cell
-capillary	I-Cell
-endothelial	I-Cell
-cells	E-Cell
+bovine	O
+retinal	O
+capillary	O
+endothelial	O
+cells	O
 to	O
 EGF	S-GP
 is	O
@@ -23496,18 +23496,18 @@ dependent	O
 upon	O
 attaching	O
 the	O
-cells	S-Cell
+cells	O
 to	O
 a	O
-matrix	S-Cellular_component
+matrix	O
 of	O
 fibronectin	S-GP
 .	O
 
-Bovine	S-Organism
-capillary	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+Bovine	O
+capillary	O
+endothelial	O
+cells	O
 are	O
 also	O
 stimulated	O
@@ -23537,8 +23537,8 @@ in	O
 vivo	O
 .	O
 
-Capillary	B-Cell
-cell	E-Cell
+Capillary	O
+cell	O
 migration	O
 and	O
 proliferation	O
@@ -23619,8 +23619,8 @@ methods	O
 such	O
 as	O
 the	O
-rabbit	S-Organism
-cornea	S-Multi-tissue_structure
+rabbit	O
+cornea	O
 ,	O
 it	O
 is	O
@@ -23632,7 +23632,7 @@ the	O
 growth	O
 of	O
 a	O
-capillary	S-Tissue
+capillary	O
 involves	O
 an	O
 ordered	O
@@ -23644,30 +23644,30 @@ includes	O
 lysis	O
 of	O
 the	O
-basement	B-Cellular_component
-membrane	E-Cellular_component
+basement	O
+membrane	O
 of	O
 a	O
 parent	O
-venule	S-Multi-tissue_structure
+venule	O
 ,	O
 directional	O
 migration	O
 of	O
-capillary	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+capillary	O
+endothelial	O
+cells	O
 toward	O
 the	O
 angiogenic	O
 stimulus	O
 ,	O
-lumen	S-Immaterial_anatomical_entity
+lumen	O
 formation	O
 ,	O
 development	O
 of	O
-branches	S-Tissue
+branches	O
 ,	O
 and	O
 anastomosis	O
@@ -23676,7 +23676,7 @@ the	O
 tip	O
 of	O
 one	O
-tube	S-Tissue
+tube	O
 with	O
 another	O
 to	O
@@ -23709,27 +23709,27 @@ from	O
 at	O
 least	O
 three	O
-non	B-Cell
--	I-Cell
-neoplastic	I-Cell
-cells	E-Cell
+non	O
+-	O
+neoplastic	O
+cells	O
 .	O
 
 These	O
 include	O
 activated	O
-macrophages	S-Cell
+macrophages	O
 ,	O
 sensitized	O
-lymphocytes	S-Cell
+lymphocytes	O
 ,	O
 and	O
-adipocytes	S-Cell
+adipocytes	O
 .	O
 
 Other	O
-normal	B-Tissue
-tissues	E-Tissue
+normal	O
+tissues	O
 can	O
 also	O
 stimulate	O
@@ -23739,7 +23739,7 @@ but	O
 the	O
 type	O
 of	O
-cell	S-Cell
+cell	O
 giving	O
 rise	O
 to	O
@@ -23765,9 +23765,9 @@ recent	O
 ability	O
 to	O
 clone	O
-capillary	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+capillary	O
+endothelial	O
+cells	O
 and	O
 to	O
 carry	O
@@ -23788,7 +23788,7 @@ delineate	O
 the	O
 mechanism	O
 of	O
-capillary	S-Tissue
+capillary	O
 growth	O
 .	O
 
@@ -23799,19 +23799,19 @@ have	O
 shown	O
 that	O
 the	O
-mast	B-Cell
-cell	E-Cell
+mast	O
+cell	O
 seems	O
 to	O
 behave	O
 as	O
 a	O
-helper	B-Cell
-cell	E-Cell
+helper	O
+cell	O
 for	O
-capillary	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+capillary	O
+endothelial	O
+cells	O
 ,	O
 in	O
 some	O
@@ -23835,17 +23835,17 @@ to	O
 be	O
 the	O
 principal	O
-mast	B-Cell
-cell	E-Cell
+mast	O
+cell	O
 factor	O
 responsible	O
 for	O
 this	O
 effect	O
 on	O
-capillary	B-Cell
-endothelial	I-Cell
-cells	E-Cell
+capillary	O
+endothelial	O
+cells	O
 .	O
 
 One	O
@@ -23853,12 +23853,12 @@ theoretical	O
 possibility	O
 is	O
 that	O
-mast	B-Cell
-cells	E-Cell
+mast	O
+cells	O
 may	O
 prepare	O
 the	O
-matrix	S-Cellular_component
+matrix	O
 ,	O
 perhaps	O
 by	O
@@ -23869,8 +23869,8 @@ heparin	S-Chemical
 ,	O
 so	O
 that	O
-capillary	B-Tissue
-sprouts	E-Tissue
+capillary	O
+sprouts	O
 can	O
 more	O
 easily	O
@@ -23924,7 +23924,7 @@ initiation	O
 and	O
 control	O
 of	O
-capillary	S-Tissue
+capillary	O
 growth	O
 .	O
 
@@ -23943,10 +23943,10 @@ virus	O
 vaccine	O
 .	O
 
-New	B-Organism
-Zealand	I-Organism
-white	I-Organism
-rabbits	E-Organism
+New	O
+Zealand	O
+white	O
+rabbits	O
 were	O
 given	O
 limbal	O
@@ -23958,20 +23958,20 @@ heat	O
 killed	O
 suspension	O
 of	O
-herpes	B-Organism
-simplex	I-Organism
-virus	E-Organism
+herpes	O
+simplex	O
+virus	O
 (	O
-HSV	S-Organism
+HSV	O
 )	O
 in	O
 a	O
 lysate	O
 of	O
-human	S-Organism
-embryonic	B-Cell
-kidney	I-Cell
-cells	E-Cell
+human	O
+embryonic	O
+kidney	O
+cells	O
 .	O
 
 At	O
@@ -23999,14 +23999,14 @@ forming	O
 units	O
 of	O
 viable	O
-HSV	S-Organism
+HSV	O
 .	O
 
-Epithelial	S-Tissue
+Epithelial	O
 keratitis	O
 ,	O
-disciform	B-Pathological_formation
-edema	E-Pathological_formation
+disciform	O
+edema	O
 ,	O
 and	O
 necrotizing	O
@@ -24015,18 +24015,18 @@ with	O
 neovascularization	O
 of	O
 the	O
-cornea	S-Multi-tissue_structure
+cornea	O
 developed	O
 in	O
 control	O
 animals	O
 .	O
 
-Epithelial	S-Tissue
+Epithelial	O
 keratitis	O
 and	O
-corneal	B-Pathological_formation
-edema	E-Pathological_formation
+corneal	O
+edema	O
 also	O
 developed	O
 in	O
@@ -24064,7 +24064,7 @@ necrotizing	O
 keratitis	O
 in	O
 the	O
-corneas	S-Multi-tissue_structure
+corneas	O
 of	O
 the	O
 immunized	O
@@ -24081,9 +24081,9 @@ in	O
 immune	O
 complexes	O
 of	O
-simian	B-Organism
-virus	I-Organism
-40	E-Organism
+simian	O
+virus	O
+40	O
 large	B-GP
 T	I-GP
 -	I-GP
@@ -24092,7 +24092,7 @@ and	O
 transformation	O
 -	O
 associated	O
-cellular	S-Cell
+cellular	O
 p53	S-GP
 protein	O
 .	O
@@ -24103,9 +24103,9 @@ kinase	O
 assays	O
 in	O
 the	O
-simian	B-Organism
-virus	I-Organism
-40	E-Organism
+simian	O
+virus	O
+40	O
 system	O
 were	O
 performed	O
@@ -24138,7 +24138,7 @@ assays	O
 yielded	O
 mainly	O
 the	O
-viral	S-Organism
+viral	O
 large	B-GP
 T	I-GP
 -	I-GP
@@ -24150,7 +24150,7 @@ particular	O
 ,	O
 the	O
 associated	O
-cellular	S-Cell
+cellular	O
 p53	S-GP
 as	O
 endogenous	O
@@ -24202,15 +24202,15 @@ MnCl2	S-Chemical
 .	O
 
 Both	O
-phosphoserine	S-Amino_acid
+phosphoserine	O
 and	O
-phosphothreonine	S-Amino_acid
+phosphothreonine	O
 ,	O
 but	O
 in	O
 no	O
 case	O
-phosphotyrosine	S-Amino_acid
+phosphotyrosine	O
 ,	O
 were	O
 detected	O
@@ -24364,17 +24364,17 @@ p53	S-GP
 molecule	O
 from	O
 a	O
-simian	B-Organism
-virus	I-Organism
-40	E-Organism
+simian	O
+virus	O
+40	O
 -	O
 free	O
 ,	O
 chemically	O
 transformed	O
-human	S-Organism
-cell	B-Cell
-line	E-Cell
+human	O
+cell	O
+line	O
 was	O
 not	O
 phosphorylated	O
@@ -24412,9 +24412,9 @@ mediators	O
 of	O
 interactions	O
 with	O
-extracellular	B-Cellular_component
-matrix	I-Cellular_component
-components	E-Cellular_component
+extracellular	O
+matrix	O
+components	O
 in	O
 metastasis	O
 and	O
@@ -24455,26 +24455,26 @@ of	O
 interaction	O
 with	O
 adjacent	O
-extracellular	B-Cellular_component
-matrix	I-Cellular_component
-components	E-Cellular_component
+extracellular	O
+matrix	O
+components	O
 by	O
 mediating	O
-cellular	S-Cell
+cellular	O
 adhesion	O
 ,	O
-matrix	S-Cellular_component
+matrix	O
 dissolution	O
 ,	O
 and	O
-cellular	S-Cell
+cellular	O
 motility	O
 to	O
 achieve	O
 metastasis	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 or	O
 neovascularization	O
 of	O
@@ -24538,9 +24538,9 @@ HER	B-GP
 neu	S-GP
 -	O
 overexpressing	O
-breast	B-Cell
-cancer	I-Cell
-cells	E-Cell
+breast	O
+cancer	O
+cells	O
 by	O
 emodin	S-Chemical
 .	O
@@ -24563,7 +24563,7 @@ oncogene	O
 which	O
 encodes	O
 the	O
-tyrosine	S-Amino_acid
+tyrosine	O
 kinase	O
 receptor	O
 p185neu	S-GP
@@ -24575,10 +24575,10 @@ frequently	O
 in	O
 tumors	S-Disease
 from	O
-human	S-Organism
+human	O
 breast	B-Disease
 cancer	E-Disease
-patients	S-Organism
+patients	O
 and	O
 are	O
 correlated	O
@@ -24596,7 +24596,7 @@ chemotherapy	O
 directed	O
 at	O
 the	O
-tyrosine	S-Amino_acid
+tyrosine	O
 kinase	O
 of	O
 p185neu	S-GP
@@ -24636,12 +24636,12 @@ HER	B-GP
 2	E-GP
 /	O
 neu	S-GP
-tyrosine	S-Amino_acid
+tyrosine	O
 kinase	O
 ,	O
 resulting	O
 in	O
-tyrosine	S-Amino_acid
+tyrosine	O
 hypophosphorylation	O
 of	O
 p185neu	S-GP
@@ -24653,9 +24653,9 @@ HER	B-GP
 neu	S-GP
 -	O
 overexpressing	O
-breast	B-Cell
-cancer	I-Cell
-cells	E-Cell
+breast	O
+cancer	O
+cells	O
 .	O
 
 Emodin	S-Chemical
@@ -24669,7 +24669,7 @@ concentration	O
 ,	O
 which	O
 repressed	O
-tyrosine	S-Amino_acid
+tyrosine	O
 kinase	O
 of	O
 p185neu	S-GP
@@ -24693,9 +24693,9 @@ HER	B-GP
 neu	S-GP
 -	O
 overexpressing	O
-breast	B-Cell
-cancer	I-Cell
-cells	E-Cell
+breast	O
+cancer	O
+cells	O
 .	O
 
 However	O
@@ -24708,7 +24708,7 @@ less	O
 effective	O
 for	O
 those	O
-cells	S-Cell
+cells	O
 expressing	O
 basal	O
 levels	O
@@ -24732,9 +24732,9 @@ HER	B-GP
 neu	S-GP
 -	O
 overexpressing	O
-breast	B-Cell
-cancer	I-Cell
-cells	E-Cell
+breast	O
+cancer	O
+cells	O
 by	O
 exhibiting	O
 a	O
@@ -24744,12 +24744,12 @@ property	O
 of	O
 large	O
 lacy	O
-nuclei	S-Cellular_component
+nuclei	O
 surrounded	O
 by	O
 sizable	O
-flat	B-Organism_substance
-cytoplasm	E-Organism_substance
+flat	O
+cytoplasm	O
 and	O
 by	O
 showing	O
@@ -24766,9 +24766,9 @@ is	O
 a	O
 marker	O
 of	O
-mature	B-Cell
-breast	I-Cell
-cells	E-Cell
+mature	O
+breast	O
+cells	O
 .	O
 
 Therefore	O
@@ -24784,7 +24784,7 @@ HER	B-GP
 2	E-GP
 /	O
 neu	S-GP
-tyrosine	S-Amino_acid
+tyrosine	O
 kinase	O
 activity	O
 and	O
@@ -24802,8 +24802,8 @@ HER	B-GP
 neu	S-GP
 -	O
 overexpressing	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 .	O
 
 These	O
@@ -24824,17 +24824,17 @@ HER	B-GP
 neu	S-GP
 -	O
 overexpressing	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 .	O
 
 Metastatic	O
-NIH	B-Cell
-3T3	I-Cell
-x	I-Cell
-LTA	I-Cell
-cell	I-Cell
-hybrids	E-Cell
+NIH	O
+3T3	O
+x	O
+LTA	O
+cell	O
+hybrids	O
 express	O
 72	B-GP
 kDa	I-GP
@@ -24848,11 +24848,11 @@ previously	O
 reported	O
 that	O
 the	O
-murine	S-Organism
-fibroblast	B-Cell
-cell	I-Cell
-line	I-Cell
-LTA	E-Cell
+murine	O
+fibroblast	O
+cell	O
+line	O
+LTA	O
 is	O
 tumorigenic	O
 but	O
@@ -24877,9 +24877,9 @@ oncogene	O
 In	O
 contrast	O
 ,	O
-NIH	B-Cell
-3T3	I-Cell
-cells	E-Cell
+NIH	O
+3T3	O
+cells	O
 are	O
 non	O
 -	O
@@ -24898,15 +24898,15 @@ with	O
 ras	S-GP
 .	O
 
-Somatic	B-Cell
-cell	I-Cell
-hybrids	E-Cell
+Somatic	O
+cell	O
+hybrids	O
 between	O
-LTA	S-Cell
+LTA	O
 and	O
-NIH	B-Cell
-3T3	I-Cell
-cells	E-Cell
+NIH	O
+3T3	O
+cells	O
 are	O
 tumorigenic	O
 ,	O
@@ -24927,11 +24927,11 @@ IV	I-GP
 collagenases	E-GP
 in	O
 parental	O
-LTA	S-Cell
+LTA	O
 and	O
-NIH	B-Cell
-3T3	I-Cell
-cells	E-Cell
+NIH	O
+3T3	O
+cells	O
 (	O
 with	O
 and	O
@@ -24941,11 +24941,11 @@ ras	S-GP
 and	O
 four	O
 metastatic	O
-LTA	B-Cell
-x	I-Cell
-NIH	I-Cell
-3T3	I-Cell
-hybrids	E-Cell
+LTA	O
+x	O
+NIH	O
+3T3	O
+hybrids	O
 (	O
 also	O
 with	O
@@ -24956,11 +24956,11 @@ ras	S-GP
 .	O
 
 Parental	O
-NIH	B-Cell
-3T3	I-Cell
--	I-Cell
-derived	I-Cell
-cells	E-Cell
+NIH	O
+3T3	O
+-	O
+derived	O
+cells	O
 had	O
 both	O
 72	B-GP
@@ -24972,10 +24972,10 @@ gelatinase	E-GP
 activities	O
 ,	O
 and	O
-LTA	S-Cell
+LTA	O
 -	O
 derived	O
-cells	S-Cell
+cells	O
 had	O
 either	O
 aberrantly	O
@@ -24994,7 +24994,7 @@ activity	O
 All	O
 four	O
 metastatic	O
-hybrids	S-Cell
+hybrids	O
 expressed	O
 60	B-GP
 -	I-GP
@@ -25028,7 +25028,7 @@ metastatic	O
 phenotype	O
 of	O
 the	O
-hybrids	S-Cell
+hybrids	O
 was	O
 associated	O
 with	O
@@ -25043,7 +25043,7 @@ Levels	O
 of	O
 RNA	O
 for	O
-tissue	S-Tissue
+tissue	O
 inhibitors	O
 of	O
 metalloproteinases	O
@@ -25084,7 +25084,7 @@ cDNA	O
 fragments	O
 of	O
 the	O
-mouse	S-Organism
+mouse	O
 72	B-GP
 kDa	I-GP
 type	I-GP
@@ -25099,7 +25099,7 @@ was	O
 present	O
 in	O
 all	O
-cells	S-Cell
+cells	O
 although	O
 the	O
 structure	O
@@ -25111,16 +25111,16 @@ one	O
 of	O
 the	O
 three	O
-LTA	B-Cell
-cell	I-Cell
-lines	E-Cell
+LTA	O
+cell	O
+lines	O
 differed	O
 from	O
 that	O
 of	O
 the	O
 other	O
-cells	S-Cell
+cells	O
 .	O
 
 Our	O
@@ -25133,7 +25133,7 @@ change	O
 in	O
 the	O
 metastatic	O
-hybrids	S-Cell
+hybrids	O
 ,	O
 relative	O
 to	O
@@ -25141,8 +25141,8 @@ non	O
 -	O
 metastatic	O
 parental	O
-LTA	B-Cell
-cells	E-Cell
+LTA	O
+cells	O
 ,	O
 is	O
 induction	O
@@ -25159,7 +25159,7 @@ collagenase	E-GP
 Neoplastic	O
 progression	O
 of	O
-human	S-Organism
+human	O
 colorectal	B-Disease
 cancer	E-Disease
 is	O
@@ -25183,12 +25183,12 @@ genes	O
 The	O
 interaction	O
 of	O
-neoplastic	B-Cell
-cells	E-Cell
+neoplastic	O
+cells	O
 with	O
 the	O
-extracellular	B-Cellular_component
-matrix	E-Cellular_component
+extracellular	O
+matrix	O
 is	O
 a	O
 critical	O
@@ -25245,14 +25245,14 @@ glycoprotein	O
 associated	O
 with	O
 the	O
-extracellular	B-Cellular_component
-matrix	E-Cellular_component
+extracellular	O
+matrix	O
 ,	O
 during	O
 the	O
 progression	O
 of	O
-human	S-Organism
+human	O
 colorectal	B-Disease
 cancers	E-Disease
 .	O
@@ -25285,10 +25285,10 @@ hybridization	O
 ,	O
 in	O
 normal	O
-mucosa	S-Multi-tissue_structure
+mucosa	O
 ,	O
-benign	B-Pathological_formation
-adenomas	E-Pathological_formation
+benign	O
+adenomas	O
 ,	O
 and	O
 primary	O
@@ -25296,7 +25296,7 @@ colorectal	B-Disease
 adenocarcinomas	E-Disease
 and	O
 their	O
-liver	S-Organ
+liver	O
 metastases	O
 .	O
 
@@ -25317,14 +25317,14 @@ colorectal	B-Disease
 cancers	E-Disease
 and	O
 their	O
-liver	S-Organ
+liver	O
 metastases	O
 compared	O
 to	O
 non	O
 -	O
 neoplastic	O
-mucosa	S-Multi-tissue_structure
+mucosa	O
 .	O
 
 These	O
@@ -25332,8 +25332,8 @@ transcripts	O
 were	O
 localized	O
 in	O
-stromal	B-Cell
-fibroblasts	E-Cell
+stromal	O
+fibroblasts	O
 adjacent	O
 to	O
 the	O
@@ -25349,14 +25349,14 @@ with	O
 the	O
 progression	O
 of	O
-human	S-Organism
+human	O
 colorectal	B-Disease
 tumors	E-Disease
 toward	O
 local	O
 invasion	O
 and	O
-liver	S-Organ
+liver	O
 metastasis	O
 .	O
 
@@ -25387,8 +25387,8 @@ collagen	B-GP
 XII	E-GP
 in	O
 transformed	O
-mesenchymal	B-Cell
-cells	E-Cell
+mesenchymal	O
+cells	O
 .	O
 
 Collagen	B-GP
@@ -25403,9 +25403,9 @@ with	O
 the	O
 surface	O
 of	O
-interstitial	S-Organ
+interstitial	O
 collagen	S-GP
-fibrils	S-Cellular_component
+fibrils	O
 .	O
 
 This	O
@@ -25416,7 +25416,7 @@ in	O
 large	O
 amounts	O
 by	O
-fibroblasts	S-Cell
+fibroblasts	O
 cultivated	O
 in	O
 vitro	O
@@ -25429,7 +25429,7 @@ is	O
 completely	O
 absent	O
 from	O
-cells	S-Cell
+cells	O
 transformed	O
 by	O
 the	O
@@ -25443,7 +25443,7 @@ v	B-GP
 src	E-GP
 and	O
 from	O
-cells	S-Cell
+cells	O
 derived	O
 from	O
 a	O
@@ -25456,7 +25456,7 @@ fibrosarcoma	S-Disease
 Since	O
 all	O
 these	O
-cells	S-Cell
+cells	O
 lack	O
 any	O
 mRNA	O
@@ -25487,9 +25487,9 @@ temperature	O
 sensitive	O
 mutant	O
 of	O
-Rous	B-Organism
-sarcoma	I-Organism
-virus	E-Organism
+Rous	O
+sarcoma	O
+virus	O
 demonstrated	O
 that	O
 a	O
@@ -25521,11 +25521,11 @@ the	O
 stability	O
 of	O
 the	O
-extracellular	B-Cellular_component
-matrix	E-Cellular_component
+extracellular	O
+matrix	O
 of	O
 transformed	O
-cells	S-Cell
+cells	O
 .	O
 
 Comparative	O
@@ -25534,70 +25534,70 @@ study	O
 of	O
 a	O
 differentiated	O
-rat	S-Organism
+rat	O
 hepatoma	S-Disease
 and	O
 its	O
 dedifferentiated	O
-subclone	S-Cell
+subclone	O
 cultured	O
 as	O
-spheroids	S-Cell
+spheroids	O
 and	O
 as	O
 implanted	O
 tumors	S-Disease
 .	O
 
-H4IIEC3	S-Cell
+H4IIEC3	O
 (	O
-H4	S-Cell
+H4	O
 )	O
 ,	O
 a	O
 differentiated	O
-rat	S-Organism
-hepatoma	B-Cell
-line	E-Cell
+rat	O
+hepatoma	O
+line	O
 and	O
-H5	S-Cell
+H5	O
 ,	O
 its	O
 dedifferentiated	O
-subclone	S-Cell
+subclone	O
 ,	O
 were	O
 investigated	O
 as	O
 proliferating	O
-spheroids	S-Cell
+spheroids	O
 and	O
 as	O
 implanted	O
 subcutaneous	B-Disease
 tumors	E-Disease
 in	O
-juvenile	B-Organism
-rats	E-Organism
+juvenile	O
+rats	O
 .	O
 
-H4	B-Cell
-cells	E-Cell
+H4	O
+cells	O
 formed	O
 tight	O
 ,	O
 round	O
-spheroids	S-Cell
+spheroids	O
 whereas	O
-H5	B-Cell
-cells	E-Cell
+H5	O
+cells	O
 formed	O
 loose	O
 ,	O
-grape	B-Cell
--	I-Cell
-like	I-Cell
-structures	E-Cell
+grape	O
+-	O
+like	O
+structures	O
 .	O
 
 31P	S-Chemical
@@ -25609,13 +25609,13 @@ phosphocreatine	S-Chemical
 was	O
 present	O
 in	O
-H5	B-Cell
-spheroids	E-Cell
+H5	O
+spheroids	O
 but	O
 not	O
 in	O
-H4	B-Cell
-spheroids	E-Cell
+H4	O
+spheroids	O
 or	O
 tumors	S-Disease
 .	O
@@ -25646,8 +25646,8 @@ that	O
 energy	O
 production	O
 in	O
-H5	B-Cell
-spheroids	E-Cell
+H5	O
+spheroids	O
 was	O
 primarily	O
 via	O
@@ -25663,22 +25663,22 @@ utilization	O
 was	O
 detected	O
 in	O
-H4	B-Cell
-spheroids	E-Cell
+H4	O
+spheroids	O
 ,	O
 but	O
 uptake	O
 of	O
-alanine	S-Amino_acid
+alanine	O
 and	O
 accumulation	O
 of	O
 labeled	O
 lactate	S-Chemical
 ,	O
-glutamate	S-Amino_acid
+glutamate	O
 and	O
-glutamine	S-Amino_acid
+glutamine	O
 indicated	O
 oxidation	O
 via	O
@@ -25693,8 +25693,8 @@ cycle	O
 
 Tumors	S-Disease
 of	O
-H4	B-Cell
-cells	E-Cell
+H4	O
+cells	O
 were	O
 well	O
 perfused	O
@@ -25702,8 +25702,8 @@ perfused	O
 unlike	O
 tumors	S-Disease
 of	O
-H5	B-Cell
-cells	E-Cell
+H5	O
+cells	O
 which	O
 were	O
 highly	O
@@ -25727,7 +25727,7 @@ alanine	E-Chemical
 ]	I-Chemical
 lactate	E-Chemical
 and	O
-glutamate	S-Amino_acid
+glutamate	O
 ,	O
 evidence	O
 of	O
@@ -25759,10 +25759,10 @@ the	O
 differentiation	O
 state	O
 of	O
-H4	S-Cell
+H4	O
 and	O
-H5	B-Cell
-spheroids	E-Cell
+H5	O
+spheroids	O
 and	O
 tumors	S-Disease
 .	O
@@ -25786,10 +25786,10 @@ modalities	O
 ]	O
 .	O
 
-RNA	S-Organism
+RNA	O
 and	O
-DNA	B-Organism
-viruses	E-Organism
+DNA	O
+viruses	O
 can	O
 be	O
 transforming	O
@@ -25807,16 +25807,16 @@ of	O
 the	O
 ability	O
 of	O
-viruses	S-Organism
+viruses	O
 to	O
 integrate	O
 into	O
 the	O
-host	B-Cell
-cell	E-Cell
+host	O
+cell	O
 '	O
 s	O
-DNA	S-Cellular_component
+DNA	O
 and	O
 to	O
 produce	O
@@ -25835,7 +25835,7 @@ integral	O
 parts	O
 of	O
 the	O
-viral	S-Organism
+viral	O
 genome	O
 ,	O
 the	O
@@ -25846,20 +25846,20 @@ Comparison	O
 between	O
 RNA	O
 /	O
-DNA	S-Cellular_component
+DNA	O
 sequence	O
 of	O
-viral	S-Organism
+viral	O
 oncogenes	O
 and	O
 normal	O
-human	S-Organism
+human	O
 genome	O
 of	O
 non	O
 -	O
 transformed	O
-cells	S-Cell
+cells	O
 revealed	O
 high	O
 sequence	O
@@ -25872,7 +25872,7 @@ areas	O
 which	O
 were	O
 named	O
-cellular	S-Cell
+cellular	O
 proto	O
 -	O
 oncogens	O
@@ -25889,7 +25889,7 @@ regulatory	O
 pathways	O
 in	O
 normal	O
-cells	S-Cell
+cells	O
 .	O
 
 The	O
@@ -25918,8 +25918,8 @@ mechanism	O
 ,	O
 by	O
 which	O
-malignant	B-Cell
-cells	E-Cell
+malignant	O
+cells	O
 can	O
 acquire	O
 a	O
@@ -25984,7 +25984,7 @@ Her	B-GP
 neu	S-GP
 proteins	O
 in	O
-human	S-Organism
+human	O
 tumours	S-Disease
 can	O
 provide	O
@@ -26000,7 +26000,7 @@ and	O
 overall	O
 survival	O
 for	O
-patients	S-Organism
+patients	O
 with	O
 breast	S-Disease
 ,	O
@@ -26014,7 +26014,7 @@ cancer	E-Disease
 
 Molecular	O
 and	O
-cell	S-Cell
+cell	O
 -	O
 physiological	O
 analyses	O
@@ -26079,29 +26079,29 @@ being	O
 investigated	O
 .	O
 
-Human	B-Organism
-cytomegalovirus	E-Organism
+Human	O
+cytomegalovirus	O
 elevates	O
 levels	O
 of	O
 the	O
-cellular	S-Cell
+cellular	O
 protein	O
 p53	S-GP
 in	O
 infected	O
-fibroblasts	S-Cell
+fibroblasts	O
 .	O
 
-Human	B-Organism
-cytomegalovirus	E-Organism
+Human	O
+cytomegalovirus	O
 (	O
-HCMV	S-Organism
+HCMV	O
 )	O
 ,	O
 like	O
 other	O
-DNA	S-Cellular_component
+DNA	O
 tumor	S-Disease
 viruses	O
 ,	O
@@ -26109,33 +26109,33 @@ induces	O
 morphological	O
 transformation	O
 of	O
-cells	S-Cell
+cells	O
 in	O
 vitro	O
 and	O
 stimulates	O
 host	O
-cell	S-Cell
+cell	O
 macromolecular	O
 synthesis	O
 in	O
 infected	O
-cells	S-Cell
+cells	O
 .	O
 
 Since	O
 other	O
-DNA	S-Cellular_component
+DNA	O
 tumor	S-Disease
 viruses	O
 ,	O
 such	O
 as	O
-simian	B-Organism
-virus	I-Organism
-40	E-Organism
+simian	O
+virus	O
+40	O
 and	O
-adenovirus	S-Organism
+adenovirus	O
 ,	O
 have	O
 previously	O
@@ -26144,7 +26144,7 @@ shown	O
 to	O
 interact	O
 with	O
-cellular	S-Cell
+cellular	O
 protein	O
 p53	S-GP
 ,	O
@@ -26153,12 +26153,12 @@ investigated	O
 whether	O
 infection	O
 of	O
-cells	S-Cell
+cells	O
 by	O
-HCMV	S-Organism
+HCMV	O
 would	O
 modulate	O
-cellular	S-Cell
+cellular	O
 p53	S-GP
 levels	O
 .	O
@@ -26167,9 +26167,9 @@ Our	O
 results	O
 indicate	O
 that	O
-HCMV	S-Organism
+HCMV	O
 elevates	O
-cellular	S-Cell
+cellular	O
 p53	S-GP
 levels	O
 on	O
@@ -26184,7 +26184,7 @@ to	O
 fold	O
 in	O
 infected	O
-fibroblasts	S-Cell
+fibroblasts	O
 .	O
 
 The	O
@@ -26227,7 +26227,7 @@ virus	O
 receptor	O
 interactions	O
 or	O
-HCMV	S-Organism
+HCMV	O
 late	O
 events	O
 .	O
@@ -26246,7 +26246,7 @@ early	O
 times	O
 of	O
 the	O
-HCMV	S-Organism
+HCMV	O
 multiplication	O
 cycle	O
 (	O
@@ -26267,14 +26267,14 @@ before	O
 most	O
 of	O
 the	O
-HCMV	S-Organism
-DNA	S-Cellular_component
+HCMV	O
+DNA	O
 synthesis	O
 was	O
 initiated	O
 .	O
 
-HCMV	S-Organism
+HCMV	O
 immediate	B-GP
 -	I-GP
 early	I-GP
@@ -26291,11 +26291,11 @@ p53	S-GP
 levels	O
 in	O
 infected	O
-fibroblasts	S-Cell
+fibroblasts	O
 ;	O
 expression	O
 of	O
-HCMV	S-Organism
+HCMV	O
 immediate	B-GP
 -	I-GP
 early	I-GP
@@ -26312,8 +26312,8 @@ p53	S-GP
 levels	O
 in	O
 transfected	O
-human	S-Organism
-fibroblasts	S-Cell
+human	O
+fibroblasts	O
 .	O
 
 This	O
@@ -26327,10 +26327,10 @@ p53	S-GP
 levels	O
 caused	O
 by	O
-HCMV	S-Organism
+HCMV	O
 in	O
 infected	O
-fibroblasts	S-Cell
+fibroblasts	O
 .	O
 
 H	B-GP
@@ -26338,7 +26338,7 @@ H	B-GP
 ras	E-GP
 mutations	O
 in	O
-human	S-Organism
+human	O
 pituitary	B-Disease
 carcinoma	E-Disease
 metastases	O
@@ -26347,7 +26347,7 @@ metastases	O
 Molecular	O
 mechanisms	O
 of	O
-pituitary	S-Organ
+pituitary	O
 tumorigenesis	O
 were	O
 studied	O
@@ -26485,20 +26485,20 @@ codon	O
 resulting	O
 in	O
 a	O
-glycine	S-Amino_acid
+glycine	O
 to	O
-arginine	S-Amino_acid
+arginine	O
 ,	O
 and	O
 an	O
-alanine	S-Amino_acid
+alanine	O
 to	O
-threonine	S-Amino_acid
+threonine	O
 change	O
 at	O
 these	O
-amino	B-Amino_acid
-acids	E-Amino_acid
+amino	O
+acids	O
 ,	O
 respectively	O
 .	O
@@ -26552,7 +26552,7 @@ are	O
 not	O
 associated	O
 with	O
-pituitary	S-Organ
+pituitary	O
 tumorigenesis	O
 ,	O
 however	O
@@ -26608,7 +26608,7 @@ Glut	B-GP
 glucose	S-Chemical
 transporter	O
 in	O
-human	S-Organism
+human	O
 breast	B-Disease
 cancer	E-Disease
 .	O
@@ -26658,7 +26658,7 @@ Glut	B-GP
 -	I-GP
 1	E-GP
 (	O
-erythrocyte	S-Cell
+erythrocyte	O
 type	O
 )	O
 ,	O
@@ -26666,7 +26666,7 @@ Glut	B-GP
 -	I-GP
 2	E-GP
 (	O
-liver	S-Organ
+liver	O
 type	O
 )	O
 ,	O
@@ -26674,7 +26674,7 @@ Glut	B-GP
 -	I-GP
 3	E-GP
 (	O
-brain	S-Organ
+brain	O
 type	O
 )	O
 ,	O
@@ -26682,9 +26682,9 @@ Glut	B-GP
 -	I-GP
 4	E-GP
 (	O
-muscle	S-Organ
+muscle	O
 /	O
-fat	S-Tissue
+fat	O
 type	O
 )	O
 ,	O
@@ -26693,8 +26693,8 @@ Glut	B-GP
 -	I-GP
 5	E-GP
 (	O
-small	B-Organ
-intestine	E-Organ
+small	O
+intestine	O
 type	O
 )	O
 ,	O
@@ -26704,11 +26704,11 @@ by	O
 immunohistochemistry	O
 of	O
 paraffin	S-Chemical
-sections	S-Tissue
+sections	O
 from	O
 12	O
 primary	O
-human	S-Organism
+human	O
 breast	B-Disease
 cancers	E-Disease
 and	O
@@ -26718,11 +26718,11 @@ node	I-Disease
 metastases	E-Disease
 from	O
 2	O
-patients	S-Organism
+patients	O
 .	O
 
-Rat	S-Organism
-tissues	S-Tissue
+Rat	O
+tissues	O
 known	O
 to	O
 express	O
@@ -26761,16 +26761,16 @@ was	O
 expressed	O
 on	O
 the	O
-cell	B-Cellular_component
-membrane	E-Cellular_component
+cell	O
+membrane	O
 and	O
 in	O
 the	O
-cytoplasm	S-Organism_substance
+cytoplasm	O
 of	O
 the	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 ,	O
 but	O
 exhibited	O
@@ -26784,7 +26784,7 @@ the	O
 proportions	O
 of	O
 positive	O
-cells	S-Cell
+cells	O
 and	O
 the	O
 intensity	O
@@ -26796,8 +26796,8 @@ Staining	O
 of	O
 the	O
 normal	O
-mammary	B-Tissue
-epithelium	E-Tissue
+mammary	O
+epithelium	O
 ,	O
 if	O
 present	O
@@ -26808,12 +26808,12 @@ lower	O
 than	O
 observed	O
 in	O
-tumor	B-Cell
-cells	E-Cell
+tumor	O
+cells	O
 from	O
 the	O
 same	O
-patient	S-Organism
+patient	O
 .	O
 
 Glut	B-GP
@@ -26840,8 +26840,8 @@ than	O
 that	O
 seen	O
 in	O
-healthy	B-Tissue
-breast	E-Tissue
+healthy	O
+breast	O
 .	O
 
 Clusters	O
@@ -26855,7 +26855,7 @@ granule	O
 were	O
 observed	O
 in	O
-cells	S-Cell
+cells	O
 in	O
 six	O
 of	O
@@ -26869,11 +26869,11 @@ the	O
 tumors	S-Disease
 or	O
 the	O
-healthy	B-Tissue
-breast	E-Tissue
+healthy	O
+breast	O
 in	O
 the	O
-tissues	S-Tissue
+tissues	O
 studied	O
 expressed	O
 Glut	B-GP
@@ -26897,15 +26897,15 @@ Glut	B-GP
 -	I-GP
 1	E-GP
 by	O
-breast	B-Cell
-cancer	I-Cell
-cells	E-Cell
+breast	O
+cancer	O
+cells	O
 compared	O
 with	O
 the	O
-healthy	B-Tissue
-breast	I-Tissue
-tissue	E-Tissue
+healthy	O
+breast	O
+tissue	O
 is	O
 common	O
 .	O
@@ -26960,11 +26960,11 @@ of	O
 somatostatin	B-GP
 receptors	E-GP
 in	O
-veins	S-Multi-tissue_structure
+veins	O
 surrounding	O
-human	S-Organism
-cancer	B-Tissue
-tissue	E-Tissue
+human	O
+cancer	O
+tissue	O
 :	O
 role	O
 in	O
@@ -26979,20 +26979,20 @@ receptors	E-GP
 were	O
 detected	O
 in	O
-peritumoral	B-Multi-tissue_structure
-veins	E-Multi-tissue_structure
+peritumoral	O
+veins	O
 of	O
 various	O
-human	S-Organism
-cancer	B-Tissue
-tissue	I-Tissue
-specimens	E-Tissue
+human	O
+cancer	O
+tissue	O
+specimens	O
 .	O
 
-Vascular	S-Tissue
+Vascular	O
 and	O
-neoplastic	B-Tissue
-tissue	E-Tissue
+neoplastic	O
+tissue	O
 from	O
 14	O
 colonic	B-Disease
@@ -27029,8 +27029,8 @@ carcinoma	I-Disease
 specimens	E-Disease
 ,	O
 the	O
-peritumoral	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+peritumoral	O
+vessels	O
 expressed	O
 a	O
 high	O
@@ -27041,8 +27041,8 @@ receptors	E-GP
 ,	O
 whereas	O
 the	O
-neoplastic	B-Tissue
-tissue	E-Tissue
+neoplastic	O
+tissue	O
 itself	O
 was	O
 receptor	O
@@ -27064,8 +27064,8 @@ of	O
 somatostatin	B-GP
 receptors	E-GP
 in	O
-peritumoral	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+peritumoral	O
+vessels	O
 was	O
 low	O
 in	O
@@ -27088,13 +27088,13 @@ such	O
 receptors	O
 in	O
 the	O
-carcinoid	B-Tissue
-tumor	I-Tissue
-tissue	E-Tissue
+carcinoid	O
+tumor	O
+tissue	O
 .	O
 
 Autochthonous	O
-vessels	S-Multi-tissue_structure
+vessels	O
 surrounding	O
 other	O
 tumors	S-Disease
@@ -27124,16 +27124,16 @@ receptors	E-GP
 were	O
 localized	O
 in	O
-veins	S-Multi-tissue_structure
+veins	O
 ,	O
 particularly	O
 in	O
 the	O
-smooth	B-Tissue
--	I-Tissue
-muscle	I-Tissue
-cell	I-Tissue
-layer	E-Tissue
+smooth	O
+-	O
+muscle	O
+cell	O
+layer	O
 .	O
 
 They	O
@@ -27168,24 +27168,24 @@ subtype	O
 
 Since	O
 the	O
-vessels	S-Multi-tissue_structure
+vessels	O
 of	O
 normal	O
 non	O
 -	O
 neoplastic	O
-human	S-Organism
-tissues	S-Tissue
+human	O
+tissues	O
 ,	O
 e	O
 .	O
 g	O
 .	O
 of	O
-intestine	S-Organ
+intestine	O
 or	O
-lymphatic	B-Organ
-organs	E-Organ
+lymphatic	O
+organs	O
 ,	O
 have	O
 few	O
@@ -27198,8 +27198,8 @@ somatostatin	B-GP
 receptor	E-GP
 expression	O
 in	O
-peritumoral	B-Multi-tissue_structure
-vessels	E-Multi-tissue_structure
+peritumoral	O
+vessels	O
 observed	O
 in	O
 this	O
@@ -27236,8 +27236,8 @@ interactions	O
 ,	O
 possibly	O
 involving	O
-tumor	B-Tissue
-stroma	E-Tissue
+tumor	O
+stroma	O
 generation	O
 ,	O
 tumor	S-Disease
@@ -27248,7 +27248,7 @@ and	O
 ,	O
 particularly	O
 ,	O
-vascular	S-Multi-tissue_structure
+vascular	O
 drainage	O
 of	O
 poorly	O
@@ -27261,10 +27261,10 @@ Syndecan	B-GP
 1	E-GP
 expression	O
 in	O
-mammary	B-Cell
-epithelial	I-Cell
-tumor	I-Cell
-cells	E-Cell
+mammary	O
+epithelial	O
+tumor	O
+cells	O
 is	O
 E	B-GP
 -	I-GP
@@ -27285,9 +27285,9 @@ Ca	B-Chemical
 )	E-Chemical
 -	O
 dependent	O
-cell	S-Cell
+cell	O
 -	O
-cell	S-Cell
+cell	O
 adhesion	O
 molecule	O
 ,	O
@@ -27296,8 +27296,8 @@ is	O
 mainly	O
 expressed	O
 in	O
-epithelial	B-Cell
-cells	E-Cell
+epithelial	O
+cells	O
 .	O
 
 Recent	O
@@ -27318,9 +27318,9 @@ invasion	O
 suppressor	O
 molecule	O
 in	O
-epithelial	B-Cell
-tumor	I-Cell
-cells	E-Cell
+epithelial	O
+tumor	O
+cells	O
 .	O
 
 Syndecan	B-GP
@@ -27328,8 +27328,8 @@ Syndecan	B-GP
 1	E-GP
 is	O
 a	O
-cell	B-Cellular_component
-surface	E-Cellular_component
+cell	O
+surface	O
 proteoglycan	O
 that	O
 has	O
@@ -27339,17 +27339,17 @@ in	O
 a	O
 number	O
 of	O
-cellular	S-Cell
+cellular	O
 functions	O
 including	O
-cell	S-Cell
+cell	O
 -	O
-cell	S-Cell
+cell	O
 adhesion	O
 ,	O
-cell	S-Cell
+cell	O
 -	O
-matrix	S-Cellular_component
+matrix	O
 anchorage	O
 and	O
 growth	B-GP
@@ -27373,8 +27373,8 @@ with	O
 malignant	O
 transformation	O
 of	O
-epithelial	B-Cell
-cells	E-Cell
+epithelial	O
+cells	O
 .	O
 
 In	O
@@ -27386,13 +27386,13 @@ the	O
 coordinated	O
 regulation	O
 of	O
-cell	S-Cell
+cell	O
 -	O
-cell	S-Cell
+cell	O
 and	O
-cell	S-Cell
+cell	O
 -	O
-matrix	S-Cellular_component
+matrix	O
 interactions	O
 during	O
 malignant	O
@@ -27408,10 +27408,10 @@ syndecan	B-GP
 -	I-GP
 1	E-GP
 in	O
-malignant	B-Cell
-mammary	I-Cell
-tumor	I-Cell
-cells	E-Cell
+malignant	O
+mammary	O
+tumor	O
+cells	O
 genetically	O
 manipulated	O
 for	O
@@ -27423,14 +27423,14 @@ expression	O
 
 In	O
 invasive	O
-NM	B-Cell
--	I-Cell
-e	I-Cell
--	I-Cell
-ras	I-Cell
--	I-Cell
-MAC1	I-Cell
-cells	E-Cell
+NM	O
+-	O
+e	O
+-	O
+ras	O
+-	O
+MAC1	O
+cells	O
 ,	O
 where	O
 E	B-GP
@@ -27462,14 +27462,14 @@ cadherin	I-GP
 cDNA	E-GP
 into	O
 invasive	O
-NM	B-Cell
--	I-Cell
-f	I-Cell
--	I-Cell
-ras	I-Cell
--	I-Cell
-TD	I-Cell
-cells	E-Cell
+NM	O
+-	O
+f	O
+-	O
+ras	O
+-	O
+TD	O
+cells	O
 resulted	O
 in	O
 the	O
@@ -27533,7 +27533,7 @@ dependent	O
 .	O
 
 Another	O
-cell	S-Cell
+cell	O
 adhesion	O
 protein	O
 ,	O
@@ -27564,7 +27564,7 @@ the	O
 expression	O
 of	O
 two	O
-cell	S-Cell
+cell	O
 adhesion	O
 molecules	O
 ,	O
@@ -27576,8 +27576,8 @@ E	B-GP
 -	I-GP
 cadherin	E-GP
 during	O
-epithelial	B-Cell
-cell	E-Cell
+epithelial	O
+cell	O
 transformation	O
 .	O
 
@@ -27587,17 +27587,17 @@ associated	O
 5T4	S-GP
 antigen	O
 disrupts	O
-cell	S-Cell
+cell	O
 -	O
-cell	S-Cell
+cell	O
 contacts	O
 and	O
 induces	O
-cellular	S-Cell
+cellular	O
 motility	O
 in	O
-epithelial	B-Cell
-cells	E-Cell
+epithelial	O
+cells	O
 .	O
 
 The	O
@@ -27614,8 +27614,8 @@ MAb	O
 )	O
 specific	O
 for	O
-human	S-Organism
-trophoblast	S-Cell
+human	O
+trophoblast	O
 .	O
 
 It	O
@@ -27626,8 +27626,8 @@ by	O
 many	O
 types	O
 of	O
-tumour	B-Cell
-cell	E-Cell
+tumour	O
+cell	O
 and	O
 has	O
 been	O
@@ -27662,8 +27662,8 @@ in	O
 the	O
 spread	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 .	O
 
 The	O
@@ -27671,21 +27671,21 @@ The	O
 antigen	O
 is	O
 a	O
-transmembrane	S-Cellular_component
+transmembrane	O
 glycoprotein	O
 with	O
 a	O
 310	O
-amino	B-Amino_acid
-acid	E-Amino_acid
-extracellular	S-Immaterial_anatomical_entity
+amino	O
+acid	O
+extracellular	O
 domain	O
 and	O
 a	O
 44	O
-amino	B-Amino_acid
-acid	E-Amino_acid
-cytoplasmic	S-Organism_substance
+amino	O
+acid	O
+cytoplasmic	O
 domain	O
 .	O
 
@@ -27697,15 +27697,15 @@ length	O
 5T4	S-GP
 cDNA	O
 into	O
-epithelial	B-Cell
-cells	E-Cell
+epithelial	O
+cells	O
 alters	O
-cell	S-Cell
+cell	O
 -	O
-cell	S-Cell
+cell	O
 contacts	O
 and	O
-cellular	S-Cell
+cellular	O
 motility	O
 .	O
 
@@ -27715,19 +27715,19 @@ in	O
 5T4	S-GP
 -	O
 transfected	O
-CL	B-Cell
--	I-Cell
-S1	I-Cell
-murine	I-Cell
-mammary	I-Cell
-cells	E-Cell
+CL	O
+-	O
+S1	O
+murine	O
+mammary	O
+cells	O
 ,	O
 5T4	S-GP
 expression	O
 is	O
 associated	O
 with	O
-dendritic	S-Cell
+dendritic	O
 morphology	O
 ,	O
 accompanied	O
@@ -27747,11 +27747,11 @@ motility	O
 
 In	O
 transfected	O
-MDCK	B-Cell
-canine	I-Cell
-kidney	I-Cell
-epithelial	I-Cell
-cells	E-Cell
+MDCK	O
+canine	O
+kidney	O
+epithelial	O
+cells	O
 ,	O
 5T4	S-GP
 over	O
@@ -27766,15 +27766,15 @@ motility	O
 but	O
 disruption	O
 of	O
-cell	S-Cell
+cell	O
 -	O
-cell	S-Cell
+cell	O
 contacts	O
 ,	O
 either	O
 by	O
 culturing	O
-cells	S-Cell
+cells	O
 in	O
 low	O
 calcium	S-Chemical
@@ -27803,7 +27803,7 @@ motility	O
 are	O
 separable	O
 since	O
-cells	S-Cell
+cells	O
 transfected	O
 with	O
 a	O
@@ -27815,7 +27815,7 @@ cDNA	O
 in	O
 which	O
 the	O
-cytoplasmic	S-Organism_substance
+cytoplasmic	O
 domain	O
 is	O
 deleted	O
@@ -27853,9 +27853,9 @@ signals	O
 through	O
 both	O
 the	O
-extracellular	S-Immaterial_anatomical_entity
+extracellular	O
 and	O
-intracellular	S-Immaterial_anatomical_entity
+intracellular	O
 domains	O
 ,	O
 and	O
@@ -27910,11 +27910,11 @@ in	O
 the	O
 adhesion	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 to	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 .	O
 
 Certain	O
@@ -27928,8 +27928,8 @@ E	B-GP
 -	I-GP
 selectin	E-GP
 on	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 and	O
 enhance	O
 the	O
@@ -27938,8 +27938,8 @@ of	O
 carbohydrate	S-Chemical
 ligands	O
 on	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 .	O
 
 Consequently	O
@@ -27947,11 +27947,11 @@ Consequently	O
 increased	O
 adhesion	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 to	O
-endothelial	B-Cell
-cells	E-Cell
+endothelial	O
+cells	O
 was	O
 observed	O
 by	O
@@ -27964,15 +27964,15 @@ agents	O
 
 In	O
 the	O
-trans	B-Immaterial_anatomical_entity
--	I-Immaterial_anatomical_entity
-splenic	E-Immaterial_anatomical_entity
-hepatic	S-Organ
+trans	O
+-	O
+splenic	O
+hepatic	O
 metastasis	O
 model	O
 using	O
-nude	B-Organism
-mice	E-Organism
+nude	O
+mice	O
 ,	O
 the	O
 augmentation	O
@@ -28004,10 +28004,10 @@ the	O
 metastatic	O
 ability	O
 of	O
-cancer	B-Cell
-cells	E-Cell
+cancer	O
+cells	O
 in	O
-patients	S-Organism
+patients	O
 with	O
 cancer	S-Disease
 .	O
@@ -28073,7 +28073,7 @@ plasminogen	S-GP
 activating	O
 system	O
 in	O
-patients	S-Organism
+patients	O
 with	O
 Non	B-Disease
 -	I-Disease
@@ -28119,7 +28119,7 @@ of	O
 tumours	S-Disease
 from	O
 147	O
-patients	S-Organism
+patients	O
 with	O
 NSCLC	S-Disease
 .	O
@@ -28149,7 +28149,7 @@ stage	O
 T	O
 )	O
 ;	O
-nodal	S-Multi-tissue_structure
+nodal	O
 stage	O
 (	O
 N	O
@@ -28232,7 +28232,7 @@ p	O
 ,	O
 presence	O
 of	O
-nodal	S-Multi-tissue_structure
+nodal	O
 metastases	O
 (	O
 p	O
@@ -28357,7 +28357,7 @@ a	O
 decreased	O
 survival	O
 in	O
-patients	S-Organism
+patients	O
 with	O
 SCC	S-Disease
 .	O
@@ -28389,7 +28389,7 @@ which	O
 is	O
 associated	O
 with	O
-intracellular	S-Immaterial_anatomical_entity
+intracellular	O
 signalling	O
 cascades	O
 which	O
@@ -28404,14 +28404,14 @@ cell	B-GP
 adhesion	I-GP
 molecules	E-GP
 engage	O
-extracellular	B-Cellular_component
-matrix	E-Cellular_component
+extracellular	O
+matrix	O
 molecules	O
 .	O
 
 In	O
 cultured	O
-cells	S-Cell
+cells	O
 ,	O
 this	O
 molecule	O
@@ -28419,8 +28419,8 @@ is	O
 physically	O
 associated	O
 with	O
-focal	B-Cellular_component
-adhesions	E-Cellular_component
+focal	O
+adhesions	O
 ,	O
 which	O
 are	O
@@ -28430,7 +28430,7 @@ defined	O
 regions	O
 of	O
 intimate	O
-cell	S-Cell
+cell	O
 -	O
 to	O
 -	O
@@ -28449,16 +28449,16 @@ other	O
 proteins	O
 of	O
 the	O
-focal	B-Cellular_component
-adhesion	E-Cellular_component
+focal	O
+adhesion	O
 to	O
 activate	O
-intracellular	S-Immaterial_anatomical_entity
+intracellular	O
 signalling	O
 events	O
 associated	O
 with	O
-cell	S-Cell
+cell	O
 adhesion	O
 .	O
 
@@ -28483,16 +28483,16 @@ physiological	O
 phenomena	O
 ,	O
 including	O
-cell	S-Cell
+cell	O
 spreading	O
 ,	O
-cell	S-Cell
+cell	O
 differentiation	O
 ,	O
-cell	S-Cell
+cell	O
 locomotion	O
 and	O
-cell	S-Cell
+cell	O
 death	O
 .	O
 
@@ -28513,8 +28513,8 @@ FAK	S-GP
 is	O
 expressed	O
 in	O
-embryonic	B-Cell
-cells	E-Cell
+embryonic	O
+cells	O
 ,	O
 evidence	O
 has	O
@@ -28551,8 +28551,8 @@ situations	O
 ,	O
 such	O
 as	O
-tumour	B-Cell
-cell	E-Cell
+tumour	O
+cell	O
 migration	O
 and	O
 invasiveness	O
@@ -28574,7 +28574,7 @@ current	O
 uncertainties	O
 regarding	O
 its	O
-cytoplasmic	S-Organism_substance
+cytoplasmic	O
 location	O
 and	O
 its	O

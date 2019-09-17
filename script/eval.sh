@@ -25,6 +25,7 @@ python3 -u $SRC_FOLDER/eval.py \
   $DATA_FOLDER/CELLFINDER-IOBES/test.tsv \
   $DATA_FOLDER/BioNLP13CG-IOBES/test.tsv \
   $DATA_FOLDER/CHEMPROT-IOBES/test.tsv \
+  $DATA_FOLDER/BC5CDR-IOBES/test.tsv \
   $DATA_FOLDER/BioNLP11ID-IOBES/test.tsv \
   $DATA_FOLDER/CRAFT-IOBES/test.tsv \
   --local_eval \

@@ -100,6 +100,7 @@ if __name__ == "__main__":
     parser.add_argument('--sigmoid', default='')
     parser.add_argument('--mask_value', type=float, default=None)
     parser.add_argument('--multi_mask', nargs='+', default=None)
+    parser.add_argument('--load_checkpoint_crf', type=int, default=1)
     
     
     args = parser.parse_args()
@@ -112,6 +113,11 @@ if __name__ == "__main__":
     assert args.sigmoid in ['nosig', 'relu']
     assert args.mask_value is not None
     assert args.idea
+    
+    # For debugging
+    # pickle.dump(args, open('/auto/nlg-05/huan183/NewBioNer/args.p', 'wb'))
+    # assert False
+    # args = pickle.load(open('/auto/nlg-05/huan183/NewBioNer/args.p', 'rb'))
     
     if not torch.cuda.is_available():
         args.gpu = -1
@@ -202,7 +208,7 @@ if __name__ == "__main__":
             print("embedding size: '{}'".format(len(token2idx)))
 
         tag_set = set()
-        for i in range(num_corpus):         
+        for i in range(num_corpus):
             tag_set = functools.reduce(lambda x, y: x | y, map(lambda t: set(t), dev_labels[i]), tag_set)
             tag_set = functools.reduce(lambda x, y: x | y, map(lambda t: set(t), test_labels[i]), tag_set)
 
@@ -345,7 +351,14 @@ if __name__ == "__main__":
         in_doc_words=in_doc_words, highway_layers = args.highway_layers, sigmoid = args.sigmoid)
     
     if can_load_check_point:
-        ner_model.load_state_dict(checkpoint_file['state_dict'])
+        if args.load_checkpoint_crf:
+            ner_model.load_state_dict(checkpoint_file['state_dict'])
+        else:
+            tmp_state_dict = {k:v for k,v in checkpoint_file['state_dict'].items() if not 'crf' in k}
+            for k,v in ner_model.state_dict().items():
+                if not k in tmp_state_dict:
+                    tmp_state_dict[k] = v
+            ner_model.load_state_dict(tmp_state_dict)
     else:
         if not args.rand_embedding:
             ner_model.load_pretrained_word_embedding(embedding_tensor)

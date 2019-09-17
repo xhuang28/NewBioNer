@@ -16,3 +16,5 @@ __pycache__/
 *.json_bak
 *.log
 *.bak
+
+/corpus/*

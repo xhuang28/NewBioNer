@@ -12,8 +12,8 @@ component	O
 regulatory	O
 system	O
 of	O
-Salmonella	B-Organism
-enterica	E-Organism
+Salmonella	O
+enterica	O
 
 Acid	O
 pH	O
@@ -50,10 +50,10 @@ Gram	O
 -	O
 negative	O
 pathogen	O
-Salmonella	B-Organism
-enterica	I-Organism
-serovar	I-Organism
-Typhimurium	E-Organism
+Salmonella	O
+enterica	O
+serovar	O
+Typhimurium	O
 experiences	O
 a	O
 number	O
@@ -206,7 +206,7 @@ B	E-Chemical
 Wild	O
 -	O
 type	O
-Salmonella	S-Organism
+Salmonella	O
 grown	O
 at	O
 pH	O
@@ -315,10 +315,10 @@ Gram	O
 -	O
 negative	O
 bacterium	O
-Salmonella	B-Organism
-enterica	I-Organism
-serovar	I-Organism
-Typhimurium	E-Organism
+Salmonella	O
+enterica	O
+serovar	O
+Typhimurium	O
 ,	O
 for	O
 example	O
@@ -344,7 +344,7 @@ a	O
 mammalian	O
 host	O
 ,	O
-Salmonella	S-Organism
+Salmonella	O
 is	O
 exposed	O
 to	O
@@ -383,7 +383,7 @@ Grinstein	O
 
 Moreover	O
 ,	O
-Salmonella	S-Organism
+Salmonella	O
 has	O
 been	O
 recovered	O
@@ -494,7 +494,7 @@ studies	O
 have	O
 revealed	O
 that	O
-Salmonella	S-Organism
+Salmonella	O
 responds	O
 to	O
 acidic	O
@@ -543,7 +543,7 @@ acid	O
 tolerance	O
 response	O
 of	O
-Salmonella	S-Organism
+Salmonella	O
 results	O
 in	O
 the	O
@@ -580,7 +580,7 @@ i	O
 e	O
 .	O
 when	O
-Salmonella	S-Organism
+Salmonella	O
 experiences	O
 severe	O
 acidic	O
@@ -598,7 +598,7 @@ Foster	O
 
 Growth	O
 of	O
-Salmonella	S-Organism
+Salmonella	O
 in	O
 mild	O
 acid	O
@@ -665,7 +665,7 @@ function	O
 s	O
 )	O
 that	O
-Salmonella	S-Organism
+Salmonella	O
 needs	O
 to	O
 regulate	O
@@ -696,7 +696,7 @@ required	O
 for	O
 virulence	O
 in	O
-mice	S-Organism
+mice	O
 (	O
 Gunn	O
 et	O
@@ -708,7 +708,7 @@ al	O
 ,	O
 infection	O
 of	O
-chicken	S-Organism
+chicken	O
 macrophages	O
 (	O
 Zhao	O
@@ -903,7 +903,7 @@ that	O
 they	O
 play	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 '	O
 s	O
 life	O
@@ -1143,7 +1143,7 @@ genes	O
 ,	O
 we	O
 grew	O
-Salmonella	S-Organism
+Salmonella	O
 cells	O
 harbouring	O
 chromosomal	O
@@ -1403,7 +1403,7 @@ that	O
 does	O
 not	O
 affect	O
-Salmonella	S-Organism
+Salmonella	O
 growth	O
 .	O
 
@@ -1461,7 +1461,7 @@ was	O
 still	O
 induced	O
 when	O
-Salmonella	S-Organism
+Salmonella	O
 was	O
 grown	O
 in	O
@@ -1631,7 +1631,7 @@ results	O
 we	O
 conclude	O
 that	O
-Salmonella	S-Organism
+Salmonella	O
 harbours	O
 a	O
 signalling	O
@@ -2646,7 +2646,7 @@ hypothesis	O
 we	O
 tested	O
 a	O
-Salmonella	S-Organism
+Salmonella	O
 strain	O
 with	O
 a	O
@@ -2895,7 +2895,7 @@ diminished	O
 the	O
 ability	O
 of	O
-Salmonella	S-Organism
+Salmonella	O
 to	O
 respond	O
 to	O
@@ -3158,7 +3158,7 @@ was	O
 substituted	O
 by	O
 alanine	O
-Salmonella	S-Organism
+Salmonella	O
 could	O
 no	O
 longer	O
@@ -3279,7 +3279,7 @@ regulated	O
 genes	O
 play	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 '	O
 s	O
 lifestyle	O
@@ -3432,7 +3432,7 @@ the	O
 PmrA	S-GP
 protein	O
 when	O
-Salmonella	S-Organism
+Salmonella	O
 experiences	O
 mild	O
 acid	O
@@ -3602,9 +3602,9 @@ organisms	O
 in	O
 addition	O
 to	O
-S	B-Organism
-.	I-Organism
-enterica	E-Organism
+S	O
+.	O
+enterica	O
 .	O
 
 The	O
@@ -3700,8 +3700,8 @@ the	O
 intracellular	O
 pH	O
 in	O
-Escherichia	B-Organism
-coli	E-Organism
+Escherichia	O
+coli	O
 cells	O
 was	O
 7	O
@@ -4101,9 +4101,9 @@ The	O
 CadC	S-GP
 protein	O
 of	O
-E	B-Organism
-.	I-Organism
-coli	E-Organism
+E	O
+.	O
+coli	O
 ,	O
 for	O
 example	O
@@ -4129,7 +4129,7 @@ al	O
 Likewise	O
 ,	O
 the	O
-human	S-Organism
+human	O
 receptor	O
 OGR1	S-GP
 responds	O
@@ -4420,7 +4420,7 @@ been	O
 suggested	O
 that	O
 the	O
-Salmonella	S-Organism
+Salmonella	O
 PhoQ	S-GP
 protein	O
 senses	O
@@ -4517,7 +4517,7 @@ regulated	O
 genes	O
 play	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 '	O
 s	O
 lifestyle	O
@@ -4584,7 +4584,7 @@ pH	O
 wild	O
 -	O
 type	O
-Salmonella	S-Organism
+Salmonella	O
 were	O
 100	O
 000	O
@@ -4616,7 +4616,7 @@ be	O
 particularly	O
 important	O
 for	O
-Salmonella	S-Organism
+Salmonella	O
 living	O
 in	O
 soil	O
@@ -4636,8 +4636,8 @@ by	O
 the	O
 soil	O
 bacterium	O
-Paenibacillus	B-Organism
-polymyxa	E-Organism
+Paenibacillus	O
+polymyxa	O
 (	O
 Paulus	O
 and	O
@@ -4735,7 +4735,7 @@ LPS	S-Chemical
 modifications	O
 seen	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 when	O
 present	O
 inside	O
@@ -4829,7 +4829,7 @@ pH	O
 Mlc	S-GP
 regulation	O
 of	O
-Salmonella	S-Organism
+Salmonella	O
 pathogenicity	O
 island	O
 I	O
@@ -4900,7 +4900,7 @@ regulatory	O
 genes	O
 in	O
 the	O
-Salmonella	S-Organism
+Salmonella	O
 pathogenicity	O
 island	O
 1	O
@@ -5106,15 +5106,15 @@ control	O
 hilE	S-GP
 expression	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 .	O
 
 INTRODUCTION	O
 
-Salmonella	B-Organism
-enterica	I-Organism
-serovar	I-Organism
-Typhimurium	E-Organism
+Salmonella	O
+enterica	O
+serovar	O
+Typhimurium	O
 is	O
 a	O
 facultative	O
@@ -5131,7 +5131,7 @@ limited	O
 to	O
 gastroenteritis	O
 in	O
-humans	S-Organism
+humans	O
 .	O
 
 However	O
@@ -5142,7 +5142,7 @@ causes	O
 systemic	O
 disease	O
 in	O
-mice	S-Organism
+mice	O
 and	O
 has	O
 been	O
@@ -5157,7 +5157,7 @@ fever	O
 .	O
 
 Since	O
-Salmonella	S-Organism
+Salmonella	O
 is	O
 acquired	O
 usually	O
@@ -5224,7 +5224,7 @@ centisome	O
 which	O
 is	O
 called	O
-Salmonella	S-Organism
+Salmonella	O
 pathogenicity	O
 island	O
 1	O
@@ -5423,11 +5423,11 @@ T3SS	O
 apparatus	O
 ,	O
 the	O
-prg	S-Regulon-operon
+prg	O
 and	O
-inv	B-Regulon-operon
-/	I-Regulon-operon
-spa	E-Regulon-operon
+inv	O
+/	O
+spa	O
 operons	O
 ,	O
 by	O
@@ -5459,9 +5459,9 @@ both	O
 within	O
 SPI1	O
 (	O
-sic	B-Regulon-operon
-/	I-Regulon-operon
-sip	E-Regulon-operon
+sic	O
+/	O
+sip	O
 operon	O
 )	O
 and	O
@@ -5633,7 +5633,7 @@ HilE	S-GP
 is	O
 an	O
 important	O
-Salmonella	S-Organism
+Salmonella	O
 -	O
 specific	O
 regulator	O
@@ -5856,7 +5856,7 @@ has	O
 been	O
 noted	O
 for	O
-Salmonella	S-Organism
+Salmonella	O
 strains	O
 that	O
 carry	O
@@ -5941,7 +5941,7 @@ affects	O
 the	O
 virulence	O
 of	O
-Salmonella	S-Organism
+Salmonella	O
 .	O
 
 In	O
@@ -5991,7 +5991,7 @@ the	O
 mlc	S-GP
 gene	O
 reduces	O
-Salmonella	S-Organism
+Salmonella	O
 invasiveness	O
 The	O
 process	O
@@ -6034,10 +6034,10 @@ in	O
 the	O
 pathogenesis	O
 of	O
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 .	O
 
 We	O
@@ -6049,21 +6049,21 @@ an	O
 mlc	S-GP
 mutant	O
 ,	O
-SR1304	S-Organism
+SR1304	O
 ,	O
 to	O
 invade	O
 cultured	O
-HEp	B-Organism
--	I-Organism
-2	E-Organism
+HEp	O
+-	O
+2	O
 and	O
 HeLa	O
 epithelial	O
 cells	O
 .	O
 
-SL1344	S-Organism
+SL1344	O
 was	O
 used	O
 as	O
@@ -6087,7 +6087,7 @@ at	O
 
 When	O
 the	O
-Salmonella	S-Organism
+Salmonella	O
 bacteria	O
 were	O
 grown	O
@@ -6108,7 +6108,7 @@ condition	O
 the	O
 invasiveness	O
 of	O
-SR1304	S-Organism
+SR1304	O
 for	O
 both	O
 epithelial	O
@@ -6126,7 +6126,7 @@ compared	O
 to	O
 that	O
 of	O
-SL1344	S-Organism
+SL1344	O
 (	O
 Figure	O
 1A	O
@@ -6135,10 +6135,10 @@ B	O
 )	O
 .	O
 
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 induces	O
 the	O
 apoptosis	O
@@ -6212,7 +6212,7 @@ Figure	O
 1C	O
 shows	O
 that	O
-SL1344	S-Organism
+SL1344	O
 killed	O
 42	O
 %	O
@@ -6221,7 +6221,7 @@ the	O
 macrophages	O
 ,	O
 whereas	O
-SR1304	S-Organism
+SR1304	O
 killed	O
 only	O
 16	O
@@ -6294,7 +6294,7 @@ with	O
 10	O
 %	O
 normal	O
-mouse	S-Organism
+mouse	O
 serum	O
 and	O
 added	O
@@ -6330,9 +6330,9 @@ replication	O
 was	O
 similar	O
 for	O
-SL1344	S-Organism
+SL1344	O
 and	O
-SR1304	S-Organism
+SR1304	O
 (	O
 Figure	O
 1D	O
@@ -6352,7 +6352,7 @@ of	O
 Mlc	S-GP
 action	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 virulence	O
 is	O
 SPI1	O
@@ -6368,7 +6368,7 @@ that	O
 are	O
 required	O
 for	O
-Salmonella	S-Organism
+Salmonella	O
 invasion	O
 of	O
 host	O
@@ -6440,9 +6440,9 @@ of	O
 total	O
 RNA	O
 from	O
-SL1344	S-Organism
+SL1344	O
 and	O
-SR1304	S-Organism
+SR1304	O
 grown	O
 statically	O
 to	O
@@ -6473,7 +6473,7 @@ previously	O
 )	O
 .	O
 
-SR1304	S-Organism
+SR1304	O
 exhibited	O
 a	O
 >	O
@@ -6516,7 +6516,7 @@ expression	O
 ,	O
 compared	O
 to	O
-SL1344	S-Organism
+SL1344	O
 .	O
 
 However	O
@@ -6564,7 +6564,7 @@ InvF	S-GP
 )	O
 ,	O
 in	O
-SR1304	S-Organism
+SR1304	O
 (	O
 Figure	O
 2B	O
@@ -6682,7 +6682,7 @@ the	O
 expression	O
 of	O
 the	O
-Salmonella	S-Organism
+Salmonella	O
 -	O
 invasive	O
 phenotype	O
@@ -6756,9 +6756,9 @@ to	O
 exponential	O
 phase	O
 ,	O
-SL1344	B-Organism
--	I-Organism
-pMAB69	E-Organism
+SL1344	O
+-	O
+pMAB69	O
 expressed	O
 28	O
 .	O
@@ -6777,9 +6777,9 @@ beta	B-GP
 galactosidase	E-GP
 ,	O
 whereas	O
-SR1304	B-Organism
--	I-Organism
-pMAB69	E-Organism
+SR1304	O
+-	O
+pMAB69	O
 expressed	O
 49	O
 .	O
@@ -6842,7 +6842,7 @@ expression	O
 was	O
 increased	O
 in	O
-SR1304	S-Organism
+SR1304	O
 by	O
 about	O
 2	O
@@ -6900,7 +6900,7 @@ mlc	S-GP
 mutant	O
 strains	O
 of	O
-Salmonella	S-Organism
+Salmonella	O
 .	O
 
 Invasiveness	O
@@ -7064,7 +7064,7 @@ the	O
 control	O
 of	O
 a	O
-lac	S-Regulon-operon
+lac	O
 promoter	O
 caused	O
 the	O
@@ -7261,7 +7261,7 @@ total	O
 RNA	O
 isolated	O
 from	O
-SL1344	S-Organism
+SL1344	O
 grown	O
 to	O
 exponential	O
@@ -7393,7 +7393,7 @@ total	O
 RNA	O
 from	O
 a	O
-Salmonella	S-Organism
+Salmonella	O
 strain	O
 was	O
 used	O
@@ -7415,9 +7415,9 @@ total	O
 RNA	O
 prepared	O
 from	O
-E	B-Organism
-.	I-Organism
-coli	E-Organism
+E	O
+.	O
+coli	O
 harboring	O
 the	O
 hilE	S-GP
@@ -7567,7 +7567,7 @@ level	O
 of	O
 hilE	S-GP
 in	O
-SR1304	S-Organism
+SR1304	O
 almost	O
 to	O
 that	O
@@ -7628,9 +7628,9 @@ protein	O
 was	O
 produced	O
 in	O
-E	B-Organism
-.	I-Organism
-coli	E-Organism
+E	O
+.	O
+coli	O
 and	O
 purified	O
 to	O
@@ -7665,7 +7665,7 @@ shift	O
 experiment	O
 employing	O
 the	O
-Salmonella	S-Organism
+Salmonella	O
 ptsG	O
 DNA	O
 fragment	O
@@ -8050,9 +8050,9 @@ and	O
 glycerol	S-Chemical
 .	O
 
-SL1344	S-Organism
+SL1344	O
 and	O
-SR1304	S-Organism
+SR1304	O
 carrying	O
 either	O
 pMAB69	O
@@ -8214,7 +8214,7 @@ hand	O
 the	O
 expression	O
 in	O
-SR1304	S-Organism
+SR1304	O
 of	O
 both	O
 hilE	S-GP
@@ -9039,7 +9039,7 @@ invasion	O
 associated	O
 genes	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 .	O
 
 The	O
@@ -9059,10 +9059,10 @@ of	O
 cell	O
 association	O
 by	O
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 (	O
 44	O
 )	O
@@ -9376,7 +9376,7 @@ regulatory	O
 networks	O
 identified	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 (	O
 46	O
 )	O
@@ -9442,7 +9442,7 @@ the	O
 promoters	O
 in	O
 the	O
-Pho	S-Regulon-operon
+Pho	O
 regulon	O
 .	O
 
@@ -9463,7 +9463,7 @@ known	O
 to	O
 activate	O
 the	O
-Pho	S-Regulon-operon
+Pho	O
 regulon	O
 via	O
 CreC	S-GP
@@ -9577,7 +9577,7 @@ downstream	O
 members	O
 of	O
 the	O
-SirA	S-Regulon-operon
+SirA	O
 regulon	O
 ,	O
 such	O
@@ -9605,7 +9605,7 @@ is	O
 not	O
 activated	O
 when	O
-Salmonella	S-Organism
+Salmonella	O
 is	O
 grown	O
 in	O
@@ -9631,7 +9631,7 @@ environmental	O
 conditions	O
 faced	O
 by	O
-Salmonella	S-Organism
+Salmonella	O
 change	O
 constantly	O
 during	O
@@ -9664,10 +9664,10 @@ It	O
 is	O
 known	O
 that	O
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 uses	O
 bile	O
 or	O
@@ -9700,7 +9700,7 @@ tract	O
 We	O
 propose	O
 that	O
-Salmonella	S-Organism
+Salmonella	O
 can	O
 use	O
 the	O
@@ -9724,7 +9724,7 @@ invasion	O
 genes	O
 .	O
 
-Salmonella	S-Organism
+Salmonella	O
 may	O
 use	O
 Mlc	S-GP
@@ -9754,10 +9754,10 @@ in	O
 invasion	O
 .	O
 
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 typically	O
 invades	O
 the	O
@@ -9882,7 +9882,7 @@ understand	O
 their	O
 roles	O
 in	O
-Salmonella	S-Organism
+Salmonella	O
 pathogenesis	O
 .	O
 
@@ -9906,23 +9906,23 @@ Virulence	O
 of	O
 Highly	O
 Invasive	O
-Streptococcus	B-Organism
-suis	I-Organism
-Serotype	I-Organism
-2	E-Organism
+Streptococcus	O
+suis	O
+Serotype	O
+2	O
 
 Background	O
-Streptococcus	B-Organism
-suis	I-Organism
-serotype	I-Organism
-2	E-Organism
+Streptococcus	O
+suis	O
+serotype	O
+2	O
 (	O
-S	B-Organism
-.	I-Organism
-suis	I-Organism
-2	E-Organism
+S	O
+.	O
+suis	O
+2	O
 ,	O
-SS2	S-Organism
+SS2	O
 )	O
 has	O
 evolved	O
@@ -9942,8 +9942,8 @@ large	O
 scale	O
 outbreaks	O
 of	O
-human	S-Organism
-SS2	S-Organism
+human	O
+SS2	O
 epidemic	O
 in	O
 China	O
@@ -10001,7 +10001,7 @@ isolated	O
 from	O
 these	O
 two	O
-SS2	S-Organism
+SS2	O
 outbreaks	O
 .	O
 
@@ -10038,8 +10038,8 @@ SalR	S-GP
 regulatory	O
 system	O
 of	O
-Streptococcus	B-Organism
-salivarius	E-Organism
+Streptococcus	O
+salivarius	O
 .	O
 
 Knockout	O
@@ -10049,12 +10049,12 @@ eliminated	O
 the	O
 lethality	O
 of	O
-SS2	S-Organism
+SS2	O
 in	O
 experimental	O
 infection	O
 of	O
-piglets	S-Organism
+piglets	O
 .	O
 
 Functional	O
@@ -10086,7 +10086,7 @@ any	O
 susceptible	O
 tissue	O
 of	O
-piglets	S-Organism
+piglets	O
 when	O
 administered	O
 alone	O
@@ -10158,7 +10158,7 @@ isolates	O
 of	O
 highly	O
 pathogenic	O
-SS2	S-Organism
+SS2	O
 ,	O
 thus	O
 providing	O
@@ -10176,12 +10176,12 @@ PAI	O
 
 Introduction	O
 
-Streptococcus	B-Organism
-suis	E-Organism
+Streptococcus	O
+suis	O
 (	O
-S	B-Organism
-.	I-Organism
-suis	E-Organism
+S	O
+.	O
+suis	O
 )	O
 is	O
 considered	O
@@ -10209,9 +10209,9 @@ even	O
 sudden	O
 death	O
 in	O
-pigs	S-Organism
+pigs	O
 and	O
-humans	S-Organism
+humans	O
 [	O
 1	O
 ]	O
@@ -10234,18 +10234,18 @@ serotypes	O
 2	O
 ]	O
 ,	O
-S	B-Organism
-.	I-Organism
-suis	I-Organism
-serotype	I-Organism
-2	E-Organism
+S	O
+.	O
+suis	O
+serotype	O
+2	O
 (	O
-S	B-Organism
-.	I-Organism
-suis	I-Organism
-2	E-Organism
+S	O
+.	O
+suis	O
+2	O
 or	O
-SS2	S-Organism
+SS2	O
 )	O
 is	O
 the	O
@@ -10264,7 +10264,7 @@ was	O
 previously	O
 thought	O
 that	O
-SS2	S-Organism
+SS2	O
 caused	O
 only	O
 sporadic	O
@@ -10274,7 +10274,7 @@ meningitis	O
 and	O
 sepsis	O
 in	O
-humans	S-Organism
+humans	O
 [	O
 1	O
 ]	O
@@ -10293,7 +10293,7 @@ infectious	O
 disease	O
 outbreaks	O
 of	O
-SS2	S-Organism
+SS2	O
 in	O
 China	O
 (	O
@@ -10430,7 +10430,7 @@ epidemic	O
 outbreak	O
 strains	O
 of	O
-SS2	S-Organism
+SS2	O
 ,	O
 our	O
 joint	O
@@ -10452,18 +10452,18 @@ sequences	O
 of	O
 two	O
 virulent	O
-SS2	S-Organism
+SS2	O
 strains	O
 (	O
-98HAH12	S-Organism
+98HAH12	O
 and	O
-05ZYH33	S-Organism
+05ZYH33	O
 )	O
 isolated	O
 from	O
 Chinese	O
 infected	O
-patients	S-Organism
+patients	O
 [	O
 6	O
 ]	O
@@ -10492,7 +10492,7 @@ strains	O
 in	O
 these	O
 two	O
-SS2	S-Organism
+SS2	O
 outbtreaks	O
 but	O
 not	O
@@ -10524,7 +10524,7 @@ and	O
 its	O
 linkage	O
 to	O
-SS2	S-Organism
+SS2	O
 -	O
 related	O
 high	O
@@ -10648,9 +10648,9 @@ SalK	S-GP
 SalR	S-GP
 system	O
 of	O
-S	B-Organism
-.	I-Organism
-salivarius	E-Organism
+S	O
+.	O
+salivarius	O
 ,	O
 a	O
 salivaricin	O
@@ -10751,7 +10751,7 @@ in	O
 the	O
 pathogenesis	O
 of	O
-SS2	S-Organism
+SS2	O
 [	O
 24	O
 ]	O
@@ -10808,7 +10808,7 @@ high	O
 pathogenicity	O
 of	O
 Chinese	O
-SS2	S-Organism
+SS2	O
 strains	O
 .	O
 
@@ -10841,7 +10841,7 @@ isolates	O
 of	O
 highly	O
 pathogenic	O
-SS2	S-Organism
+SS2	O
 .	O
 
 Results	O
@@ -10859,10 +10859,10 @@ decoded	O
 genomic	O
 sequence	O
 of	O
-S	B-Organism
-.	I-Organism
-suis	I-Organism
-05ZYH33	E-Organism
+S	O
+.	O
+suis	O
+05ZYH33	O
 makes	O
 it	O
 possible	O
@@ -10922,8 +10922,8 @@ the	O
 SalR	S-GP
 proteins	O
 of	O
-Streptococcus	B-Organism
-salivarius	E-Organism
+Streptococcus	O
+salivarius	O
 ,	O
 respectively	O
 ,	O
@@ -10982,7 +10982,7 @@ the	O
 whole	O
 genome	O
 of	O
-05ZYH33	S-Organism
+05ZYH33	O
 (	O
 36	O
 .	O
@@ -11331,8 +11331,8 @@ to	O
 the	O
 orthologues	O
 of	O
-Streptococcus	B-Organism
-agalactiae	E-Organism
+Streptococcus	O
+agalactiae	O
 .	O
 
 The	O
@@ -11410,10 +11410,10 @@ genes	O
 RNA	O
 extracted	O
 from	O
-S	B-Organism
-.	I-Organism
-suis	I-Organism
-05ZYH33	E-Organism
+S	O
+.	O
+suis	O
+05ZYH33	O
 cells	O
 was	O
 subjected	O
@@ -11606,7 +11606,7 @@ in	O
 the	O
 pathogenesis	O
 of	O
-SS2	S-Organism
+SS2	O
 ,	O
 we	O
 constructed	O
@@ -11635,7 +11635,7 @@ the	O
 competent	O
 cells	O
 of	O
-05ZYH33	S-Organism
+05ZYH33	O
 .	O
 
 Positive	O
@@ -11723,7 +11723,7 @@ In	O
 wild	O
 type	O
 strain	O
-05ZYH33	S-Organism
+05ZYH33	O
 ,	O
 the	O
 internal	O
@@ -12075,7 +12075,7 @@ general	O
 biological	O
 characteristics	O
 of	O
-SS2	S-Organism
+SS2	O
 prior	O
 to	O
 in	O
@@ -12203,7 +12203,7 @@ experimental	O
 infection	O
 model	O
 in	O
-piglets	S-Organism
+piglets	O
 was	O
 designed	O
 to	O
@@ -12228,7 +12228,7 @@ all	O
 six	O
 SPF	O
 -	O
-piglets	S-Organism
+piglets	O
 inoculated	O
 intravenously	O
 with	O
@@ -12287,13 +12287,13 @@ contrast	O
 ,	O
 six	O
 infected	O
-piglets	S-Organism
+piglets	O
 with	O
 an	O
 avirulent	O
 strain	O
 ,	O
-05HAS68	S-Organism
+05HAS68	O
 (	O
 as	O
 negative	O
@@ -12323,7 +12323,7 @@ infection	O
 Wherein	O
 the	O
 six	O
-piglets	S-Organism
+piglets	O
 challenged	O
 with	O
 the	O
@@ -12393,7 +12393,7 @@ Five	O
 out	O
 of	O
 six	O
-piglets	S-Organism
+piglets	O
 succumbed	O
 to	O
 the	O
@@ -12453,7 +12453,7 @@ isolates	O
 of	O
 highly	O
 invasive	O
-SS2	S-Organism
+SS2	O
 .	O
 
 To	O
@@ -12488,14 +12488,14 @@ in	O
 all	O
 of	O
 the	O
-SS2	S-Organism
+SS2	O
 specific	O
 tissues	O
 of	O
 WT	O
 -	O
 infected	O
-piglets	S-Organism
+piglets	O
 ,	O
 including	O
 heart	O
@@ -12557,14 +12557,14 @@ impaired	O
 the	O
 capability	O
 of	O
-05ZYH33	S-Organism
+05ZYH33	O
 to	O
 colonize	O
 the	O
 various	O
 tissues	O
 of	O
-piglets	S-Organism
+piglets	O
 .	O
 
 In	O
@@ -12649,7 +12649,7 @@ of	O
 host	O
 defense	O
 against	O
-SS2	S-Organism
+SS2	O
 infection	O
 in	O
 these	O
@@ -13047,8 +13047,8 @@ pathogenesis	O
 related	O
 protein	O
 in	O
-Vibrio	B-Organism
-vulnificus	E-Organism
+Vibrio	O
+vulnificus	O
 [	O
 31	O
 ]	O
@@ -13083,13 +13083,13 @@ system	O
 PST	O
 )	O
 in	O
-extraintestinal	B-Organism
-pathogenic	I-Organism
-E	I-Organism
-.	I-Organism
-coli	E-Organism
+extraintestinal	O
+pathogenic	O
+E	O
+.	O
+coli	O
 (	O
-ExPEC	S-Organism
+ExPEC	O
 )	O
 can	O
 cause	O
@@ -13455,7 +13455,7 @@ from	O
 the	O
 chromosome	O
 of	O
-05ZYH33	S-Organism
+05ZYH33	O
 every	O
 200	O
 ORFs	O
@@ -13609,14 +13609,14 @@ the	O
 first	O
 description	O
 of	O
-human	S-Organism
+human	O
 infection	O
 in	O
 Denmark	O
 in	O
 1968	O
 ,	O
-SS2	S-Organism
+SS2	O
 seems	O
 to	O
 have	O
@@ -13641,7 +13641,7 @@ large	O
 scale	O
 outbreaks	O
 of	O
-human	S-Organism
+human	O
 epidemics	O
 in	O
 China	O
@@ -13691,7 +13691,7 @@ of	O
 virulence	O
 determinants	O
 of	O
-SS2	S-Organism
+SS2	O
 involved	O
 in	O
 the	O
@@ -13755,7 +13755,7 @@ epidemic	O
 outbreak	O
 strains	O
 of	O
-SS2	S-Organism
+SS2	O
 infections	O
 in	O
 China	O
@@ -13770,7 +13770,7 @@ molecular	O
 pathways	O
 by	O
 which	O
-SS2	S-Organism
+SS2	O
 behaved	O
 so	O
 aggressively	O
@@ -13958,7 +13958,7 @@ to	O
 be	O
 introduced	O
 into	O
-SS2	S-Organism
+SS2	O
 via	O
 lateral	O
 gene	O
@@ -13991,7 +13991,7 @@ epidemic	O
 outbreak	O
 strains	O
 of	O
-SS2	S-Organism
+SS2	O
 (	O
 data	O
 not	O
@@ -14024,7 +14024,7 @@ SalK	S-GP
 /	O
 SalR	S-GP
 in	O
-SS2	S-Organism
+SS2	O
 infection	O
 ,	O
 an	O
@@ -14046,14 +14046,14 @@ deletion	O
 on	O
 virulence	O
 of	O
-SS2	S-Organism
+SS2	O
 was	O
 assessed	O
 .	O
 
 Results	O
 of	O
-piglets	S-Organism
+piglets	O
 experimental	O
 infections	O
 clearly	O
@@ -14091,7 +14091,7 @@ any	O
 susceptible	O
 tissue	O
 of	O
-piglets	S-Organism
+piglets	O
 when	O
 administered	O
 alone	O
@@ -14113,7 +14113,7 @@ in	O
 the	O
 pathogenicity	O
 of	O
-SS2	S-Organism
+SS2	O
 .	O
 
 The	O
@@ -14165,7 +14165,7 @@ complementation	O
 observed	O
 in	O
 the	O
-piglets	S-Organism
+piglets	O
 infection	O
 model	O
 is	O
@@ -14253,7 +14253,7 @@ the	O
 bacterial	O
 virulence	O
 of	O
-SS2	S-Organism
+SS2	O
 .	O
 
 It	O
@@ -14456,7 +14456,7 @@ the	O
 full	O
 virulence	O
 of	O
-SS2	S-Organism
+SS2	O
 by	O
 regulating	O
 distant	O
@@ -14630,9 +14630,9 @@ of	O
 the	O
 TCSTSs	O
 of	O
-S	B-Organism
-.	I-Organism
-pneumoniae	E-Organism
+S	O
+.	O
+pneumoniae	O
 were	O
 suggested	O
 to	O
@@ -14665,7 +14665,7 @@ similar	O
 processes	O
 in	O
 Chinese	O
-SS2	S-Organism
+SS2	O
 virulent	O
 isolates	O
 .	O
@@ -14691,7 +14691,7 @@ the	O
 full	O
 virulence	O
 of	O
-SS2	S-Organism
+SS2	O
 ,	O
 as	O
 the	O
@@ -14753,7 +14753,7 @@ isolates	O
 of	O
 highly	O
 pathogenic	O
-SS2	S-Organism
+SS2	O
 .	O
 
 Prior	O
@@ -14786,9 +14786,9 @@ A	E-Chemical
 SalA	S-Chemical
 )	O
 in	O
-S	B-Organism
-.	I-Organism
-salivarius	E-Organism
+S	O
+.	O
+salivarius	O
 [	O
 11	O
 ]	O
@@ -14834,7 +14834,7 @@ of	O
 Chinese	O
 highly	O
 invasive	O
-SS2	S-Organism
+SS2	O
 strains	O
 ,	O
 although	O
@@ -14876,7 +14876,7 @@ infectious	O
 disease	O
 pathogenesis	O
 of	O
-SS2	S-Organism
+SS2	O
 .	O
 
 RpoE	S-GP
@@ -14893,17 +14893,17 @@ regulated	O
 virulence	O
 factors	O
 in	O
-Salmonella	B-Organism
-enterica	I-Organism
-serovar	I-Organism
-Typhimurium	E-Organism
+Salmonella	O
+enterica	O
+serovar	O
+Typhimurium	O
 
 Background	O
 The	O
 survival	O
 of	O
-Salmonella	B-Organism
-enterica	E-Organism
+Salmonella	O
+enterica	O
 within	O
 the	O
 intracellular	O
@@ -14930,12 +14930,12 @@ regulatory	O
 system	O
 .	O
 
-S	B-Organism
-.	I-Organism
-enterica	I-Organism
-serovar	I-Organism
-Typhimurium	I-Organism
-mutants	E-Organism
+S	O
+.	O
+enterica	O
+serovar	O
+Typhimurium	O
+mutants	O
 lacking	O
 the	O
 ssrAB	S-GP
@@ -14943,7 +14943,7 @@ genes	O
 are	O
 avirulent	O
 in	O
-mice	S-Organism
+mice	O
 ,	O
 highlighting	O
 the	O
@@ -15016,7 +15016,7 @@ genes	O
 found	O
 in	O
 the	O
-Salmonella	S-Organism
+Salmonella	O
 pathogenicity	O
 island	O
 -	O
@@ -15105,8 +15105,8 @@ infection	O
 
 Background	O
 
-Salmonella	B-Organism
-enterica	E-Organism
+Salmonella	O
+enterica	O
 are	O
 enteric	O
 pathogens	O
@@ -15162,7 +15162,7 @@ intracellular	O
 host	O
 niche	O
 for	O
-Salmonella	S-Organism
+Salmonella	O
 replication	O
 [	O
 3	O
@@ -15268,7 +15268,7 @@ and	O
 are	O
 avirulent	O
 in	O
-mice	S-Organism
+mice	O
 [	O
 1	O
 ]	O
@@ -15378,10 +15378,10 @@ regulated	O
 translocated	O
 effectors	O
 protect	O
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 against	O
 host	O
 cell	O
@@ -15420,7 +15420,7 @@ at	O
 cellular	O
 invasion	O
 ,	O
-rpoE	S-Organism
+rpoE	O
 or	O
 ssrB	S-GP
 mutants	O
@@ -15483,8 +15483,8 @@ Deletion	O
 of	O
 rseA	S-GP
 in	O
-Yersinia	B-Organism
-pseudotuberculosis	E-Organism
+Yersinia	O
+pseudotuberculosis	O
 causes	O
 elevated	O
 virulence	O
@@ -15515,7 +15515,7 @@ together	O
 a	O
 connection	O
 between	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 and	O
 SsrB	S-GP
 is	O
@@ -15529,7 +15529,7 @@ however	O
 the	O
 role	O
 of	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 in	O
 activating	O
 SsrB	S-GP
@@ -15734,7 +15734,7 @@ SsrB	S-GP
 regulated	O
 virulence	O
 genes	O
-Salmonella	S-Organism
+Salmonella	O
 virulence	O
 gene	O
 expression	O
@@ -15798,10 +15798,10 @@ sigma	O
 factor	O
 mutants	O
 of	O
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 (	O
 rpoS	S-GP
 ,	O
@@ -16008,12 +16008,12 @@ was	O
 then	O
 generated	O
 in	O
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	B-Organism
-strain	I-Organism
-SL1344	E-Organism
+Typhimurium	O
+strain	O
+SL1344	O
 and	O
 we	O
 verified	O
@@ -16308,7 +16308,7 @@ suggesting	O
 a	O
 role	O
 for	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 in	O
 the	O
 repression	O
@@ -16398,11 +16398,11 @@ operons	O
 (	O
 i	O
 )	O
-type	B-Regulon-operon
-III	I-Regulon-operon
-secretion	I-Regulon-operon
-effector	I-Regulon-operon
-operon	E-Regulon-operon
+type	O
+III	O
+secretion	O
+effector	O
+operon	O
 (	O
 sseA	S-GP
 )	O
@@ -16410,9 +16410,9 @@ sseA	S-GP
 (	O
 ii	O
 )	O
-structural	B-Regulon-operon
-operon	I-Regulon-operon
-I	E-Regulon-operon
+structural	O
+operon	O
+I	O
 (	O
 ssaB	S-GP
 )	O
@@ -16420,9 +16420,9 @@ ssaB	S-GP
 (	O
 iii	O
 )	O
-structural	B-Regulon-operon
-operon	I-Regulon-operon
-II	E-Regulon-operon
+structural	O
+operon	O
+II	O
 (	O
 ssaG	S-GP
 )	O
@@ -16893,10 +16893,10 @@ virulence	O
 gene	O
 expression	O
 in	O
-S	B-Organism
-.	E-Organism
+S	O
+.	O
 
-Typhimurium	S-Organism
+Typhimurium	O
 .	O
 
 Discussion	O
@@ -16932,7 +16932,7 @@ virulence	O
 genes	O
 required	O
 for	O
-Salmonella	S-Organism
+Salmonella	O
 pathogenesis	O
 .	O
 
@@ -17028,7 +17028,7 @@ fine	O
 tuning	O
 effect	O
 on	O
-Salmonella	S-Organism
+Salmonella	O
 virulence	O
 gene	O
 expression	O
@@ -17079,7 +17079,7 @@ not	O
 appear	O
 to	O
 contain	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 consensus	O
 sequences	O
 .	O
@@ -17100,7 +17100,7 @@ a	O
 bioinformatics	O
 screen	O
 identified	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 consensus	O
 sequences	O
 upstream	O
@@ -17127,7 +17127,7 @@ were	O
 not	O
 tested	O
 for	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 -	O
 dependence	O
 in	O
@@ -17170,7 +17170,7 @@ factor	O
 binding	O
 sequences	O
 ,	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 may	O
 not	O
 be	O
@@ -17187,7 +17187,7 @@ lack	O
 of	O
 a	O
 canonical	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 sequence	O
 at	O
 these	O
@@ -17201,7 +17201,7 @@ may	O
 be	O
 epistatic	O
 to	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 or	O
 that	O
 these	O
@@ -17213,7 +17213,7 @@ but	O
 non	O
 -	O
 canonical	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 -	O
 binding	O
 sites	O
@@ -17227,7 +17227,7 @@ gradual	O
 integration	O
 into	O
 the	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 regulatory	O
 network	O
 .	O
@@ -17236,7 +17236,7 @@ This	O
 integration	O
 may	O
 help	O
-Salmonella	S-Organism
+Salmonella	O
 coordinate	O
 expression	O
 of	O
@@ -17267,7 +17267,7 @@ would	O
 activate	O
 a	O
 restorative	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 pathway	O
 ,	O
 which	O
@@ -17310,7 +17310,7 @@ is	O
 no	O
 evidence	O
 that	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 can	O
 directly	O
 repress	O
@@ -17392,7 +17392,7 @@ conditions	O
 suggesting	O
 that	O
 the	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 pathway	O
 regulates	O
 effector	O
@@ -17408,7 +17408,7 @@ ssrAB	S-GP
 transcription	O
 from	O
 the	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 regulon	O
 would	O
 be	O
@@ -17443,7 +17443,7 @@ this	O
 study	O
 demonstrate	O
 that	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 has	O
 the	O
 ability	O
@@ -17533,7 +17533,7 @@ the	O
 genetic	O
 interaction	O
 between	O
-sigmaE	S-Regulon-operon
+sigmaE	O
 and	O
 a	O
 subset	O
@@ -17581,8 +17581,8 @@ defence	O
 peptides	O
 .	O
 
-Caenorhabditis	B-Organism
-elegans	E-Organism
+Caenorhabditis	O
+elegans	O
 Semi	O
 -	O
 Automated	O
@@ -17598,16 +17598,16 @@ Chemotaxis	O
 Gene	O
 cheB2	S-GP
 in	O
-Pseudomonas	B-Organism
-aeruginosa	E-Organism
+Pseudomonas	O
+aeruginosa	O
 Virulence	O
 
-Pseudomonas	B-Organism
-aeruginosa	E-Organism
+Pseudomonas	O
+aeruginosa	O
 is	O
 an	O
 opportunistic	O
-human	S-Organism
+human	O
 pathogen	O
 that	O
 causes	O
@@ -17622,8 +17622,8 @@ plant	O
 hosts	O
 .	O
 
-Caenorhabditis	B-Organism
-elegans	E-Organism
+Caenorhabditis	O
+elegans	O
 is	O
 a	O
 simple	O
@@ -17641,9 +17641,9 @@ genes	O
 Previous	O
 studies	O
 with	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 have	O
 shown	O
 that	O
@@ -17653,9 +17653,9 @@ the	O
 growth	O
 medium	O
 ,	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 provokes	O
 different	O
 pathologies	O
@@ -17725,12 +17725,12 @@ a	O
 cystic	O
 fibrosis	O
 airway	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 isolate	O
 ,	O
-TBCF10839	S-Organism
+TBCF10839	O
 .	O
 
 Twelve	O
@@ -17745,9 +17745,9 @@ least	O
 %	O
 attenuation	O
 in	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 killing	O
 .	O
 
@@ -17818,7 +17818,7 @@ was	O
 tested	O
 in	O
 a	O
-murine	S-Organism
+murine	O
 lung	O
 infection	O
 model	O
@@ -17859,9 +17859,9 @@ vitro	O
 .	O
 
 In	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 ,	O
 the	O
 main	O
@@ -17901,9 +17901,9 @@ attenuated	O
 for	O
 virulence	O
 in	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 whereas	O
 in	O
 vitro	O
@@ -17956,9 +17956,9 @@ and	O
 is	O
 required	O
 for	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 pathogenicity	O
 .	O
 
@@ -17970,8 +17970,8 @@ Gram	O
 -	O
 negative	O
 bacterium	O
-Pseudomonas	B-Organism
-aeruginosa	E-Organism
+Pseudomonas	O
+aeruginosa	O
 is	O
 an	O
 opportunistic	O
@@ -17988,7 +17988,7 @@ and	O
 plants	O
 hosts	O
 including	O
-humans	S-Organism
+humans	O
 .	O
 
 In	O
@@ -17997,9 +17997,9 @@ course	O
 of	O
 infection	O
 ,	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 adapts	O
 to	O
 changing	O
@@ -18096,8 +18096,8 @@ demonstrated	O
 that	O
 the	O
 nematode	O
-Caenorhabditis	B-Organism
-elegans	E-Organism
+Caenorhabditis	O
+elegans	O
 can	O
 be	O
 an	O
@@ -18123,16 +18123,16 @@ pathogens	O
 ]	O
 .	O
 
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 is	O
 capable	O
 of	O
 killing	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 in	O
 several	O
 distinct	O
@@ -18141,11 +18141,11 @@ ways	O
 
 When	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	I-Organism
-strain	I-Organism
-PA14	E-Organism
+P	O
+.	O
+aeruginosa	O
+strain	O
+PA14	O
 is	O
 cultured	O
 on	O
@@ -18188,7 +18188,7 @@ hours	O
 Nematodes	O
 exposed	O
 to	O
-PA14	S-Organism
+PA14	O
 grown	O
 on	O
 nematode	O
@@ -18233,11 +18233,11 @@ hours	O
 .	O
 
 The	O
-P	B-Organism
-.	I-Organism
-aeruginosa	I-Organism
-isolate	I-Organism
-PAO1	E-Organism
+P	O
+.	O
+aeruginosa	O
+isolate	O
+PAO1	O
 cultured	O
 on	O
 Brain	O
@@ -18261,9 +18261,9 @@ hours	O
 
 Finally	O
 ,	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 death	O
 ,	O
 called	O
@@ -18275,7 +18275,7 @@ observed	O
 in	O
 response	O
 to	O
-PAO1	S-Organism
+PAO1	O
 grown	O
 on	O
 phosphate	S-Chemical
@@ -18300,13 +18300,13 @@ is	O
 known	O
 that	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	I-Organism
-isolates	I-Organism
-PA14	E-Organism
+P	O
+.	O
+aeruginosa	O
+isolates	O
+PA14	O
 and	O
-PAO1	S-Organism
+PAO1	O
 show	O
 genomic	O
 diversity	O
@@ -18366,13 +18366,13 @@ study	O
 we	O
 used	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	I-Organism
-strain	I-Organism
-TBCF10839	E-Organism
+P	O
+.	O
+aeruginosa	O
+strain	O
+TBCF10839	O
 (	O
-TB	S-Organism
+TB	O
 )	O
 ,	O
 which	O
@@ -18385,14 +18385,14 @@ Fibrosis	O
 (	O
 CF	O
 )	O
-patient	S-Organism
+patient	O
 [	O
 14	O
 ]	O
 .	O
 
 The	O
-TB	S-Organism
+TB	O
 strain	O
 belongs	O
 to	O
@@ -18402,9 +18402,9 @@ clonal	O
 complex	O
 in	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 population	O
 [	O
 15	O
@@ -18450,9 +18450,9 @@ throughput	O
 killing	O
 assay	O
 using	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 as	O
 a	O
 host	O
@@ -18470,9 +18470,9 @@ mutant	O
 libraries	O
 of	O
 any	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 isolate	O
 of	O
 interest	O
@@ -18537,14 +18537,14 @@ manner	O
 We	O
 screened	O
 a	O
-TB	B-Organism
-STM	I-Organism
-(	I-Organism
-signature	I-Organism
-tagged	I-Organism
-mutagenesis	I-Organism
-)	I-Organism
-mutant	E-Organism
+TB	O
+STM	O
+(	O
+signature	O
+tagged	O
+mutagenesis	O
+)	O
+mutant	O
 library	O
 of	O
 2	O
@@ -18574,9 +18574,9 @@ attenuated	O
 for	O
 virulence	O
 in	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 .	O
 
 By	O
@@ -18597,7 +18597,7 @@ and	O
 virulence	O
 in	O
 a	O
-mouse	S-Organism
+mouse	O
 model	O
 ,	O
 we	O
@@ -18611,9 +18611,9 @@ necessary	O
 for	O
 in	O
 vivo	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 virulence	O
 .	O
 
@@ -18623,9 +18623,9 @@ gene	O
 belongs	O
 to	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 chemotaxis	O
 che2	O
 gene	O
@@ -18647,9 +18647,9 @@ Figure	O
 ]	O
 .	O
 
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 has	O
 multiple	O
 copies	O
@@ -18700,9 +18700,9 @@ and	O
 flagellar	O
 mobility	O
 in	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 [	O
 23	O
 ]	O
@@ -18794,9 +18794,9 @@ optimal	O
 chemotactic	O
 response	O
 in	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 .	O
 
 The	O
@@ -18859,8 +18859,8 @@ activity	O
 .	O
 
 In	O
-Escherichia	B-Organism
-coli	E-Organism
+Escherichia	O
+coli	O
 ,	O
 the	O
 loss	O
@@ -18917,8 +18917,8 @@ been	O
 reported	O
 previously	O
 in	O
-Salmonella	B-Organism
-typhimurium	E-Organism
+Salmonella	O
+typhimurium	O
 that	O
 a	O
 loss	O
@@ -18949,7 +18949,7 @@ isolates	O
 ability	O
 to	O
 invade	O
-human	S-Organism
+human	O
 epithelial	O
 HEP2	O
 cells	O
@@ -18962,7 +18962,7 @@ in	O
 infectivity	O
 in	O
 a	O
-mouse	S-Organism
+mouse	O
 ligated	O
 -	O
 loop	O
@@ -19014,9 +19014,9 @@ for	O
 Nematode	O
 Killing	O
 by	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 It	O
 was	O
 reported	O
@@ -19043,21 +19043,21 @@ various	O
 pathogens	O
 such	O
 as	O
-Staphylococcus	B-Organism
-aureus	E-Organism
+Staphylococcus	O
+aureus	O
 [	O
 32	O
 ]	O
 ,	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 [	O
 8	O
 ]	O
 or	O
-Serratia	B-Organism
-marcescens	E-Organism
+Serratia	O
+marcescens	O
 [	O
 33	O
 ]	O
@@ -19075,9 +19075,9 @@ method	O
 ,	O
 in	O
 which	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 killing	O
 is	O
 assessed	O
@@ -19099,9 +19099,9 @@ large	O
 transposon	O
 libraries	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 .	O
 
 We	O
@@ -19123,10 +19123,10 @@ the	O
 non	O
 -	O
 pathogenic	O
-E	B-Organism
-.	I-Organism
-coli	I-Organism
-OP50	E-Organism
+E	O
+.	O
+coli	O
+OP50	O
 ,	O
 and	O
 bacterial	O
@@ -19221,9 +19221,9 @@ the	O
 worms	O
 grown	O
 on	O
-E	B-Organism
-.	I-Organism
-coli	E-Organism
+E	O
+.	O
+coli	O
 were	O
 still	O
 alive	O
@@ -19256,15 +19256,15 @@ of	O
 three	O
 isolates	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 ,	O
-PA14	S-Organism
+PA14	O
 ,	O
-PAO1	S-Organism
+PAO1	O
 and	O
-TB	S-Organism
+TB	O
 (	O
 data	O
 not	O
@@ -19284,9 +19284,9 @@ allow	O
 the	O
 recovery	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 mutants	O
 with	O
 an	O
@@ -19307,7 +19307,7 @@ gacA	S-GP
 mutant	O
 from	O
 the	O
-PA14	S-Organism
+PA14	O
 transposon	O
 library	O
 (	O
@@ -19355,9 +19355,9 @@ virulence	O
 ]	O
 .	O
 
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 infection	O
 using	O
 this	O
@@ -19385,7 +19385,7 @@ observed	O
 with	O
 the	O
 parental	O
-PA14	S-Organism
+PA14	O
 strain	O
 (	O
 data	O
@@ -19471,7 +19471,7 @@ plate	O
 
 Screening	O
 the	O
-TB	S-Organism
+TB	O
 Transposon	O
 Library	O
 for	O
@@ -19494,13 +19494,13 @@ generated	O
 in	O
 the	O
 virulent	O
-P	B-Organism
-.	I-Organism
-aeruginosa	I-Organism
-CF	I-Organism
-isolate	E-Organism
+P	O
+.	O
+aeruginosa	O
+CF	O
+isolate	O
 ,	O
-TB	S-Organism
+TB	O
 ,	O
 using	O
 the	O
@@ -19530,7 +19530,7 @@ screening	O
 post	O
 -	O
 conjugation	O
-TB	S-Organism
+TB	O
 isolates	O
 onto	O
 minimal	O
@@ -19595,9 +19595,9 @@ and	O
 tested	O
 with	O
 the	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 high	O
 throughput	O
 -	O
@@ -19637,7 +19637,7 @@ as	O
 compared	O
 to	O
 the	O
-TB	S-Organism
+TB	O
 parental	O
 strain	O
 ,	O
@@ -19777,7 +19777,7 @@ in	O
 virulence	O
 compared	O
 to	O
-TB	S-Organism
+TB	O
 .	O
 
 Characterization	O
@@ -19834,7 +19834,7 @@ were	O
 compared	O
 to	O
 the	O
-PAO1	S-Organism
+PAO1	O
 genome	O
 sequence	O
 database	O
@@ -19899,7 +19899,7 @@ with	O
 similarity	O
 to	O
 the	O
-PAO1	S-Organism
+PAO1	O
 PA0831	S-GP
 gene	O
 product	O
@@ -19924,8 +19924,8 @@ with	O
 %	O
 similarity	O
 to	O
-Pseudomonas	B-Organism
-fluorescens	E-Organism
+Pseudomonas	O
+fluorescens	O
 ColS	S-GP
 ,	O
 a	O
@@ -19942,9 +19942,9 @@ system	O
 .	O
 
 In	O
-P	B-Organism
-.	I-Organism
-fluorescens	E-Organism
+P	O
+.	O
+fluorescens	O
 ColS	S-GP
 has	O
 been	O
@@ -19954,8 +19954,8 @@ root	O
 colonization	O
 while	O
 in	O
-Pseudomonas	B-Organism
-putida	E-Organism
+Pseudomonas	O
+putida	O
 it	O
 has	O
 been	O
@@ -20036,9 +20036,9 @@ with	O
 similarity	O
 to	O
 the	O
-E	B-Organism
-.	I-Organism
-coli	E-Organism
+E	O
+.	O
+coli	O
 MotB	S-GP
 ,	O
 one	O
@@ -20086,9 +20086,9 @@ gene	O
 homologues	O
 in	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 genome	O
 sequence	O
 .	O
@@ -20104,7 +20104,7 @@ II	O
 found	O
 in	O
 the	O
-PAO1	S-Organism
+PAO1	O
 genome	O
 (	O
 Figure	O
@@ -20194,9 +20194,9 @@ similar	O
 to	O
 GltP	S-GP
 from	O
-E	B-Organism
-.	I-Organism
-coli	E-Organism
+E	O
+.	O
+coli	O
 ,	O
 a	O
 glutamate	O
@@ -20248,9 +20248,9 @@ to	O
 be	O
 involved	O
 in	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 virulence	O
 .	O
 
@@ -20342,9 +20342,9 @@ assay	O
 with	O
 the	O
 established	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 slow	O
 killing	O
 assay	O
@@ -20355,13 +20355,13 @@ the	O
 lethality	O
 of	O
 the	O
-TB	S-Organism
+TB	O
 strain	O
 with	O
 the	O
 previously	O
 tested	O
-PA14	S-Organism
+PA14	O
 strain	O
 .	O
 
@@ -20391,7 +20391,7 @@ group	O
 mutants	O
 derived	O
 from	O
-TB	S-Organism
+TB	O
 was	O
 further	O
 tested	O
@@ -20404,7 +20404,7 @@ assay	O
 
 The	O
 parental	O
-TB	S-Organism
+TB	O
 isolate	O
 is	O
 able	O
@@ -20449,7 +20449,7 @@ three	O
 group	O
 1A	O
 mutants	O
-TB0173s	S-Organism
+TB0173s	O
 (	O
 cheB2	S-GP
 ,	O
@@ -20460,7 +20460,7 @@ p	O
 001	O
 )	O
 ,	O
-TB4554s	S-Organism
+TB4554s	O
 (	O
 pilY1	S-GP
 ,	O
@@ -20471,7 +20471,7 @@ p	O
 001	O
 )	O
 and	O
-TB4380s	S-Organism
+TB4380s	O
 (	O
 colS	S-GP
 ,	O
@@ -20536,8 +20536,8 @@ Phenotypic	O
 Analysis	O
 of	O
 Selected	O
-TB	B-Organism
-mutants	E-Organism
+TB	O
+mutants	O
 
 Several	O
 of	O
@@ -20588,9 +20588,9 @@ in	O
 the	O
 process	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 colonization	O
 ,	O
 allowing	O
@@ -20645,7 +20645,7 @@ surface	O
 such	O
 as	O
 the	O
-human	S-Organism
+human	O
 epithelial	O
 cell	O
 line	O
@@ -20656,7 +20656,7 @@ line	O
 In	O
 addition	O
 to	O
-TB4953s	S-Organism
+TB4953s	O
 (	O
 motB	S-GP
 ,	O
@@ -20667,7 +20667,7 @@ p	O
 0001	O
 )	O
 and	O
-TB0173s	S-Organism
+TB0173s	O
 (	O
 cheB2	S-GP
 ,	O
@@ -20700,7 +20700,7 @@ compared	O
 to	O
 the	O
 parental	O
-TB	S-Organism
+TB	O
 isolate	O
 (	O
 Figure	O
@@ -20714,7 +20714,7 @@ Table	O
 These	O
 mutants	O
 were	O
-TB2588s	S-Organism
+TB2588s	O
 (	O
 araC	S-GP
 -	O
@@ -20729,7 +20729,7 @@ p	O
 001	O
 )	O
 ,	O
-TB4380s	S-Organism
+TB4380s	O
 (	O
 colS	S-GP
 -	O
@@ -20744,7 +20744,7 @@ p	O
 001	O
 )	O
 ,	O
-TB3080s	S-Organism
+TB3080s	O
 (	O
 hypothetical	O
 ,	O
@@ -20757,7 +20757,7 @@ p	O
 01	O
 )	O
 ,	O
-TB2769s	S-Organism
+TB2769s	O
 (	O
 hypothetical	O
 ,	O
@@ -20770,7 +20770,7 @@ p	O
 05	O
 )	O
 and	O
-TB5479s	S-Organism
+TB5479s	O
 (	O
 gltP	S-GP
 -	O
@@ -20793,9 +20793,9 @@ an	O
 important	O
 factor	O
 for	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 colonization	O
 and	O
 spread	O
@@ -20829,7 +20829,7 @@ Figure	O
 .	O
 
 The	O
-TB0173s	S-Organism
+TB0173s	O
 (	O
 cheB2	S-GP
 )	O
@@ -20841,7 +20841,7 @@ Table	O
 1	O
 )	O
 and	O
-TB4953s	S-Organism
+TB4953s	O
 (	O
 motB	S-GP
 )	O
@@ -20866,14 +20866,14 @@ Furthermore	O
 ,	O
 the	O
 mutants	O
-TB0260s	S-Organism
+TB0260s	O
 (	O
 hypothetical	O
 ,	O
 PA0260	S-GP
 )	O
 and	O
-TB5479s	S-Organism
+TB5479s	O
 (	O
 gltP	S-GP
 -	O
@@ -20893,14 +20893,14 @@ Table	O
 whereas	O
 the	O
 mutants	O
-TB2588s	S-Organism
+TB2588s	O
 (	O
 araC	S-GP
 -	O
 like	O
 )	O
 and	O
-TB3080s	S-Organism
+TB3080s	O
 (	O
 hypothetical	O
 )	O
@@ -20929,7 +20929,7 @@ to	O
 further	O
 characterize	O
 the	O
-TB0173s	S-Organism
+TB0173s	O
 mutant	O
 (	O
 cheB2	S-GP
@@ -20967,7 +20967,7 @@ cheB2	S-GP
 gene	O
 in	O
 the	O
-TB	S-Organism
+TB	O
 strain	O
 is	O
 located	O
@@ -20982,9 +20982,9 @@ cluster	O
 described	O
 for	O
 the	O
-PAO1	S-Organism
+PAO1	O
 or	O
-PA14	S-Organism
+PA14	O
 strains	O
 ,	O
 we	O
@@ -20992,7 +20992,7 @@ further	O
 analyzed	O
 the	O
 corresponding	O
-TB	S-Organism
+TB	O
 chromosomal	O
 region	O
 .	O
@@ -21015,7 +21015,7 @@ sequence	O
 obtained	O
 from	O
 the	O
-PA14	S-Organism
+PA14	O
 genome	O
 sequence	O
 (	O
@@ -21052,7 +21052,7 @@ mcpA	S-GP
 gene	O
 to	O
 the	O
-PA0171	S-Organism
+PA0171	O
 gene	O
 located	O
 downstream	O
@@ -21068,9 +21068,9 @@ were	O
 performed	O
 simultaneously	O
 using	O
-PA14	S-Organism
+PA14	O
 or	O
-TB	S-Organism
+TB	O
 genomic	O
 DNA	O
 as	O
@@ -21082,9 +21082,9 @@ paired	O
 reaction	O
 set	O
 (	O
-TB	S-Organism
+TB	O
 /	O
-PA14	S-Organism
+PA14	O
 )	O
 resulted	O
 in	O
@@ -21123,9 +21123,9 @@ the	O
 two	O
 isolates	O
 ,	O
-TB	S-Organism
+TB	O
 and	O
-PA14	S-Organism
+PA14	O
 ,	O
 with	O
 regards	O
@@ -21153,7 +21153,7 @@ changes	O
 observed	O
 with	O
 the	O
-TB	S-Organism
+TB	O
 strain	O
 were	O
 a	O
@@ -21198,7 +21198,7 @@ cheB2	S-GP
 mutant	O
 ,	O
 called	O
-TB0173i	S-Organism
+TB0173i	O
 (	O
 p	O
 <	O
@@ -21210,9 +21210,9 @@ p	O
 showed	O
 a	O
 delayed	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 killing	O
 comparable	O
 to	O
@@ -21235,9 +21235,9 @@ Both	O
 cheB2	S-GP
 mutants	O
 ,	O
-TB0173s	S-Organism
+TB0173s	O
 and	O
-TB0173i	S-Organism
+TB0173i	O
 ,	O
 required	O
 at	O
@@ -21249,7 +21249,7 @@ day	O
 as	O
 compared	O
 to	O
-TB	S-Organism
+TB	O
 ,	O
 to	O
 kill	O
@@ -21271,14 +21271,14 @@ cheB2	S-GP
 mutation	O
 in	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	I-Organism
-PA14	I-Organism
-strain	E-Organism
+P	O
+.	O
+aeruginosa	O
+PA14	O
+strain	O
 ,	O
 yielding	O
-PA140173i	S-Organism
+PA140173i	O
 (	O
 see	O
 Materials	O
@@ -21292,9 +21292,9 @@ similar	O
 virulence	O
 attenuation	O
 on	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 (	O
 Figure	O
 S3	O
@@ -21318,7 +21318,7 @@ it	O
 is	O
 not	O
 a	O
-TB	S-Organism
+TB	O
 strain	O
 -	O
 specific	O
@@ -21384,9 +21384,9 @@ within	O
 the	O
 genome	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 .	O
 
 The	O
@@ -21419,11 +21419,11 @@ the	O
 cheB2	S-GP
 mutant	O
 ,	O
-TB0173s	S-Organism
+TB0173s	O
 ,	O
 generating	O
 the	O
-TB0173sp2B2	S-Organism
+TB0173sp2B2	O
 strain	O
 .	O
 
@@ -21445,7 +21445,7 @@ cheB2	S-GP
 mutant	O
 ,	O
 generating	O
-TB0173sCTX	S-Organism
+TB0173sCTX	O
 .	O
 
 As	O
@@ -21496,9 +21496,9 @@ Is	O
 not	O
 Attenuated	O
 for	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 Virulence	O
 
 Several	O
@@ -21510,9 +21510,9 @@ been	O
 identified	O
 in	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 genome	O
 [	O
 21	O
@@ -21553,9 +21553,9 @@ the	O
 cheB2	S-GP
 mutant	O
 on	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 is	O
 specific	O
 ,	O
@@ -21610,7 +21610,7 @@ was	O
 engineered	O
 in	O
 the	O
-TB	S-Organism
+TB	O
 strain	O
 as	O
 described	O
@@ -21620,7 +21620,7 @@ and	O
 methods	O
 ,	O
 yielding	O
-TB1459i	S-Organism
+TB1459i	O
 .	O
 
 The	O
@@ -21630,9 +21630,9 @@ was	O
 used	O
 to	O
 feed	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 in	O
 the	O
 slow	O
@@ -21655,7 +21655,7 @@ mutant	O
 or	O
 the	O
 parental	O
-TB	S-Organism
+TB	O
 strain	O
 (	O
 Figure	O
@@ -21673,16 +21673,16 @@ no	O
 significant	O
 reduction	O
 in	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 killing	O
 when	O
 compared	O
 to	O
 the	O
 parental	O
-TB	S-Organism
+TB	O
 strain	O
 ,	O
 with	O
@@ -21715,7 +21715,7 @@ original	O
 cheB2	S-GP
 mutant	O
 (	O
-TB0173s	S-Organism
+TB0173s	O
 )	O
 and	O
 the	O
@@ -21799,7 +21799,7 @@ Methods	O
 
 The	O
 parental	O
-TB	S-Organism
+TB	O
 strain	O
 was	O
 able	O
@@ -21826,7 +21826,7 @@ min	O
 )	O
 and	O
 the	O
-TB0173s	S-Organism
+TB0173s	O
 strain	O
 (	O
 cheB2	S-GP
@@ -21845,7 +21845,7 @@ reduced	O
 as	O
 compared	O
 to	O
-TB	S-Organism
+TB	O
 (	O
 Figure	O
 S4	O
@@ -21855,7 +21855,7 @@ S4	O
 However	O
 ,	O
 the	O
-TB1459i	S-Organism
+TB1459i	O
 strain	O
 (	O
 cheB1	S-GP
@@ -21893,7 +21893,7 @@ Shows	O
 Reduced	O
 Virulence	O
 in	O
-Mice	S-Organism
+Mice	O
 
 We	O
 further	O
@@ -21907,7 +21907,7 @@ mutant	O
 TB0173s	O
 in	O
 a	O
-mouse	S-Organism
+mouse	O
 model	O
 of	O
 lung	O
@@ -21928,10 +21928,10 @@ protocol	O
 
 Ten	O
 female	O
-C3H	B-Organism
-/	I-Organism
-HeN	I-Organism
-mice	E-Organism
+C3H	O
+/	O
+HeN	O
+mice	O
 each	O
 were	O
 inoculated	O
@@ -21980,7 +21980,7 @@ The	O
 cheB2	S-GP
 mutant	O
 (	O
-TB0173s	S-Organism
+TB0173s	O
 )	O
 showed	O
 a	O
@@ -21992,19 +21992,19 @@ respiratory	O
 tract	O
 infection	O
 of	O
-mice	S-Organism
+mice	O
 as	O
 compared	O
 to	O
 the	O
 parental	O
 strain	O
-TB	S-Organism
+TB	O
 and	O
 the	O
 complemented	O
 strain	O
-TB0173sp2B2	S-Organism
+TB0173sp2B2	O
 .	O
 
 Infection	O
@@ -22060,7 +22060,7 @@ with	O
 the	O
 complemented	O
 strain	O
-TB0173sp2B2	S-Organism
+TB0173sp2B2	O
 resulted	O
 in	O
 60	O
@@ -22101,7 +22101,7 @@ body	O
 condition	O
 of	O
 the	O
-mice	S-Organism
+mice	O
 during	O
 bacterial	O
 infection	O
@@ -22114,7 +22114,7 @@ Methods	O
 .	O
 
 Surviving	O
-mice	S-Organism
+mice	O
 infected	O
 with	O
 the	O
@@ -22149,7 +22149,7 @@ test	O
 )	O
 than	O
 surviving	O
-mice	S-Organism
+mice	O
 infected	O
 with	O
 the	O
@@ -22175,9 +22175,9 @@ Figure	O
 Pathohistological	O
 Analysis	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 Infection	O
 
 To	O
@@ -22190,7 +22190,7 @@ virulence	O
 between	O
 the	O
 parental	O
-TB	S-Organism
+TB	O
 isolate	O
 and	O
 the	O
@@ -22198,7 +22198,7 @@ TB0173s	O
 cheB2	S-GP
 mutant	O
 ,	O
-mice	S-Organism
+mice	O
 were	O
 sacrificed	O
 2	O
@@ -22220,18 +22220,18 @@ embedded	O
 Lungs	O
 from	O
 infected	O
-mice	S-Organism
+mice	O
 challenged	O
 with	O
 the	O
-TB	S-Organism
+TB	O
 strain	O
 as	O
 well	O
 as	O
 the	O
 complemented	O
-TB0173sp2B2	S-Organism
+TB0173sp2B2	O
 strain	O
 had	O
 a	O
@@ -22281,9 +22281,9 @@ Figure	O
 
 Discussion	O
 
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 is	O
 a	O
 convenient	O
@@ -22312,9 +22312,9 @@ in	O
 the	O
 killing	O
 of	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 are	O
 relevant	O
 for	O
@@ -22342,9 +22342,9 @@ affect	O
 the	O
 physiology	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 via	O
 complex	O
 regulatory	O
@@ -22384,9 +22384,9 @@ liquid	O
 based	O
 high	O
 throughput	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 killing	O
 assay	O
 to	O
@@ -22441,7 +22441,7 @@ Figure	O
 3	O
 )	O
 the	O
-TB	S-Organism
+TB	O
 strain	O
 requires	O
 approximately	O
@@ -22542,12 +22542,12 @@ STM	O
 library	O
 of	O
 the	O
-P	B-Organism
-.	I-Organism
-aeruginosa	I-Organism
-CF	I-Organism
-isolate	I-Organism
-TB	E-Organism
+P	O
+.	O
+aeruginosa	O
+CF	O
+isolate	O
+TB	O
 [	O
 20	O
 ]	O
@@ -22564,9 +22564,9 @@ associated	O
 with	O
 virulence	O
 in	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 .	O
 
 Several	O
@@ -22593,9 +22593,9 @@ motility	O
 related	O
 phenotypes	O
 including	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 slow	O
 killing	O
 ,	O
@@ -22607,7 +22607,7 @@ motility	O
 or	O
 adherence	O
 to	O
-human	S-Organism
+human	O
 cells	O
 (	O
 Table	O
@@ -22653,7 +22653,7 @@ This	O
 mutant	O
 ,	O
 named	O
-TB0173s	S-Organism
+TB0173s	O
 ,	O
 has	O
 a	O
@@ -22671,9 +22671,9 @@ cheB	O
 genes	O
 found	O
 in	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 .	O
 
 CheB	O
@@ -22694,9 +22694,9 @@ have	O
 been	O
 identified	O
 in	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 [	O
 56	O
 ]	O
@@ -22724,9 +22724,9 @@ In	O
 the	O
 high	O
 throughput	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 liquid	O
 -	O
 based	O
@@ -22805,7 +22805,7 @@ Most	O
 importantly	O
 in	O
 a	O
-mouse	S-Organism
+mouse	O
 lung	O
 model	O
 of	O
@@ -22827,7 +22827,7 @@ response	O
 in	O
 the	O
 infected	O
-mice	S-Organism
+mice	O
 lungs	O
 .	O
 
@@ -22951,9 +22951,9 @@ the	O
 dominant	O
 role	O
 in	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 chemotaxis	O
 and	O
 flagellar	O
@@ -23219,8 +23219,8 @@ a	O
 cheW	S-GP
 mutant	O
 in	O
-Helicobacter	B-Organism
-pylori	E-Organism
+Helicobacter	O
+pylori	O
 is	O
 unable	O
 to	O
@@ -23232,7 +23232,7 @@ long	O
 term	O
 infection	O
 in	O
-mice	S-Organism
+mice	O
 ,	O
 remaining	O
 only	O
@@ -23281,9 +23281,9 @@ II	O
 che	O
 genes	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 might	O
 play	O
 a	O
@@ -23373,7 +23373,7 @@ mutant	O
 with	O
 reduced	O
 motility	O
-TB4953s	S-Organism
+TB4953s	O
 (	O
 motB	S-GP
 mutant	O
@@ -23427,7 +23427,7 @@ cheB2	S-GP
 mutant	O
 strain	O
 (	O
-TB0173s	S-Organism
+TB0173s	O
 )	O
 is	O
 not	O
@@ -23465,16 +23465,16 @@ others	O
 ,	O
 such	O
 as	O
-S	B-Organism
-.	I-Organism
-marcescens	E-Organism
+S	O
+.	O
+marcescens	O
 during	O
 its	O
 infection	O
 of	O
-C	B-Organism
-.	I-Organism
-elegans	E-Organism
+C	O
+.	O
+elegans	O
 [	O
 33	O
 ]	O
@@ -23532,7 +23532,7 @@ the	O
 lungs	O
 of	O
 the	O
-mice	S-Organism
+mice	O
 ,	O
 bacteria	O
 might	O
@@ -23628,9 +23628,9 @@ the	O
 physiological	O
 response	O
 of	O
-P	B-Organism
-.	I-Organism
-aeruginosa	E-Organism
+P	O
+.	O
+aeruginosa	O
 to	O
 Che2	O
 sensing	O
