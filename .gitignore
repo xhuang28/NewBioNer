@@ -4,17 +4,5 @@ __pycache__/
 
 
 *.json
-*.pdf
-*.out
 *.model
 *.pickle
-*.tsv
-*.pkl
-*.h5
-*.pt
-*.p
-*.json_bak
-*.log
-*.bak
-
-/corpus/*

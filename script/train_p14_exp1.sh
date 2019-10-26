@@ -1,17 +1,14 @@
 #!/bin/bash
 
-source activate base
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
 FOLDER="P1/EXP1" # Fix me!
 
-# 1: char hidden size; 2: word hidden size; 3,4: multiple mask value
-EXEC_NAME="$C${1}_W${2}_MV${3}_${4}"
+EXEC_NAME="C${1}_W${2}_MV${3}_${4}"
 
-SRC_FOLDER="/auto/nlg-05/huan183/NewBioNer"
+SRC_FOLDER="."
 DATA_FOLDER="$SRC_FOLDER/corpus/train"
 CHECKPOINT_FOLDER="$SRC_FOLDER/checkpoints/$FOLDER/$EXEC_NAME"
 
@@ -22,7 +19,7 @@ mkdir -p $SRC_FOLDER/logs/$FOLDER
 
 python3 -u $SRC_FOLDER/train_p1.py \
   --checkpoint $CHECKPOINT_FOLDER \
-  --emb_file /home/nlg-05/lidong/clean_base/MT_NER/external/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
+  --emb_file $SRC_FOLDER/embedding/wikipedia-pubmed-and-PMC-w2v.txt \
   --train_file \
   $DATA_FOLDER/BC2GM-IOBES/train.tsv \
   $DATA_FOLDER/BC4CHEMD-IOBES/train.tsv \
@@ -57,5 +54,3 @@ python3 -u $SRC_FOLDER/train_p1.py \
   --multi_mask $3 $4 \
   | tee $SRC_FOLDER/logs/$FOLDER/$EXEC_NAME.log
 
-
-source deactivate
