@@ -6,6 +6,7 @@ The paper was accepted as a long paper in CoNLL 2019.
 I'm using:
 
 -Python 3.6
+
 -Pytorch 0.3.1
 
 -tqdm
