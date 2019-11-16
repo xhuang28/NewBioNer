@@ -11,6 +11,7 @@ I'm using:
 
 -tqdm
 
+
 Please download word embedding into ```/embeddings/``` from http://bio.nlplab.org/ (wikipedia-pubmed-and-PMC-w2v.bin)
 
 To train the proposed models, run commands in 
